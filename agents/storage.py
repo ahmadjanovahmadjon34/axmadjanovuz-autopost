@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT);
 """
 EXTRA_COLUMNS = {"draft": "TEXT", "related": "TEXT", "qc": "TEXT", "msg_id": "INTEGER", "drafted_at": "TEXT"}
 
-# status: new → skipped | drafted → posted | rejected
+# status: new → skipped | drafted ⇄ redo → posted | rejected
 
 
 def utcnow():
@@ -63,11 +63,18 @@ class Store:
         return [dict(r) for r in self.db.execute(
             "SELECT * FROM items WHERE status='new' AND published >= ? ORDER BY published DESC", (since,))]
 
+    def by_status(self, status):
+        return [dict(r) for r in self.db.execute("SELECT * FROM items WHERE status=?", (status,))]
+
+    def unsent_drafts(self):
+        return [dict(r) for r in self.db.execute(
+            "SELECT * FROM items WHERE status='drafted' AND msg_id IS NULL ORDER BY drafted_at")]
+
     def recent_topics(self, hours=48, limit=40):
         """Oxirgi qoralama va postlar — takrorlanmaslik uchun."""
         since = (utcnow() - timedelta(hours=hours)).isoformat()
         return [(r["draft"] or r["text"])[:200].replace("\n", " ") for r in self.db.execute(
-            "SELECT draft, text FROM items WHERE status IN ('drafted','posted') AND drafted_at >= ?"
+            "SELECT draft, text FROM items WHERE status IN ('drafted','redo','posted') AND drafted_at >= ?"
             " ORDER BY drafted_at DESC LIMIT ?", (since, limit))]
 
     def set(self, item_id, **fields):
