@@ -37,6 +37,7 @@ jobs:
           OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           HOOK_SECRET: ${{ secrets.HOOK_SECRET }}
+          ROUTINE_TOKEN: ${{ secrets.ROUTINE_TOKEN }}
         run: python main.py ${{ github.event.inputs.command || 'run' }}
       - name: Holatni saqlash (takrorlanmaslik uchun)
         if: always()
@@ -48,3 +49,16 @@ jobs:
           git commit -m "holat yangilandi"
           git pull --rebase origin main
           git push
+      - name: Siz yuborgan xabar uchun 2-agentni darhol chaqirish
+        if: always() && hashFiles('.fire_routine') != ''
+        env:
+          ROUTINE_TOKEN: ${{ secrets.ROUTINE_TOKEN }}
+        run: |
+          [ -n "$ROUTINE_TOKEN" ] || { echo "ROUTINE_TOKEN yo'q: keyingi soatlik tahlilda yoziladi"; exit 0; }
+          curl -sS -X POST https://api.anthropic.com/v1/claude_code/routines/trig_01SKsGH9yLLRdAXvaM3QBsQ3/fire \
+            -H "Authorization: Bearer $ROUTINE_TOKEN" \
+            -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "Content-Type: application/json" \
+            -d '{"text": "Egasi botga yangi xabar yubordi: ROUTINE.md bo'"'"'yicha uni birinchi bo'"'"'lib post qiling."}' \
+            -o /dev/null -w "Routine chaqirildi: HTTP %{http_code}\n"

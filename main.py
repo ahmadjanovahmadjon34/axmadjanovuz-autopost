@@ -146,8 +146,10 @@ def on_owner_message(store, bot, msg, chat):
     store.add({"id": item_id, "source": OWNER_SOURCE, "url": url, "title": text.strip().split("\n")[0][:200],
                "text": text, "image": None, "media": json.dumps(media), "published": utcnow().isoformat(),
                "score": 100})
-    bot.say(chat, "📥 Qabul qilindi. 2-agent keyingi tahlilda (ko'pi bilan 1 soatda) undan post tayyorlab, "
-                  "3-agent tekshirgach shu yerga yuboradi.", menu=True)
+    Path(".fire_routine").touch()  # GitHub Actions 2-agentni darhol chaqiradi
+    when = "bir necha daqiqada" if os.environ.get("ROUTINE_TOKEN") else "keyingi tahlilda (ko'pi bilan 1 soatda)"
+    bot.say(chat, f"📥 Qabul qilindi. 2-agent {when} undan post tayyorlaydi, 3-agent tekshirgach shu yerga keladi.",
+            menu=True)
 
 
 def on_button(cfg, store, bot, cb, chat):

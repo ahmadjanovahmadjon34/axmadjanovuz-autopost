@@ -9,7 +9,7 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    Fayl: `new_items` (tahlil qilinmagan yangiliklar), `redo` (egasi "Qayta ishlash" bosgan qoralamalar),
    `recent_posts` (takrorlamaslik uchun), `signature`, `avg_posts_per_day`, `max_drafts`, `min_quality_score`.
 2. Hech narsa bo'lmasa (`new_items` va `redo` bo'sh) — hech narsa commit qilmay to'xtang.
-3. **Egasi yuborgan xabarlar:** `source` qiymati `owner_source` ga teng bo'lgan yangiliklarni egasi o'zi botga
+3. **Egasi yuborgan xabarlar (eng birinchi):** `source` qiymati `owner_source` ga teng bo'lgan yangiliklarni egasi o'zi botga
    yuborgan. Ularni tanlovsiz, `max_drafts` ga qo'shmasdan **albatta** post qiling (matni kam bo'lsa ham, bor
    faktlar asosida). Egasining xabaridagi faktlarni o'zgartirmang.
 4. **2-agent, tahlil:** `new_items` ni to'liq o'qing. `agents/writer.py` dagi `TRIAGE` qoidalari bo'yicha
@@ -39,3 +39,5 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
 9. `python -c "import json,sys; json.load(open(sys.argv[1]))" inbox/<fayl>.json` bilan tekshiring, so'ng
    faqat shu faylni commit qiling: `git add inbox && git commit -m "qoralamalar" && git pull --rebase && git push`.
    `data.db` ni o'zgartirmang.
+10. Qoralama botga darhol yetib borishi uchun GitHub ishini ishga tushiring:
+    `gh api -X POST repos/ahmadjanovahmadjon34/axmadjanovuz-autopost/actions/workflows/post.yml/dispatches -f ref=main -f 'inputs[command]=run'`
