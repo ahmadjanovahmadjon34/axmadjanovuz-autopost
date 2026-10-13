@@ -119,8 +119,20 @@ def status_text(store):
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
     lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
-    lines += ["", "1-agent har 20 daqiqada izlaydi, 2-3-agent har soatda yozadi."]
+    lines += ["", f"1-agent har 20 daqiqada izlaydi, 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()})."]
     return "\n".join(lines)
+
+
+def next_analysis():
+    """Claude routine Toshkent vaqti bilan har soatning 07-daqiqasida, 07:07–22:07 orasida ishlaydi."""
+    now = utcnow().astimezone(TASHKENT)
+    t = now.replace(minute=7, second=0, microsecond=0)
+    if t <= now:
+        t += timedelta(hours=1)
+    if t.hour > 22 or t.hour < 7:
+        t = (t if t.hour < 7 else t + timedelta(days=1)).replace(hour=7)
+        return f"ertalab {t:%H:%M} da"
+    return f"soat {t:%H:%M} da"
 
 
 def on_owner_message(store, bot, msg, chat):
@@ -147,9 +159,8 @@ def on_owner_message(store, bot, msg, chat):
                "text": text, "image": None, "media": json.dumps(media), "published": utcnow().isoformat(),
                "score": 100})
     Path(".fire_routine").touch()  # GitHub Actions 2-agentni darhol chaqiradi
-    when = "bir necha daqiqada" if os.environ.get("ROUTINE_TOKEN") else "keyingi tahlilda (ko'pi bilan 1 soatda)"
-    bot.say(chat, f"📥 Qabul qilindi. 2-agent {when} undan post tayyorlaydi, 3-agent tekshirgach shu yerga keladi.",
-            menu=True)
+    bot.say(chat, f"📥 Qabul qilindi. 2-agent navbatdagi tahlilda ({next_analysis()}) birinchi bo'lib undan post "
+                  "tayyorlaydi, 3-agent tekshirgach shu yerga keladi.", menu=True)
 
 
 def on_button(cfg, store, bot, cb, chat):
