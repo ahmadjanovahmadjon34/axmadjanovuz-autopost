@@ -34,7 +34,7 @@ def fetch_telegram(channel, client):
     """Ochiq kanalning veb-ko'rinishidan (t.me/s/...) oxirgi postlarni oladi."""
     r = client.get(f"https://t.me/s/{channel}")
     r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
+    soup = BeautifulSoup(r.text, "lxml")  # html.parser t.me sahifasida ichma-ich joylashuvni buzadi
     for msg in soup.select(".tgme_widget_message"):
         body = msg.select_one(".tgme_widget_message_text")
         if not body:
@@ -122,6 +122,9 @@ def collect(cfg, store: Store, log=print):
             except Exception as e:
                 log(f"[1-agent] {arg}: xato {e}")
                 continue
+            with_media = sum(1 for it in items if it.get("media", "[]") != "[]")
+            if fn is fetch_telegram:
+                log(f"[1-agent] {arg}: {len(items)} post, {with_media} tasida media")
             for it in items:
                 it["published"] = it["published"] or now.isoformat()
                 if it["published"] < cutoff:
