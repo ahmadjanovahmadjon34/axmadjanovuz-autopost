@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "run | post | collect"
+        description: "run | collect"
         default: "run"
 
 concurrency:
@@ -32,12 +32,12 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          PREVIEW_CHAT_ID: ${{ secrets.PREVIEW_CHAT_ID }}
-          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
+          OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
         run: python main.py ${{ github.event.inputs.command || 'run' }}
       - name: Holatni saqlash (takrorlanmaslik uchun)
+        if: always()
         run: |
           git config user.name "autopost-bot"
           git config user.email "autopost-bot@users.noreply.github.com"
-          git add data.db preview_chat_id.txt 2>/dev/null || git add data.db
+          git add data.db
           git diff --cached --quiet || git commit -m "holat yangilandi" && git push

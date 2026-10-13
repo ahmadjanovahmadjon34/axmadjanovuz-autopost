@@ -75,14 +75,19 @@ def fetch_page(site, client):
     r = client.get(site["url"])
     soup = BeautifulSoup(r.text, "html.parser")
     base = httpx.URL(site["url"])
+    today = datetime.now(timezone.utc).date()
     seen = set()
     for a in soup.select("a[href]"):
         title = a.get_text(" ", strip=True)
-        href = str(base.join(a["href"]))
-        if len(title) < 40 or href in seen:
+        href = base.join(a["href"])
+        if len(title) < 40 or str(href) in seen or href.host != base.host:
             continue
-        seen.add(href)
-        yield {"source": site["name"], "url": href, "title": title, "text": title,
+        # maqola havolasida sana bo'ladi (/2026/10/13/...): eski yoki sanasiz bo'lim havolalarini tashlaymiz
+        m = re.search(r"/(20\d\d)/(\d\d)/(\d\d)/", href.path)
+        if not m or (today - datetime(*map(int, m.groups())).date()).days > 1:
+            continue
+        seen.add(str(href))
+        yield {"source": site["name"], "url": str(href), "title": title, "text": title,
                "image": None, "published": None}
 
 

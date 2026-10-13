@@ -1,19 +1,26 @@
-"""2-agent: yangiliklar ichidan eng muhimini tanlab, kanal uslubida post yozadi."""
+"""2-agent: barcha yangi yangiliklarni tahlil qiladi, muhimlarini tanlaydi va kanal uslubida post yozadi."""
 from pathlib import Path
 
 from .llm import ask_json
 
-SYSTEM = """Siz @Axmadjanovuz Telegram kanalining muharririsiz. Kanal auditoriyasi: abituriyentlar,
-talabalar, ota-onalar, o'qituvchilar. Mavzular: {topics} (asosan ta'lim, qabul, OTM, nodavlat OTMlar,
-grant/kontrakt, ijtimoiy masalalar).
+AUDIENCE = """@Axmadjanovuz Telegram kanali auditoriyasi: abituriyentlar, talabalar, ota-onalar, o'qituvchilar.
+Mavzular: {topics} (asosan ta'lim, qabul, OTM, nodavlat OTMlar, grant/kontrakt, imtiyozlar, ijtimoiy masalalar)."""
 
-Vazifa: berilgan yangiliklar ichidan kanal auditoriyasi uchun eng muhim, foydali va YANGI bittasini
-tanlang va uni kanal uslubida o'zbek tilida (lotin yozuvida) post qilib yozing.
-Kalit so'z bo'lmasa ham ta'lim va ijtimoiy yangiliklar mos bo'lishi mumkin. Sport, shou-biznes,
-kriminal, reklama va kanal auditoriyasiga aloqasiz yangiliklarni tanlamang.
+TRIAGE = AUDIENCE + """
 
-Bugun {posted} ta post chiqdi, kunlik limit {limit} ta. Agar hech bir yangilik haqiqatan muhim
-bo'lmasa, tanlamang — kuchsiz post chiqargandan ko'ra kutgan yaxshi.
+Vazifa: quyidagi barcha yangi yangiliklarni tahlil qiling va kanal uchun post qilishga arziydiganlarini tanlang.
+- Bir xil voqea haqida bir nechta manba bo'lsa, bittasini asosiy qiling, qolganlarini "related" ga qo'shing.
+- Kalit so'z bo'lmasa ham muhim ta'lim/ijtimoiy yangilik tanlanishi mumkin.
+- Sport, shou-biznes, kriminal, reklama, obunaga chaqiruv, tabriklar va auditoriyaga aloqasizlarini tanlamang.
+- Oxirgi chiqqan/tayyorlangan postlarni takrorlamang.
+- Kanalda kuniga o'rtacha {avg} ta post chiqadi; bu qat'iy cheklov emas, muhim yangilik ko'p bo'lsa ko'proq
+  tanlang, bo'lmasa kamroq. Lekin bitta tahlilda {cap} tadan ko'p tanlamang, eng muhimlarini oling.
+
+Faqat JSON: {{"selected": [{{"index": 3, "related": [7, 12], "reason": "..."}}]}}"""
+
+WRITE = AUDIENCE + """
+
+Vazifa: berilgan yangilikdan kanal uslubida o'zbek tilida (lotin yozuvida) post yozing.
 
 Uslub qoidalari (namunalarga qarang):
 - Qisqa, e'tiborni tortuvchi birinchi qator (savol yoki ❗️ bilan muhim xabar).
@@ -25,13 +32,12 @@ Uslub qoidalari (namunalarga qarang):
 - Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.
 - 300–1500 belgi.
-- Manba boshqa kanal bo'lsa ham, uni so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
+- Manbani so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
 
 Kanal uslubidan namunalar:
 {examples}
 
-Faqat JSON qaytaring: {{"index": <tanlangan yangilik raqami>, "reason": "<nega tanlandi>", "post": "<post>"}}
-Mos yangilik bo'lmasa: {{"index": -1, "reason": "...", "post": ""}}"""
+Faqat JSON: {{"post": "<post>"}}"""
 
 
 def load_examples(path):
@@ -42,16 +48,39 @@ def load_examples(path):
     return "\n".join(lines).strip() or "(namuna yo'q)"
 
 
-def write_post(cfg, candidates, recent, posted_today, feedback=None, previous=None):
-    system = SYSTEM.format(topics=", ".join(cfg["topics"]), posted=posted_today,
-                           limit=cfg["schedule"]["max_posts_per_day"], signature=cfg["signature"],
-                           examples=load_examples(cfg["style_examples_file"]))
-    parts = [f"[{i}] Manba: {c['source']} | {c['url']} | {c['published']}\n{c['title']}\n{c['text'][:2500]}"
-             for i, c in enumerate(candidates)]
-    user = "Yangiliklar:\n\n" + "\n\n---\n\n".join(parts)
-    if recent:
-        user += "\n\nOxirgi chiqqan postlar (shu mavzularni takrorlamang):\n- " + "\n- ".join(recent)
+def _fmt(i, c, limit):
+    return f"[{i}] {c['source']} | {c['url']} | {c['published'][:16]}\n{c['title']}\n{c['text'][:limit]}"
+
+
+def select_news(cfg, items, recent):
+    """Barcha yangi yangiliklarni bo'laklab tahlil qiladi. Qaytaradi: [(asosiy, [bog'liqlar], sabab)]."""
+    out = []
+    cap = cfg["review"]["max_drafts_per_run"]
+    system = TRIAGE.format(topics=", ".join(cfg["topics"]), avg=cfg["review"]["avg_posts_per_day"], cap=cap)
+    for start in range(0, len(items), 40):
+        chunk = items[start:start + 40]
+        user = "Yangiliklar:\n\n" + "\n\n".join(_fmt(i, c, 600) for i, c in enumerate(chunk))
+        if recent:
+            user += "\n\nOxirgi chiqqan/tayyorlangan postlar:\n- " + "\n- ".join(recent)
+        res = ask_json(cfg["model"], system, user, max_tokens=2000)
+        for s in res.get("selected", []):
+            i = s.get("index")
+            if isinstance(i, int) and 0 <= i < len(chunk):
+                rel = [chunk[j] for j in s.get("related", []) if isinstance(j, int) and 0 <= j < len(chunk) and j != i]
+                out.append((chunk[i], rel, s.get("reason", "")))
+    return out[:cap]
+
+
+def write_post(cfg, item, related=(), feedback=None, previous=None, improve=False):
+    system = WRITE.format(topics=", ".join(cfg["topics"]), signature=cfg["signature"],
+                          examples=load_examples(cfg["style_examples_file"]))
+    user = "Asosiy manba:\n" + _fmt(0, item, 4000)
+    if related:
+        user += "\n\nShu voqea haqida boshqa manbalar:\n" + "\n\n".join(_fmt(i + 1, r, 1500) for i, r in enumerate(related))
+    if previous and improve:
+        user += (f"\n\nOldingi variant:\n{previous}\n\nKanal egasi buni qayta ishlashni so'radi. Ancha yaxshiroq"
+                 " variant yozing: sarlavhani kuchliroq, izohni chuqurroq va o'quvchi uchun foydaliroq qiling,"
+                 " faktlarni saqlang.")
     if feedback:
-        user += (f"\n\nOldingi variant:\n{previous}\n\nSifat nazoratchisi e'tirozlari, tuzatib qayta yozing"
-                 f" (xuddi shu yangilik bo'yicha):\n{feedback}")
-    return ask_json(cfg["model"], system, user, max_tokens=3000)
+        user += f"\n\nOldingi variant:\n{previous}\n\nSifat nazoratchisi e'tirozlari, tuzatib qayta yozing:\n{feedback}"
+    return ask_json(cfg["model"], system, user, max_tokens=3000).get("post", "")

@@ -1,4 +1,4 @@
-"""Yangiliklar va chiqarilgan postlarni saqlash (takrorlanmaslik uchun)."""
+"""Yangiliklar, qoralamalar va bot holatini saqlash."""
 from datetime import datetime, timedelta, timezone
 import hashlib
 import sqlite3
@@ -8,7 +8,11 @@ CREATE TABLE IF NOT EXISTS items (
   id TEXT PRIMARY KEY, source TEXT, url TEXT, title TEXT, text TEXT,
   image TEXT, published TEXT, score REAL, status TEXT DEFAULT 'new', posted_at TEXT
 );
+CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT);
 """
+EXTRA_COLUMNS = {"draft": "TEXT", "related": "TEXT", "qc": "TEXT", "msg_id": "INTEGER", "drafted_at": "TEXT"}
+
+# status: new → skipped | drafted → posted | rejected
 
 
 def utcnow():
@@ -20,11 +24,26 @@ class Store:
         self.db = sqlite3.connect(path)
         self.db.row_factory = sqlite3.Row
         self.db.executescript(SCHEMA)
+        have = {r["name"] for r in self.db.execute("PRAGMA table_info(items)")}
+        for col, typ in EXTRA_COLUMNS.items():
+            if col not in have:
+                self.db.execute(f"ALTER TABLE items ADD COLUMN {col} {typ}")
+        self.db.commit()
 
     @staticmethod
     def make_id(url, text):
         return hashlib.sha1((url or text[:200]).encode()).hexdigest()
 
+    # --- kv ---
+    def get(self, k, default=None):
+        r = self.db.execute("SELECT v FROM kv WHERE k=?", (k,)).fetchone()
+        return r["v"] if r else default
+
+    def put(self, k, v):
+        self.db.execute("INSERT OR REPLACE INTO kv (k, v) VALUES (?, ?)", (k, str(v)))
+        self.db.commit()
+
+    # --- items ---
     def exists(self, item_id):
         return self.db.execute("SELECT 1 FROM items WHERE id=?", (item_id,)).fetchone() is not None
 
@@ -35,28 +54,36 @@ class Store:
         self.db.commit()
         return cur.rowcount == 1
 
-    def candidates(self, max_age_hours, limit=25):
-        """Eng yangi, hali ishlatilmagan yangiliklar; kalit so'z mosligi ustuvor."""
+    def item(self, item_id):
+        r = self.db.execute("SELECT * FROM items WHERE id=?", (item_id,)).fetchone()
+        return dict(r) if r else None
+
+    def new_items(self, max_age_hours):
         since = (utcnow() - timedelta(hours=max_age_hours)).isoformat()
         return [dict(r) for r in self.db.execute(
-            "SELECT * FROM items WHERE status='new' AND published >= ?"
-            " ORDER BY (score > 0) DESC, published DESC LIMIT ?", (since, limit))]
+            "SELECT * FROM items WHERE status='new' AND published >= ? ORDER BY published DESC", (since,))]
 
-    def recent_posted(self, limit=30):
-        return [(r["title"] or r["text"])[:200] for r in self.db.execute(
-            "SELECT title, text FROM items WHERE status='posted' ORDER BY posted_at DESC LIMIT ?", (limit,))]
+    def recent_topics(self, hours=48, limit=40):
+        """Oxirgi qoralama va postlar — takrorlanmaslik uchun."""
+        since = (utcnow() - timedelta(hours=hours)).isoformat()
+        return [(r["draft"] or r["text"])[:200].replace("\n", " ") for r in self.db.execute(
+            "SELECT draft, text FROM items WHERE status IN ('drafted','posted') AND drafted_at >= ?"
+            " ORDER BY drafted_at DESC LIMIT ?", (since, limit))]
 
-    def posted_since(self, since):
-        return [r["posted_at"] for r in self.db.execute(
-            "SELECT posted_at FROM items WHERE status='posted' AND posted_at >= ? ORDER BY posted_at",
-            (since.isoformat(),))]
+    def set(self, item_id, **fields):
+        if fields.get("status") == "posted":
+            fields["posted_at"] = utcnow().isoformat()
+        if fields.get("status") == "drafted":
+            fields["drafted_at"] = utcnow().isoformat()
+        cols = ", ".join(f"{k}=?" for k in fields)
+        self.db.execute(f"UPDATE items SET {cols} WHERE id=?", (*fields.values(), item_id))
+        self.db.commit()
 
-    def set_status(self, item_id, status):
-        self.db.execute("UPDATE items SET status=?, posted_at=? WHERE id=?",
-                        (status, utcnow().isoformat() if status == "posted" else None, item_id))
+    def mark_new_as(self, ids, status):
+        self.db.executemany("UPDATE items SET status=? WHERE id=? AND status='new'", [(status, i) for i in ids])
         self.db.commit()
 
     def prune(self, days=14):
-        self.db.execute("DELETE FROM items WHERE status!='posted' AND published < ?",
+        self.db.execute("DELETE FROM items WHERE status IN ('new','skipped','rejected') AND published < ?",
                         ((utcnow() - timedelta(days=days)).isoformat(),))
         self.db.commit()

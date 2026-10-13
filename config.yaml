@@ -4,12 +4,14 @@ channel: "@Axmadjanovuz"          # bot shu kanalda admin bo'lishi kerak
 signature: "👉 @Axmadjanovuz"
 timezone: "Asia/Tashkent"
 
-# Vaqt: qat'iy jadval yo'q, yangi muhim yangilik chiqishi bilan (eskirmasdan) chiqariladi
+# Vaqt: har 20 daqiqada barcha yangi yangiliklar tahlil qilinadi, muhimlaridan qoralama
+# tayyorlanib botda sizga keladi. Kanalga faqat siz "Kanalga yuborish" ni bosganda chiqadi.
 schedule:
-  max_posts_per_day: 5
-  min_gap_minutes: 90          # ikki post orasida kamida
-  active_hours: ["07:00", "23:00"]
   max_age_hours: 6             # bundan eski yangilik olinmaydi
+
+review:
+  avg_posts_per_day: 5         # o'rtacha mo'ljal, cheklov emas
+  max_drafts_per_run: 8        # bitta tahlilda eng ko'pi
 
 topics: ["ta'lim", "siyosat", "ijtimoiy"]
 
