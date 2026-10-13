@@ -11,7 +11,7 @@ Vaqt: har 20 daqiqada tekshiriladi; 07:00–23:00 orasida, kuniga ko'pi bilan 5 
 ## GitHub Actions sozlash
 Settings → Secrets and variables → Actions:
 - Secrets: `TELEGRAM_BOT_TOKEN`, `ANTHROPIC_API_KEY` (sinov chati botga /start yozganingizda avtomatik topiladi)
-- Variables: `PUBLISH_MODE` = `preview` (sinov: postlar faqat sizga keladi) → keyin `live` (kanalga)
+- Standart holatda postlar faqat sizga (sinov) keladi. Kanalga chiqarish uchun Variables: `PUBLISH_MODE` = `live`
 
 Qo'lda sinash: Actions → Avtomatik post → Run workflow → `post`.
 

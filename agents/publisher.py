@@ -2,8 +2,8 @@
 
 PUBLISH_MODE muhit o'zgaruvchisi:
   live    — kanalga (config.yaml dagi channel)
-  preview — faqat PREVIEW_CHAT_ID ga (sizning shaxsiy chatingiz), kanalga emas
-  (bo'sh) — hech qayerga yubormaydi, out/ papkaga yozadi
+  preview — (standart) faqat sizning shaxsiy chatingizga, kanalga emas
+Bot tokeni bo'lmasa hech qayerga yubormaydi, out/ papkaga yozadi.
 """
 import json
 import os
@@ -44,7 +44,9 @@ def _send(token, chat_id, post, image):
 
 def publish(cfg, post, image=None, source_url=None, log=print):
     mode = os.environ.get("PUBLISH_MODE", "").strip().lower()
-    if mode not in ("live", "preview"):
+    if mode != "live":
+        mode = "preview"
+    if not os.environ.get("TELEGRAM_BOT_TOKEN"):
         out = Path("out")
         out.mkdir(exist_ok=True)
         f = out / f"{datetime.now():%Y%m%d_%H%M%S}.html"
