@@ -37,9 +37,11 @@ class Bot:
 
     def ensure_webhook(self, worker, secret):
         url = f"{worker.rstrip('/')}/tg"
-        if self.call("getWebhookInfo").get("url") != url:
-            self.call("setWebhook", url=url, secret_token=secret, allowed_updates=["message", "callback_query"])
-            print(f"Webhook o'rnatildi: {url}")
+        # Telegram parolni qaytarib bermaydi, shuning uchun parol o'zgarsa ham mos kelishi uchun har safar o'rnatiladi.
+        self.call("setWebhook", url=url, secret_token=secret, allowed_updates=["message", "callback_query"])
+        info = self.call("getWebhookInfo")
+        if info.get("last_error_message"):
+            print(f"Webhook oxirgi xatosi: {info['last_error_message']} (navbatda {info.get('pending_update_count', 0)})")
 
     # --- media ---
     @staticmethod
