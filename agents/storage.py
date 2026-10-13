@@ -47,6 +47,11 @@ class Store:
     def exists(self, item_id):
         return self.db.execute("SELECT 1 FROM items WHERE id=?", (item_id,)).fetchone() is not None
 
+    def fill_media(self, item_id, media):
+        if media and media != "[]":
+            self.db.execute("UPDATE items SET media=? WHERE id=? AND (media IS NULL OR media='[]')", (media, item_id))
+            self.db.commit()
+
     def add(self, item):
         cur = self.db.execute(
             "INSERT OR IGNORE INTO items (id, source, url, title, text, image, media, published, score)"

@@ -137,6 +137,7 @@ def collect(cfg, store: Store, log=print):
                 it["score"] = score
                 it["id"] = Store.make_id(it["url"], it["text"])
                 if store.exists(it["id"]):
+                    store.fill_media(it["id"], it.get("media", "[]"))
                     continue
                 if fn is not fetch_telegram and it["url"] and len(it["text"]) < 300 and score > 0:
                     it["text"] = fetch_article_text(it["url"], client) or it["text"]
