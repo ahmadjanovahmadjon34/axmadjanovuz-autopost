@@ -27,8 +27,8 @@ def rule_check(post, has_media=False, source_url=None):
         issues.append("Sarlavha (birinchi qator) qalin emas")
     if "<i>" not in post:
         issues.append("Oxirgi izoh/eslatma kursiv emas")
-    if has_media and len(post) > 1024:
-        issues.append(f"Media bilan chiqadi, lekin {len(post)} belgi (1024 dan oshmasin)")
+    if has_media and len(post) > 900:
+        issues.append(f"Media bilan chiqadi, lekin {len(post)} belgi (900 dan oshmasin)")
     if len(post) > 4000:
         issues.append(f"Juda uzun: {len(post)} belgi (Telegram limiti 4096)")
     if len(post) < 150:

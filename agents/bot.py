@@ -1,5 +1,5 @@
 """4-agent: admin bot. Qoralamani egasiga kanalda qanday chiqsa shunday ko'rinishda (media bilan) tugmalar
-bilan ko'rsatadi; manba va sifat bahosi ostida alohida xabarda. Tasdiqlansa kanalga chiqaradi."""
+bilan ko'rsatadi; ostida faqat egasi uchun manba va sifat bahosi. Kanalga faqat postning o'zi chiqadi."""
 import html
 import json
 import os
@@ -102,27 +102,33 @@ class Bot:
         self.call("editMessageReplyMarkup", chat_id=chat_id, message_id=msg_id, reply_markup=self.keyboard(item))
 
     @staticmethod
-    def footer(item, qc):
-        text = (f"🧾 Manba: {html.escape(item['source'])}\n{html.escape(item['url'] or '')}"
-                f"\n🔎 Sifat: {qc.get('score', '?')}/10")
+    def footer(item, qc, short=False):
+        """Faqat egasi uchun: manba va sifat bahosi. Kanalga chiqmaydi."""
+        text = f"\n\n— — — — —\n🧾 {html.escape(item['url'] or item['source'])}\n🔎 Sifat: {qc.get('score', '?')}/10"
         issues = qc.get("issues") or []
-        if issues:
-            text += "\n⚠️ " + html.escape("; ".join(issues))[:600]
+        if issues and not short:
+            text += "\n⚠️ " + html.escape("; ".join(issues))[:400]
         return text
 
     def send_draft(self, chat_id, item, post, qc):
-        """Qaytaradi: (tugmali xabar id, media file_id lar)."""
+        """Qoralama kanaldagi ko'rinishda, ostida manba va baho — bitta xabarda. Qaytaradi: (xabar id, file_id lar)."""
         media = self.media_of(item)
+        limit = MAX_CAPTION if media and not item.get("media_off") else MAX_TEXT
+        preview = post + self.footer(item, qc)
+        if len(preview) > limit:
+            preview = post + self.footer(item, qc, short=True)
+        separate = len(preview) > limit  # sig'masa manba alohida xabarda
         try:
-            msg_id, file_ids = self._post(chat_id, post, media, self.keyboard(item))
+            msg_id, file_ids = self._post(chat_id, post if separate else preview, media, self.keyboard(item))
         except (RuntimeError, httpx.HTTPError) as e:
             # media yoki HTML xato bo'lsa ham qoralama yo'qolmasin
             qc = {**qc, "issues": [*qc.get("issues", []), f"Yuborishda xato: {e}"[:300]]}
-            msg = self.call("sendMessage", chat_id=chat_id, text=post[:MAX_TEXT],
+            msg = self.call("sendMessage", chat_id=chat_id, text=(post + self.footer(item, qc))[:MAX_TEXT],
                             link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
-            msg_id, file_ids = msg["message_id"], []
-        self.call("sendMessage", chat_id=chat_id, text=self.footer(item, qc), parse_mode="HTML",
-                  reply_parameters={"message_id": msg_id}, link_preview_options={"is_disabled": True})
+            return msg["message_id"], []
+        if separate:
+            self.call("sendMessage", chat_id=chat_id, text=self.footer(item, qc).strip(), parse_mode="HTML",
+                      reply_parameters={"message_id": msg_id}, link_preview_options={"is_disabled": True})
         return msg_id, file_ids
 
     def mark(self, chat_id, msg_id, note):

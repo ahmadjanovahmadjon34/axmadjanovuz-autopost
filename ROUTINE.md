@@ -13,7 +13,7 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
 4. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
    `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b>, muhim raqam/sanalar qalin (me'yorida),
-   oxirgi izoh/eslatma <i>kursiv</i>. Yangilikda `media` bo'lsa (rasm/video), post 1000 belgidan oshmasin —
+   oxirgi izoh/eslatma <i>kursiv</i>. Yangilikda `media` bo'lsa (rasm/video), post 850 belgidan oshmasin —
    u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.

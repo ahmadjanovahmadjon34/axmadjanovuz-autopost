@@ -36,7 +36,7 @@ Uslub qoidalari (namunalarga qarang):
 - Faqat manbada bor faktlarni yozing, raqam, sana, ismlarni o'zgartirmang, hech narsa o'ylab topmang.
 - Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.
-- 300–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 1000 belgidan oshmasin,
+- 300–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 850 belgidan oshmasin,
   chunki u media ostiga izoh sifatida chiqadi.
 - Manbani so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
 
