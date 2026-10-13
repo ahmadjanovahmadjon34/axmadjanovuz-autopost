@@ -94,6 +94,6 @@ def run(cfg, store):
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
     cfg, store = load_config(), Store()
-    {"run": lambda: run(cfg, store), "debug": lambda: __import__("debug_tg"),
+    {"run": lambda: run(cfg, store),
      "collect": lambda: collect(cfg, store),
      "post": lambda: (collect(cfg, store), make_post(cfg, store))}[cmd]()

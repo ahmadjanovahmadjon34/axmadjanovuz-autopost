@@ -39,7 +39,11 @@ def fetch_telegram(channel, client):
         if not body:
             continue
         link = msg.get("data-post")
-        when = msg.select_one("time[datetime]")
+        when = msg.select_one(".tgme_widget_message_date time[datetime]")
+        if not when and link:
+            # html.parser ba'zan ichma-ich joylashuvni buzadi: vaqtni post havolasi orqali topamiz
+            a = soup.find("a", class_="tgme_widget_message_date", href=f"https://t.me/{link}")
+            when = a.find("time") if a else None
         photo = msg.select_one(".tgme_widget_message_photo_wrap")
         image = None
         if photo and (m := re.search(r"url\('(.+?)'\)", photo.get("style", ""))):
