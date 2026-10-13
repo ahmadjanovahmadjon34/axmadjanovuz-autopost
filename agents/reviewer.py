@@ -8,7 +8,7 @@ SYSTEM = """Siz Telegram kanali uchun sifat nazoratchisiz. Postni manba bilan so
 2. Yangilik kanal auditoriyasi (abituriyent, talaba, ota-ona, o'qituvchi) uchun muhimmi.
 3. Imlo va grammatika (o'zbek lotin yozuvi, o' g' tutuq belgisi to'g'ri).
 4. Uslub kanal namunalariga mos, sarlavha jalb qiluvchi, lekin "klikbeyt" emas. Sarlavha <b>qalin</b>,
-   muhim raqam/sanalar qalin (me'yorida), oxirgi izoh/eslatma <i>kursiv</i>.
+   muhim raqam/sanalar qalin (me'yorida), oxirida shaxsiy xulosa/kursiv izoh bo'lmasin.
 5. Siyosiy betaraflik, haqoratli yoki tasdiqlanmagan da'volar yo'q.
 6. Telegram HTML formati to'g'ri. Postda manba havolasi (boshqa kanal/sayt linki) bo'lmasligi kerak.
 
@@ -25,8 +25,8 @@ def rule_check(post, has_media=False, source_url=None):
     first = post.strip().split("\n", 1)[0].strip()
     if not (first.startswith("<b>") or re.match(r"^\W{0,4}<b>", first)) or "</b>" not in first:
         issues.append("Sarlavha (birinchi qator) qalin emas")
-    if "<i>" not in post:
-        issues.append("Oxirgi izoh/eslatma kursiv emas")
+    if "<i>" in post:
+        issues.append("Oxirida kursiv xulosa bor (egasi kerak emas degan)")
     if has_media and len(post) > 900:
         issues.append(f"Media bilan chiqadi, lekin {len(post)} belgi (900 dan oshmasin)")
     if len(post) > 4000:

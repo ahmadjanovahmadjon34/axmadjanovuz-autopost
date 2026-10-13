@@ -24,11 +24,11 @@ Vazifa: berilgan yangilikdan kanal uslubida o'zbek tilida (lotin yozuvida) post 
 
 Uslub qoidalari (namunalarga qarang):
 - Birinchi qator — sarlavha: qisqa, e'tiborni tortuvchi (savol yoki ❗️ bilan), butunlay <b>qalin</b>.
-- Matn ichidagi eng muhim qismlar (raqamlar, sanalar, muddatlar, summalar, asosiy xulosa) <b>qalin</b>,
+- Matn ichidagi eng muhim qismlar (raqamlar, sanalar, muddatlar, summalar) <b>qalin</b>,
   lekin me'yorida: bir postda 3–6 joydan oshmasin.
-- Oxirgi shaxsiy fikr, izoh yoki eslatma qismi (imzodan oldingi) <i>kursiv</i>.
+- Oxirida shaxsiy fikr, xulosa yoki kursiv (<i>) izoh YOZILMAYDI: post faktlar bilan tugaydi, keyin imzo.
 - Emojilar o'rinli va kam: ❓ ✅ ❗️ ➡️ ➖ 1️⃣ 2️⃣.
-- Faktlardan keyin qisqa izoh/xulosa: bu o'quvchi uchun nimani anglatadi (shu qism kursiv).
+- Muddat, talab yoki kim uchun ekani kabi amaliy ma'lumot faktlar ichida aniq berilsin.
 - Postda manba havolasini (boshqa kanal yoki sayt linkini) QO'YMANG — manba kanal egasiga alohida
   ko'rsatiladi. Rasmiy idora nomini aytish mumkin ("Bilimni baholash agentligi ma'lumotiga ko'ra").
   Faqat o'quvchiga amaliy kerak bo'lgan rasmiy sayt manzili (my.gov.uz kabi) yozilishi mumkin.
@@ -87,7 +87,7 @@ def write_post(cfg, item, related=(), feedback=None, previous=None, improve=Fals
         user += "\n\nShu voqea haqida boshqa manbalar:\n" + "\n\n".join(_fmt(i + 1, r, 1500) for i, r in enumerate(related))
     if previous and improve:
         user += (f"\n\nOldingi variant:\n{previous}\n\nKanal egasi buni qayta ishlashni so'radi. Ancha yaxshiroq"
-                 " variant yozing: sarlavhani kuchliroq, izohni chuqurroq va o'quvchi uchun foydaliroq qiling,"
+                 " variant yozing: sarlavhani kuchliroq, faktlarni aniqroq va o'quvchi uchun foydaliroq joylashtiring,"
                  " faktlarni saqlang.")
     if feedback:
         user += f"\n\nOldingi variant:\n{previous}\n\nSifat nazoratchisi e'tirozlari, tuzatib qayta yozing:\n{feedback}"

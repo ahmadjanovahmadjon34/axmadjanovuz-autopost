@@ -16,15 +16,15 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
 5. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
    `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b>, muhim raqam/sanalar qalin (me'yorida),
-   oxirgi izoh/eslatma <i>kursiv</i>. Yangilikda `media` bo'lsa (rasm/video), post 850 belgidan oshmasin —
+   oxirida shaxsiy xulosa yoki kursiv izoh **yozilmaydi** (egasining talabi): post faktlar bilan tugaydi, keyin imzo. Yangilikda `media` bo'lsa (rasm/video), post 850 belgidan oshmasin —
    u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
 6. **Qayta ishlash:** `redo` dagi har biri uchun `previous_draft` dan ancha yaxshiroq variant yozing
-   (kuchliroq sarlavha, chuqurroq izoh, faktlar o'zgarmaydi).
+   (kuchliroq sarlavha, aniqroq faktlar, faktlar o'zgarmaydi).
 7. **3-agent, sifat nazorati:** har bir postni `agents/reviewer.py` dagi `SYSTEM` mezonlari bo'yicha manba bilan
    solishtirib 10 ballik baho bering. `min_quality_score` dan past bo'lsa tuzating va qayta baholang
-   (3 urinish). Telegram HTML faqat `<b> <i> <a href>`; oxirida `signature` bo'lsin.
+   (3 urinish). Telegram HTML faqat `<b> <a href>`; oxirida `signature` bo'lsin.
 8. Natijani `inbox/<UTC vaqt, masalan 20261013T150000>.json` ga yozing:
    ```json
    {
