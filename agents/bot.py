@@ -160,8 +160,11 @@ class Bot:
         except RuntimeError:
             pass  # eski tugma bosilgan bo'lsa Telegram rad etadi — muhim emas
 
-    def say(self, chat_id, text):
-        self.call("sendMessage", chat_id=chat_id, text=text)
+    MENU = {"keyboard": [[{"text": "🔄 Yangilash"}]], "resize_keyboard": True, "is_persistent": True}
+
+    def say(self, chat_id, text, menu=False, html_mode=False):
+        self.call("sendMessage", chat_id=chat_id, text=text, reply_markup=self.MENU if menu else None,
+                  parse_mode="HTML" if html_mode else None)
 
     def publish(self, channel, post, media=None):
         """Kanalga chiqarish (qoralamadagi file_id lar bilan, qayta yuklamasdan)."""

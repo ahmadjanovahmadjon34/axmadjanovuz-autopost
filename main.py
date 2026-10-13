@@ -9,6 +9,7 @@
   python main.py collect   # faqat 1-agent
   python main.py export    # Claude routine uchun vazifa (ROUTINE.md ga qarang)
 """
+from datetime import datetime, timedelta, timezone
 import json
 import os
 from pathlib import Path
@@ -19,7 +20,10 @@ import yaml
 from agents.bot import Bot
 from agents.collector import collect
 from agents.reviewer import review, rule_check
-from agents.storage import Store
+from agents.storage import Store, utcnow
+
+OWNER_SOURCE = "📩 Siz yuborgan xabar"
+TASHKENT = timezone(timedelta(hours=5))
 from agents.writer import select_news, write_post
 
 
@@ -58,13 +62,27 @@ def handle_updates(cfg, store, bot):
     for u in bot.updates(offset):
         store.put("tg_offset", u["update_id"] + 1)
         msg = u.get("message")
-        if msg and msg.get("chat", {}).get("type") == "private" and msg.get("text", "").startswith("/start"):
+        if msg and msg.get("chat", {}).get("type") == "private":
             chat = str(msg["chat"]["id"])
-            if not owner_chat(store):
-                store.put("owner_chat_id", chat)
-                bot.say(chat, "✅ Siz bot egasi sifatida ro'yxatdan o'tdingiz. Post qoralamalari shu yerga keladi.")
-            elif chat != owner_chat(store):
-                bot.say(chat, "Bu bot shaxsiy foydalanish uchun.")
+            if msg.get("text", "").startswith("/start"):
+                if not owner_chat(store):
+                    store.put("owner_chat_id", chat)
+                    bot.say(chat, "✅ Siz bot egasi sifatida ro'yxatdan o'tdingiz. Post qoralamalari shu yerga keladi.",
+                            menu=True)
+                    store.put("menu_v1", 1)
+                elif chat != owner_chat(store):
+                    bot.say(chat, "Bu bot shaxsiy foydalanish uchun.")
+                continue
+            if chat != owner_chat(store):
+                continue
+            try:
+                if msg.get("text") == "🔄 Yangilash":
+                    bot.say(chat, status_text(store), menu=True, html_mode=True)
+                else:
+                    on_owner_message(store, bot, msg, chat)
+            except Exception as e:
+                print(f"Xabarni bajarishda xato: {e}")
+                bot.say(chat, f"⚠️ Xato: {e}"[:1000])
             continue
         cb = u.get("callback_query")
         if not cb:
@@ -78,6 +96,58 @@ def handle_updates(cfg, store, bot):
         except Exception as e:
             print(f"Tugmani bajarishda xato: {e}")
             bot.say(chat, f"⚠️ Xato: {e}"[:1000])
+
+
+def _local(iso):
+    if not iso:
+        return None
+    t = datetime.fromisoformat(iso)
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    mins = int((utcnow() - t).total_seconds() // 60)
+    ago = f"{mins} daqiqa oldin" if mins < 60 else f"{mins // 60} soat {mins % 60} daqiqa oldin"
+    return f"<b>{t.astimezone(TASHKENT):%d.%m %H:%M}</b> ({ago})"
+
+
+def status_text(store):
+    """"🔄 Yangilash" tugmasi: agentlar oxirgi marta qachon ishlagani."""
+    collected = _local(store.get("last_collect"))
+    analysed = _local(store.get("last_analysis"))
+    waiting = len(store.by_status("drafted")) + len(store.by_status("redo"))
+    lines = ["🔄 <b>Holat</b> (Toshkent vaqti)", ""]
+    lines.append(f"🔎 1-agent yangiliklarni oxirgi marta izladi: {collected or 'hali yo‘q'}"
+                 + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
+    lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
+    lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
+    lines += ["", "1-agent har 20 daqiqada izlaydi, 2-3-agent har soatda yozadi."]
+    return "\n".join(lines)
+
+
+def on_owner_message(store, bot, msg, chat):
+    """Egasi botga yuborgan (yoki forward qilgan) xabar: 2- va 3-agent undan post tayyorlaydi."""
+    text = msg.get("text") or msg.get("caption") or ""
+    media = []
+    if msg.get("photo"):
+        media = [{"type": "photo", "file_id": msg["photo"][-1]["file_id"]}]
+    elif msg.get("video"):
+        media = [{"type": "video", "file_id": msg["video"]["file_id"]}]
+    key = f"bot:{chat}:{msg.get('media_group_id') or msg['message_id']}"
+    item_id = key
+    if store.exists(item_id):
+        # albomning keyingi qismlari bitta yangilikka qo'shiladi
+        item = store.item(item_id)
+        store.set(item_id, media=json.dumps(Bot.media_of(item) + media))
+        if text and not item["text"]:
+            store.set(item_id, text=text, title=text.strip().split("\n")[0][:200])
+        return
+    origin = msg.get("forward_origin") or {}
+    oc = origin.get("chat") or {}
+    url = f"https://t.me/{oc['username']}/{origin.get('message_id')}" if oc.get("username") else ""
+    store.add({"id": item_id, "source": OWNER_SOURCE, "url": url, "title": text.strip().split("\n")[0][:200],
+               "text": text, "image": None, "media": json.dumps(media), "published": utcnow().isoformat(),
+               "score": 100})
+    bot.say(chat, "📥 Qabul qilindi. 2-agent keyingi tahlilda (ko'pi bilan 1 soatda) undan post tayyorlab, "
+                  "3-agent tekshirgach shu yerga yuboradi.", menu=True)
 
 
 def on_button(cfg, store, bot, cb, chat):
@@ -168,6 +238,11 @@ def ingest_inbox(store, bot, chat):
                 except RuntimeError:
                     pass
             store.set(item["id"], status="drafted", msg_id=None, **fields)
+        try:
+            store.put("last_analysis", datetime.strptime(f.stem[:15], "%Y%m%dT%H%M%S")
+                      .replace(tzinfo=timezone.utc).isoformat())
+        except ValueError:
+            store.put("last_analysis", utcnow().isoformat())
         f.unlink()
     send_unsent(store, bot, chat)
 
@@ -194,8 +269,10 @@ def export_task(cfg, store):
         pending.update(data.get("processed_ids", []))
         pending.update(d["id"] for d in data.get("drafts", []))
     fields = ("id", "source", "url", "title", "text", "published", "score", "media")
-    items = [{k: i[k] for k in fields} for i in store.new_items(cfg["schedule"]["max_age_hours"])
-             if i["id"] not in pending]
+    fresh = store.new_items(cfg["schedule"]["max_age_hours"])
+    # egasi yuborgan xabarlar eskirgan bo'lsa ham albatta ko'riladi
+    fresh += [i for i in store.by_status("new") if i["source"] == OWNER_SOURCE and i not in fresh]
+    items = [{k: i[k] for k in fields} for i in fresh if i["id"] not in pending]
     redo = []
     for i in store.by_status("redo"):
         if i["id"] in pending:
@@ -203,7 +280,7 @@ def export_task(cfg, store):
         related = [store.item(r) for r in json.loads(i["related"] or "[]")]
         redo.append({**{k: i[k] for k in fields}, "previous_draft": i["draft"],
                      "related": [{k: r[k] for k in fields} for r in related if r]})
-    task = {"new_items": items, "redo": redo, "recent_posts": store.recent_topics(),
+    task = {"owner_source": OWNER_SOURCE, "new_items": items, "redo": redo, "recent_posts": store.recent_topics(),
             "signature": cfg["signature"], "avg_posts_per_day": cfg["review"]["avg_posts_per_day"],
             "max_drafts": cfg["review"]["max_drafts_per_run"], "min_quality_score": cfg["min_quality_score"]}
     print(json.dumps(task, ensure_ascii=False, indent=1))
@@ -219,8 +296,15 @@ def run(cfg, store):
         handle_updates(cfg, store, bot)
     except Exception as e:  # tugmalardagi xato yangi qoralamalarni to'xtatib qo'ymasin
         print(f"XATO (tugmalar): {e}")
-    collect(cfg, store)
+    added = collect(cfg, store)
+    store.put("last_collect", utcnow().isoformat())
+    store.put("last_collect_added", added or 0)
     chat = owner_chat(store)
+    if chat and not store.get("menu_v1"):
+        bot.say(chat, "Pastda 🔄 Yangilash tugmasi paydo bo'ldi: bossangiz agentlar oxirgi marta qachon "
+                      "ishlaganini ko'rsatadi. Botga istalgan xabarni yuborsangiz yoki forward qilsangiz, "
+                      "undan post tayyorlanadi.", menu=True)
+        store.put("menu_v1", 1)
     if not chat:
         print("Egasi aniqlanmagan: botga shaxsiy chatda /start yozing.")
         return
