@@ -6,6 +6,12 @@ const KEYS = ["BOT_TOKEN", "GH_TOKEN", "HOOK_SECRET", "GH_REPO"];
 async function config(env) {
   const c = {};
   for (const k of KEYS) c[k] = env[k] || (await env.QUEUE.get(k)) || "";
+  for (const k of KEYS) c[k] = c[k].trim();
+  // Telegram va GitHub Actions parolning o'zini emas, sha256 xeshini yuboradi.
+  if (c.HOOK_SECRET) {
+    const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(c.HOOK_SECRET));
+    c.HOOK_SECRET = [...new Uint8Array(d)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  }
   if (!c.GH_REPO) c.GH_REPO = "ahmadjanovahmadjon34/axmadjanovuz-autopost";
   c.QUEUE = env.QUEUE;
   return c;

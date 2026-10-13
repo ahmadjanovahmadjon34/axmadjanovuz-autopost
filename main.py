@@ -215,7 +215,10 @@ def run(cfg, store):
         print("Bot tokeni yo'q: faqat yangiliklar yig'ildi.")
         return
     bot = Bot()
-    handle_updates(cfg, store, bot)
+    try:
+        handle_updates(cfg, store, bot)
+    except Exception as e:  # tugmalardagi xato yangi qoralamalarni to'xtatib qo'ymasin
+        print(f"XATO (tugmalar): {e}")
     collect(cfg, store)
     chat = owner_chat(store)
     if not chat:

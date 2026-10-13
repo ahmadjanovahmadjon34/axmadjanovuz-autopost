@@ -1,5 +1,6 @@
 """4-agent: admin bot. Qoralamani egasiga kanalda qanday chiqsa shunday ko'rinishda (media bilan) tugmalar
 bilan ko'rsatadi; ostida faqat egasi uchun manba va sifat bahosi. Kanalga faqat postning o'zi chiqadi."""
+import hashlib
 import html
 import json
 import os
@@ -23,8 +24,10 @@ class Bot:
 
     def updates(self, offset):
         """Worker ulangan bo'lsa bosishlar uning navbatidan, aks holda getUpdates orqali olinadi."""
-        worker, secret = os.environ.get("WORKER_URL"), os.environ.get("HOOK_SECRET")
+        worker, secret = (os.environ.get("WORKER_URL") or "").strip(), (os.environ.get("HOOK_SECRET") or "").strip()
         if worker and secret:
+            # Telegram faqat [A-Za-z0-9_-] ni qabul qiladi, shuning uchun parolning sha256 xeshi yuboriladi.
+            secret = hashlib.sha256(secret.encode()).hexdigest()
             self.ensure_webhook(worker, secret)
             r = httpx.get(f"{worker.rstrip('/')}/updates", headers={"x-hook-secret": secret}, timeout=60)
             r.raise_for_status()
