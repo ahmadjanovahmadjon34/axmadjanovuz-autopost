@@ -1,0 +1,92 @@
+# axmadjanov.uz avtomatik post tizimi sozlamalari
+
+channel: "@Axmadjanovuz"          # bot shu kanalda admin bo'lishi kerak
+signature: "👉 @Axmadjanovuz"
+timezone: "Asia/Tashkent"
+
+# Vaqt: qat'iy jadval yo'q, yangi muhim yangilik chiqishi bilan (eskirmasdan) chiqariladi
+schedule:
+  max_posts_per_day: 5
+  min_gap_minutes: 90          # ikki post orasida kamida
+  active_hours: ["07:00", "23:00"]
+  max_age_hours: 6             # bundan eski yangilik olinmaydi
+
+topics: ["ta'lim", "siyosat", "ijtimoiy"]
+
+sources:
+  telegram:
+    - nodavlattalim
+    - abitur24
+    - magistrlarofficial
+    - nqaaeuz
+    - avlodmediauz
+    - nodavlat_otm
+    - talimxabarlari
+    - eduuz
+    - Talimgaoid_perevod
+    - xushnudbek
+    - uztdi
+    - bektoshkhatamov
+    - z_amirqulov
+    - BaholashUz
+    - abrorhamzauz
+    - Axmadjanoov
+    - eduuz_DTMuzb_Abituriyent_mandat
+    - YQQUZB_KANAL
+    - talimuz
+    - xususiy_oliygohlar
+    - eduinfo_talim
+    - Nodavlat_oliygohlar
+    - talimgaoid
+    - davlattestmarkazi
+    - r_kusherbayev
+    - magistrscience
+    - u_generalissimus
+    - Yurisprudensiya_ikkinchi
+    - kunuzofficial
+    - Daryo
+    - qalampir
+  sites:
+    - name: "Kun.uz"
+      rss: "https://kun.uz/news/rss"
+    - name: "Daryo.uz"
+      url: "https://daryo.uz/"     # RSS topilmadi, bosh sahifadan olinadi
+    - name: "Gazeta.uz"
+      rss: "https://www.gazeta.uz/ru/rss/"
+
+# Bu so'zlar bor yangiliklar ustuvor. So'z bo'lmasa ham ijtimoiy/ta'lim
+# yangiliklari 2-agent tomonidan ko'rib chiqiladi.
+keywords:
+  include:
+    - "ta'lim"
+    - "fan"
+    - "ilm-fan"
+    - "innovatsiya"
+    - "subsidiya"
+    - "imtiyoz"
+    - "vazirlik"
+    - "vazirligi"
+    - "agentlik"
+    - "agentligi"
+    - "abituriyent"
+    - "qabul"
+    - "kvota"
+    - "grant"
+    - "kontrakt"
+    - "ta'lim krediti"
+    - "bilimni va malakani baholash agentligi"
+    - "bilimni baholash agentligi"
+    - "kollej"
+    - "texnikum"
+    - "maktab"
+    - "universitet"
+    - "institut"
+    - "xususiy universitet"
+    - "xususiy otm"
+    - "nodavlat otm"
+    - "nodavlat universitet"
+  exclude: []
+
+model: "claude-sonnet-5-5"
+style_examples_file: "style_examples.txt"
+min_quality_score: 8
