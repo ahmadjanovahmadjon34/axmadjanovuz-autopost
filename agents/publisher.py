@@ -12,6 +12,23 @@ from pathlib import Path
 
 import httpx
 
+PREVIEW_FILE = Path("preview_chat_id.txt")
+
+
+def preview_chat(token):
+    """Sinov chati: PREVIEW_CHAT_ID yoki botga /start yozgan shaxsiy chat (avtomatik topiladi)."""
+    if os.environ.get("PREVIEW_CHAT_ID"):
+        return os.environ["PREVIEW_CHAT_ID"]
+    if PREVIEW_FILE.exists():
+        return PREVIEW_FILE.read_text().strip()
+    r = httpx.get(f"https://api.telegram.org/bot{token}/getUpdates", timeout=30).json()
+    for u in r.get("result", []):
+        chat = (u.get("message") or {}).get("chat", {})
+        if chat.get("type") == "private":
+            PREVIEW_FILE.write_text(str(chat["id"]))
+            return str(chat["id"])
+    raise RuntimeError("Sinov chati topilmadi: botga shaxsiy chatda /start yozing")
+
 
 def _send(token, chat_id, post, image):
     api = f"https://api.telegram.org/bot{token}"
@@ -36,7 +53,7 @@ def publish(cfg, post, image=None, source_url=None, log=print):
         return True
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     if mode == "preview":
-        chat = os.environ["PREVIEW_CHAT_ID"]
+        chat = preview_chat(token)
         post = f"🧪 SINOV (kanalga chiqmadi)\nManba: {source_url}\n\n{post}"
     else:
         chat = cfg["channel"]

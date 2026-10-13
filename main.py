@@ -6,6 +6,7 @@
   python main.py post      # limitlarga qaramay hozir bitta post tayyorlash (sinov uchun)
 """
 from datetime import datetime, timedelta
+import os
 import sys
 from zoneinfo import ZoneInfo
 
@@ -80,6 +81,9 @@ def make_post(cfg, store, attempts=3):
 
 def run(cfg, store):
     collect(cfg, store)
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("ANTHROPIC_API_KEY yo'q: faqat yangiliklar yig'ildi, post yozilmaydi.")
+        return
     ok, why = can_post_now(cfg, store)
     if not ok:
         print(f"Hozir post chiqmaydi: {why}")
