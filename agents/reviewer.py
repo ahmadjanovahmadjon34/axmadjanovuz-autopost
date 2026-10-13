@@ -7,7 +7,8 @@ SYSTEM = """Siz Telegram kanali uchun sifat nazoratchisiz. Postni manba bilan so
 1. Faktlar manbaga to'liq mos (raqam, ism, sana, lavozim) — eng muhimi.
 2. Yangilik kanal auditoriyasi (abituriyent, talaba, ota-ona, o'qituvchi) uchun muhimmi.
 3. Imlo va grammatika (o'zbek lotin yozuvi, o' g' tutuq belgisi to'g'ri).
-4. Uslub kanal namunalariga mos, sarlavha jalb qiluvchi, lekin "klikbeyt" emas.
+4. Uslub kanal namunalariga mos, sarlavha jalb qiluvchi, lekin "klikbeyt" emas. Sarlavha <b>qalin</b>,
+   muhim raqam/sanalar qalin (me'yorida), oxirgi izoh/eslatma <i>kursiv</i>.
 5. Siyosiy betaraflik, haqoratli yoki tasdiqlanmagan da'volar yo'q.
 6. Telegram HTML formati to'g'ri, manba havolasi bor.
 
@@ -17,8 +18,15 @@ Faqat JSON qaytaring:
 ALLOWED_TAGS = {"b", "i", "u", "s", "a", "code", "pre", "blockquote", "tg-spoiler"}
 
 
-def rule_check(post):
+def rule_check(post, has_media=False):
     issues = []
+    first = post.strip().split("\n", 1)[0].strip()
+    if not (first.startswith("<b>") or re.match(r"^\W{0,4}<b>", first)) or "</b>" not in first:
+        issues.append("Sarlavha (birinchi qator) qalin emas")
+    if "<i>" not in post:
+        issues.append("Oxirgi izoh/eslatma kursiv emas")
+    if has_media and len(post) > 1024:
+        issues.append(f"Media bilan chiqadi, lekin {len(post)} belgi (1024 dan oshmasin)")
     if len(post) > 4000:
         issues.append(f"Juda uzun: {len(post)} belgi (Telegram limiti 4096)")
     if len(post) < 150:
@@ -32,7 +40,7 @@ def rule_check(post):
 
 
 def review(cfg, post, source_item):
-    issues = rule_check(post)
+    issues = rule_check(post, source_item.get("media", "[]") not in ("[]", None))
     if cfg["signature"] not in post:
         issues.append(f"Oxirida {cfg['signature']} yo'q")
     user = (f"MANBA ({source_item['source']}, {source_item['url']}):\n"

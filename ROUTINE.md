@@ -12,7 +12,9 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
 3. **2-agent, tahlil:** `new_items` ni to'liq o'qing. `agents/writer.py` dagi `TRIAGE` qoidalari bo'yicha
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
 4. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
-   `style_examples.txt` uslubida post yozing. Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
+   `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b>, muhim raqam/sanalar qalin (me'yorida),
+   oxirgi izoh/eslatma <i>kursiv</i>. Yangilikda `media` bo'lsa (rasm/video), post 1000 belgidan oshmasin —
+   u media ostida izoh bo'lib chiqadi. Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
 5. **Qayta ishlash:** `redo` dagi har biri uchun `previous_draft` dan ancha yaxshiroq variant yozing
    (kuchliroq sarlavha, chuqurroq izoh, faktlar o'zgarmaydi).

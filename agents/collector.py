@@ -1,5 +1,6 @@
 """1-agent: filtrlar bo'yicha Telegram kanallar va rasmiy saytlardan yangilik izlaydi."""
 from datetime import datetime, timedelta, timezone
+import json
 import re
 
 import feedparser
@@ -44,16 +45,21 @@ def fetch_telegram(channel, client):
             # html.parser ba'zan ichma-ich joylashuvni buzadi: vaqtni post havolasi orqali topamiz
             a = soup.find("a", class_="tgme_widget_message_date", href=f"https://t.me/{link}")
             when = a.find("time") if a else None
-        photo = msg.select_one(".tgme_widget_message_photo_wrap")
-        image = None
-        if photo and (m := re.search(r"url\('(.+?)'\)", photo.get("style", ""))):
-            image = m.group(1)
+        media = []
+        for el in msg.select(".tgme_widget_message_photo_wrap, video.tgme_widget_message_video, .tgme_widget_message_video_player video"):
+            if el.name == "video":
+                if el.get("src"):
+                    media.append({"type": "video", "url": el["src"]})
+            elif m := re.search(r"url\('(.+?)'\)", el.get("style", "")):
+                media.append({"type": "photo", "url": m.group(1)})
+        media = [x for i, x in enumerate(media) if x not in media[:i]][:10]
         yield {
             "source": f"t.me/{channel}",
             "url": f"https://t.me/{link}" if link else None,
             "title": "",
             "text": body.get_text("\n", strip=True),
-            "image": image,
+            "image": media[0]["url"] if media else None,
+            "media": json.dumps(media),
             "published": _utc(when.get("datetime")) if when else None,
         }
 
@@ -67,7 +73,7 @@ def fetch_rss(site, client):
             published = datetime(*e.published_parsed[:6], tzinfo=timezone.utc).isoformat()
         summary = BeautifulSoup(e.get("summary", ""), "html.parser").get_text(" ", strip=True)
         yield {"source": site["name"], "url": e.get("link"), "title": e.get("title", ""),
-               "text": summary, "image": None, "published": published}
+               "text": summary, "image": None, "media": "[]", "published": published}
 
 
 def fetch_page(site, client):
@@ -88,7 +94,7 @@ def fetch_page(site, client):
             continue
         seen.add(str(href))
         yield {"source": site["name"], "url": str(href), "title": title, "text": title,
-               "image": None, "published": None}
+               "image": None, "media": "[]", "published": None}
 
 
 def fetch_article_text(url, client):

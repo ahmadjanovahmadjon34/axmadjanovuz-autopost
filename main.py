@@ -92,11 +92,16 @@ def on_button(cfg, store, bot, cb, chat):
         if item["status"] == "posted":
             bot.answer(cb["id"], "Allaqachon yuborilgan")
             return
-        bot.publish(cfg["channel"], item["draft"], item.get("image"))
+        bot.publish(cfg["channel"], item["draft"], [] if item["media_off"] else Bot.media_of(item))
         store.set(item_id, status="posted")
         bot.mark(chat, msg_id, "✅ Kanalga yuborildi")
         bot.answer(cb["id"], "Kanalga yuborildi")
         print(f"[4-agent] Kanalga yuborildi: {item['url']}")
+    elif action == "media":
+        store.set(item_id, media_off=0 if item["media_off"] else 1)
+        item = store.item(item_id)
+        bot.set_keyboard(chat, msg_id, item)
+        bot.answer(cb["id"], "Mediasiz chiqadi" if item["media_off"] else "Media bilan chiqadi")
     elif action == "redo" and not os.environ.get("ANTHROPIC_API_KEY"):
         # post yozuvchi Claude routine keyingi ishga tushishida qayta yozadi
         store.set(item_id, status="redo")
@@ -152,7 +157,7 @@ def ingest_inbox(store, bot, chat):
             if not item or not d.get("post") or item["status"] == "posted":
                 continue
             qc = d.get("qc") or {}
-            qc["issues"] = rule_check(d["post"]) + qc.get("issues", [])
+            qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item))) + qc.get("issues", [])
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):
                 fields["related"] = json.dumps(d["related"])
@@ -176,7 +181,7 @@ def export_task(cfg, store):
         data = json.loads(f.read_text(encoding="utf-8"))
         pending.update(data.get("processed_ids", []))
         pending.update(d["id"] for d in data.get("drafts", []))
-    fields = ("id", "source", "url", "title", "text", "published", "score")
+    fields = ("id", "source", "url", "title", "text", "published", "score", "media")
     items = [{k: i[k] for k in fields} for i in store.new_items(cfg["schedule"]["max_age_hours"])
              if i["id"] not in pending]
     redo = []

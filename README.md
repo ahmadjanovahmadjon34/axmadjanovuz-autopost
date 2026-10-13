@@ -8,6 +8,7 @@ Har 20 daqiqada (07:00–23:00, Toshkent) GitHub Actions ishga tushadi:
 4. **Admin bot** — qoralamani sizga shaxsiy chatda ikki tugma bilan yuboradi:
    - 🔄 **Qayta ishlash** — post yaxshiroq qilib qayta yoziladi (keyingi routine'da, 1 soatgacha)
    - ✅ **Kanalga yuborish** — post kanalga chiqadi
+   - 🖼 **Media** — manbada rasm/video bo'lsa chiqadi; bir marta bossangiz post mediasiz chiqadi, yana bossangiz qaytadi
 
 Kanalga hech narsa sizning tasdig'ingizsiz chiqmaydi.
 

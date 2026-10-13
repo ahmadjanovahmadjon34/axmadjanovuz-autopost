@@ -23,15 +23,19 @@ WRITE = AUDIENCE + """
 Vazifa: berilgan yangilikdan kanal uslubida o'zbek tilida (lotin yozuvida) post yozing.
 
 Uslub qoidalari (namunalarga qarang):
-- Qisqa, e'tiborni tortuvchi birinchi qator (savol yoki ❗️ bilan muhim xabar).
+- Birinchi qator — sarlavha: qisqa, e'tiborni tortuvchi (savol yoki ❗️ bilan), butunlay <b>qalin</b>.
+- Matn ichidagi eng muhim qismlar (raqamlar, sanalar, muddatlar, summalar, asosiy xulosa) <b>qalin</b>,
+  lekin me'yorida: bir postda 3–6 joydan oshmasin.
+- Oxirgi shaxsiy fikr, izoh yoki eslatma qismi (imzodan oldingi) <i>kursiv</i>.
 - Emojilar o'rinli va kam: ❓ ✅ ❗️ ➡️ ➖ 1️⃣ 2️⃣.
-- Faktlardan keyin qisqa izoh/xulosa: bu o'quvchi uchun nimani anglatadi.
+- Faktlardan keyin qisqa izoh/xulosa: bu o'quvchi uchun nimani anglatadi (shu qism kursiv).
 - Manba havolasi gap ichida qavsda yoki so'zga biriktirilgan bo'lsin.
 - Oxirida bo'sh qatordan keyin "{signature}", kerak bo'lsa hashtag (#Qabul2026 kabi).
 - Faqat manbada bor faktlarni yozing, raqam, sana, ismlarni o'zgartirmang, hech narsa o'ylab topmang.
 - Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.
-- 300–1500 belgi.
+- 300–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 1000 belgidan oshmasin,
+  chunki u media ostiga izoh sifatida chiqadi.
 - Manbani so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
 
 Kanal uslubidan namunalar:
@@ -49,7 +53,9 @@ def load_examples(path):
 
 
 def _fmt(i, c, limit):
-    return f"[{i}] {c['source']} | {c['url']} | {c['published'][:16]}\n{c['title']}\n{c['text'][:limit]}"
+    media = "bor" if c.get("media") and c["media"] != "[]" else "yo'q"
+    return (f"[{i}] {c['source']} | {c['url']} | {c['published'][:16]} | Media: {media}\n"
+            f"{c['title']}\n{c['text'][:limit]}")
 
 
 def select_news(cfg, items, recent):
