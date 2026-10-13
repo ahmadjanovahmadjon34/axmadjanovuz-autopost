@@ -22,8 +22,21 @@ class Bot:
         return r["result"]
 
     def updates(self, offset):
+        """Worker ulangan bo'lsa bosishlar uning navbatidan, aks holda getUpdates orqali olinadi."""
+        worker, secret = os.environ.get("WORKER_URL"), os.environ.get("HOOK_SECRET")
+        if worker and secret:
+            self.ensure_webhook(worker, secret)
+            r = httpx.get(f"{worker.rstrip('/')}/updates", headers={"x-hook-secret": secret}, timeout=60)
+            r.raise_for_status()
+            return sorted((u for u in r.json() if u["update_id"] >= offset), key=lambda u: u["update_id"])
         return self.call("getUpdates", offset=offset, timeout=0,
                          allowed_updates=["message", "callback_query"])
+
+    def ensure_webhook(self, worker, secret):
+        url = f"{worker.rstrip('/')}/tg"
+        if self.call("getWebhookInfo").get("url") != url:
+            self.call("setWebhook", url=url, secret_token=secret, allowed_updates=["message", "callback_query"])
+            print(f"Webhook o'rnatildi: {url}")
 
     # --- media ---
     @staticmethod

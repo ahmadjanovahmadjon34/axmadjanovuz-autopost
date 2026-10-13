@@ -35,6 +35,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          HOOK_SECRET: ${{ secrets.HOOK_SECRET }}
         run: python main.py ${{ github.event.inputs.command || 'run' }}
       - name: Holatni saqlash (takrorlanmaslik uchun)
         if: always()
