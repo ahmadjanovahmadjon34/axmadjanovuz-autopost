@@ -119,19 +119,16 @@ def status_text(store):
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
     lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
-    lines += ["", f"1-agent har 20 daqiqada izlaydi, 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()})."]
+    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()})."]
     return "\n".join(lines)
 
 
 def next_analysis():
-    """Claude routine Toshkent vaqti bilan har soatning 07-daqiqasida, 07:07–22:07 orasida ishlaydi."""
+    """Claude routine kecha-kunduz har soatning 07-daqiqasida ishlaydi (Toshkent vaqti)."""
     now = utcnow().astimezone(TASHKENT)
     t = now.replace(minute=7, second=0, microsecond=0)
     if t <= now:
         t += timedelta(hours=1)
-    if t.hour > 22 or t.hour < 7:
-        t = (t if t.hour < 7 else t + timedelta(days=1)).replace(hour=7)
-        return f"ertalab {t:%H:%M} da"
     return f"soat {t:%H:%M} da"
 
 
