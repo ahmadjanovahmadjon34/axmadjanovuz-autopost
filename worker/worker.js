@@ -1,6 +1,15 @@
 // Cloudflare Worker: bot tugmalarini darhol qabul qiladi va GitHub'dagi ishni shu zahoti ishga tushiradi.
-// Sozlamalar (Worker → Settings → Variables): BOT_TOKEN, GH_TOKEN, HOOK_SECRET (secret sifatida),
-// GH_REPO = "ahmadjanovahmadjon34/axmadjanovuz-autopost"; KV binding nomi: QUEUE.
+// KV binding nomi: QUEUE. Sozlamalar BOT_TOKEN, GH_TOKEN, HOOK_SECRET, GH_REPO Worker o'zgaruvchisi
+// sifatida yoki shu KV ichida kalit sifatida saqlanadi (o'zgaruvchi bo'lsa, u ustun).
+const KEYS = ["BOT_TOKEN", "GH_TOKEN", "HOOK_SECRET", "GH_REPO"];
+
+async function config(env) {
+  const c = {};
+  for (const k of KEYS) c[k] = env[k] || (await env.QUEUE.get(k)) || "";
+  if (!c.GH_REPO) c.GH_REPO = "ahmadjanovahmadjon34/axmadjanovuz-autopost";
+  c.QUEUE = env.QUEUE;
+  return c;
+}
 
 async function tg(env, method, body) {
   return fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/${method}`, {
@@ -20,8 +29,11 @@ async function dispatch(env) {
 }
 
 export default {
-  async fetch(req, env) {
+  async fetch(req, rawEnv) {
     const url = new URL(req.url);
+    if (url.pathname !== "/tg" && url.pathname !== "/updates") return new Response("ok");
+    const env = await config(rawEnv);
+    if (!env.HOOK_SECRET) return new Response("not configured", { status: 503 });
 
     // Telegram webhook
     if (url.pathname === "/tg" && req.method === "POST") {
