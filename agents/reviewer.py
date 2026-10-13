@@ -10,7 +10,7 @@ SYSTEM = """Siz Telegram kanali uchun sifat nazoratchisiz. Postni manba bilan so
 4. Uslub kanal namunalariga mos, sarlavha jalb qiluvchi, lekin "klikbeyt" emas. Sarlavha <b>qalin</b>,
    muhim raqam/sanalar qalin (me'yorida), oxirgi izoh/eslatma <i>kursiv</i>.
 5. Siyosiy betaraflik, haqoratli yoki tasdiqlanmagan da'volar yo'q.
-6. Telegram HTML formati to'g'ri, manba havolasi bor.
+6. Telegram HTML formati to'g'ri. Postda manba havolasi (boshqa kanal/sayt linki) bo'lmasligi kerak.
 
 Faqat JSON qaytaring:
 {"score": <0-10>, "issues": ["..."], "fixed_post": "<faqat mayda imlo xatolari bo'lsa tuzatilgan matn, aks holda bo'sh>"}"""
@@ -18,8 +18,10 @@ Faqat JSON qaytaring:
 ALLOWED_TAGS = {"b", "i", "u", "s", "a", "code", "pre", "blockquote", "tg-spoiler"}
 
 
-def rule_check(post, has_media=False):
+def rule_check(post, has_media=False, source_url=None):
     issues = []
+    if (source_url and source_url in post) or re.search(r'href="https?://t\.me/', post):
+        issues.append("Postda manba havolasi bor (kerak emas)")
     first = post.strip().split("\n", 1)[0].strip()
     if not (first.startswith("<b>") or re.match(r"^\W{0,4}<b>", first)) or "</b>" not in first:
         issues.append("Sarlavha (birinchi qator) qalin emas")
@@ -40,7 +42,7 @@ def rule_check(post, has_media=False):
 
 
 def review(cfg, post, source_item):
-    issues = rule_check(post, source_item.get("media", "[]") not in ("[]", None))
+    issues = rule_check(post, source_item.get("media", "[]") not in ("[]", None), source_item.get("url"))
     if cfg["signature"] not in post:
         issues.append(f"Oxirida {cfg['signature']} yo'q")
     user = (f"MANBA ({source_item['source']}, {source_item['url']}):\n"

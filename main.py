@@ -115,8 +115,9 @@ def on_button(cfg, store, bot, cb, chat):
             bot.say(chat, "Qayta ishlab bo'lmadi, eski variant qoldi.")
             return
         post, qc = res
-        store.set(item_id, draft=post, qc=json.dumps(qc, ensure_ascii=False))
-        bot.edit_draft(chat, msg_id, item, post, qc)
+        store.set(item_id, draft=post, qc=json.dumps(qc, ensure_ascii=False), msg_id=None)
+        bot.mark(chat, msg_id, "♻️ Yangi variant pastda")
+        send_unsent(store, bot, chat)
         print(f"[2-agent] Qayta ishlandi: {item['url']}")
 
 
@@ -139,8 +140,7 @@ def make_drafts(cfg, store, bot, chat):
         post, qc = res
         store.set(item["id"], status="drafted", draft=post, qc=json.dumps(qc, ensure_ascii=False),
                   related=json.dumps([r["id"] for r in related]))
-        msg_id = bot.send_draft(chat, item, post, qc)
-        store.set(item["id"], msg_id=msg_id)
+        save_sent(store, item, *bot.send_draft(chat, item, post, qc))
         print(f"[4-agent] Qoralama yuborildi: {item['url']} — {reason}")
     # tanlanmagan va bog'liq yangiliklar qayta ko'rilmaydi
     store.mark_new_as([i["id"] for i in items if i["id"] not in used], "skipped")
@@ -157,20 +157,32 @@ def ingest_inbox(store, bot, chat):
             if not item or not d.get("post") or item["status"] == "posted":
                 continue
             qc = d.get("qc") or {}
-            qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item))) + qc.get("issues", [])
+            qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item)), item["url"]) + qc.get("issues", [])
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):
                 fields["related"] = json.dumps(d["related"])
-            if item["msg_id"] and item["status"] in ("redo", "drafted"):
-                store.set(item["id"], status="drafted", **fields)
-                bot.edit_draft(chat, item["msg_id"], item, d["post"], qc)
-                print(f"[4-agent] Qayta ishlangan qoralama yangilandi: {item['url']}")
-            else:
-                store.set(item["id"], status="drafted", **fields)
+            if item["msg_id"]:
+                # qayta ishlangan/yangilangan variant: eskisini belgilab, yangisini yuboramiz
+                try:
+                    bot.mark(chat, item["msg_id"], "♻️ Yangi variant pastda")
+                except RuntimeError:
+                    pass
+            store.set(item["id"], status="drafted", msg_id=None, **fields)
         f.unlink()
+    send_unsent(store, bot, chat)
+
+
+def save_sent(store, item, msg_id, file_ids):
+    media = Bot.media_of(item)
+    if media and len(file_ids) == len(media):
+        media = [{**m, "file_id": fid} for m, fid in zip(media, file_ids)]
+        store.set(item["id"], media=json.dumps(media))
+    store.set(item["id"], msg_id=msg_id)
+
+
+def send_unsent(store, bot, chat):
     for item in store.unsent_drafts():
-        msg_id = bot.send_draft(chat, item, item["draft"], json.loads(item["qc"] or "{}"))
-        store.set(item["id"], msg_id=msg_id)
+        save_sent(store, item, *bot.send_draft(chat, item, item["draft"], json.loads(item["qc"] or "{}")))
         print(f"[4-agent] Qoralama yuborildi: {item['url']}")
 
 

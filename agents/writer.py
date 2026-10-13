@@ -29,7 +29,9 @@ Uslub qoidalari (namunalarga qarang):
 - Oxirgi shaxsiy fikr, izoh yoki eslatma qismi (imzodan oldingi) <i>kursiv</i>.
 - Emojilar o'rinli va kam: ❓ ✅ ❗️ ➡️ ➖ 1️⃣ 2️⃣.
 - Faktlardan keyin qisqa izoh/xulosa: bu o'quvchi uchun nimani anglatadi (shu qism kursiv).
-- Manba havolasi gap ichida qavsda yoki so'zga biriktirilgan bo'lsin.
+- Postda manba havolasini (boshqa kanal yoki sayt linkini) QO'YMANG — manba kanal egasiga alohida
+  ko'rsatiladi. Rasmiy idora nomini aytish mumkin ("Bilimni baholash agentligi ma'lumotiga ko'ra").
+  Faqat o'quvchiga amaliy kerak bo'lgan rasmiy sayt manzili (my.gov.uz kabi) yozilishi mumkin.
 - Oxirida bo'sh qatordan keyin "{signature}", kerak bo'lsa hashtag (#Qabul2026 kabi).
 - Faqat manbada bor faktlarni yozing, raqam, sana, ismlarni o'zgartirmang, hech narsa o'ylab topmang.
 - Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini

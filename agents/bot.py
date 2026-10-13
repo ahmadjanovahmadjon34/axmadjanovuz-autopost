@@ -1,4 +1,5 @@
-"""4-agent: admin bot. Qoralamani egasiga tugmalar bilan ko'rsatadi, tasdiqlansa kanalga chiqaradi."""
+"""4-agent: admin bot. Qoralamani egasiga kanalda qanday chiqsa shunday ko'rinishda (media bilan) tugmalar
+bilan ko'rsatadi; manba va sifat bahosi ostida alohida xabarda. Tasdiqlansa kanalga chiqaradi."""
 import html
 import json
 import os
@@ -6,27 +7,85 @@ import os
 import httpx
 
 MAX_TEXT = 4096
+MAX_CAPTION = 1024
 
 
 class Bot:
     def __init__(self, token=None):
         self.api = f"https://api.telegram.org/bot{token or os.environ['TELEGRAM_BOT_TOKEN']}"
 
-    def call(self, method, **params):
+    def call(self, method, files=None, **params):
         data = {k: json.dumps(v) if isinstance(v, (dict, list)) else v for k, v in params.items() if v is not None}
-        r = httpx.post(f"{self.api}/{method}", data=data, timeout=60).json()
+        r = httpx.post(f"{self.api}/{method}", data=data, files=files, timeout=120).json()
         if not r.get("ok"):
-            raise RuntimeError(f"{method}: {r}")
+            raise RuntimeError(f"{method}: {r.get('description', r)}")
         return r["result"]
 
     def updates(self, offset):
         return self.call("getUpdates", offset=offset, timeout=0,
                          allowed_updates=["message", "callback_query"])
 
+    # --- media ---
     @staticmethod
     def media_of(item):
         return json.loads(item.get("media") or "[]")
 
+    @staticmethod
+    def _download(url):
+        r = httpx.get(url, timeout=120, follow_redirects=True)
+        r.raise_for_status()
+        return r.content
+
+    @staticmethod
+    def _file_id(msg):
+        if msg.get("photo"):
+            return msg["photo"][-1]["file_id"]
+        return (msg.get("video") or msg.get("animation") or msg.get("document") or {}).get("file_id")
+
+    def send_media(self, chat_id, media, caption=None, keyboard=None):
+        """Media'ni yuboradi. m["file_id"] bo'lsa qayta yuklamaydi, bo'lmasa yuklab olib fayl sifatida jo'natadi.
+        Qaytaradi: (keyboard qo'yish mumkin bo'lgan xabar yoki None, har bir media'ning file_id si)."""
+        cap = {"caption": caption, "parse_mode": "HTML"} if caption else {}
+        files, items = {}, []
+        for i, m in enumerate(media[:10]):
+            if m.get("file_id"):
+                items.append((m, m["file_id"]))
+            else:
+                name = f"f{i}.{'mp4' if m['type'] == 'video' else 'jpg'}"
+                files[name] = (name, self._download(m["url"]))
+                items.append((m, f"attach://{name}"))
+        if len(items) == 1:
+            m, ref = items[0]
+            method, field = ("sendVideo", "video") if m["type"] == "video" else ("sendPhoto", "photo")
+            params = {field: ref} if not ref.startswith("attach://") else {}
+            f = {field: files[ref[9:]]} if ref.startswith("attach://") else None
+            msg = self.call(method, files=f, chat_id=chat_id, reply_markup=keyboard, **params, **cap)
+            return msg, [self._file_id(msg)]
+        group = [{"type": m["type"], "media": ref} for m, ref in items]
+        if caption:
+            group[0].update(caption=caption, parse_mode="HTML")
+        msgs = self.call("sendMediaGroup", files=files or None, chat_id=chat_id, media=group)
+        return None, [self._file_id(x) for x in msgs]
+
+    def _post(self, chat_id, post, media, keyboard=None):
+        """Postni kanalda chiqadigan ko'rinishda yuboradi. Qaytaradi: (tugmali xabar id, file_id lar)."""
+        file_ids = []
+        if media:
+            if len(post) <= MAX_CAPTION:
+                msg, file_ids = self.send_media(chat_id, media, caption=post, keyboard=keyboard)
+                if msg:
+                    return msg["message_id"], file_ids
+                if keyboard is None:
+                    return None, file_ids
+                # albom: tugmalarni alohida xabarga qo'yamiz
+                msg = self.call("sendMessage", chat_id=chat_id, text="⬆️ Albom bilan chiqadi", reply_markup=keyboard)
+                return msg["message_id"], file_ids
+            _, file_ids = self.send_media(chat_id, media)
+        msg = self.call("sendMessage", chat_id=chat_id, text=post, parse_mode="HTML",
+                        link_preview_options={"is_disabled": True}, reply_markup=keyboard)
+        return msg["message_id"], file_ids
+
+    # --- qoralama ---
     @classmethod
     def keyboard(cls, item):
         rows = [[
@@ -43,35 +102,28 @@ class Bot:
         self.call("editMessageReplyMarkup", chat_id=chat_id, message_id=msg_id, reply_markup=self.keyboard(item))
 
     @staticmethod
-    def draft_text(item, post, qc):
-        footer = (f"\n\n— — —\n🧾 Manba: {html.escape(item['source'])} {html.escape(item['url'] or '')}"
-                  f"\n🔎 Sifat: {qc.get('score', '?')}/10")
+    def footer(item, qc):
+        text = (f"🧾 Manba: {html.escape(item['source'])}\n{html.escape(item['url'] or '')}"
+                f"\n🔎 Sifat: {qc.get('score', '?')}/10")
         issues = qc.get("issues") or []
         if issues:
-            footer += "\n⚠️ " + html.escape("; ".join(issues))[:400]
-        return post[:MAX_TEXT - len(footer)] + footer
+            text += "\n⚠️ " + html.escape("; ".join(issues))[:600]
+        return text
 
     def send_draft(self, chat_id, item, post, qc):
+        """Qaytaradi: (tugmali xabar id, media file_id lar)."""
         media = self.media_of(item)
-        if media:
-            try:  # avval media'ni ko'rsatamiz, qoralama matni tugmalar bilan uning ostida
-                self.send_media(chat_id, media)
-            except RuntimeError as e:
-                qc = {**qc, "issues": [*qc.get("issues", []), f"Media yuklanmadi: {e}"[:200]]}
-        text = self.draft_text(item, post, qc)
         try:
-            msg = self.call("sendMessage", chat_id=chat_id, text=text, parse_mode="HTML",
+            msg_id, file_ids = self._post(chat_id, post, media, self.keyboard(item))
+        except (RuntimeError, httpx.HTTPError) as e:
+            # media yoki HTML xato bo'lsa ham qoralama yo'qolmasin
+            qc = {**qc, "issues": [*qc.get("issues", []), f"Yuborishda xato: {e}"[:300]]}
+            msg = self.call("sendMessage", chat_id=chat_id, text=post[:MAX_TEXT],
                             link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
-        except RuntimeError as e:
-            # HTML xato bo'lsa ham qoralama yo'qolmasin: oddiy matn sifatida ko'rsatamiz
-            msg = self.call("sendMessage", chat_id=chat_id, text=f"⚠️ HTML xatosi: {e}\n\n{text}"[:MAX_TEXT],
-                            link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
-        return msg["message_id"]
-
-    def edit_draft(self, chat_id, msg_id, item, post, qc):
-        self.call("editMessageText", chat_id=chat_id, message_id=msg_id, text=self.draft_text(item, post, qc),
-                  parse_mode="HTML", link_preview_options={"is_disabled": True},
-                  reply_markup=self.keyboard(item))
+            msg_id, file_ids = msg["message_id"], []
+        self.call("sendMessage", chat_id=chat_id, text=self.footer(item, qc), parse_mode="HTML",
+                  reply_parameters={"message_id": msg_id}, link_preview_options={"is_disabled": True})
+        return msg_id, file_ids
 
     def mark(self, chat_id, msg_id, note):
         """Tugmalarni olib tashlab, holatni yozib qo'yadi."""
@@ -87,26 +139,12 @@ class Bot:
     def say(self, chat_id, text):
         self.call("sendMessage", chat_id=chat_id, text=text)
 
-    def send_media(self, chat_id, media, caption=None):
-        """1 ta media — sendPhoto/sendVideo, bir nechta — albom. caption ≤ 1024 belgi."""
-        cap = {"caption": caption, "parse_mode": "HTML"} if caption else {}
-        if len(media) == 1:
-            m = media[0]
-            method, field = ("sendVideo", "video") if m["type"] == "video" else ("sendPhoto", "photo")
-            return self.call(method, chat_id=chat_id, **{field: m["url"]}, **cap)
-        group = [{"type": m["type"], "media": m["url"]} for m in media[:10]]
-        if caption:
-            group[0].update(caption=caption, parse_mode="HTML")
-        return self.call("sendMediaGroup", chat_id=chat_id, media=group)
-
     def publish(self, channel, post, media=None):
-        """Kanalga chiqarish. Media bo'lsa post uning izohi bo'ladi; post uzun bo'lsa media, keyin matn."""
-        if media:
-            try:
-                if len(post) <= 1024:
-                    return self.send_media(channel, media, caption=post)
-                self.send_media(channel, media)
-            except RuntimeError as e:
-                print(f"Media yuborilmadi, faqat matn: {e}")
-        return self.call("sendMessage", chat_id=channel, text=post, parse_mode="HTML",
-                         link_preview_options={"is_disabled": True})
+        """Kanalga chiqarish (qoralamadagi file_id lar bilan, qayta yuklamasdan)."""
+        try:
+            self._post(channel, post, media or [])
+        except (RuntimeError, httpx.HTTPError) as e:
+            if not media:
+                raise
+            print(f"Media bilan chiqmadi, faqat matn: {e}")
+            self._post(channel, post, [])
