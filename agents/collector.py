@@ -39,7 +39,7 @@ def fetch_telegram(channel, client):
         if not body:
             continue
         link = msg.get("data-post")
-        when = msg.select_one("time")
+        when = msg.select_one("time[datetime]")
         photo = msg.select_one(".tgme_widget_message_photo_wrap")
         image = None
         if photo and (m := re.search(r"url\('(.+?)'\)", photo.get("style", ""))):
