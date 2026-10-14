@@ -119,7 +119,7 @@ def status_text(store):
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
     lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
-    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()}); qayta ishlash va siz yuborgan xabarlar har 15 daqiqada bajariladi."]
+    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
     return "\n".join(lines)
 
 

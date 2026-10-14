@@ -42,7 +42,7 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
 10. Qoralama botga darhol yetib borishi uchun GitHub ishini ishga tushiring:
     `gh api -X POST repos/ahmadjanovahmadjon34/axmadjanovuz-autopost/actions/workflows/post.yml/dispatches -f ref=main -f 'inputs[command]=run'`
 
-## Tezkor tekshiruv (har 15 daqiqada, :22 / :37 / :52)
+## Tezkor tekshiruv (har 15 daqiqada, :22 / :37 / :52) — endi to'liq tahlil ham shu vaqtlarda bajariladi
 Egasi "🔄 Qayta ishlash" bosgan yoki botga xabar yuborgan bo'lsa, soatlik tahlilni kutmasdan bajariladi.
 `python main.py export` dan faqat `redo` va `source == owner_source` bo'lgan `new_items` olinadi. Ikkalasi ham
 bo'sh bo'lsa hech narsa commit qilinmaydi. Bo'lsa — faqat shular uchun post yoziladi (qolgan yangiliklar
