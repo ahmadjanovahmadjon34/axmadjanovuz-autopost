@@ -48,3 +48,6 @@ Egasi "🔄 Qayta ishlash" bosgan yoki botga xabar yuborgan bo'lsa, soatlik tahl
 bo'sh bo'lsa hech narsa commit qilinmaydi. Bo'lsa — faqat shular uchun post yoziladi (qolgan yangiliklar
 soatlik tahlilga qoladi, ularni `processed_ids` ga qo'shmang), inbox push qilinadi va workflow ishga tushiriladi.
 Qayta ishlangan postga eski variant avtomatik `prev_draft` bo'lib saqlanadi (botda "↩️ Avvalgi variantga qaytish").
+
+## Yig'ishni yangilash (har tahlil boshida)
+GitHub cron ba'zan 30+ daqiqa kechikadi. Shuning uchun `git pull` dan oldin workflow'ni `command=run` bilan dispatch qiling, run tugashini kuting (`until` sikl bilan), keyin `git pull` va `export` qiling.
