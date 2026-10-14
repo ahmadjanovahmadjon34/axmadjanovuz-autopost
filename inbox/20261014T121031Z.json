@@ -1,0 +1,39 @@
+{
+ "processed_ids": [
+  "2bcbb453b1df4b343375e265c7af93e02fc03b92",
+  "6c1002f1b6bde08ae86865e2ae27f56c56f91bc3",
+  "1b0ec0f495776c74a8b7a4d91924f42626dfe9d6",
+  "7467d510766f33f084dc036bff1dabee3dca4acb",
+  "7c0acf266b9f60d6325bbbbe7b345392d2fbf221",
+  "cbfc78c0f1d55e87c93ebc30afce6cdabdcef5e7",
+  "50a4f7679eccdeeae1cee0dc7539c221d678714e",
+  "096386a5d2df1e01920819a9799a6fb43af745af",
+  "f14512675eeb2c158e500b9e5fd95b7e3010cc85"
+ ],
+ "drafts": [
+  {
+   "id": "6c1002f1b6bde08ae86865e2ae27f56c56f91bc3",
+   "related": [
+    "2bcbb453b1df4b343375e265c7af93e02fc03b92",
+    "7c0acf266b9f60d6325bbbbe7b345392d2fbf221",
+    "50a4f7679eccdeeae1cee0dc7539c221d678714e"
+   ],
+   "post": "<b>⚖️ Bolalarga zo‘ravonlik uchun jazo kuchaytirildi</b>\n\nPrezident <b>5 ta kodeks va 6 ta qonunga</b> o‘zgartirish kirituvchi qonunni imzoladi.\n\n🔹 <b>14 yoshga to‘lmagan</b> bolaga nisbatan jinsiy zo‘ravonlik uchun <b>25 yilgacha ozodlikdan mahrum qilish yoki umrbod qamoq</b> jazosi tayinlanadi.\n🔹 Bunday og‘ir jinoyatlar bo‘yicha javobgarlikka tortish muddatida <b>cheklov bo‘lmaydi</b>.\n🔹 Bolaga jismoniy yoki ruhiy azob bergan har kim, u <b>ta’lim muassasasi xodimi</b> bo‘ladimi yoki <b>yaqin qarindoshi</b>, javobgarlikka tortiladi.\n🔹 Bolaning o‘limiga sabab bo‘lgan jinoyatlar uchun jazo <b>yengillashtirilmaydi</b>.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false
+  },
+  {
+   "id": "cbfc78c0f1d55e87c93ebc30afce6cdabdcef5e7",
+   "related": [],
+   "post": "<b>🥔 “Kartoshka puli” kimlarga beriladi?</b>\n\nKuz kelishi bilan ko‘pchilik “kartoshka puli qachon beriladi?” deb so‘raydi. Bu qishloq xo‘jaligi mahsulotlarini xarid qilish uchun beriladigan <b>bir martalik moddiy yordam</b>.\n\n<b>Kimlarga beriladi:</b>\n🔹 ayrim <b>davlat organlari va budjet tashkilotlari</b> xodimlariga, agar sohaviy hujjatlarda nazarda tutilgan bo‘lsa;\n🔹 <b>jamoa shartnomasi</b> yoki ichki hujjatlarida shunday to‘lov belgilangan korxona xodimlariga.\n\n🔹 Mehnat kodeksida kartoshka pulini <b>barcha xodimlarga majburiy to‘lash talabi yo‘q</b>.\n🔹 To‘lov bor-yo‘qligi va miqdori sohaviy qarorlar, jamoa va mehnat shartnomasi yoki ish beruvchining ichki hujjatlariga bog‘liq.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false
+  }
+ ]
+}
