@@ -41,3 +41,10 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    `data.db` ni o'zgartirmang.
 10. Qoralama botga darhol yetib borishi uchun GitHub ishini ishga tushiring:
     `gh api -X POST repos/ahmadjanovahmadjon34/axmadjanovuz-autopost/actions/workflows/post.yml/dispatches -f ref=main -f 'inputs[command]=run'`
+
+## Tezkor tekshiruv (har 15 daqiqada, :22 / :37 / :52)
+Egasi "🔄 Qayta ishlash" bosgan yoki botga xabar yuborgan bo'lsa, soatlik tahlilni kutmasdan bajariladi.
+`python main.py export` dan faqat `redo` va `source == owner_source` bo'lgan `new_items` olinadi. Ikkalasi ham
+bo'sh bo'lsa hech narsa commit qilinmaydi. Bo'lsa — faqat shular uchun post yoziladi (qolgan yangiliklar
+soatlik tahlilga qoladi, ularni `processed_ids` ga qo'shmang), inbox push qilinadi va workflow ishga tushiriladi.
+Qayta ishlangan postga eski variant avtomatik `prev_draft` bo'lib saqlanadi (botda "↩️ Avvalgi variantga qaytish").

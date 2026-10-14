@@ -256,7 +256,9 @@ def ingest_inbox(store, bot, chat):
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):
                 fields["related"] = json.dumps(d["related"])
-            if item["msg_id"] and item["draft"] and item["draft"] != d["post"]:
+            if d.get("prev_draft"):
+                fields.update(prev_draft=d["prev_draft"], prev_qc=json.dumps(d.get("prev_qc") or {}, ensure_ascii=False))
+            elif item["msg_id"] and item["draft"] and item["draft"] != d["post"]:
                 fields.update(prev_draft=item["draft"], prev_qc=item["qc"])
             if item["msg_id"]:
                 # qayta ishlangan/yangilangan variant: eskisini belgilab, yangisini yuboramiz
