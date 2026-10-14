@@ -1,0 +1,46 @@
+{
+ "processed_ids": [
+  "8f567e94af9c2cd0a45649b4b7fa7f1638fd0c3f",
+  "2347038a0179891f2d4b270a19b98dc1ba680d5b",
+  "f62b0290b1c0679fffd58d3501d2707d15e6a9a8",
+  "7ab875a3925642b67648db489a911c70b24ff39d",
+  "625311787294a8fa83bbc81b203634e1ca839757",
+  "dfdee19484bf69f84eb97d45a26b25fbaa017086",
+  "9687542d2fc2e5c4fe298e5513aa8bcff4d8c0da",
+  "c2437dd1c2d4d6d594b810e8667c5cc81a77c893",
+  "07e8d2d805d95f2f37bebe45c829fa95147ea22b",
+  "4e543933e9b63c0c1428afdcf8ea3567ab3da62f",
+  "e6f509e031173dcfbd301847598fcf52317970fb",
+  "3ce479ed4229dee86af669fdae6ebf171ee17b9f",
+  "6fa306ef1969fd824419b3160d9a7883e3430ef7",
+  "9ea196021b8bc61155dd9e0b64b89556c6cb9ba5",
+  "420ef6f51b074566afdb335eadb6d2b2dea5490a",
+  "628e8b14bb12466e47c439c4cb3bf1bd14d1d8ce",
+  "bf78201790aef60f9839c7d9ca0ae6ae42db187a",
+  "9fd59719cf71b652e1dde8edb0797d1982998504",
+  "118dd325bf6fb6ceb5f21493210ea703fc334694",
+  "2a8c177d1fa2cbecc82a3fb3936a4197c9777960",
+  "79563d8ff4de2f61991e6d3c0d693c9e62de5bd3",
+  "394ff74941c6afc88bf4b16f523d19b393e52b55",
+  "6522ddda7b3ab75a36e48c45f4984f14985501a4",
+  "ee8e31be4f8b85b704f3e4f4242a761840a2b060",
+  "20c5faa6afc2b0d11677709bb9ee9cc34d721f44"
+ ],
+ "drafts": [
+  {
+   "id": "a4ce73879eee8a9e01f745cc27c8383a1a204061",
+   "related": [
+    "9ea196021b8bc61155dd9e0b64b89556c6cb9ba5",
+    "6522ddda7b3ab75a36e48c45f4984f14985501a4"
+   ],
+   "post": "<b>⏰ Doktoranturaga hujjat topshirish 15-oktabrda tugaydi</b>\n\nOliy ta’limdan keyingi ta’limga (<b>tayanch doktorantura, doktorantura</b>) hujjat qabuli <b>15-oktabr soat 23:55 gacha</b> davom etadi. Topshirishni oxirgi kunga qoldirmang!\n\n☎️ Murojaat uchun: <b>71 203-32-23</b>\n🔹 platformadagi muammolar bo‘yicha: <b>665</b>\n🔹 hujjatlarni to‘ldirish bo‘yicha: <b>152</b>\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": [
+     "Avvalgi variantda 'magistratura' deb xato yozilgan edi: oliy ta’limdan keyingi ta’lim — bu doktorantura"
+    ]
+   },
+   "redo": true
+  }
+ ]
+}
