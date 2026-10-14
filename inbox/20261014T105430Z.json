@@ -1,0 +1,25 @@
+{
+ "processed_ids": [
+  "ccbb5423851a189cb0e8d116425cc85e5495e357",
+  "bot:619839487:81",
+  "3c8b3d05ebdc793430bb5afb3d86f8a1713a9b81",
+  "5a289c2e631b7d4e3b460a173f4bb3a3fa6ce98a"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:81",
+   "related": [
+    "e882497864c9d044a690ea8e21f0bd3855b426d5",
+    "fed53143ccbe72143fe913e7bf4ef2e7c2c2a8a8"
+   ],
+   "post": "<b>❓ Kunduzgi ta’limda o‘qiyotgan talaba to‘liq 1 stavkada ishlashi mumkinmi?</b>\n\nKo‘plab talabalarni qiziqtiradigan savol:\n\n🔹 Kunduzgi ta’lim shaklida o‘qiyotgan talaba <b>asosiy ish joyida to‘liq stavkada</b> ishlay oladimi?\n🔹 Mehnat qonunchiligida bunga <b>qandaydir cheklovlar</b> bormi?\n\nBu savolga <b>Toshkent davlat yuridik universiteti katta o‘qituvchisi, advokat Muhammadamin Karimjonov</b> videoda javob beradi 👆\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": [
+     "Javob mazmuni videoda, matnda yo'q"
+    ]
+   },
+   "redo": false
+  }
+ ]
+}
