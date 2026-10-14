@@ -119,16 +119,17 @@ def status_text(store):
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
     lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
-    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()})."]
+    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har soatda yozadi (navbatdagisi {next_analysis()}); qayta ishlash va siz yuborgan xabarlar har 15 daqiqada bajariladi."]
     return "\n".join(lines)
 
 
-def next_analysis():
-    """Claude routine kecha-kunduz har soatning 07-daqiqasida ishlaydi (Toshkent vaqti)."""
+def next_analysis(quick=False):
+    """Claude routine har soatning 07-daqiqasida to'liq tahlil qiladi; 22/37/52-daqiqalarda esa faqat
+    qayta ishlash va siz yuborgan xabarlarni bajaradi (Toshkent vaqti)."""
     now = utcnow().astimezone(TASHKENT)
     t = now.replace(minute=7, second=0, microsecond=0)
-    if t <= now:
-        t += timedelta(hours=1)
+    while t <= now:
+        t += timedelta(minutes=15 if quick else 60)
     return f"soat {t:%H:%M} da"
 
 
@@ -156,7 +157,7 @@ def on_owner_message(store, bot, msg, chat):
                "text": text, "image": None, "media": json.dumps(media), "published": utcnow().isoformat(),
                "score": 100})
     Path(".fire_routine").touch()  # GitHub Actions 2-agentni darhol chaqiradi
-    bot.say(chat, f"📥 Qabul qilindi. 2-agent navbatdagi tahlilda ({next_analysis()}) birinchi bo'lib undan post "
+    bot.say(chat, f"📥 Qabul qilindi. 2-agent navbatdagi tahlilda ({next_analysis(quick=True)}) birinchi bo'lib undan post "
                   "tayyorlaydi, 3-agent tekshirgach shu yerga keladi.", menu=True)
 
 
@@ -199,7 +200,7 @@ def on_button(cfg, store, bot, cb, chat):
     elif action == "redo" and not os.environ.get("ANTHROPIC_API_KEY"):
         # post yozuvchi Claude routine keyingi ishga tushishida qayta yozadi
         store.set(item_id, status="redo")
-        bot.answer(cb["id"], "Navbatga qo'yildi: keyingi tahlilda qayta yoziladi")
+        bot.answer(cb["id"], f"Navbatga qo'yildi: {next_analysis(quick=True)} qayta yoziladi")
         bot.mark(chat, msg_id, "🔄 Qayta ishlanmoqda...")
     elif action == "redo":
         bot.answer(cb["id"], "Qayta ishlanmoqda...")
