@@ -114,6 +114,9 @@ class Bot:
         if media:
             label = "🚫 Mediasiz chiqadi (qaytarish)" if item.get("media_off") else f"🖼 Media bilan chiqadi ({len(media)})"
             rows.append([{"text": label, "callback_data": f"media:{item['id']}"}])
+        if item.get("prev_draft"):
+            rows.append([{"text": "↩️ Avvalgi variantga qaytish", "callback_data": f"back:{item['id']}"}])
+        rows.append([{"text": "🗑 Keraksiz", "callback_data": f"junk:{item['id']}"}])
         return {"inline_keyboard": rows}
 
     def set_keyboard(self, chat_id, msg_id, item):

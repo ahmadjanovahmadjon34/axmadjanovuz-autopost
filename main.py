@@ -177,6 +177,20 @@ def on_button(cfg, store, bot, cb, chat):
         bot.mark(chat, msg_id, "✅ Kanalga yuborildi")
         bot.answer(cb["id"], "Kanalga yuborildi")
         print(f"[4-agent] Kanalga yuborildi: {item['url']}")
+    elif action == "junk":
+        store.set(item_id, status="rejected")
+        bot.mark(chat, msg_id, "🗑 Keraksiz deb topildi")
+        bot.answer(cb["id"], "Yaroqsiz deb belgilandi")
+    elif action == "back":
+        if not item.get("prev_draft"):
+            bot.answer(cb["id"], "Avvalgi variant yo'q")
+            return
+        # variantlarni almashtiramiz: avvalgisi yangi xabar bo'lib keladi, undan yana qaytish mumkin
+        store.set(item_id, status="drafted", draft=item["prev_draft"], qc=item["prev_qc"],
+                  prev_draft=item["draft"], prev_qc=item["qc"], msg_id=None)
+        bot.mark(chat, msg_id, "↩️ Avvalgi variant pastda")
+        bot.answer(cb["id"], "Avvalgi variant qaytarildi")
+        send_unsent(store, bot, chat)
     elif action == "media":
         store.set(item_id, media_off=0 if item["media_off"] else 1)
         item = store.item(item_id)
@@ -195,7 +209,8 @@ def on_button(cfg, store, bot, cb, chat):
             bot.say(chat, "Qayta ishlab bo'lmadi, eski variant qoldi.")
             return
         post, qc = res
-        store.set(item_id, draft=post, qc=json.dumps(qc, ensure_ascii=False), msg_id=None)
+        store.set(item_id, draft=post, qc=json.dumps(qc, ensure_ascii=False), msg_id=None,
+                  prev_draft=item["draft"], prev_qc=item["qc"])
         bot.mark(chat, msg_id, "♻️ Yangi variant pastda")
         send_unsent(store, bot, chat)
         print(f"[2-agent] Qayta ishlandi: {item['url']}")
@@ -234,13 +249,15 @@ def ingest_inbox(store, bot, chat):
         store.mark_new_as(data.get("processed_ids", []), "skipped")
         for d in data.get("drafts", []):
             item = store.item(d["id"])
-            if not item or not d.get("post") or item["status"] == "posted":
+            if not item or not d.get("post") or item["status"] in ("posted", "rejected"):
                 continue
             qc = d.get("qc") or {}
             qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item)), item["url"]) + qc.get("issues", [])
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):
                 fields["related"] = json.dumps(d["related"])
+            if item["msg_id"] and item["draft"] and item["draft"] != d["post"]:
+                fields.update(prev_draft=item["draft"], prev_qc=item["qc"])
             if item["msg_id"]:
                 # qayta ishlangan/yangilangan variant: eskisini belgilab, yangisini yuboramiz
                 try:
@@ -318,6 +335,15 @@ def run(cfg, store):
     if not chat:
         print("Egasi aniqlanmagan: botga shaxsiy chatda /start yozing.")
         return
+    if not store.get("kb_v2"):
+        # kutayotgan eski qoralamalarga ham 🗑 Keraksiz tugmasini qo'shamiz
+        for item in store.by_status("drafted"):
+            if item["msg_id"]:
+                try:
+                    bot.set_keyboard(chat, item["msg_id"], item)
+                except RuntimeError:
+                    pass
+        store.put("kb_v2", 1)
     ingest_inbox(store, bot, chat)
     if os.environ.get("ANTHROPIC_API_KEY"):
         # API kaliti bo'lsa, 2- va 3-agent shu yerda ishlaydi (aks holda Claude routine bajaradi)

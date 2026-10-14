@@ -10,9 +10,10 @@ CREATE TABLE IF NOT EXISTS items (
 );
 CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT);
 """
-EXTRA_COLUMNS = {"media": "TEXT", "media_off": "INTEGER DEFAULT 0", "draft": "TEXT", "related": "TEXT", "qc": "TEXT", "msg_id": "INTEGER", "drafted_at": "TEXT"}
+EXTRA_COLUMNS = {"media": "TEXT", "media_off": "INTEGER DEFAULT 0", "draft": "TEXT", "related": "TEXT", "qc": "TEXT", "msg_id": "INTEGER", "drafted_at": "TEXT",
+                 "prev_draft": "TEXT", "prev_qc": "TEXT"}
 
-# status: new → skipped | drafted ⇄ redo → posted | rejected
+# status: new → skipped | drafted ⇄ redo → posted | rejected (🗑 Keraksiz)
 
 
 def utcnow():
