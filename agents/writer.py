@@ -92,6 +92,17 @@ REDO_TASKS = {
 }
 
 
+# 5-agent: 2-agentning raqibi. Xuddi shu qoidalar, lekin boshqacha yondashuv: o'quvchiga foydasini
+# birinchi qatorda aytadi, sarlavhani savol yoki aniq raqam bilan quradi, matnni qisqaroq va lo'ndaroq yozadi.
+RIVAL_APPROACH = ("Yondashuv (5-agent): o'quvchi uchun eng muhim narsa (kimga, qancha, qachongacha) sarlavha va birinchi"
+                  " jumlada bo'lsin; sarlavha savol yoki aniq raqam bilan; matn qisqa va lo'nda, har bir qator yangi fakt.")
+
+# 6-agent: faqat qayta ishlash ("🔄 Qayta ishlash" tugmasi). Avvalgi variantning kamchiliklarini aniqlab,
+# REDO_TASKS dagi tanlov bo'yicha qayta yozadi.
+REDO_AGENT = ("6-agent (qayta ishlash): avval oldingi variantning kamchiliklarini aniqlang (zaif sarlavha, ortiqcha"
+              " so'z, yashirin qolgan muhim fakt, noto'g'ri tartib), keyin ularni tuzatib, egasi tanlagan usulda yozing.")
+
+
 def write_post(cfg, item, related=(), feedback=None, previous=None, improve=False):
     system = WRITE.format(topics=", ".join(cfg["topics"]), signature=cfg["signature"],
                           examples=load_examples(cfg["style_examples_file"]))
@@ -99,7 +110,8 @@ def write_post(cfg, item, related=(), feedback=None, previous=None, improve=Fals
     if related:
         user += "\n\nShu voqea haqida boshqa manbalar:\n" + "\n\n".join(_fmt(i + 1, r, 1500) for i, r in enumerate(related))
     if previous and improve:
-        user += f"\n\nOldingi variant:\n{previous}\n\n" + REDO_TASKS.get(improve, REDO_TASKS["improve"])
+        user += (f"\n\nOldingi variant:\n{previous}\n\n" + REDO_AGENT + "\n"
+                 + REDO_TASKS.get(improve, REDO_TASKS["improve"]))
     if feedback:
         user += f"\n\nOldingi variant:\n{previous}\n\nSifat nazoratchisi e'tirozlari, tuzatib qayta yozing:\n{feedback}"
     return ask_json(cfg["model"], system, user, max_tokens=3000).get("post", "")

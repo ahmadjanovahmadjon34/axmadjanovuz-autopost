@@ -20,7 +20,13 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
-6. **Qayta ishlash:** `redo` dagi har birining `redo_mode` iga qarab `previous_draft` ni qayta yozing
+5a. **5-agent (raqib):** har bir tanlangan yangilik uchun 2-agentdan mustaqil ikkinchi variant yozing,
+   `agents/writer.py` dagi `RIVAL_APPROACH` yondashuvida (qoidalar o'sha `WRITE`). 3-agent ikkala variantni
+   baholaydi va yuqori ballisini yuboradi (teng bo'lsa 2-agentniki). Draftga `"agent": "2"` yoki `"5"`,
+   `"rival_agent"` va `"rival_score"` (yutqazgan variant bahosi) qo'shing. Egasi oxirida kim yaxshiroq ekanini
+   botdagi "🔄 Yangilash" statistikasidan ko'rib, yutqazganini bo'shatadi.
+6. **6-agent, qayta ishlash:** `redo` ni faqat 6-agent bajaradi (`REDO_AGENT` qoidasi), draftga `"agent": "6"`.
+   **Qayta ishlash:** `redo` dagi har birining `redo_mode` iga qarab `previous_draft` ni qayta yozing
    (faktlar o'zgarmaydi), `agents/writer.py` dagi `REDO_TASKS` bo'yicha:
    - `improve` — ancha yaxshiroq variant (kuchliroq sarlavha, aniqroq faktlar);
    - `formal` — rasmiyroq, rasmiy-ishchan uslubda, so'zlashuv va ortiqcha emojisiz;

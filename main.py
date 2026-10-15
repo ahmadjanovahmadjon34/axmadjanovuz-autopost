@@ -117,8 +117,13 @@ def status_text(store):
     lines = ["🔄 <b>Holat</b> (Toshkent vaqti)", ""]
     lines.append(f"🔎 1-agent yangiliklarni oxirgi marta izladi: {collected or 'hali yo‘q'}"
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
-    lines.append(f"✍️ 2-3-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
+    lines.append(f"✍️ 2-, 3-, 5-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
+    duel = {a: (int(store.get(f"won_by_{a}", 0)), int(store.get(f"posted_by_{a}", 0))) for a in ("2", "5", "6")}
+    lines += ["", "🏁 <b>Bellashuv</b> (3-agent tanlagan / siz kanalga chiqargan):",
+              f"✍️ 2-agent: {duel['2'][0]} / {duel['2'][1]}",
+              f"✍️ 5-agent: {duel['5'][0]} / {duel['5'][1]}",
+              f"♻️ 6-agent (qayta ishlash): kanalga chiqqan {duel['6'][1]}"]
     lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
     return "\n".join(lines)
 
@@ -179,6 +184,9 @@ def on_button(cfg, store, bot, cb, chat):
             return
         bot.publish(cfg["channel"], item["draft"], [] if item["media_off"] else Bot.media_of(item))
         store.set(item_id, status="posted")
+        agent = json.loads(item["qc"] or "{}").get("agent")
+        if agent:
+            store.put(f"posted_by_{agent}", int(store.get(f"posted_by_{agent}", 0)) + 1)
         bot.mark(chat, msg_id, "✅ Kanalga yuborildi")
         bot.answer(cb["id"], "Kanalga yuborildi")
         print(f"[4-agent] Kanalga yuborildi: {item['url']}")
@@ -276,6 +284,12 @@ def ingest_inbox(store, bot, chat):
                     or (item["status"] == "rejected" and not d.get("revive")):
                 continue
             qc = d.get("qc") or {}
+            for k in ("agent", "rival_agent", "rival_score"):
+                if d.get(k) is not None:
+                    qc[k] = d[k]
+            if d.get("agent") in ("2", "5") and d.get("rival_score") is not None:
+                # 2- va 5-agent bellashuvi: 3-agent kimning variantini tanlagani hisoblanadi
+                store.put(f"won_by_{d['agent']}", int(store.get(f"won_by_{d['agent']}", 0)) + 1)
             qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item)), item["url"]) + qc.get("issues", [])
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):
