@@ -179,6 +179,13 @@ class Bot:
                       reply_parameters={"message_id": msg_id}, link_preview_options={"is_disabled": True})
         return msg_id, file_ids
 
+    def delete(self, chat_id, msg_id):
+        """Qoralama xabarini o'chiradi; 48 soatdan eski bo'lsa o'chmaydi, unda belgi qo'yiladi."""
+        try:
+            self.call("deleteMessage", chat_id=chat_id, message_id=msg_id)
+        except RuntimeError:
+            self.mark(chat_id, msg_id, "🗑 Qoralamalardan olib tashlandi")
+
     def mark(self, chat_id, msg_id, note):
         """Tugmalarni olib tashlab, holatni yozib qo'yadi."""
         self.call("editMessageReplyMarkup", chat_id=chat_id, message_id=msg_id,

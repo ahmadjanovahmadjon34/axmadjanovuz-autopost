@@ -258,9 +258,22 @@ def ingest_inbox(store, bot, chat):
     for f in sorted(Path("inbox").glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         store.mark_new_as(data.get("processed_ids", []), "skipped")
+        # egasi so'ragan: kutilayotgan qoralamalarni botdan olib tashlash
+        for rid in data.get("reject_ids", []):
+            item = store.item(rid)
+            if not item or item["status"] not in ("drafted", "redo"):
+                continue
+            store.set(rid, status="rejected")
+            if item["msg_id"]:
+                try:
+                    bot.delete(chat, item["msg_id"])
+                except RuntimeError:
+                    pass
         for d in data.get("drafts", []):
             item = store.item(d["id"])
-            if not item or not d.get("post") or item["status"] in ("posted", "rejected"):
+            # "revive": egasi keraksiz deb belgilagan postni qayta yuborishni so'ragan
+            if not item or not d.get("post") or item["status"] == "posted" \
+                    or (item["status"] == "rejected" and not d.get("revive")):
                 continue
             qc = d.get("qc") or {}
             qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item)), item["url"]) + qc.get("issues", [])
