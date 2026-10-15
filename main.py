@@ -117,10 +117,10 @@ def status_text(store):
     lines = ["🔄 <b>Holat</b> (Toshkent vaqti)", ""]
     lines.append(f"🔎 1-agent yangiliklarni oxirgi marta izladi: {collected or 'hali yo‘q'}"
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
-    lines.append(f"✍️ 2-, 3-, 5-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
+    lines.append(f"✍️ Yozuvchilar jamoasi (2-, 5-, 6-agent) va 3-agent oxirgi marta ishladi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
     by = {a: int(store.get(f"posted_by_{a}", 0)) for a in ("2", "5", "6")}
-    lines += ["", f"📤 Kanalga chiqqan postlar: 2-agent {by['2']}, 5-agent (yordamchi) {by['5']}, 6-agent (qayta ishlash) {by['6']}"]
+    lines += ["", f"📤 Kanalga chiqqan postlar: 2-agent {by['2']}, 5-agent {by['5']}, 6-agent {by['6']}"]
     lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
     return "\n".join(lines)
 

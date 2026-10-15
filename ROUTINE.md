@@ -20,11 +20,11 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
-5a. **5-agent (yordamchi):** 2-agent bilan bir xil qoidalar va uslubda ishlaydi, ishni tezlatish uchun
-   tanlangan yangiliklarni ular navbatma-navbat bo'lishib yozadi (1-, 3-, 5-... 2-agentga, 2-, 4-... 5-agentga).
-   Draftga kim yozganini `"agent": "2"` yoki `"5"` qilib qo'shing.
-6. **6-agent, qayta ishlash:** `redo` ni faqat 6-agent bajaradi (`REDO_AGENT` qoidasi), draftga `"agent": "6"`.
-   **Qayta ishlash:** `redo` dagi har birining `redo_mode` iga qarab `previous_draft` ni qayta yozing
+5a. **Yozuvchilar jamoasi (2-, 5-, 6-agent):** uchalasi bitta uslub va bitta qoidalar (`WRITE`) bilan
+   ishlaydi va yangi postlarni ham, qayta ishlashni ham birga bajaradi. Ishni navbatma-navbat bo'lishadi:
+   avval `redo`, keyin yangi postlar ro'yxati bo'yicha 2 → 5 → 6 → 2 ... tartibida. Har bir draftga kim
+   yozganini `"agent": "2"`, `"5"` yoki `"6"` qilib qo'shing.
+6. **Qayta ishlash:** `redo` dagi har birining `redo_mode` iga qarab `previous_draft` ni qayta yozing
    (faktlar o'zgarmaydi), `agents/writer.py` dagi `REDO_TASKS` bo'yicha:
    - `improve` — ancha yaxshiroq variant (kuchliroq sarlavha, aniqroq faktlar);
    - `formal` — rasmiyroq, rasmiy-ishchan uslubda, so'zlashuv va ortiqcha emojisiz;

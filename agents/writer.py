@@ -92,9 +92,8 @@ REDO_TASKS = {
 }
 
 
-# 6-agent: faqat qayta ishlash ("🔄 Qayta ishlash" tugmasi). Avvalgi variantning kamchiliklarini aniqlab,
-# REDO_TASKS dagi tanlov bo'yicha qayta yozadi.
-REDO_AGENT = ("6-agent (qayta ishlash): avval oldingi variantning kamchiliklarini aniqlang (zaif sarlavha, ortiqcha"
+# Yozuvchilar jamoasi (2-, 5-, 6-agent) qayta ishlashda: avval kamchiliklarni topib, keyin tuzatadi.
+REDO_AGENT = ("Qayta ishlash: avval oldingi variantning kamchiliklarini aniqlang (zaif sarlavha, ortiqcha"
               " so'z, yashirin qolgan muhim fakt, noto'g'ri tartib), keyin ularni tuzatib, egasi tanlagan usulda yozing.")
 
 
