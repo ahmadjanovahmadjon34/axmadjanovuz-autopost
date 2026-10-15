@@ -78,7 +78,9 @@ export default {
         return new Response("ok");
       }
       await env.QUEUE.put(`u:${String(u.update_id).padStart(12, "0")}`, JSON.stringify(u), { expirationTtl: 259200 });
-      if (u.callback_query || u.message) await dispatch(env);
+      // Guruh izohlari navbatda kutadi (keyingi rejali ishda olinadi), GitHub daqiqalarini tejash uchun
+      // ishni faqat tugma bosilganda yoki botga shaxsiy xabar kelganda darhol ishga tushiramiz.
+      if (u.callback_query || (u.message && u.message.chat && u.message.chat.type === "private")) await dispatch(env);
       return new Response("ok");
     }
 
