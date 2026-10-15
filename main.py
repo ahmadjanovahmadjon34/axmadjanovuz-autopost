@@ -14,6 +14,7 @@ import hashlib
 import html
 import json
 import os
+import re
 from pathlib import Path
 import sys
 
@@ -114,19 +115,60 @@ def _local(iso):
     return f"<b>{t.astimezone(TASHKENT):%d.%m %H:%M}</b> ({ago})"
 
 
+def _today(ts):
+    """ts Toshkent vaqti bo'yicha bugungi kunga to'g'ri keladimi."""
+    if not ts:
+        return False
+    t = datetime.fromisoformat(ts)
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return t.astimezone(TASHKENT).date() == utcnow().astimezone(TASHKENT).date()
+
+
 def status_text(store):
-    """"🔄 Yangilash" tugmasi: agentlar oxirgi marta qachon ishlagani."""
+    """"🔄 Yangilash" tugmasi: loyiha bo'yicha to'liq hisobot."""
     collected = _local(store.get("last_collect"))
     analysed = _local(store.get("last_analysis"))
-    waiting = len(store.by_status("drafted")) + len(store.by_status("redo"))
-    lines = ["🔄 <b>Holat</b> (Toshkent vaqti)", ""]
-    lines.append(f"🔎 1-agent yangiliklarni oxirgi marta izladi: {collected or 'hali yo‘q'}"
+    lines = ["📊 <b>Hisobot</b> (Toshkent vaqti)", ""]
+
+    lines.append("🔎 <b>Yangiliklar</b>")
+    lines.append(f"1-agent oxirgi marta izladi: {collected or 'hali yo‘q'}"
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
-    lines.append(f"✍️ Yozuvchilar jamoasi (2-, 5-, 6-agent) va 3-agent oxirgi marta ishladi: {analysed or 'hali yo‘q'}")
-    lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
+    lines.append(f"Yozuvchilar (2-, 5-, 6-agent) va 3-agent oxirgi marta tahlil qildi: {analysed or 'hali yo‘q'}")
+    lines.append(f"Navbatdagi tahlil {next_analysis(quick=True)}")
+
+    drafts = sorted(store.by_status("drafted") + store.by_status("redo"), key=lambda i: i.get("drafted_at") or "")
+    lines += ["", f"📋 <b>Qoralamalar: {len(drafts)} ta</b> qaroringizni kutmoqda"]
+    for i in drafts[-8:]:
+        first = re.sub(r"<[^>]+>", "", (i.get("draft") or i.get("title") or "").strip().split("\n")[0]).strip()
+        first = html.escape(first[:70] + ("…" if len(first) > 70 else ""), quote=False)
+        mark = " (qayta yozilmoqda)" if i["status"] == "redo" else ""
+        lines.append(f"• {first or 'nomsiz'}{mark}")
+    if len(drafts) > 8:
+        lines.append(f"…va yana {len(drafts) - 8} ta")
+
+    comments = store.comments_all()
+    answered = [c for c in comments if c["status"] == "answered"]
+    when = lambda c: c.get("answered_at") or c.get("created") or ""
+    last = max(answered, key=when) if answered else None
+    lines += ["", "💬 <b>Izohlar</b>"]
+    lines.append(f"Bugun javob yozildi: {sum(_today(when(c)) for c in answered)} ta (jami {len(answered)} ta)")
+    lines.append(f"Oxirgi javob: {_local(when(last)) if last else 'hali yo‘q'}")
+    lines.append(f"Javob kutayotgan izohlar: {sum(c['status'] == 'new' for c in comments)} ta")
+    failed = sum(c["status"] == "failed" and _today(c.get("created")) for c in comments)
+    if failed:
+        lines.append(f"Bugun yetib bormagan javoblar: {failed} ta (odatda izoh o'chirilgan bo'ladi)")
+
+    posted = [i for i in store.by_status("posted") if i.get("posted_at")]
+    lastp = max(posted, key=lambda i: i["posted_at"]) if posted else None
     by = {a: int(store.get(f"posted_by_{a}", 0)) for a in ("2", "5", "6")}
-    lines += ["", f"📤 Kanalga chiqqan postlar: 2-agent {by['2']}, 5-agent {by['5']}, 6-agent {by['6']}"]
-    lines += ["", f"1-agent har 5 daqiqada izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
+    lines += ["", "📤 <b>Kanalga chiqqan postlar</b>"]
+    lines.append(f"Bugun: {sum(_today(i['posted_at']) for i in posted)} ta, jami: {len(posted)} ta")
+    lines.append(f"Oxirgi post: {_local(lastp['posted_at']) if lastp else 'hali yo‘q'}")
+    lines.append(f"Mualliflar: 2-agent {by['2']}, 5-agent {by['5']}, 6-agent {by['6']}")
+    rejected = sum(_today(i.get("drafted_at")) for i in store.by_status("rejected"))
+    if rejected:
+        lines.append(f"Bugun keraksiz deb topilgan qoralamalar: {rejected} ta")
     return "\n".join(lines)
 
 
@@ -339,7 +381,7 @@ def ingest_inbox(store, bot, chat):
             try:
                 bot.call("sendMessage", chat_id=c["chat_id"], text=r["reply"], parse_mode="HTML",
                          reply_parameters={"message_id": c["message_id"]}, link_preview_options={"is_disabled": True})
-                store.set_comment(c["id"], status="answered", reply=r["reply"])
+                store.set_comment(c["id"], status="answered", reply=r["reply"], answered_at=utcnow().isoformat())
             except RuntimeError as e:
                 store.set_comment(c["id"], status="failed", reply=str(e)[:300])
                 print(f"Izohga javob berib bo'lmadi: {e}")

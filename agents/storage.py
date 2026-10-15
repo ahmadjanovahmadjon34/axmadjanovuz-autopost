@@ -33,6 +33,8 @@ class Store:
         for col, typ in EXTRA_COLUMNS.items():
             if col not in have:
                 self.db.execute(f"ALTER TABLE items ADD COLUMN {col} {typ}")
+        if "answered_at" not in {r["name"] for r in self.db.execute("PRAGMA table_info(comments)")}:
+            self.db.execute("ALTER TABLE comments ADD COLUMN answered_at TEXT")
         self.db.commit()
 
     @staticmethod
@@ -112,6 +114,9 @@ class Store:
     def comment(self, cid):
         r = self.db.execute("SELECT * FROM comments WHERE id=?", (cid,)).fetchone()
         return dict(r) if r else None
+
+    def comments_all(self):
+        return [dict(r) for r in self.db.execute("SELECT * FROM comments")]
 
     def set_comment(self, cid, **fields):
         cols = ", ".join(f"{k}=?" for k in fields)
