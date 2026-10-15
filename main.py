@@ -86,7 +86,7 @@ def handle_updates(cfg, store, bot):
                 bot.say(chat, f"⚠️ Xato: {e}"[:1000])
             continue
         if msg and msg.get("chat", {}).get("type") in ("group", "supergroup"):
-            on_group_message(store, msg)
+            on_group_message(cfg, store, bot, msg)
             continue
         cb = u.get("callback_query")
         if not cb:
@@ -139,8 +139,19 @@ def next_analysis(quick=False):
     return f"soat {t:%H:%M} da"
 
 
-def on_group_message(store, msg):
+def on_group_message(cfg, store, bot, msg):
     """Kanal izoh guruhidagi har qanday xabar: keyingi tahlilda yozuvchilar jamoasi javob yozadi va bot avtomatik qo'yadi."""
+    if msg.get("is_automatic_forward"):
+        # kanalda yangi post chiqdi: bot izohlarda birinchi bo'lib ijtimoiy tarmoqlar tugmalarini qoldiradi
+        sc = cfg.get("social_comment")
+        if sc:
+            try:
+                bot.call("sendMessage", chat_id=msg["chat"]["id"], text=sc["text"],
+                         reply_parameters={"message_id": msg["message_id"]},
+                         reply_markup={"inline_keyboard": [[{"text": b["text"], "url": b["url"]} for b in sc["buttons"]]]})
+            except RuntimeError as e:
+                print(f"Ijtimoiy tarmoqlar izohi yuborilmadi: {e}")
+        return
     text = (msg.get("text") or msg.get("caption") or "").strip()
     sender = msg.get("from") or {}
     if not text or sender.get("is_bot") or msg.get("sender_chat") or msg.get("is_automatic_forward"):

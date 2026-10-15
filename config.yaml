@@ -96,3 +96,10 @@ keywords:
 model: "claude-sonnet-5-5"
 style_examples_file: "style_examples.txt"
 min_quality_score: 8
+
+# Kanalda yangi post chiqqanda bot izohlarda birinchi bo'lib qoldiradigan xabar
+social_comment:
+  text: "📢 Bizni barcha ijtimoiy tarmoqlarda kuzatib boring:"
+  buttons:
+    - {text: "Instagram", url: "https://www.instagram.com/axmadjanov.uz/"}
+    - {text: "Telegram", url: "https://t.me/Axmadjanovuz"}
