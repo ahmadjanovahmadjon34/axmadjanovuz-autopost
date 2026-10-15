@@ -200,18 +200,8 @@ def on_owner_message(store, bot, msg, chat):
 
 
 def publish_nodavlat(cfg, store, bot, post, media):
-    """@nodavlattalim: Axmadjanovuz imzosi o'rniga shu kanal imzosi (premium gerb bilan) qo'yiladi."""
-    sig = html.escape(cfg["signature2"], quote=False)
-    emoji_id = store.get("nodavlat_emoji_id")
-    gerb = f'<tg-emoji emoji-id="{emoji_id}">🇺🇿</tg-emoji>' if emoji_id else "🇺🇿"
-    body = post.replace(cfg["signature"], "").rstrip()
-    try:
-        bot.publish(cfg["channel2"], f"{body}\n\n{sig.format(gerb=gerb)}", media)
-    except RuntimeError:
-        if not emoji_id:
-            raise
-        # bot premium emojini ishlata olmasa, oddiy bayroq bilan chiqadi
-        bot.publish(cfg["channel2"], f"{body}\n\n{sig.format(gerb='🇺🇿')}", media)
+    """@nodavlattalim: post imzosiz chiqadi (Axmadjanovuz imzosi olib tashlanadi; kanal imzosini boshqa bot qo'yadi)."""
+    bot.publish(cfg["channel2"], post.replace(cfg["signature"], "").rstrip(), media)
 
 
 # "🔄 Qayta ishlash" ichidagi tanlovlar: tugma → routine'ga boriladigan redo_mode
