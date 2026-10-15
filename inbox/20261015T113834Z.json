@@ -1,0 +1,49 @@
+{
+ "processed_ids": [
+  "78c30549046116929042a764a377464f6afc6d0d",
+  "26158390e8e482991491e9cf8a7300874ae62b43",
+  "029c93a903436295615eba772eb83e7edfabe7b0",
+  "7c96a4e3f624e17c2239d974a84235a4eb99c18b",
+  "347ad5e1c288fb4cdeb3c638658e21afc1c8e954",
+  "9843e800db1ee467c50f2efc607664ba95823e43",
+  "45f60160b10235e0d5ec68ab2e8abc06a7929a34",
+  "da728d54f4f22f116329738f9f8ba726fcd35f4d"
+ ],
+ "drafts": [
+  {
+   "id": "9d9e6dd0d8af49c625ddd4e582f15abf9940e6ce",
+   "related": [],
+   "post": "<b>Nilufar Allabergenova Toshkent shahar prokurori o'rinbosari etib tayinlandi</b>\n\nBosh prokurorning buyrug'iga asosan adliya katta maslahatchisi <b>Nilufar Anvarovna Allabergenova</b> <b>Toshkent shahar prokurori o'rinbosari</b> lavozimiga tayinlandi.\n\nN. Allabergenova mazkur tayinlovga qadar <b>Yakkasaroy tumani hokimi</b> lavozimida faoliyat yuritgan. Bugun u ushbu lavozimdan ozod etildi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": "2"
+  },
+  {
+   "id": "26158390e8e482991491e9cf8a7300874ae62b43",
+   "related": [],
+   "post": "<b>❗️Malaka toifa sinovlari sanalari belgilandi</b>\n\nMaktabgacha, umumiy o'rta va maktabdan tashqari ta'lim pedagoglari uchun jadval:\n\n➖ <b>26-okt</b> — Informatika\n➖ <b>27–29-okt</b> — Ona tili va adabiyot, O'zbek tili\n➖ <b>30–31-okt</b> — Jismoniy tarbiya, Musiqa\n➖ <b>2–7-noy</b> — Boshlang'ich ta'lim\n➖ <b>9–10-noy</b> — Matematika; 11-noy — Fizika\n➖ <b>12–13-noy</b> — Tarix, Huquq, Tarbiya\n➖ <b>16–17-noy</b> — Rus va milliy tillar\n➖ <b>18–20-noy</b> — Chet tillari\n➖ <b>23–24-noy</b> — Biologiya, Kimyo\n➖ <b>26–27-noy</b> — Maktabgacha ta'lim\n\nToshkent shahri va viloyati o'zbek tili va adabiyoti pedagoglari <b>28-noyabr</b>da topshiradi.\n\n📌 Sinovga pasport yoki ID-karta olib boring.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": [
+     "Ba'zi fanlar (texnologiya, geografiya, psixolog va b.) joy sig'masligi uchun qisqartirildi"
+    ]
+   },
+   "redo": false,
+   "agent": "5"
+  },
+  {
+   "id": "9843e800db1ee467c50f2efc607664ba95823e43",
+   "related": [],
+   "post": "<b>❗️Yakkasaroy tumaniga yangi hokim tayinlandi</b>\n\n<b>Jumaboyev Akmal Muradovich</b> Toshkent shahri Yakkasaroy tumani hokimi lavozimiga tayinlandi.\n\n➖ <b>1987-yil</b> Toshkent viloyati Parkent tumanida tug'ilgan\n➖ Toshkent avtomobil-yo'llar institutini (<b>2011</b>) va uning magistraturasini (<b>2013</b>) tamomlagan\n➖ Yoshlar tashkilotlari va davlat boshqaruvi tizimida ishlagan\n➖ <b>2021-yildan</b> Sergeli tumani hokimining moliya-iqtisodiyot va kambag'allikni qisqartirish bo'yicha birinchi o'rinbosari bo'lgan\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ]
+}
