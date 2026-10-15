@@ -1,6 +1,6 @@
 """@Axmadjanovuz avtomatik post tizimi.
 
-  python main.py run       # asosiy (GitHub Actions har 20 daqiqada):
+  python main.py run       # asosiy (GitHub Actions har 5 daqiqada):
                            #   1) botdagi tugma bosishlarini bajaradi
                            #   2) 1-agent: yangiliklarni yig'adi
                            #   3) 2-agent: hammasini tahlil qilib, muhimlaridan post yozadi
@@ -125,7 +125,7 @@ def status_text(store):
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
     by = {a: int(store.get(f"posted_by_{a}", 0)) for a in ("2", "5", "6")}
     lines += ["", f"📤 Kanalga chiqqan postlar: 2-agent {by['2']}, 5-agent {by['5']}, 6-agent {by['6']}"]
-    lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
+    lines += ["", f"1-agent har 5 daqiqada izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
     return "\n".join(lines)
 
 

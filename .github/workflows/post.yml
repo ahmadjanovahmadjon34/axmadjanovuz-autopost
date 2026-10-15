@@ -2,10 +2,8 @@ name: Avtomatik post
 
 on:
   schedule:
-    # Kunduzi har 20 daqiqada (Toshkent 07:00–23:59, UTC 02–18), kechasi har soatda
-    # (GitHub'ning tekin daqiqalari yetishi uchun)
-    - cron: "*/20 2-18 * * *"
-    - cron: "0 19-23,0-1 * * *"
+    # Repo ochiq: daqiqalar cheksiz, shuning uchun kun bo'yi har 5 daqiqada (GitHub ruxsat bergan eng tez oraliq)
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       command:
