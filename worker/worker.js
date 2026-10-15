@@ -52,6 +52,18 @@ export default {
           callback_query_id: u.callback_query.id, text: "⏳ Qabul qilindi, 1 daqiqada bajariladi",
         });
       }
+      // Kanalda yangi post chiqdi: izohlarga darhol birinchi bo'lib ijtimoiy tarmoqlar tugmalarini qoldiramiz.
+      if (u.message && u.message.is_automatic_forward) {
+        await tg(env, "sendMessage", {
+          chat_id: u.message.chat.id, text: "📢 Bizni barcha ijtimoiy tarmoqlarda kuzatib boring:",
+          reply_parameters: { message_id: u.message.message_id },
+          reply_markup: { inline_keyboard: [[
+            { text: "Instagram", url: "https://www.instagram.com/axmadjanov.uz/" },
+            { text: "Telegram", url: "https://t.me/Axmadjanovuz" },
+          ]] },
+        });
+        return new Response("ok");
+      }
       await env.QUEUE.put(`u:${String(u.update_id).padStart(12, "0")}`, JSON.stringify(u), { expirationTtl: 259200 });
       if (u.callback_query || u.message) await dispatch(env);
       return new Response("ok");
