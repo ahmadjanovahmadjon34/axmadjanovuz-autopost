@@ -137,15 +137,8 @@ def status_text(store):
     lines.append(f"Yozuvchilar (2-, 5-, 6-agent) va 3-agent oxirgi marta tahlil qildi: {analysed or 'hali yo‘q'}")
     lines.append(f"Navbatdagi tahlil {next_analysis(quick=True)}")
 
-    drafts = sorted(store.by_status("drafted") + store.by_status("redo"), key=lambda i: i.get("drafted_at") or "")
+    drafts = store.by_status("drafted") + store.by_status("redo")
     lines += ["", f"📋 <b>Qoralamalar: {len(drafts)} ta</b> qaroringizni kutmoqda"]
-    for i in drafts[-8:]:
-        first = re.sub(r"<[^>]+>", "", (i.get("draft") or i.get("title") or "").strip().split("\n")[0]).strip()
-        first = html.escape(first[:70] + ("…" if len(first) > 70 else ""), quote=False)
-        mark = " (qayta yozilmoqda)" if i["status"] == "redo" else ""
-        lines.append(f"• {first or 'nomsiz'}{mark}")
-    if len(drafts) > 8:
-        lines.append(f"…va yana {len(drafts) - 8} ta")
 
     comments = store.comments_all()
     answered = [c for c in comments if c["status"] == "answered"]
