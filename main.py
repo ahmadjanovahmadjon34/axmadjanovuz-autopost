@@ -144,7 +144,8 @@ def on_group_message(cfg, store, bot, msg):
     if msg.get("is_automatic_forward"):
         # kanalda yangi post chiqdi: bot izohlarda birinchi bo'lib ijtimoiy tarmoqlar tugmalarini qoldiradi
         sc = cfg.get("social_comment")
-        if sc:
+        origin = ((msg.get("forward_origin") or {}).get("chat") or {}).get("username", "")
+        if sc and origin.lower() == cfg["channel"].lstrip("@").lower():
             try:
                 bot.call("sendMessage", chat_id=msg["chat"]["id"], text=sc["text"],
                          reply_parameters={"message_id": msg["message_id"]},

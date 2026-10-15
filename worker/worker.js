@@ -3,6 +3,17 @@
 // sifatida yoki shu KV ichida kalit sifatida saqlanadi (o'zgaruvchi bo'lsa, u ustun).
 const KEYS = ["BOT_TOKEN", "GH_TOKEN", "HOOK_SECRET", "GH_REPO"];
 
+// Har bir kanal posti ostidagi izohga qo'yiladigan tugmalar (kanal username'i kichik harflarda).
+const SOCIAL = {
+  axmadjanovuz: [
+    { text: "Instagram", url: "https://www.instagram.com/axmadjanov.uz/" },
+    { text: "Telegram", url: "https://t.me/Axmadjanovuz" },
+  ],
+  nodavlattalim: [
+    { text: "Telegram", url: "https://t.me/nodavlattalim" },
+  ],
+};
+
 async function config(env) {
   const c = {};
   for (const k of KEYS) c[k] = env[k] || (await env.QUEUE.get(k)) || "";
@@ -53,14 +64,14 @@ export default {
         });
       }
       // Kanalda yangi post chiqdi: izohlarga darhol birinchi bo'lib ijtimoiy tarmoqlar tugmalarini qoldiramiz.
-      if (u.message && u.message.is_automatic_forward) {
+      const origin = ((u.message && u.message.is_automatic_forward && u.message.forward_origin &&
+        u.message.forward_origin.chat && u.message.forward_origin.chat.username) || "").toLowerCase();
+      const social = SOCIAL[origin];
+      if (social) {
         await tg(env, "sendMessage", {
           chat_id: u.message.chat.id, text: "📢 Bizni barcha ijtimoiy tarmoqlarda kuzatib boring:",
           reply_parameters: { message_id: u.message.message_id },
-          reply_markup: { inline_keyboard: [[
-            { text: "Instagram", url: "https://www.instagram.com/axmadjanov.uz/" },
-            { text: "Telegram", url: "https://t.me/Axmadjanovuz" },
-          ]] },
+          reply_markup: { inline_keyboard: [social] },
         });
         return new Response("ok");
       }
