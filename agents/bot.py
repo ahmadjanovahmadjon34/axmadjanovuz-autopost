@@ -116,15 +116,21 @@ class Bot:
     def keyboard(cls, item):
         rows = [[
             {"text": "🔄 Qayta ishlash", "callback_data": f"redom:{item['id']}"},
-            {"text": "✅ Kanalga yuborish", "callback_data": f"send:{item['id']}"},
+            {"text": "🗑 Keraksiz", "callback_data": f"junk:{item['id']}"},
         ]]
+        posted = (item.get("posted_to") or "").split(",")
+        rows.append([
+            {"text": "✅ Axmadjanov'ga yuborildi", "callback_data": "noop"} if "main" in posted else
+            {"text": "📤 Kanalga yuborish Axmadjanov", "callback_data": f"send:{item['id']}"},
+            {"text": "✅ Nodavlat'ga yuborildi", "callback_data": "noop"} if "nodavlat" in posted else
+            {"text": "📤 Kanalga yuborish nodavlat", "callback_data": f"sendn:{item['id']}"},
+        ])
         media = cls.media_of(item)
         if media:
             label = "🚫 Mediasiz chiqadi (qaytarish)" if item.get("media_off") else f"🖼 Media bilan chiqadi ({len(media)})"
             rows.append([{"text": label, "callback_data": f"media:{item['id']}"}])
         if item.get("prev_draft"):
             rows.append([{"text": "↩️ Avvalgi variantga qaytish", "callback_data": f"back:{item['id']}"}])
-        rows.append([{"text": "🗑 Keraksiz", "callback_data": f"junk:{item['id']}"}])
         return {"inline_keyboard": rows}
 
     @staticmethod

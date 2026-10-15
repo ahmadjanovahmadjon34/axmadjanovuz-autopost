@@ -10,6 +10,7 @@
   python main.py export    # Claude routine uchun vazifa (ROUTINE.md ga qarang)
 """
 from datetime import datetime, timedelta, timezone
+import html
 import json
 import os
 from pathlib import Path
@@ -154,6 +155,12 @@ def on_owner_message(store, bot, msg, chat):
         return
     origin = msg.get("forward_origin") or {}
     oc = origin.get("chat") or {}
+    if (oc.get("username") or "").lower() == "nodavlattalim":
+        # kanal imzosidagi premium gerb: id sini eslab qolamiz
+        for e in (msg.get("entities") or []) + (msg.get("caption_entities") or []):
+            if e.get("type") == "custom_emoji":
+                store.put("nodavlat_emoji_id", e["custom_emoji_id"])
+                break
     url = f"https://t.me/{oc['username']}/{origin.get('message_id')}" if oc.get("username") else ""
     store.add({"id": item_id, "source": OWNER_SOURCE, "url": url, "title": text.strip().split("\n")[0][:200],
                "text": text, "image": None, "media": json.dumps(media), "published": utcnow().isoformat(),
@@ -161,6 +168,21 @@ def on_owner_message(store, bot, msg, chat):
     Path(".fire_routine").touch()  # GitHub Actions 2-agentni darhol chaqiradi
     bot.say(chat, f"📥 Qabul qilindi. 2-agent navbatdagi tahlilda ({next_analysis(quick=True)}) birinchi bo'lib undan post "
                   "tayyorlaydi, 3-agent tekshirgach shu yerga keladi.", menu=True)
+
+
+def publish_nodavlat(cfg, store, bot, post, media):
+    """@nodavlattalim: Axmadjanovuz imzosi o'rniga shu kanal imzosi (premium gerb bilan) qo'yiladi."""
+    sig = html.escape(cfg["signature2"], quote=False)
+    emoji_id = store.get("nodavlat_emoji_id")
+    gerb = f'<tg-emoji emoji-id="{emoji_id}">🇺🇿</tg-emoji>' if emoji_id else "🇺🇿"
+    body = post.replace(cfg["signature"], "").rstrip()
+    try:
+        bot.publish(cfg["channel2"], f"{body}\n\n{sig.format(gerb=gerb)}", media)
+    except RuntimeError:
+        if not emoji_id:
+            raise
+        # bot premium emojini ishlata olmasa, oddiy bayroq bilan chiqadi
+        bot.publish(cfg["channel2"], f"{body}\n\n{sig.format(gerb='🇺🇿')}", media)
 
 
 # "🔄 Qayta ishlash" ichidagi tanlovlar: tugma → routine'ga boriladigan redo_mode
@@ -175,18 +197,29 @@ def on_button(cfg, store, bot, cb, chat):
     if not item or action == "noop":
         bot.answer(cb["id"])
         return
-    if action == "send":
-        if item["status"] == "posted":
+    if action in ("send", "sendn"):
+        target = "main" if action == "send" else "nodavlat"
+        posted = [c for c in (item["posted_to"] or ("main" if item["status"] == "posted" else "")).split(",") if c]
+        if target in posted:
             bot.answer(cb["id"], "Allaqachon yuborilgan")
             return
-        bot.publish(cfg["channel"], item["draft"], [] if item["media_off"] else Bot.media_of(item))
-        store.set(item_id, status="posted")
+        media = [] if item["media_off"] else Bot.media_of(item)
+        if target == "main":
+            bot.publish(cfg["channel"], item["draft"], media)
+        else:
+            publish_nodavlat(cfg, store, bot, item["draft"], media)
+        posted.append(target)
+        store.set(item_id, status="posted", posted_to=",".join(posted))
         agent = json.loads(item["qc"] or "{}").get("agent")
-        if agent:
+        if agent and len(posted) == 1:
             store.put(f"posted_by_{agent}", int(store.get(f"posted_by_{agent}", 0)) + 1)
-        bot.mark(chat, msg_id, "✅ Kanalga yuborildi")
-        bot.answer(cb["id"], "Kanalga yuborildi")
-        print(f"[4-agent] Kanalga yuborildi: {item['url']}")
+        name = "Axmadjanov" if target == "main" else "Nodavlat"
+        if len(posted) == 2:
+            bot.mark(chat, msg_id, "✅ Ikkala kanalga yuborildi")
+        else:
+            bot.set_keyboard(chat, msg_id, store.item(item_id))
+        bot.answer(cb["id"], f"{name} kanaliga yuborildi")
+        print(f"[4-agent] {name} kanaliga yuborildi: {item['url']}")
     elif action == "junk":
         store.set(item_id, status="rejected")
         bot.mark(chat, msg_id, "🗑 Keraksiz deb topildi")

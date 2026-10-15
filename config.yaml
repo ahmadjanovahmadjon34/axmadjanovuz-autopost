@@ -2,6 +2,10 @@
 
 channel: "@Axmadjanovuz"          # bot shu kanalda admin bo'lishi kerak
 signature: "👉 @Axmadjanovuz"
+# ikkinchi kanal: "Kanalga yuborish nodavlat" tugmasi. Imzo Axmadjanovuz imzosi o'rniga qo'yiladi.
+# {gerb} — premium gerb emojisi (egasi kanaldan imzoli postni botga forward qilganda id avtomatik olinadi)
+channel2: "@nodavlattalim"
+signature2: "{gerb} @nodavlattalim — nodavlat oliy ta'lim muassasalari haqida rasmiy xabarlar!"
 timezone: "Asia/Tashkent"
 
 # Vaqt: har 20 daqiqada barcha yangi yangiliklar tahlil qilinadi, muhimlaridan qoralama
