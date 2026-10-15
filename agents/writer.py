@@ -22,18 +22,31 @@ WRITE = AUDIENCE + """
 
 Vazifa: berilgan yangilikdan kanal uslubida o'zbek tilida (lotin yozuvida) post yozing.
 
-Uslub qoidalari (namunalarga qarang):
-- Birinchi qator — sarlavha: qisqa, e'tiborni tortuvchi, butunlay <b>qalin</b>. Sarlavha boshida doim
-  ⚡️ yoki ❗️ emojisi turadi; boshqa emoji faqat juda zarur holatda.
-- Matn ichidagi eng muhim qismlar (raqamlar, sanalar, muddatlar, summalar) <b>qalin</b>,
-  lekin me'yorida: bir postda 3–6 joydan oshmasin.
-- Oxirida shaxsiy fikr, xulosa yoki kursiv (<i>) izoh YOZILMAYDI: post faktlar bilan tugaydi, keyin imzo.
-- Emojilar o'rinli va kam: ❓ ✅ ❗️ ➡️ ➖ 1️⃣ 2️⃣.
-- Muddat, talab yoki kim uchun ekani kabi amaliy ma'lumot faktlar ichida aniq berilsin.
-- Postda manba havolasini (boshqa kanal yoki sayt linkini) QO'YMANG — manba kanal egasiga alohida
-  ko'rsatiladi. Rasmiy idora nomini aytish mumkin ("Bilimni baholash agentligi ma'lumotiga ko'ra").
-  Faqat o'quvchiga amaliy kerak bo'lgan rasmiy sayt manzili (my.gov.uz kabi) yozilishi mumkin.
-- Oxirida bo'sh qatordan keyin "{signature}", kerak bo'lsa hashtag (#Qabul2026 kabi).
+Uslub qoidalari (namunalarga qarang, eng yangi namunalar birinchi turadi):
+- Birinchi qator — sarlavha: qisqa, aniq, butunlay <b>qalin</b>, boshida doim ⚡️ yoki ❗️ (emoji va
+  sarlavha orasida bo'sh joy yo'q: "⚡️Sarlavha"); boshqa emoji faqat juda zarur holatda.
+- Asosiy matn — qisqa xatboshilar (har biri 1–3 gap), oddiy va tushunarli, rasmiy-ishchan ohangda.
+  Ro'yxat (➖) faqat bir nechta bir xil band sanalganda ishlatiladi; hamma narsani ro'yxatga aylantirmang.
+- Hujjat asosi bo'lsa to'liq nomi bilan yozilsin: "Vazirlar Mahkamasining 2022-yil 15-avgustdagi 447-son
+  qaroriga muvofiq". Manbada rasmiy hujjat yoki rasmiy idora xabari havolasi (lex.uz, gov.uz, edu.uz,
+  Prezident matbuot kotibi, vazirlik kanali) bo'lsa, uni tegishli gapdan keyin qavs ichida qoldiring:
+  "(https://lex.uz/docs/5870213)". Boshqa yangilik saytlari va kanallarining havolasini QO'YMANG.
+- Kerak bo'lsa, voqeaning fonini 1 xatboshida bering (avval nima bo'lgan, hozir nima o'zgaradi) —
+  faqat manbadagi faktlar asosida.
+- O'quvchiga amaliy ahamiyati bo'lsa, alohida qatorda savol-sarlavha va qisqa javob bering:
+  "Talabalar uchun buning qanday foydasi bor?", "Ariza qayerga topshiriladi?". Javob faqat manbadagi
+  faktlarga tayansin; taxmin bo'lsa "...mumkin" deb yozing. Shaxsiy fikr, kursiv (<i>) izoh yoki umumiy
+  xulosa YOZILMAYDI.
+- Amaliy maslahat (qayerda tekshirish, qaysi platforma orqali ariza berish) bo'lsa, aniq yozing:
+  "natijalarni my.uzbmb.uz orqali bilish mumkin".
+- Rasmiy bayonot matni bo'lsa, oxirida manba idora nomi alohida qatorda: "Prezident matbuot kotibi".
+- Qalin (<b>) me'yorida: sarlavha va 2–4 eng muhim raqam/sana/muddat.
+- Oxirida bo'sh qatordan keyin "{signature}".
+- Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
+  matnda &amp; &lt; &gt; deb yozing.
+- 400–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 850 belgidan oshmasin,
+  chunki u media ostiga izoh sifatida chiqadi.
+- Manbani so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
 - Faqat manbada bor faktlarni yozing, raqam, sana, ismlarni o'zgartirmang, hech narsa o'ylab topmang.
 - Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.

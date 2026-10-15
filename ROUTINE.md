@@ -21,9 +21,12 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
 4. **2-agent, tahlil:** `new_items` ni to'liq o'qing. `agents/writer.py` dagi `TRIAGE` qoidalari bo'yicha
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
 5. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
-   `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b> va boshida doim ⚡️ yoki ❗️ (boshqa emoji faqat juda zarur holatda), muhim raqam/sanalar qalin (me'yorida),
-   oxirida shaxsiy xulosa yoki kursiv izoh **yozilmaydi** (egasining talabi): post faktlar bilan tugaydi, keyin imzo. Yangilikda `media` bo'lsa (rasm/video), post 850 belgidan oshmasin —
-   u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
+   `style_examples.txt` uslubida post yozing (eng yangi namunalar birinchi): sarlavha <b>qalin</b>, boshida ⚡️ yoki ❗️,
+   matn qisqa xatboshilarda (➖ ro'yxat faqat haqiqiy ro'yxat uchun). Hujjat asosi to'liq nomi bilan
+   (masalan, "VM 2022-yil 15-avgustdagi 447-son qarori"); faqat RASMIY havola (lex.uz, gov.uz, Prezident
+   matbuot kotibi, vazirlik) qavs ichida qo'yilishi mumkin, boshqa sayt/kanal havolasi yo'q. Kerak bo'lsa
+   "Talabalar uchun buning qanday foydasi bor?" kabi savol-sarlavha va manbaga tayangan qisqa javob; amaliy
+   maslahat (qayerda tekshirish/ariza). Shaxsiy fikr, kursiv izoh **yo'q**. Media bo'lsa 850 belgidan oshmasin.
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
 5a. **Yozuvchilar jamoasi (2-, 5-, 6-agent):** uchalasi bitta uslub va bitta qoidalar (`WRITE`) bilan
