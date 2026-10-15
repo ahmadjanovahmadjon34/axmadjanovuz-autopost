@@ -140,15 +140,12 @@ def next_analysis(quick=False):
 
 
 def on_group_message(store, msg):
-    """Kanal izoh guruhidagi izoh: keyingi tahlilda yozuvchilar jamoasi javob yozadi va bot avtomatik qo'yadi."""
+    """Kanal izoh guruhidagi har qanday xabar: keyingi tahlilda yozuvchilar jamoasi javob yozadi va bot avtomatik qo'yadi."""
     text = (msg.get("text") or msg.get("caption") or "").strip()
     sender = msg.get("from") or {}
     if not text or sender.get("is_bot") or msg.get("sender_chat") or msg.get("is_automatic_forward"):
         return
     parent = msg.get("reply_to_message") or {}
-    # faqat kanal postiga yozilgan izohlar yoki botning javobiga qaytarilgan javoblar
-    if not (parent.get("is_automatic_forward") or (parent.get("from") or {}).get("is_bot")):
-        return
     chat_id = str(msg["chat"]["id"])
     store.add_comment({"id": f"{chat_id}:{msg['message_id']}", "chat_id": chat_id, "message_id": msg["message_id"],
                        "author": sender.get("first_name", ""), "text": text[:2000],
@@ -338,7 +335,6 @@ def ingest_inbox(store, bot, chat):
                 bot.call("sendMessage", chat_id=c["chat_id"], text=r["reply"], parse_mode="HTML",
                          reply_parameters={"message_id": c["message_id"]}, link_preview_options={"is_disabled": True})
                 store.set_comment(c["id"], status="answered", reply=r["reply"])
-                bot.say(chat, f"💬 Izohga javob berildi\n\n{c['author']}: {c['text'][:300]}\n\n↪️ {r['reply'][:600]}")
             except RuntimeError as e:
                 store.set_comment(c["id"], status="failed", reply=str(e)[:300])
                 print(f"Izohga javob berib bo'lmadi: {e}")

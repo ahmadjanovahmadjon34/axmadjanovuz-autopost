@@ -9,8 +9,8 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    Fayl: `new_items` (tahlil qilinmagan yangiliklar), `redo` (egasi "Qayta ishlash" bosgan qoralamalar),
    `recent_posts` (takrorlamaslik uchun), `signature`, `avg_posts_per_day`, `max_drafts`, `min_quality_score`.
 2. Hech narsa bo'lmasa (`new_items`, `redo` va `comments` bo'sh) — hech narsa commit qilmay to'xtang.
-2a. **Izohlarga javob (avtomatik, egasi tanlagan):** `comments` — kanal izoh guruhidagi izohlar (`text`,
-   `post` = qaysi post ostida). Har biriga yozuvchilar jamoasi qisqa, xushmuomala, o'zbek tilida (lotin) javob
+2a. **Izohlarga javob (avtomatik, egasi tanlagan):** `comments` — kanal izoh guruhidagi barcha xabarlar (`text`,
+   `post` = qaysi post yoki xabarga javob, bo'sh bo'lishi mumkin). Har biriga yozuvchilar jamoasi qisqa, xushmuomala, o'zbek tilida (lotin) javob
    yozadi: faqat postdagi yoki aniq ma'lum rasmiy faktlar asosida, hech narsa o'ylab topilmaydi; bilinmasa
    qayerdan aniqlash mumkinligini (rasmiy sayt/idora) ayting. Haqorat, reklama, spam, "rahmat"/salomlashish
    kabi javob talab qilmaydiganlariga `"reply": ""` (javobsiz). Inbox'ga: `"comment_replies": [{"id": "...", "reply": "..."}]`
