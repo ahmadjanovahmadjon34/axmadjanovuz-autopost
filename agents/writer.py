@@ -92,11 +92,6 @@ REDO_TASKS = {
 }
 
 
-# 5-agent: 2-agentning raqibi. Xuddi shu qoidalar, lekin boshqacha yondashuv: o'quvchiga foydasini
-# birinchi qatorda aytadi, sarlavhani savol yoki aniq raqam bilan quradi, matnni qisqaroq va lo'ndaroq yozadi.
-RIVAL_APPROACH = ("Yondashuv (5-agent): o'quvchi uchun eng muhim narsa (kimga, qancha, qachongacha) sarlavha va birinchi"
-                  " jumlada bo'lsin; sarlavha savol yoki aniq raqam bilan; matn qisqa va lo'nda, har bir qator yangi fakt.")
-
 # 6-agent: faqat qayta ishlash ("🔄 Qayta ishlash" tugmasi). Avvalgi variantning kamchiliklarini aniqlab,
 # REDO_TASKS dagi tanlov bo'yicha qayta yozadi.
 REDO_AGENT = ("6-agent (qayta ishlash): avval oldingi variantning kamchiliklarini aniqlang (zaif sarlavha, ortiqcha"

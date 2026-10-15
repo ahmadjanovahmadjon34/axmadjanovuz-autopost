@@ -119,11 +119,8 @@ def status_text(store):
                  + (f", {store.get('last_collect_added', 0)} ta yangi topildi" if collected else ""))
     lines.append(f"✍️ 2-, 3-, 5-agent oxirgi qoralamalarni yozdi: {analysed or 'hali yo‘q'}")
     lines.append(f"📋 Qaroringizni kutayotgan qoralamalar: {waiting} ta")
-    duel = {a: (int(store.get(f"won_by_{a}", 0)), int(store.get(f"posted_by_{a}", 0))) for a in ("2", "5", "6")}
-    lines += ["", "🏁 <b>Bellashuv</b> (3-agent tanlagan / siz kanalga chiqargan):",
-              f"✍️ 2-agent: {duel['2'][0]} / {duel['2'][1]}",
-              f"✍️ 5-agent: {duel['5'][0]} / {duel['5'][1]}",
-              f"♻️ 6-agent (qayta ishlash): kanalga chiqqan {duel['6'][1]}"]
+    by = {a: int(store.get(f"posted_by_{a}", 0)) for a in ("2", "5", "6")}
+    lines += ["", f"📤 Kanalga chiqqan postlar: 2-agent {by['2']}, 5-agent (yordamchi) {by['5']}, 6-agent (qayta ishlash) {by['6']}"]
     lines += ["", f"1-agent kunduzi har 20 daqiqada, kechasi har soatda izlaydi; 2-3-agent har 15 daqiqada tahlil qiladi (navbatdagisi {next_analysis(quick=True)})."]
     return "\n".join(lines)
 
@@ -284,12 +281,9 @@ def ingest_inbox(store, bot, chat):
                     or (item["status"] == "rejected" and not d.get("revive")):
                 continue
             qc = d.get("qc") or {}
-            for k in ("agent", "rival_agent", "rival_score"):
+            for k in ("agent",):
                 if d.get(k) is not None:
                     qc[k] = d[k]
-            if d.get("agent") in ("2", "5") and d.get("rival_score") is not None:
-                # 2- va 5-agent bellashuvi: 3-agent kimning variantini tanlagani hisoblanadi
-                store.put(f"won_by_{d['agent']}", int(store.get(f"won_by_{d['agent']}", 0)) + 1)
             qc["issues"] = rule_check(d["post"], bool(Bot.media_of(item)), item["url"]) + qc.get("issues", [])
             fields = dict(draft=d["post"], qc=json.dumps(qc, ensure_ascii=False))
             if d.get("related"):

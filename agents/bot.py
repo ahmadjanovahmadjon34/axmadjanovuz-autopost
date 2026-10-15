@@ -148,8 +148,6 @@ class Bot:
         text = f"\n\n— — — — —\n🧾 {html.escape(item['url'] or item['source'])}\n🔎 Sifat: {qc.get('score', '?')}/10"
         if qc.get("agent"):
             text += f"\n✍️ {qc['agent']}-agent yozdi"
-            if qc.get("rival_score") is not None:
-                text += f" (raqibi {qc.get('rival_agent', '?')}-agent: {qc['rival_score']}/10)"
         issues = qc.get("issues") or []
         if issues and not short:
             text += "\n⚠️ " + html.escape("; ".join(issues))[:400]
