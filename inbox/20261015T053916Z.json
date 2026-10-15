@@ -1,0 +1,25 @@
+{
+ "processed_ids": [
+  "4abbbb0b673592ddff50456a8d200cdd65fd874f",
+  "f85cd3a5a0eb5e64cb69b2fab81ff2816e3be094",
+  "db468aa08f5fef38ed99770a2a6ef588a95225d5",
+  "01582b2a47fe3a36cd1cf1443a49a9f2e8727442",
+  "2882e74d35dab09e3442ba054fb8114432ef2641",
+  "35deb0255c8a346dbfa19f5368e18b59e3cda179",
+  "0ebb2e9e546e4ad10a8cf8f9f177d86990f470f1"
+ ],
+ "drafts": [
+  {
+   "id": "db468aa08f5fef38ed99770a2a6ef588a95225d5",
+   "related": [],
+   "post": "<b>📋 Biznes ro‘yxatga olish boshlandi: kimlar qatnashadi?</b>\n\n<b>15-oktyabrdan</b> O‘zbekistonda biznes ro‘yxatga olinmoqda (biznes perepisi).\n\n🔹 Muddat: <b>15-oktyabr – 30-noyabr</b>\n🔹 Qamrab olinadi: <b>yuridik shaxslar, yakka tartibdagi tadbirkorlar, dehqon xo‘jaliklari, o‘zini o‘zi band qilganlar</b>\n🔹 Ro‘yxatdan o‘tmagan holda faoliyat yuritayotganlar ham ro‘yxatga olinadi\n🔹 Ro‘yxatdan <b>onlayn</b> o‘tish mumkin\n\nTadbirkor bo‘lsangiz yoki o‘zini o‘zi band qilgan bo‘lsangiz, muddatni yodda tuting.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": [
+     "onlayn platforma nomi manbada yo‘q"
+    ]
+   },
+   "redo": false
+  }
+ ]
+}
