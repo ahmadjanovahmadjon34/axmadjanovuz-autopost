@@ -3,7 +3,9 @@ bilan ko'rsatadi; ostida faqat egasi uchun manba va sifat bahosi. Kanalga faqat 
 import hashlib
 import html
 import json
+import re
 import os
+import time
 
 import httpx
 
@@ -50,9 +52,15 @@ class Bot:
 
     @staticmethod
     def _download(url):
-        r = httpx.get(url, timeout=120, follow_redirects=True)
-        r.raise_for_status()
-        return r.content
+        for attempt in range(3):
+            try:
+                r = httpx.get(url, timeout=120, follow_redirects=True)
+                r.raise_for_status()
+                return r.content
+            except httpx.HTTPError:
+                if attempt == 2:
+                    raise
+                time.sleep(3)
 
     @staticmethod
     def _file_id(msg):
@@ -154,10 +162,17 @@ class Bot:
         try:
             msg_id, file_ids = self._post(chat_id, post if separate else preview, media, self.keyboard(item))
         except (RuntimeError, httpx.HTTPError) as e:
-            # media yoki HTML xato bo'lsa ham qoralama yo'qolmasin
-            qc = {**qc, "issues": [*qc.get("issues", []), f"Yuborishda xato: {e}"[:300]]}
-            msg = self.call("sendMessage", chat_id=chat_id, text=(post + self.footer(item, qc))[:MAX_TEXT],
-                            link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
+            # media yoki HTML xato bo'lsa ham qoralama yo'qolmasin: avval mediasiz, lekin formatlangan holda,
+            # u ham bo'lmasa teglarsiz oddiy matn sifatida yuboriladi
+            err = "Media yuklanmadi, mediasiz ko'rsatildi" if isinstance(e, httpx.HTTPError) else f"Yuborishda xato: {e}"
+            qc = {**qc, "issues": [*qc.get("issues", []), err[:200]]}
+            text = (post + self.footer(item, qc))[:MAX_TEXT]
+            try:
+                msg = self.call("sendMessage", chat_id=chat_id, text=text, parse_mode="HTML",
+                                link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
+            except RuntimeError:
+                msg = self.call("sendMessage", chat_id=chat_id, text=re.sub(r"</?(b|i|a)[^>]*>", "", text),
+                                link_preview_options={"is_disabled": True}, reply_markup=self.keyboard(item))
             return msg["message_id"], []
         if separate:
             self.call("sendMessage", chat_id=chat_id, text=self.footer(item, qc).strip(), parse_mode="HTML",
