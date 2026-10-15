@@ -10,7 +10,9 @@ const SOCIAL = {
     { text: "Telegram", url: "https://t.me/Axmadjanovuz" },
   ],
   nodavlattalim: [
+    { text: "Instagram", url: "https://www.instagram.com/nodavlattalim" },
     { text: "Telegram", url: "https://t.me/nodavlattalim" },
+    { text: "Veb-sayt", url: "https://nodavlattalim.uz" },
   ],
 };
 
