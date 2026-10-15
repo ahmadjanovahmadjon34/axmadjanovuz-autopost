@@ -2,3 +2,4 @@
 out/
 __pycache__/
 .fire_routine
+data.db

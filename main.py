@@ -453,8 +453,22 @@ def run(cfg, store):
         make_drafts(cfg, store, bot, chat)
 
 
+def load_state():
+    """data.db main tarixida emas, "state" branchida turadi (faqat oxirgi nusxa, repo kattalashmasligi uchun)."""
+    import subprocess
+    if subprocess.run(["git", "fetch", "-q", "origin", "state"], capture_output=True).returncode:
+        if not Path("data.db").exists():
+            # bo'sh baza bilan ishlab, holatni o'chirib yubormaslik uchun to'xtaymiz
+            sys.exit("state branchini olib bo'lmadi va mahalliy data.db yo'q")
+        print("state branchi topilmadi, mahalliy data.db ishlatiladi")
+        return
+    db = subprocess.run(["git", "show", "FETCH_HEAD:data.db"], capture_output=True, check=True).stdout
+    Path("data.db").write_bytes(db)
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
+    load_state()
     cfg, store = load_config(), Store()
     {"run": lambda: run(cfg, store), "collect": lambda: collect(cfg, store),
      "export": lambda: export_task(cfg, store)}[cmd]()

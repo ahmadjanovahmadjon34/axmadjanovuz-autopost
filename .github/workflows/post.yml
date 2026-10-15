@@ -44,9 +44,16 @@ jobs:
         run: |
           git config user.name "autopost-bot"
           git config user.email "autopost-bot@users.noreply.github.com"
-          git add -A data.db inbox
+          # data.db "state" branchiga yoziladi: har gal tarixsiz bitta commit, shuning uchun repo kattalashmaydi
+          if [ -f data.db ]; then
+            blob=$(git hash-object -w data.db)
+            tree=$(printf "100644 blob %s\tdata.db\n" "$blob" | git mktree)
+            commit=$(git commit-tree "$tree" -m "holat")
+            git push -q -f origin "$commit:refs/heads/state"
+          fi
+          git add -A inbox
           git diff --cached --quiet && exit 0
-          git commit -m "holat yangilandi"
+          git commit -m "inbox qayta ishlandi"
           git pull --rebase origin main
           git push
       - name: Siz yuborgan xabar uchun 2-agentni darhol chaqirish
