@@ -1,0 +1,36 @@
+{
+ "processed_ids": [
+  "dc051c13128fd360f4d1c653cfc0bfe72c5d6dc3",
+  "467273d4f4250d68f2ae500660d764c457cb616b",
+  "6c4cced704eb8fe746a7e9e2cf4426cece9a57e6",
+  "64cb6c72f8ddbf7424faf77da45d148f0d2242f2",
+  "437abfb7c0bcff87d83ccd998ccd0570a53f7fe0",
+  "6e318d0affeb656bf2f0ad82a0aff64681c43bbb",
+  "f71263aac7544b3ffa75f2dfa70bd4e017438249",
+  "69f5b15cc745fdc134ec5787c6865b3a38c4b954",
+  "27cc7d19fa342347a7e19084c0292734db4cbdca",
+  "d57437963b2ec11d06e6f106bda63fb852f7321a",
+  "3e64a0e8ee16fc3315f59aa62d3e4bd442323d5b",
+  "0353ba59e0ca287f1d19c292527e4d27c89dc040",
+  "1c829729a59162c0c44b1cb426e5f6de0fae1b5f",
+  "4645af3bb8f96ecb1aa58b87a4fe593209c02223",
+  "9eef410dd07c8bb3cb30538a26448385502f1041",
+  "d870b8f2b76e6e8c60f8f9be24805dfcc65a4297",
+  "fa66ae46854d533f672d61d8e7ab517719546ae6"
+ ],
+ "drafts": [
+  {
+   "id": "437abfb7c0bcff87d83ccd998ccd0570a53f7fe0",
+   "related": [
+    "dc051c13128fd360f4d1c653cfc0bfe72c5d6dc3",
+    "6e318d0affeb656bf2f0ad82a0aff64681c43bbb"
+   ],
+   "post": "<b>⚠️ Turkiyadagi o‘zbekistonliklar ogohlantirildi</b>\n\n<b>Istanbul, Yalova va Kojaeli</b> viloyatlarida kuchli yomg‘ir va shamol sabab <b>suv toshqini xavfi</b> bor.\n\n🔹 Istanbulda ikki kundan beri kuchli yomg‘ir yog‘moqda, ko‘chalar, yerosti yo‘laklari va uylarni suv bosgan\n🔹 Shaharda <b>sariq ogohlantirish</b> e’lon qilingan\n🔹 15-oktyabr kuni ta’lim muassasalarida <b>darslar to‘xtatildi</b>, mototsikl harakati cheklandi\n\nO‘zbekistonliklardan <b>ehtiyot choralariga rioya qilish</b> so‘raldi. Turkiyada yaqinlaringiz bo‘lsa, ularga ham yetkazing.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false
+  }
+ ]
+}
