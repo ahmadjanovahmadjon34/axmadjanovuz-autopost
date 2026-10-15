@@ -1,0 +1,32 @@
+{
+ "processed_ids": [
+  "abb43b563b98649919b6b3d5b67416ffab346206",
+  "ddb40ab0629778bb648a819ff80e04e6f89e02e9",
+  "4bf4007765c49eeec5ab4829ee3e3dab37a63fa7",
+  "510e38e81afcdf5682e7f728ccf72f429817a9c8",
+  "c2679f6213ae4f5a2f3ee84940cc2f2bc291e3b5",
+  "c62e5ff7e704831000396c1200930f774da50a46",
+  "9d9e6dd0d8af49c625ddd4e582f15abf9940e6ce",
+  "342547b53019fdc753cc1c37526690e8f532e2b7",
+  "3ca2a3ce8b298a46ed45a2d441d28503d1fb15eb",
+  "8247d4ae09f9e6caae6b0265233bc239413baedc",
+  "3a3ae5b90fa1062e85d6c2306d9ae3f893669222"
+ ],
+ "drafts": [
+  {
+   "id": "9d9e6dd0d8af49c625ddd4e582f15abf9940e6ce",
+   "related": [
+    "4bf4007765c49eeec5ab4829ee3e3dab37a63fa7",
+    "c62e5ff7e704831000396c1200930f774da50a46"
+   ],
+   "post": "⚖️ <b>Nilufar Allabergenova prokuraturaga qaytdi</b>\n\nBosh prokurorning buyrug'iga asosan adliya katta maslahatchisi <b>Nilufar Anvarovna Allabergenova</b> <b>Toshkent shahar prokurori o'rinbosari</b> lavozimiga tayinlandi.\n\n🔹 Bungacha u <b>Yakkasaroy tumani hokimi</b> bo'lib ishlagan\n🔹 Bugun hokimlik lavozimidan ozod etilgan edi\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": [
+     "Oldingi Chilonzor/Yakkasaroy qoralamasining davomi"
+    ]
+   },
+   "redo": false
+  }
+ ]
+}
