@@ -10,6 +10,7 @@
   python main.py export    # Claude routine uchun vazifa (ROUTINE.md ga qarang)
 """
 from datetime import datetime, timedelta, timezone
+import hashlib
 import html
 import json
 import os
@@ -96,7 +97,7 @@ def handle_updates(cfg, store, bot):
             bot.answer(cb["id"], "Ruxsat yo'q")
             continue
         try:
-            on_button(cfg, store, bot, cb, chat)
+            on_button(cfg, store, QuietBot(bot) if cb.get("worker") else bot, cb, chat)
         except Exception as e:
             print(f"Tugmani bajarishda xato: {e}")
             bot.say(chat, f"⚠️ Xato: {e}"[:1000])
@@ -223,7 +224,9 @@ def on_button(cfg, store, bot, cb, chat):
             bot.answer(cb["id"], "Allaqachon yuborilgan")
             return
         media = [] if item["media_off"] else Bot.media_of(item)
-        if target == "main":
+        if cb.get("worker_sent"):
+            pass  # worker kanalga allaqachon chiqardi, bu yerda faqat holat yoziladi
+        elif target == "main":
             bot.publish(cfg["channel"], item["draft"], media)
         else:
             publish_nodavlat(cfg, store, bot, item["draft"], media)
@@ -374,6 +377,39 @@ def ingest_inbox(store, bot, chat):
     send_unsent(store, bot, chat)
 
 
+def stash_all(cfg, bot, store):
+    """O'zgargan qoralamalarni worker'ga beradi (tugmalar bir soniyada ishlashi uchun)."""
+    items = store.by_status("drafted") + [i for i in store.by_status("posted") if "," not in (i["posted_to"] or "")]
+    for item in items:
+        if not item["msg_id"]:
+            continue
+        nodavlat = item["draft"].replace(cfg["signature"], "").rstrip()
+        key = hashlib.sha256(json.dumps([item["draft"], item["media"], item["media_off"], item["posted_to"],
+                                         item["prev_draft"], item["status"]]).encode()).hexdigest()[:16]
+        if store.get(f"stash:{item['id']}") == key:
+            continue
+        if bot.stash(item, {"main": item["draft"], "nodavlat": nodavlat}, Bot.keyboard(item)):
+            store.put(f"stash:{item['id']}", key)
+
+
+class QuietBot:
+    """Worker tugma ko'rinishini allaqachon o'zgartirgan: takroriy tahrir xatolari egasiga bormasin."""
+    def __init__(self, bot):
+        self._bot = bot
+
+    def __getattr__(self, name):
+        fn = getattr(self._bot, name)
+        if name not in ("set_keyboard", "mark", "answer"):
+            return fn
+
+        def quiet(*a, **k):
+            try:
+                return fn(*a, **k)
+            except RuntimeError:
+                pass
+        return quiet
+
+
 def save_sent(store, item, msg_id, file_ids):
     media = Bot.media_of(item)
     if media and len(file_ids) == len(media):
@@ -451,6 +487,7 @@ def run(cfg, store):
     if os.environ.get("ANTHROPIC_API_KEY"):
         # API kaliti bo'lsa, 2- va 3-agent shu yerda ishlaydi (aks holda Claude routine bajaradi)
         make_drafts(cfg, store, bot, chat)
+    stash_all(cfg, bot, store)
 
 
 def load_state():

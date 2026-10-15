@@ -37,6 +37,28 @@ class Bot:
         return self.call("getUpdates", offset=offset, timeout=0,
                          allowed_updates=["message", "callback_query"])
 
+    def stash(self, item, posts, keyboard):
+        """Worker'ga tayyor postni beradi: "Yuborish" bosilganda u GitHub'ni kutmasdan bir soniyada chiqaradi."""
+        worker, secret = (os.environ.get("WORKER_URL") or "").strip(), (os.environ.get("HOOK_SECRET") or "").strip()
+        if not (worker and secret):
+            return False
+        media = self.media_of(item)
+        if any(not m.get("file_id") for m in media):
+            return False  # media hali Telegram'ga yuklanmagan: bu post odatdagi yo'l bilan chiqadi
+        body = {"id": item["id"], "posts": posts, "posted_to": item.get("posted_to") or "",
+                "media": [{"type": m["type"], "file_id": m["file_id"]} for m in media],
+                "has_media": bool(media), "media_off": bool(item.get("media_off")),
+                "keyboard": keyboard}
+        try:
+            r = httpx.post(f"{worker.rstrip('/')}/stash", json=body, timeout=20,
+                           headers={"x-hook-secret": hashlib.sha256(secret.encode()).hexdigest()})
+            r.raise_for_status()
+            # eski worker bu manzilni bilmaydi va oddiy "ok" qaytaradi
+            return r.headers.get("content-type", "").startswith("application/json") and r.json().get("stored") is True
+        except (httpx.HTTPError, ValueError) as e:
+            print(f"Worker'ga tayyor post berilmadi: {e}")
+            return False
+
     def ensure_webhook(self, worker, secret):
         url = f"{worker.rstrip('/')}/tg"
         # Telegram parolni qaytarib bermaydi, shuning uchun parol o'zgarsa ham mos kelishi uchun har safar o'rnatiladi.
