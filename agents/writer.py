@@ -23,7 +23,8 @@ WRITE = AUDIENCE + """
 Vazifa: berilgan yangilikdan kanal uslubida o'zbek tilida (lotin yozuvida) post yozing.
 
 Uslub qoidalari (namunalarga qarang):
-- Birinchi qator — sarlavha: qisqa, e'tiborni tortuvchi (savol yoki ❗️ bilan), butunlay <b>qalin</b>.
+- Birinchi qator — sarlavha: qisqa, e'tiborni tortuvchi, butunlay <b>qalin</b>. Sarlavha boshida doim
+  ⚡️ yoki ❗️ emojisi turadi; boshqa emoji faqat juda zarur holatda.
 - Matn ichidagi eng muhim qismlar (raqamlar, sanalar, muddatlar, summalar) <b>qalin</b>,
   lekin me'yorida: bir postda 3–6 joydan oshmasin.
 - Oxirida shaxsiy fikr, xulosa yoki kursiv (<i>) izoh YOZILMAYDI: post faktlar bilan tugaydi, keyin imzo.
@@ -79,6 +80,18 @@ def select_news(cfg, items, recent):
     return out[:cap]
 
 
+# "🔄 Qayta ishlash" ichidagi tanlovlar (redo_mode)
+REDO_TASKS = {
+    "improve": ("Kanal egasi buni qayta ishlashni so'radi. Ancha yaxshiroq variant yozing: sarlavhani kuchliroq,"
+                " faktlarni aniqroq va o'quvchi uchun foydaliroq joylashtiring, faktlarni saqlang."),
+    "formal": ("Kanal egasi postni rasmiyroq qilishni so'radi. Rasmiy-ishchan uslubda qayta yozing: so'zlashuv"
+               " iboralari, undovlar va ortiqcha emojisiz, aniq va vazmin jumlalar bilan. Faktlarni saqlang."),
+    "no_emoji": ("Kanal egasi postni emojisiz qilishni so'radi. Matn va faktlarni saqlab, sarlavha va matndagi"
+                 " barcha emojilarni olib tashlang (ro'yxat belgisi kerak bo'lsa \"—\" ishlating)."
+                 " Faqat oxiridagi imzo o'zgarmaydi."),
+}
+
+
 def write_post(cfg, item, related=(), feedback=None, previous=None, improve=False):
     system = WRITE.format(topics=", ".join(cfg["topics"]), signature=cfg["signature"],
                           examples=load_examples(cfg["style_examples_file"]))
@@ -86,9 +99,7 @@ def write_post(cfg, item, related=(), feedback=None, previous=None, improve=Fals
     if related:
         user += "\n\nShu voqea haqida boshqa manbalar:\n" + "\n\n".join(_fmt(i + 1, r, 1500) for i, r in enumerate(related))
     if previous and improve:
-        user += (f"\n\nOldingi variant:\n{previous}\n\nKanal egasi buni qayta ishlashni so'radi. Ancha yaxshiroq"
-                 " variant yozing: sarlavhani kuchliroq, faktlarni aniqroq va o'quvchi uchun foydaliroq joylashtiring,"
-                 " faktlarni saqlang.")
+        user += f"\n\nOldingi variant:\n{previous}\n\n" + REDO_TASKS.get(improve, REDO_TASKS["improve"])
     if feedback:
         user += f"\n\nOldingi variant:\n{previous}\n\nSifat nazoratchisi e'tirozlari, tuzatib qayta yozing:\n{feedback}"
     return ask_json(cfg["model"], system, user, max_tokens=3000).get("post", "")

@@ -15,13 +15,16 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
 4. **2-agent, tahlil:** `new_items` ni to'liq o'qing. `agents/writer.py` dagi `TRIAGE` qoidalari bo'yicha
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
 5. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
-   `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b>, muhim raqam/sanalar qalin (me'yorida),
+   `style_examples.txt` uslubida post yozing: sarlavha <b>qalin</b> va boshida doim ⚡️ yoki ❗️ (boshqa emoji faqat juda zarur holatda), muhim raqam/sanalar qalin (me'yorida),
    oxirida shaxsiy xulosa yoki kursiv izoh **yozilmaydi** (egasining talabi): post faktlar bilan tugaydi, keyin imzo. Yangilikda `media` bo'lsa (rasm/video), post 850 belgidan oshmasin —
    u media ostida izoh bo'lib chiqadi. Postga manba havolasini qo'ymang (manba egasiga alohida ko'rsatiladi).
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
-6. **Qayta ishlash:** `redo` dagi har biri uchun `previous_draft` dan ancha yaxshiroq variant yozing
-   (kuchliroq sarlavha, aniqroq faktlar, faktlar o'zgarmaydi).
+6. **Qayta ishlash:** `redo` dagi har birining `redo_mode` iga qarab `previous_draft` ni qayta yozing
+   (faktlar o'zgarmaydi), `agents/writer.py` dagi `REDO_TASKS` bo'yicha:
+   - `improve` — ancha yaxshiroq variant (kuchliroq sarlavha, aniqroq faktlar);
+   - `formal` — rasmiyroq, rasmiy-ishchan uslubda, so'zlashuv va ortiqcha emojisiz;
+   - `no_emoji` — emojisiz: sarlavha va matnda emoji yo'q, faqat imzo qoladi.
 7. **3-agent, sifat nazorati:** har bir postni `agents/reviewer.py` dagi `SYSTEM` mezonlari bo'yicha manba bilan
    solishtirib 10 ballik baho bering. `min_quality_score` dan past bo'lsa tuzating va qayta baholang
    (3 urinish). Telegram HTML faqat `<b> <a href>`; oxirida `signature` bo'lsin.

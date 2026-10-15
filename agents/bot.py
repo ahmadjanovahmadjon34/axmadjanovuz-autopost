@@ -107,7 +107,7 @@ class Bot:
     @classmethod
     def keyboard(cls, item):
         rows = [[
-            {"text": "🔄 Qayta ishlash", "callback_data": f"redo:{item['id']}"},
+            {"text": "🔄 Qayta ishlash", "callback_data": f"redom:{item['id']}"},
             {"text": "✅ Kanalga yuborish", "callback_data": f"send:{item['id']}"},
         ]]
         media = cls.media_of(item)
@@ -119,8 +119,20 @@ class Bot:
         rows.append([{"text": "🗑 Keraksiz", "callback_data": f"junk:{item['id']}"}])
         return {"inline_keyboard": rows}
 
-    def set_keyboard(self, chat_id, msg_id, item):
-        self.call("editMessageReplyMarkup", chat_id=chat_id, message_id=msg_id, reply_markup=self.keyboard(item))
+    @staticmethod
+    def redo_keyboard(item):
+        """"🔄 Qayta ishlash" bosilganda chiqadigan tanlovlar."""
+        i = item["id"]
+        return {"inline_keyboard": [
+            [{"text": "🎩 Rasmiyroq", "callback_data": f"redof:{i}"},
+             {"text": "🚫 Emojisiz", "callback_data": f"redop:{i}"}],
+            [{"text": "🔄 Qayta ishlash", "callback_data": f"redo:{i}"}],
+            [{"text": "⬅️ Orqaga", "callback_data": f"kb:{i}"}],
+        ]}
+
+    def set_keyboard(self, chat_id, msg_id, item, keyboard=None):
+        self.call("editMessageReplyMarkup", chat_id=chat_id, message_id=msg_id,
+                  reply_markup=keyboard or self.keyboard(item))
 
     @staticmethod
     def footer(item, qc, short=False):

@@ -161,6 +161,10 @@ def on_owner_message(store, bot, msg, chat):
                   "tayyorlaydi, 3-agent tekshirgach shu yerga keladi.", menu=True)
 
 
+# "🔄 Qayta ishlash" ichidagi tanlovlar: tugma → routine'ga boriladigan redo_mode
+REDO_MODES = {"redo": "improve", "redof": "formal", "redop": "no_emoji"}
+
+
 def on_button(cfg, store, bot, cb, chat):
     """Tugma: "send" — kanalga chiqarish, "redo" — qayta ishlash."""
     action, _, item_id = cb.get("data", "").partition(":")
@@ -197,15 +201,21 @@ def on_button(cfg, store, bot, cb, chat):
         item = store.item(item_id)
         bot.set_keyboard(chat, msg_id, item)
         bot.answer(cb["id"], "Mediasiz chiqadi" if item["media_off"] else "Media bilan chiqadi")
-    elif action == "redo" and not os.environ.get("ANTHROPIC_API_KEY"):
+    elif action == "redom":
+        bot.set_keyboard(chat, msg_id, item, Bot.redo_keyboard(item))
+        bot.answer(cb["id"], "Qanday qayta ishlansin?")
+    elif action == "kb":
+        bot.set_keyboard(chat, msg_id, item)
+        bot.answer(cb["id"])
+    elif action in REDO_MODES and not os.environ.get("ANTHROPIC_API_KEY"):
         # post yozuvchi Claude routine keyingi ishga tushishida qayta yozadi
-        store.set(item_id, status="redo")
+        store.set(item_id, status="redo", redo_mode=REDO_MODES[action])
         bot.answer(cb["id"], f"Navbatga qo'yildi: {next_analysis(quick=True)} qayta yoziladi")
         bot.mark(chat, msg_id, "🔄 Qayta ishlanmoqda...")
-    elif action == "redo":
+    elif action in REDO_MODES:
         bot.answer(cb["id"], "Qayta ishlanmoqda...")
         related = [store.item(i) for i in json.loads(item["related"] or "[]")]
-        res = produce(cfg, item, [r for r in related if r], previous=item["draft"], improve=True)
+        res = produce(cfg, item, [r for r in related if r], previous=item["draft"], improve=REDO_MODES[action])
         if not res:
             bot.say(chat, "Qayta ishlab bo'lmadi, eski variant qoldi.")
             return
@@ -308,7 +318,7 @@ def export_task(cfg, store):
         if i["id"] in pending:
             continue
         related = [store.item(r) for r in json.loads(i["related"] or "[]")]
-        redo.append({**{k: i[k] for k in fields}, "previous_draft": i["draft"],
+        redo.append({**{k: i[k] for k in fields}, "previous_draft": i["draft"], "redo_mode": i["redo_mode"] or "improve",
                      "related": [{k: r[k] for k in fields} for r in related if r]})
     task = {"owner_source": OWNER_SOURCE, "new_items": items, "redo": redo, "recent_posts": store.recent_topics(),
             "signature": cfg["signature"], "avg_posts_per_day": cfg["review"]["avg_posts_per_day"],
