@@ -154,7 +154,6 @@ def on_group_message(store, msg):
                        "author": sender.get("first_name", ""), "text": text[:2000],
                        "post": (parent.get("text") or parent.get("caption") or "")[:1500],
                        "created": utcnow().isoformat()})
-    Path(".fire_routine").touch()
 
 
 def on_owner_message(store, bot, msg, chat):
