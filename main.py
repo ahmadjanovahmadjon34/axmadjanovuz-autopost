@@ -72,14 +72,14 @@ def handle_updates(cfg, store, bot):
                     store.put("owner_chat_id", chat)
                     bot.say(chat, "✅ Siz bot egasi sifatida ro'yxatdan o'tdingiz. Post qoralamalari shu yerga keladi.",
                             menu=True)
-                    store.put("menu_v1", 1)
+                    store.put("menu_v2", 1)
                 elif chat != owner_chat(store):
                     bot.say(chat, "Bu bot shaxsiy foydalanish uchun.")
                 continue
             if chat != owner_chat(store):
                 continue
             try:
-                if msg.get("text") == "🔄 Yangilash":
+                if msg.get("text") in ("📊 Hisobot", "🔄 Yangilash"):
                     bot.say(chat, status_text(store), menu=True, html_mode=True)
                 else:
                     on_owner_message(store, bot, msg, chat)
@@ -126,7 +126,7 @@ def _today(ts):
 
 
 def status_text(store):
-    """"🔄 Yangilash" tugmasi: loyiha bo'yicha to'liq hisobot."""
+    """"📊 Hisobot" tugmasi: loyiha bo'yicha to'liq hisobot."""
     collected = _local(store.get("last_collect"))
     analysed = _local(store.get("last_analysis"))
     lines = ["📊 <b>Hisobot</b> (Toshkent vaqti)", ""]
@@ -508,11 +508,11 @@ def run(cfg, store):
     store.put("last_collect", utcnow().isoformat())
     store.put("last_collect_added", added or 0)
     chat = owner_chat(store)
-    if chat and not store.get("menu_v1"):
-        bot.say(chat, "Pastda 🔄 Yangilash tugmasi paydo bo'ldi: bossangiz agentlar oxirgi marta qachon "
-                      "ishlaganini ko'rsatadi. Botga istalgan xabarni yuborsangiz yoki forward qilsangiz, "
+    if chat and not store.get("menu_v2"):
+        bot.say(chat, "Pastda 📊 Hisobot tugmasi paydo bo'ldi: bossangiz yangiliklar, qoralamalar, izohlar va "
+                      "postlar bo'yicha hisobot keladi. Botga istalgan xabarni yuborsangiz yoki forward qilsangiz, "
                       "undan post tayyorlanadi.", menu=True)
-        store.put("menu_v1", 1)
+        store.put("menu_v2", 1)
     if not chat:
         print("Egasi aniqlanmagan: botga shaxsiy chatda /start yozing.")
         return

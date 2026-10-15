@@ -227,7 +227,7 @@ class Bot:
         except RuntimeError:
             pass  # eski tugma bosilgan bo'lsa Telegram rad etadi — muhim emas
 
-    MENU = {"keyboard": [[{"text": "🔄 Yangilash"}]], "resize_keyboard": True, "is_persistent": True}
+    MENU = {"keyboard": [[{"text": "📊 Hisobot"}]], "resize_keyboard": True, "is_persistent": True}
 
     def say(self, chat_id, text, menu=False, html_mode=False):
         self.call("sendMessage", chat_id=chat_id, text=text, reply_markup=self.MENU if menu else None,
