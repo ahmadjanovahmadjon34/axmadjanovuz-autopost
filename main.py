@@ -85,6 +85,9 @@ def handle_updates(cfg, store, bot):
                 print(f"Xabarni bajarishda xato: {e}")
                 bot.say(chat, f"⚠️ Xato: {e}"[:1000])
             continue
+        if msg and msg.get("chat", {}).get("type") in ("group", "supergroup"):
+            on_group_message(store, msg)
+            continue
         cb = u.get("callback_query")
         if not cb:
             continue
@@ -134,6 +137,24 @@ def next_analysis(quick=False):
     while t <= now:
         t += timedelta(minutes=15 if quick else 60)
     return f"soat {t:%H:%M} da"
+
+
+def on_group_message(store, msg):
+    """Kanal izoh guruhidagi izoh: keyingi tahlilda yozuvchilar jamoasi javob yozadi va bot avtomatik qo'yadi."""
+    text = (msg.get("text") or msg.get("caption") or "").strip()
+    sender = msg.get("from") or {}
+    if not text or sender.get("is_bot") or msg.get("sender_chat") or msg.get("is_automatic_forward"):
+        return
+    parent = msg.get("reply_to_message") or {}
+    # faqat kanal postiga yozilgan izohlar yoki botning javobiga qaytarilgan javoblar
+    if not (parent.get("is_automatic_forward") or (parent.get("from") or {}).get("is_bot")):
+        return
+    chat_id = str(msg["chat"]["id"])
+    store.add_comment({"id": f"{chat_id}:{msg['message_id']}", "chat_id": chat_id, "message_id": msg["message_id"],
+                       "author": sender.get("first_name", ""), "text": text[:2000],
+                       "post": (parent.get("text") or parent.get("caption") or "")[:1500],
+                       "created": utcnow().isoformat()})
+    Path(".fire_routine").touch()
 
 
 def on_owner_message(store, bot, msg, chat):
@@ -307,6 +328,21 @@ def ingest_inbox(store, bot, chat):
                     bot.delete(chat, item["msg_id"])
                 except RuntimeError:
                     pass
+        for r in data.get("comment_replies", []):
+            c = store.comment(r.get("id", ""))
+            if not c or c["status"] != "new":
+                continue
+            if not r.get("reply"):
+                store.set_comment(c["id"], status="skipped")
+                continue
+            try:
+                bot.call("sendMessage", chat_id=c["chat_id"], text=r["reply"], parse_mode="HTML",
+                         reply_parameters={"message_id": c["message_id"]}, link_preview_options={"is_disabled": True})
+                store.set_comment(c["id"], status="answered", reply=r["reply"])
+                bot.say(chat, f"💬 Izohga javob berildi\n\n{c['author']}: {c['text'][:300]}\n\n↪️ {r['reply'][:600]}")
+            except RuntimeError as e:
+                store.set_comment(c["id"], status="failed", reply=str(e)[:300])
+                print(f"Izohga javob berib bo'lmadi: {e}")
         for d in data.get("drafts", []):
             item = store.item(d["id"])
             # "revive": egasi keraksiz deb belgilagan postni qayta yuborishni so'ragan
@@ -362,6 +398,7 @@ def export_task(cfg, store):
         data = json.loads(f.read_text(encoding="utf-8"))
         pending.update(data.get("processed_ids", []))
         pending.update(d["id"] for d in data.get("drafts", []))
+        pending.update(r["id"] for r in data.get("comment_replies", []))
     fields = ("id", "source", "url", "title", "text", "published", "score", "media")
     fresh = store.new_items(cfg["schedule"]["max_age_hours"])
     # egasi yuborgan xabarlar eskirgan bo'lsa ham albatta ko'riladi
@@ -374,7 +411,9 @@ def export_task(cfg, store):
         related = [store.item(r) for r in json.loads(i["related"] or "[]")]
         redo.append({**{k: i[k] for k in fields}, "previous_draft": i["draft"], "redo_mode": i["redo_mode"] or "improve",
                      "related": [{k: r[k] for k in fields} for r in related if r]})
-    task = {"owner_source": OWNER_SOURCE, "new_items": items, "redo": redo, "recent_posts": store.recent_topics(),
+    comments = [{k: c[k] for k in ("id", "author", "text", "post")} for c in store.comments()
+                if c["id"] not in pending]
+    task = {"owner_source": OWNER_SOURCE, "new_items": items, "redo": redo, "comments": comments, "recent_posts": store.recent_topics(),
             "signature": cfg["signature"], "avg_posts_per_day": cfg["review"]["avg_posts_per_day"],
             "max_drafts": cfg["review"]["max_drafts_per_run"], "min_quality_score": cfg["min_quality_score"]}
     print(json.dumps(task, ensure_ascii=False, indent=1))
@@ -402,15 +441,15 @@ def run(cfg, store):
     if not chat:
         print("Egasi aniqlanmagan: botga shaxsiy chatda /start yozing.")
         return
-    if not store.get("kb_v2"):
-        # kutayotgan eski qoralamalarga ham 🗑 Keraksiz tugmasini qo'shamiz
+    if not store.get("kb_v3"):
+        # kutayotgan eski qoralamalarga ham yangi tugmalarni (ikki kanal, qayta ishlash tanlovlari) qo'yamiz
         for item in store.by_status("drafted"):
             if item["msg_id"]:
                 try:
                     bot.set_keyboard(chat, item["msg_id"], item)
                 except RuntimeError:
                     pass
-        store.put("kb_v2", 1)
+        store.put("kb_v3", 1)
     ingest_inbox(store, bot, chat)
     if os.environ.get("ANTHROPIC_API_KEY"):
         # API kaliti bo'lsa, 2- va 3-agent shu yerda ishlaydi (aks holda Claude routine bajaradi)

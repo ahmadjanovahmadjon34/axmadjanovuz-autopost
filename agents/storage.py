@@ -9,6 +9,10 @@ CREATE TABLE IF NOT EXISTS items (
   image TEXT, published TEXT, score REAL, status TEXT DEFAULT 'new', posted_at TEXT
 );
 CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT);
+CREATE TABLE IF NOT EXISTS comments (
+  id TEXT PRIMARY KEY, chat_id TEXT, message_id INTEGER, author TEXT, text TEXT, post TEXT,
+  status TEXT DEFAULT 'new', created TEXT, reply TEXT
+);
 """
 EXTRA_COLUMNS = {"media": "TEXT", "media_off": "INTEGER DEFAULT 0", "draft": "TEXT", "related": "TEXT", "qc": "TEXT", "msg_id": "INTEGER", "drafted_at": "TEXT",
                  "prev_draft": "TEXT", "prev_qc": "TEXT", "redo_mode": "TEXT", "posted_to": "TEXT"}
@@ -94,6 +98,24 @@ class Store:
 
     def mark_new_as(self, ids, status):
         self.db.executemany("UPDATE items SET status=? WHERE id=? AND status='new'", [(status, i) for i in ids])
+        self.db.commit()
+
+    # --- izohlar (kanal izoh guruhi) ---
+    def add_comment(self, c):
+        self.db.execute("INSERT OR IGNORE INTO comments (id, chat_id, message_id, author, text, post, created)"
+                        " VALUES (:id, :chat_id, :message_id, :author, :text, :post, :created)", c)
+        self.db.commit()
+
+    def comments(self, status="new"):
+        return [dict(r) for r in self.db.execute("SELECT * FROM comments WHERE status=? ORDER BY created", (status,))]
+
+    def comment(self, cid):
+        r = self.db.execute("SELECT * FROM comments WHERE id=?", (cid,)).fetchone()
+        return dict(r) if r else None
+
+    def set_comment(self, cid, **fields):
+        cols = ", ".join(f"{k}=?" for k in fields)
+        self.db.execute(f"UPDATE comments SET {cols} WHERE id=?", (*fields.values(), cid))
         self.db.commit()
 
     def prune(self, days=14):
