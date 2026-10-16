@@ -1,0 +1,68 @@
+{
+ "processed_ids": [
+  "a5391ce11a02706337ec11995f7605fcf5dd2c94",
+  "7f4011cdda5146b3f5f934acc991b3165767e334",
+  "3dc91db09cc11abccc0a34d9073e0d772d4cabb0",
+  "710dff4ffed5d8b5fbd4fdbce06397e0d6edaa52",
+  "0bde909353fdb0671fd3c54f5cacd748c38784ef"
+ ],
+ "drafts": [
+  {
+   "id": "710dff4ffed5d8b5fbd4fdbce06397e0d6edaa52",
+   "related": [],
+   "post": "<b>❗️4 ta fan bo‘yicha milliy sertifikatga ro‘yxatdan o‘tish boshlandi</b>\n\nBugundan <b>matematika, fizika, kimyo va biologiya</b> fanlaridan milliy sertifikat imtihonlariga ro‘yxatga olinmoqda.\n\nMuhim sanalar:\n➖ ro‘yxatdan o‘tish – <b>16–30-oktabr</b>;\n➖ to‘lov – <b>31-oktabrgacha</b> (shu kuni ham);\n➖ imtihonlar – noyabr oyida.\n\nTalabgorlar soniga <b>limit</b> qo‘yilgan, joylar 30-oktabrdan oldin ham to‘lib qolishi mumkin. Muddatida to‘lov qilmaganlarning arizasi bekor qilinadi va bo‘shagan o‘rinlarga qayta ro‘yxat ochiladi.\n\n<a href=\"https://t.me/uztdi/11550\">Manba</a>\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  },
+  {
+   "id": "7f4011cdda5146b3f5f934acc991b3165767e334",
+   "related": [
+    "9a63ed4b32e1167b4ba717b44b3ed1acb22652bf"
+   ],
+   "post": "<b>⚡️Tashqi reklama bo‘yicha tadbirkorlarga yengilliklar kiritildi</b>\n\n➖ Tadbirkor o‘z binosiga firma nomi, tovar belgisi va faoliyati haqida ma’lumot joylashtirsa, bu reklama hisoblanmaydi va <b>reklama pasporti talab qilinmaydi</b>.\n➖ Yuridik shaxslar avtomobilga tovar belgisi va faoliyati haqida yozuv joylashtirish uchun my.gov.uz orqali xabarnoma yuboradi. Pasport avtomatik shakllanadi, <b>yig‘im olinmaydi</b>.\n➖ Dizayn-kod jamoatchilik bilan muhokama qilinadi.\n\nReklama konstruksiyalarini demontaj qilish tartibi ham aniqlashtirildi: egasiga <b>2 kun oldin</b> xabar beriladi, ish ish kunlari 09:00–18:00 da bajariladi va dalolatnoma hamda fotosuratlar bilan rasmiylashtiriladi.\n\nO‘zgarishlar e’lon qilinganidan <b>3 oy</b> o‘tib kuchga kiradi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": [
+     "Rasmiy qaror raqami ko‘rsatilmagan"
+    ]
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566684",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566685",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566686",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566687",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566688",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566689",
+   "reply": "Ha, bugundan matematika, fizika, kimyo va biologiya bo‘yicha milliy sertifikatga ro‘yxat ochildi. Ro‘yxatdan o‘tish 16–30-oktabr, to‘lov 31-oktabrgacha. Joylar soni cheklangan, kechiktirmang 🙂"
+  }
+ ],
+ "reject_ids": [
+  "a5391ce11a02706337ec11995f7605fcf5dd2c94",
+  "3dc91db09cc11abccc0a34d9073e0d772d4cabb0",
+  "0bde909353fdb0671fd3c54f5cacd748c38784ef"
+ ]
+}
