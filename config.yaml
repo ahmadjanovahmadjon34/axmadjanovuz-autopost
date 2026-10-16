@@ -52,6 +52,7 @@ sources:
     - kunuzofficial
     - Daryo
     - qalampir
+    - Press_Secretary_Uz
   sites:
     - name: "Kun.uz"
       rss: "https://kun.uz/news/rss"
