@@ -290,7 +290,7 @@ def on_button(cfg, store, bot, cb, chat):
                   prev_draft=item["draft"], prev_qc=item["qc"], msg_id=None)
         bot.mark(chat, msg_id, "↩️ Avvalgi variant pastda")
         bot.answer(cb["id"], "Avvalgi variant qaytarildi")
-        send_unsent(store, bot, chat)
+        send_unsent(store, bot, chat, cfg)
     elif action == "media":
         store.set(item_id, media_off=0 if item["media_off"] else 1)
         item = store.item(item_id)
@@ -318,7 +318,7 @@ def on_button(cfg, store, bot, cb, chat):
         store.set(item_id, draft=post, qc=json.dumps(qc, ensure_ascii=False), msg_id=None,
                   prev_draft=item["draft"], prev_qc=item["qc"])
         bot.mark(chat, msg_id, "♻️ Yangi variant pastda")
-        send_unsent(store, bot, chat)
+        send_unsent(store, bot, chat, cfg)
         print(f"[2-agent] Qayta ishlandi: {item['url']}")
 
 
@@ -348,7 +348,7 @@ def make_drafts(cfg, store, bot, chat):
     store.mark_new_as(list(used), "skipped")
 
 
-def ingest_inbox(store, bot, chat):
+def ingest_inbox(cfg, store, bot, chat):
     """Claude routine (Pro obuna) yozgan qoralamalarni inbox/ dan oladi va sizga yuboradi."""
     for f in sorted(Path("inbox").glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
@@ -409,22 +409,27 @@ def ingest_inbox(store, bot, chat):
         except ValueError:
             store.put("last_analysis", utcnow().isoformat())
         f.unlink()
-    send_unsent(store, bot, chat)
+    send_unsent(store, bot, chat, cfg)
+
+
+def stash_item(cfg, bot, store, item):
+    """Bitta qoralamani worker'ga beradi. Variant almashganda tugma eski matnni chiqarmasligi uchun
+    yangi xabar ko'rinishidan oldin ham chaqiriladi."""
+    nodavlat = item["draft"].replace(cfg["signature"], "").rstrip()
+    key = hashlib.sha256(json.dumps([item["draft"], item["media"], item["media_off"], item["posted_to"],
+                                     item["prev_draft"], item["status"]]).encode()).hexdigest()[:16]
+    if store.get(f"stash:{item['id']}") == key:
+        return
+    if bot.stash(item, {"main": item["draft"], "nodavlat": nodavlat}, Bot.keyboard(item)):
+        store.put(f"stash:{item['id']}", key)
 
 
 def stash_all(cfg, bot, store):
     """O'zgargan qoralamalarni worker'ga beradi (tugmalar bir soniyada ishlashi uchun)."""
     items = store.by_status("drafted") + [i for i in store.by_status("posted") if "," not in (i["posted_to"] or "")]
     for item in items:
-        if not item["msg_id"]:
-            continue
-        nodavlat = item["draft"].replace(cfg["signature"], "").rstrip()
-        key = hashlib.sha256(json.dumps([item["draft"], item["media"], item["media_off"], item["posted_to"],
-                                         item["prev_draft"], item["status"]]).encode()).hexdigest()[:16]
-        if store.get(f"stash:{item['id']}") == key:
-            continue
-        if bot.stash(item, {"main": item["draft"], "nodavlat": nodavlat}, Bot.keyboard(item)):
-            store.put(f"stash:{item['id']}", key)
+        if item["msg_id"]:
+            stash_item(cfg, bot, store, item)
 
 
 class QuietBot:
@@ -453,8 +458,11 @@ def save_sent(store, item, msg_id, file_ids):
     store.set(item["id"], msg_id=msg_id)
 
 
-def send_unsent(store, bot, chat):
+def send_unsent(store, bot, chat, cfg):
     for item in store.unsent_drafts():
+        # worker'dagi eski variantni xabar chiqishidan oldin almashtiramiz: aks holda "Yuborish" darhol
+        # bosilsa, worker hali eski (masalan, qayta ishlangan) matnni kanalga chiqarib yuboradi
+        stash_item(cfg, bot, store, item)
         save_sent(store, item, *bot.send_draft(chat, item, item["draft"], json.loads(item["qc"] or "{}")))
         print(f"[4-agent] Qoralama yuborildi: {item['url']}")
 
@@ -518,7 +526,7 @@ def run(cfg, store):
                 except RuntimeError:
                     pass
         store.put("kb_v3", 1)
-    ingest_inbox(store, bot, chat)
+    ingest_inbox(cfg, store, bot, chat)
     if os.environ.get("ANTHROPIC_API_KEY"):
         # API kaliti bo'lsa, 2- va 3-agent shu yerda ishlaydi (aks holda Claude routine bajaradi)
         make_drafts(cfg, store, bot, chat)
