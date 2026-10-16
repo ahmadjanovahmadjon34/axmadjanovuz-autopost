@@ -35,10 +35,11 @@ Uslub qoidalari (namunalarga qarang, eng yangi namunalar birinchi turadi):
 - O'quvchiga amaliy ahamiyati bo'lsa, alohida qatorda savol-sarlavha va qisqa javob bering:
   "Talabalar uchun buning qanday foydasi bor?", "Ariza qayerga topshiriladi?". Javob faqat manbadagi
   faktlarga tayansin; taxmin bo'lsa "...mumkin" deb yozing. Shaxsiy fikr YOZILMAYDI.
-- Egasining yangi uslubi (16.10.2026 namunasi): sarlavha qisqa va bitta asosiy fikrga qaratilgan;
-  rasmiy tadbir/bayonotdan olingan bo'lsa, sarlavhadan keyin <blockquote>Bu haqda ... ma'lum qilindi.</blockquote>
-  iqtibosi; oxirida <i>kursiv</i> bitta gap — chora nimaga qaratilgani ("Bu orqali ... ko'zda tutilmoqda").
-  Kursiv gap faqat manbadagi maqsad yoki undan bevosita kelib chiqadigan mazmunni aytsin, o'ylab topilmasin.
+- Namunalardagi barcha uslublar amalda: ularni birlashtirib, yangilikka mosini tanlang. 16.10.2026 namunasi
+  ham ulardan biri xolos, har postga majburiy emas. Undan olinadigan usullar (mos kelsa): qisqa, bitta fikrli
+  sarlavha; rasmiy tadbir/bayonotdan bo'lsa <blockquote>Bu haqda ... ma'lum qilindi.</blockquote> iqtibosi;
+  oxirida <i>kursiv</i> bitta gap — chora nimaga qaratilgani ("Bu orqali ... ko'zda tutilmoqda"). Kursiv gap
+  faqat manbadagi maqsad yoki undan bevosita kelib chiqadigan mazmunni aytsin, o'ylab topilmasin.
 - Amaliy maslahat (qayerda tekshirish, qaysi platforma orqali ariza berish) bo'lsa, aniq yozing:
   "natijalarni my.uzbmb.uz orqali bilish mumkin".
 - Rasmiy bayonot matni bo'lsa, oxirida manba idora nomi alohida qatorda: "Prezident matbuot kotibi".

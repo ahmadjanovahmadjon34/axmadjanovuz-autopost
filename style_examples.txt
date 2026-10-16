@@ -1,4 +1,4 @@
-# Kanal uslubidan namunalar. Har bir post "---" bilan ajratilgan. Eng yangi namunalar birinchi. Birinchi namuna (egasi 16.10.2026 da tahrirlagan) HTML teglari bilan: qisqa sarlavha, iqtibos (<blockquote>) ichida "Bu haqda ... ma’lum qilindi", bitta asosiy fikr, oxirida kursiv (<i>) bir gaplik maqsad/xulosa.
+# Kanal uslubidan namunalar. Har bir post "---" bilan ajratilgan. Barcha namunalar birdek amalda: uslublarni birlashtiring. Birinchisi (egasi 16.10.2026 da tahrirlagan) HTML teglari bilan, iqtibos va kursiv xulosa usulini ko'rsatadi; u bitta namuna xolos, har postga majburiy emas.
 <b>⚡️Texnikumlar boshqaruvi investorlarga beriladi</b>
 
 <blockquote>Bu haqda Prezidentning yoqilg‘i-energetika sohasidagi investorlar bilan ochiq muloqotida ma’lum qilindi.</blockquote>

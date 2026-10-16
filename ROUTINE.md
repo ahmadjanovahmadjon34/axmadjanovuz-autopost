@@ -26,9 +26,9 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    (masalan, "VM 2022-yil 15-avgustdagi 447-son qarori"); faqat RASMIY havola (lex.uz, gov.uz, Prezident
    matbuot kotibi, vazirlik) qavs ichida qo'yilishi mumkin, boshqa sayt/kanal havolasi yo'q. Kerak bo'lsa
    "Talabalar uchun buning qanday foydasi bor?" kabi savol-sarlavha va manbaga tayangan qisqa javob; amaliy
-   maslahat (qayerda tekshirish/ariza). Shaxsiy fikr **yo'q**. Egasining 16.10 namunasi: rasmiy tadbirdan bo'lsa
-   sarlavhadan keyin `<blockquote>Bu haqda ... ma'lum qilindi.</blockquote>`, oxirida bitta `<i>kursiv</i>` maqsad gapi
-   (faqat manbaga tayangan). Media bo'lsa 850 belgidan oshmasin.
+   maslahat (qayerda tekshirish/ariza). Shaxsiy fikr **yo'q**. Namunalardagi barcha uslublar birlashtiriladi;
+   16.10 namunasi ulardan biri xolos (mos kelsa: `<blockquote>Bu haqda ... ma'lum qilindi.</blockquote>` iqtibosi,
+   oxirida bitta manbaga tayangan `<i>kursiv</i>` maqsad gapi), har postga majburiy emas. Media bo'lsa 850 belgidan oshmasin.
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
 5a. **Yozuvchilar jamoasi (2-, 5-, 6-agent):** uchalasi bitta uslub va bitta qoidalar (`WRITE`) bilan
