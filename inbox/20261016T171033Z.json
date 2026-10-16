@@ -1,0 +1,51 @@
+{
+ "processed_ids": [
+  "1019e2e60644ed7440c23f994ccdc9356b80224b",
+  "fe17315c8c714079b965d0592d3ccd3675558102",
+  "4cb00467e84f7210a68793764d2532ae16912f6c",
+  "144524d7a29445d4b6808736c7f8efde48283b72",
+  "033e3925c720da1710f78b63bc2d1252f706e5c4",
+  "c9dd84c1b85ede137cfec039d0d1bb17dd9fb313",
+  "28b94635e5a623007313192092e0bbf9b3e1a120",
+  "7b5fd07a3c2a9d9f7979026b97e321a73f5305a9",
+  "-1001981582728:1567128",
+  "-1001981582728:1567129",
+  "-1001981582728:1567130"
+ ],
+ "drafts": [
+  {
+   "id": "7b5fd07a3c2a9d9f7979026b97e321a73f5305a9",
+   "related": [],
+   "post": "⚡️ <b>Toshkentdagi talabalar shaharchasi bo'yicha so'rovnoma boshlandi</b>\n\nTalabalar shaharchasida taʼlim va yashash sharoitlarini o'rganish maqsadida <b>my.hemis.uz</b> platformasida <b>\"Talabalar shaharchasi — yoshlar nigohida\"</b> so'rovnomasi o'tkazilmoqda.\n\n📌 So'rovnoma taʼlim olish, yashash sharoiti, TTJ, kundalik xizmatlar, xavfsizlik, madaniy hordiq va sport sharoitlarini qamrab oladi.\n\n🔹 <b>Shaharcha hududidagi OTMlar:</b> O'zMU, TDTU, Toshkent davlat tibbiyot universiteti, Tosh Tech, Turin politexnika universiteti, Profi universiteti Tillar fakulteti.\n\n🔹 <b>Shaharchada TTJ si bor OTMlar:</b> TDYU, O'zbek milliy musiqa sanʼati instituti, TDIU, Renesans universiteti.\n\n<i>Kundalik hayotingizga taʼsir qilayotgan muammolar va takliflaringizni so'rovnomada qoldiring.</i>",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567128",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567129",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567130",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "1019e2e60644ed7440c23f994ccdc9356b80224b",
+  "fe17315c8c714079b965d0592d3ccd3675558102",
+  "4cb00467e84f7210a68793764d2532ae16912f6c",
+  "144524d7a29445d4b6808736c7f8efde48283b72",
+  "033e3925c720da1710f78b63bc2d1252f706e5c4",
+  "c9dd84c1b85ede137cfec039d0d1bb17dd9fb313",
+  "28b94635e5a623007313192092e0bbf9b3e1a120"
+ ]
+}
