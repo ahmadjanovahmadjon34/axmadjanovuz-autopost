@@ -1,0 +1,44 @@
+{
+ "processed_ids": [
+  "d350fc596f31da3040f00fc23d4a4e3a60bb3ea9",
+  "5511ee8813252d6a97e99629709e7755ba05510e",
+  "40205aad294875f8e2491de802ad5ae2bd25f06e",
+  "12f698419d58f90025c03cffee6ff48b3dc384ab",
+  "f93488e13956c0baf74e5c3d7bc2c54ac9bf4284",
+  "c5fb1e987707010ef1bffe7b0ef2e07bee48672c",
+  "e9cf2bb006788f5b18ac6730d7771bc338749627"
+ ],
+ "drafts": [
+  {
+   "id": "d350fc596f31da3040f00fc23d4a4e3a60bb3ea9",
+   "related": [],
+   "post": "<b>⚡️2027-yildan qurilishda malaka sertifikatisiz ishlash cheklanadi</b>\n\n<b>2027-yil 1-yanvardan</b> tegishli malaka sertifikatiga ega bo‘lmagan mutaxassislarning ayrim qurilish obyektlarida ishlashi cheklanadi.\n\nCheklov quyidagi yo‘nalishlarga tegishli:\n➖ loyiha hujjatlarini ishlab chiqish;\n➖ ekspertiza;\n➖ texnik nazorat va qurilish sifatini nazorat qilish.\n\nShuningdek, sertifikatsiz shaxslar ko‘p kvartirali uylar boshqaruv organlariga rahbarlik qila olmaydi.\n\nMutaxassis sertifikati <b>3 yil</b> amal qiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": [
+     "Hujjat raqami manbada ko‘rsatilmagan"
+    ]
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566772",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566773",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "5511ee8813252d6a97e99629709e7755ba05510e",
+  "40205aad294875f8e2491de802ad5ae2bd25f06e",
+  "12f698419d58f90025c03cffee6ff48b3dc384ab",
+  "f93488e13956c0baf74e5c3d7bc2c54ac9bf4284",
+  "c5fb1e987707010ef1bffe7b0ef2e07bee48672c",
+  "e9cf2bb006788f5b18ac6730d7771bc338749627"
+ ]
+}
