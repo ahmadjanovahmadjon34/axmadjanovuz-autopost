@@ -1,0 +1,36 @@
+{
+ "processed_ids": [
+  "b75f0dc019749fc3d651e0ab1a282298af424151",
+  "deb7aa21061030115c9505bfa6b3214f15bfcd3b",
+  "ab697ce0aa79b969df9cb26769b6696aa81924c4",
+  "f1339af5b034f7c7f9f0d1f94d3bb1cb114a4801",
+  "8ec0ba03f52b3b183dbba2abcb1ea95e22f75ae9",
+  "26aa39816d396748144b7d811204a245e30921b6",
+  "-1001981582728:1566990",
+  "-1001981582728:1566991",
+  "-1001981582728:1566992"
+ ],
+ "drafts": [],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566990",
+   "reply": "Sizga ham xayrli kech! Savolingiz bo‘lsa, bemalol yozing."
+  },
+  {
+   "id": "-1001981582728:1566991",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566992",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "b75f0dc019749fc3d651e0ab1a282298af424151",
+  "deb7aa21061030115c9505bfa6b3214f15bfcd3b",
+  "ab697ce0aa79b969df9cb26769b6696aa81924c4",
+  "f1339af5b034f7c7f9f0d1f94d3bb1cb114a4801",
+  "8ec0ba03f52b3b183dbba2abcb1ea95e22f75ae9",
+  "26aa39816d396748144b7d811204a245e30921b6"
+ ]
+}
