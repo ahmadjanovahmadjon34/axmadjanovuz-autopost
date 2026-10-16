@@ -1,0 +1,58 @@
+{
+ "processed_ids": [
+  "f7d7da15bd0f3bea5e1d44e4fcd2e1d2f7cadd4a",
+  "7ef021c0c0991ce9f325be04505f2425eba11554",
+  "d6c2d934f07c4cb37151b6294d9c8480b2ab536e",
+  "b19414106469d05af27077ab14734a8cbff4a56f",
+  "76bb28c0ae85594ea9cca31a44038b76820b731b",
+  "7239699cc6b23b3bbf6d8ddcf9aa2f184c8f1731",
+  "dab413698051cd9772cb3a5b1c49afd6e10d7e17",
+  "9b65a0cc3f205c31691d474a62dfbc270b206fa7",
+  "9855c5c089472b92957deab6264fe0ee890dc197"
+ ],
+ "drafts": [
+  {
+   "id": "7239699cc6b23b3bbf6d8ddcf9aa2f184c8f1731",
+   "related": [],
+   "post": "<b>❗️Toshkentda Pedagogika universitetining amaldagi yotoqxonalari sotilmoqda</b>\n\nO‘zbekistonda davlat OTMlarida yotoqxonaga ehtiyoji bor talabalarning atigi <b>58 foizi</b> yotoqxona bilan ta’minlangan.\n\nShunday sharoitda Toshkentda Pedagogika universitetining faoliyat yuritayotgan yotoqxonalari sotuvga chiqarilgan.\n\nDavlat aktivlarini boshqarish agentligi rahbari binolar xaridorga <b>faqat yangi yotoqxonalar qurilib, talabalar ko‘chirilgandan keyin</b> topshirilishini ma’lum qildi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566791",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566792",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566794",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566798",
+   "reply": "Ayrim OTMlar talabalarga shaxsiy korporativ elektron pochta beradi. Bu sizning institutingizda bor-yo‘qligini dekanat yoki registrator ofisidan so‘rang."
+  },
+  {
+   "id": "-1001981582728:1566799",
+   "reply": "Rahmat, yaxshi! O‘zingiz qalaysiz? Savolingiz bo‘lsa, yozing."
+  }
+ ],
+ "reject_ids": [
+  "f7d7da15bd0f3bea5e1d44e4fcd2e1d2f7cadd4a",
+  "7ef021c0c0991ce9f325be04505f2425eba11554",
+  "d6c2d934f07c4cb37151b6294d9c8480b2ab536e",
+  "b19414106469d05af27077ab14734a8cbff4a56f",
+  "76bb28c0ae85594ea9cca31a44038b76820b731b",
+  "dab413698051cd9772cb3a5b1c49afd6e10d7e17",
+  "9b65a0cc3f205c31691d474a62dfbc270b206fa7",
+  "9855c5c089472b92957deab6264fe0ee890dc197"
+ ]
+}
