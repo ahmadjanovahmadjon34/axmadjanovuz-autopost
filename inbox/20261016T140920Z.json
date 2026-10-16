@@ -1,0 +1,74 @@
+{
+ "processed_ids": [
+  "9ea2b21b51b481b9439f7443dfadeeb862e86ec3",
+  "bac2d2800ed63ed91c560ee3107ba2b4cfce0123",
+  "acda9f19c1046daefeb8a341cd10e5858a522abb",
+  "b855ec8cf4ae22dddc9b1400b583a7c5440a1cd5",
+  "-1001981582728:1566994",
+  "-1001981582728:1566995",
+  "-1001981582728:1566997",
+  "-1001981582728:1566998",
+  "-1001981582728:1566999",
+  "-1001981582728:1567000",
+  "-1001981582728:1567001"
+ ],
+ "drafts": [
+  {
+   "id": "dbbcf98b963383e31bc5edb203b92b3aa341a9ea",
+   "related": [],
+   "post": "<b>❗️Talabalar kontraktini 100 foizgacha qoplaydigan ta’lim krediti: ariza my.gov.uz orqali</b>\n\nKunduzgi ta’limda o‘qiyotgan bakalavr, magistratura talabalari va professional ta’lim o‘quvchilari ariza topshira oladi.\n\nKredit miqdori:\n➖ 1-kurs – kontraktning <b>100 foizi</b>;\n➖ 2-kurs va undan yuqori, GPA 3 dan past – <b>80 foizgacha</b>;\n➖ GPA 3 va undan yuqori yoki “Ijtimoiy himoya yagona reestri”da bo‘lsa – <b>100 foiz</b>.\n\nQizlar uchun kredit <b>foizsiz</b>, yigitlar uchun foiz Markaziy bankning asosiy stavkasi asosida belgilanadi.\n\nKredit o‘qish tugaganidan keyin <b>7-oydan boshlab 7 yil</b> davomida qaytariladi. Arizalar 5 ish kunida ko‘rib chiqiladi.\n\nSuper-kontrakt, sirtqi, kechki, masofaviy ta’lim va xorijiy OTM talabalariga kredit berilmaydi.\n\n<i>2026/2027-o‘quv yili uchun kontrakt to‘lov muddati 1-noyabrgacha uzaytirilgan.</i>\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 6
+  },
+  {
+   "id": "bac2d2800ed63ed91c560ee3107ba2b4cfce0123",
+   "related": [],
+   "post": "<b>⚡️Ko‘p qavatli uylarda markaziy isitishdan voz kechib, gaz qozonga o‘tib bo‘lmaydi</b>\n\nKo‘p kvartirali uylar aholisi xonadonini markaziy isitishdan o‘zboshimchalik bilan uzib, individual gaz qozonlariga o‘ta olmaydi.\n\nBu haqda Qurilish va uy-joy kommunal xo‘jaligi vazirligi ma’lum qildi.\n\nVazirlik taqiqni umumiy tizimga aralashuv <b>qo‘shni xonadonlarning issiqlik ta’minotini buzishi</b> mumkinligi bilan izohladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566994",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566995",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566997",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566998",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566999",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567000",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567001",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "9ea2b21b51b481b9439f7443dfadeeb862e86ec3",
+  "acda9f19c1046daefeb8a341cd10e5858a522abb",
+  "b855ec8cf4ae22dddc9b1400b583a7c5440a1cd5"
+ ]
+}
