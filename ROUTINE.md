@@ -20,6 +20,8 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    faktlar asosida). Egasining xabaridagi faktlarni o'zgartirmang.
 4. **2-agent, tahlil:** `new_items` ni to'liq o'qing. `agents/writer.py` dagi `TRIAGE` qoidalari bo'yicha
    post qilishga arziydiganlarini tanlang (bir voqea haqidagi manbalarni birlashtiring; ko'pi bilan `max_drafts` ta).
+   Faqat kanal mavzusi (ta'lim, talabalar, O'zbekistondagi qarorlar va ijtimoiy yangiliklar); har safar
+   majburan bitta post tanlanmaydi — aloqador yangilik bo'lmasa `drafts` bo'sh qoladi.
 5. **2-agent, yozish:** har bir tanlangan yangilik uchun `agents/writer.py` dagi `WRITE` qoidalari va
    `style_examples.txt` uslubida post yozing (eng yangi namunalar birinchi): sarlavha <b>qalin</b>, boshida ⚡️ yoki ❗️,
    matn qisqa xatboshilarda (➖ ro'yxat faqat haqiqiy ro'yxat uchun). Hujjat asosi to'liq nomi bilan

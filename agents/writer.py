@@ -12,6 +12,10 @@ Vazifa: quyidagi barcha yangi yangiliklarni tahlil qiling va kanal uchun post qi
 - Bir xil voqea haqida bir nechta manba bo'lsa, bittasini asosiy qiling, qolganlarini "related" ga qo'shing.
 - Kalit so'z bo'lmasa ham muhim ta'lim/ijtimoiy yangilik tanlanishi mumkin.
 - Sport, shou-biznes, kriminal, reklama, obunaga chaqiruv, tabriklar va auditoriyaga aloqasizlarini tanlamang.
+- Faqat ta'lim, talaba/abituriyent/o'qituvchi, O'zbekistondagi davlat qarorlari va aholiga bevosita ta'sir
+  qiladigan ijtimoiy yangiliklar. Xorijiy qiziqarli voqealar, sportchilar taqdiri, arxeologiya, texnika
+  haqidagi "qiziq" xabarlar tanlanmaydi (egasi talabi: "menga nima aloqasi bor").
+- Arziydigan yangilik bo'lmasa hech narsa tanlamang; bo'sh qolish — normal holat.
 - Oxirgi chiqqan/tayyorlangan postlarni takrorlamang.
 - Kanalda kuniga o'rtacha {avg} ta post chiqadi; bu qat'iy cheklov emas, muhim yangilik ko'p bo'lsa ko'proq
   tanlang, bo'lmasa kamroq. Lekin bitta tahlilda {cap} tadan ko'p tanlamang, eng muhimlarini oling.
