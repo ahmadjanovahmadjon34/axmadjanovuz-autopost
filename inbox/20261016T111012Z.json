@@ -1,0 +1,50 @@
+{
+ "processed_ids": [
+  "a3b5b649081d2ef5e6e02f6bbdd25d2268d8e34f",
+  "7cb06cba9659458cf16bf4055090307d7967dd7b",
+  "7ae28aa4a9c82397cf5b5bbc9f2b4c4713d64201",
+  "d55654aea4851beb5db91363ede102dcd1936588",
+  "1c5343228f6975e0d29652a192bb037565a29a13",
+  "3a3c42287ebc288e04526426e86021e869fd1d90",
+  "e0148955e82904f593544c323337bc923b2b7ac3",
+  "46b59d3b9254e18303fb210fc05a1bb2441f2824",
+  "49d3bd702852deb937790ba68f3d93aaff262a0b",
+  "ab301dde4f5df6cfc6ce19a52821f397786b31bc",
+  "749dcd34908a6eb04a780c79448eebe30307103a",
+  "c66e0c0f89e088479ee394ba874ee91b367a3714",
+  "36ee6db6736e2aeafcd3c7bedf5957d53bd6ad16"
+ ],
+ "drafts": [
+  {
+   "id": "3a3c42287ebc288e04526426e86021e869fd1d90",
+   "related": [],
+   "post": "<b>⚡️Energetika yo‘nalishlari bo‘yicha OTMlarda qabul kvotalari oshiriladi</b>\n\nBu haqda Prezidentning yoqilg‘i-energetika sohasidagi investorlar bilan ochiq muloqotida ma’lum qilindi.\n\n➖ <b>Kelasi o‘quv yilidan</b> mahalliy oliygohlarda energetika yo‘nalishlari bo‘yicha qabul kvotalari oshiriladi;\n➖ dunyoning yetakchi universitetlarida o‘qish uchun har yili <b>50 nafar</b> yoshga davlat granti ajratiladi;\n➖ Saudiya Arabistonining “ACWA” kompaniyasi Qoraqalpog‘iston, Buxoro va Sirdaryodagi texnikumlarni jihozlab, har yili yuzlab yoshlarni energetikaning yangi yo‘nalishlariga o‘qitishni boshlamoqda.\n\nInvestorlarga o‘z loyihalari uchun mutaxassis tayyorlash maqsadida joylardagi texnikumlarni boshqaruvga berishga tayyorlik bildirildi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1566907",
+   "reply": "Salom! Savolingiz bo‘lsa, bemalol yozing."
+  }
+ ],
+ "reject_ids": [
+  "a3b5b649081d2ef5e6e02f6bbdd25d2268d8e34f",
+  "7cb06cba9659458cf16bf4055090307d7967dd7b",
+  "7ae28aa4a9c82397cf5b5bbc9f2b4c4713d64201",
+  "d55654aea4851beb5db91363ede102dcd1936588",
+  "1c5343228f6975e0d29652a192bb037565a29a13",
+  "e0148955e82904f593544c323337bc923b2b7ac3",
+  "46b59d3b9254e18303fb210fc05a1bb2441f2824",
+  "49d3bd702852deb937790ba68f3d93aaff262a0b",
+  "ab301dde4f5df6cfc6ce19a52821f397786b31bc",
+  "749dcd34908a6eb04a780c79448eebe30307103a",
+  "c66e0c0f89e088479ee394ba874ee91b367a3714",
+  "36ee6db6736e2aeafcd3c7bedf5957d53bd6ad16"
+ ]
+}
