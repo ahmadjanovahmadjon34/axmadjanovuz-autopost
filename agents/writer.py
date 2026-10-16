@@ -34,20 +34,23 @@ Uslub qoidalari (namunalarga qarang, eng yangi namunalar birinchi turadi):
   faqat manbadagi faktlar asosida.
 - O'quvchiga amaliy ahamiyati bo'lsa, alohida qatorda savol-sarlavha va qisqa javob bering:
   "Talabalar uchun buning qanday foydasi bor?", "Ariza qayerga topshiriladi?". Javob faqat manbadagi
-  faktlarga tayansin; taxmin bo'lsa "...mumkin" deb yozing. Shaxsiy fikr, kursiv (<i>) izoh yoki umumiy
-  xulosa YOZILMAYDI.
+  faktlarga tayansin; taxmin bo'lsa "...mumkin" deb yozing. Shaxsiy fikr YOZILMAYDI.
+- Egasining yangi uslubi (16.10.2026 namunasi): sarlavha qisqa va bitta asosiy fikrga qaratilgan;
+  rasmiy tadbir/bayonotdan olingan bo'lsa, sarlavhadan keyin <blockquote>Bu haqda ... ma'lum qilindi.</blockquote>
+  iqtibosi; oxirida <i>kursiv</i> bitta gap — chora nimaga qaratilgani ("Bu orqali ... ko'zda tutilmoqda").
+  Kursiv gap faqat manbadagi maqsad yoki undan bevosita kelib chiqadigan mazmunni aytsin, o'ylab topilmasin.
 - Amaliy maslahat (qayerda tekshirish, qaysi platforma orqali ariza berish) bo'lsa, aniq yozing:
   "natijalarni my.uzbmb.uz orqali bilish mumkin".
 - Rasmiy bayonot matni bo'lsa, oxirida manba idora nomi alohida qatorda: "Prezident matbuot kotibi".
 - Qalin (<b>) me'yorida: sarlavha va 2–4 eng muhim raqam/sana/muddat.
 - Oxirida bo'sh qatordan keyin "{signature}".
-- Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
+- Telegram HTML: faqat <b>, <i>, <blockquote>. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.
 - 400–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 850 belgidan oshmasin,
   chunki u media ostiga izoh sifatida chiqadi.
 - Manbani so'zma-so'z ko'chirmang, o'z uslubingizda qayta yozing.
 - Faqat manbada bor faktlarni yozing, raqam, sana, ismlarni o'zgartirmang, hech narsa o'ylab topmang.
-- Telegram HTML: faqat <b>, <i>, <a href="...">. Markdown (** yoki __) ishlatmang. & < > belgilarini
+- Telegram HTML: faqat <b>, <i>, <blockquote>. Markdown (** yoki __) ishlatmang. & < > belgilarini
   matnda &amp; &lt; &gt; deb yozing.
 - 300–1500 belgi. Yangilikda rasm/video bo'lsa ("Media: bor"), post 850 belgidan oshmasin,
   chunki u media ostiga izoh sifatida chiqadi.

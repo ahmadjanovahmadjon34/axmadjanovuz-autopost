@@ -1,4 +1,16 @@
-# Kanal uslubidan namunalar. Har bir post "---" bilan ajratilgan. Eng yangi (egasi 15.10.2026 da bergan) namunalar birinchi.
+# Kanal uslubidan namunalar. Har bir post "---" bilan ajratilgan. Eng yangi namunalar birinchi. Birinchi namuna (egasi 16.10.2026 da tahrirlagan) HTML teglari bilan: qisqa sarlavha, iqtibos (<blockquote>) ichida "Bu haqda ... ma’lum qilindi", bitta asosiy fikr, oxirida kursiv (<i>) bir gaplik maqsad/xulosa.
+<b>⚡️Texnikumlar boshqaruvi investorlarga beriladi</b>
+
+<blockquote>Bu haqda Prezidentning yoqilg‘i-energetika sohasidagi investorlar bilan ochiq muloqotida ma’lum qilindi.</blockquote>
+
+Prezident investorlarni o‘z loyihalari uchun xalqaro talablarga mos mutaxassislar tayyorlash jarayonida ishtirok etishga chaqirdi.
+
+Bunday tashabbuslarni qo‘llab-quvvatlash maqsadida investorlarga hududlardagi <b>texnikumlarni boshqaruvga berishga</b> tayyorlik bildirildi.
+
+<i>Bu orqali mutaxassislar tayyorlash jarayonini mehnat bozori talablari bilan uyg‘unlashtirish ko‘zda tutilmoqda.</i>
+
+👉 @Axmadjanovuz
+---
 ⚡️Kelasi yilgi qabuldan xususiy OTMlar qabuli nazoratga olinishi mumkin
 
 Kelgusi yilgi qabuldan xususiy oliy ta’lim muassasalariga kirish uchun minimal o‘tish balli joriy etilishi mumkin.

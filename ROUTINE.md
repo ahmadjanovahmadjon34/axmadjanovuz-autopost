@@ -26,7 +26,9 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    (masalan, "VM 2022-yil 15-avgustdagi 447-son qarori"); faqat RASMIY havola (lex.uz, gov.uz, Prezident
    matbuot kotibi, vazirlik) qavs ichida qo'yilishi mumkin, boshqa sayt/kanal havolasi yo'q. Kerak bo'lsa
    "Talabalar uchun buning qanday foydasi bor?" kabi savol-sarlavha va manbaga tayangan qisqa javob; amaliy
-   maslahat (qayerda tekshirish/ariza). Shaxsiy fikr, kursiv izoh **yo'q**. Media bo'lsa 850 belgidan oshmasin.
+   maslahat (qayerda tekshirish/ariza). Shaxsiy fikr **yo'q**. Egasining 16.10 namunasi: rasmiy tadbirdan bo'lsa
+   sarlavhadan keyin `<blockquote>Bu haqda ... ma'lum qilindi.</blockquote>`, oxirida bitta `<i>kursiv</i>` maqsad gapi
+   (faqat manbaga tayangan). Media bo'lsa 850 belgidan oshmasin.
    Manba matnidagi faktlardan tashqari hech narsa qo'shmang.
    Kerak bo'lsa havola orqali manbaning to'liq matnini o'qing.
 5a. **Yozuvchilar jamoasi (2-, 5-, 6-agent):** uchalasi bitta uslub va bitta qoidalar (`WRITE`) bilan
@@ -40,7 +42,7 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    - `no_emoji` — emojisiz: sarlavha va matnda emoji yo'q, faqat imzo qoladi.
 7. **3-agent, sifat nazorati:** har bir postni `agents/reviewer.py` dagi `SYSTEM` mezonlari bo'yicha manba bilan
    solishtirib 10 ballik baho bering. `min_quality_score` dan past bo'lsa tuzating va qayta baholang
-   (3 urinish). Telegram HTML faqat `<b>`; manba havolasi yoki "Manba" qatori qo'yilmaydi; oxirida `signature` bo'lsin.
+   (3 urinish). Telegram HTML faqat `<b>`, `<i>`, `<blockquote>`; manba havolasi yoki "Manba" qatori qo'yilmaydi; oxirida `signature` bo'lsin.
 8. Natijani `inbox/<UTC vaqt, masalan 20261013T150000>.json` ga yozing:
    ```json
    {

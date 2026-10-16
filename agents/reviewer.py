@@ -25,8 +25,8 @@ def rule_check(post, has_media=False, source_url=None):
     first = post.strip().split("\n", 1)[0].strip()
     if not (first.startswith("<b>") or re.match(r"^\W{0,4}<b>", first)) or "</b>" not in first:
         issues.append("Sarlavha (birinchi qator) qalin emas")
-    if "<i>" in post:
-        issues.append("Oxirida kursiv xulosa bor (egasi kerak emas degan)")
+    if len(re.findall(r"<i>", post)) > 1:
+        issues.append("Kursiv (<i>) faqat oxirgi bitta xulosa gapida bo'lsin")
     if has_media and len(post) > 900:
         issues.append(f"Media bilan chiqadi, lekin {len(post)} belgi (900 dan oshmasin)")
     if len(post) > 4000:
