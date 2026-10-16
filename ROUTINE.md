@@ -40,7 +40,7 @@ yuborish va tugmalarni GitHub Actions bajaradi; routine faqat **tahlil, post yoz
    - `no_emoji` — emojisiz: sarlavha va matnda emoji yo'q, faqat imzo qoladi.
 7. **3-agent, sifat nazorati:** har bir postni `agents/reviewer.py` dagi `SYSTEM` mezonlari bo'yicha manba bilan
    solishtirib 10 ballik baho bering. `min_quality_score` dan past bo'lsa tuzating va qayta baholang
-   (3 urinish). Telegram HTML faqat `<b> <a href>`; oxirida `signature` bo'lsin.
+   (3 urinish). Telegram HTML faqat `<b>`; manba havolasi yoki "Manba" qatori qo'yilmaydi; oxirida `signature` bo'lsin.
 8. Natijani `inbox/<UTC vaqt, masalan 20261013T150000>.json` ga yozing:
    ```json
    {

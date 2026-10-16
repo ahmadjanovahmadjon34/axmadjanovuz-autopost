@@ -20,7 +20,7 @@ ALLOWED_TAGS = {"b", "i", "u", "s", "a", "code", "pre", "blockquote", "tg-spoile
 
 def rule_check(post, has_media=False, source_url=None):
     issues = []
-    if (source_url and source_url in post) or re.search(r'href="https?://t\.me/', post):
+    if (source_url and source_url in post) or "href=" in post or re.search(r"\bManba\b", post):
         issues.append("Postda manba havolasi bor (kerak emas)")
     first = post.strip().split("\n", 1)[0].strip()
     if not (first.startswith("<b>") or re.match(r"^\W{0,4}<b>", first)) or "</b>" not in first:

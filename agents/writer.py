@@ -28,9 +28,8 @@ Uslub qoidalari (namunalarga qarang, eng yangi namunalar birinchi turadi):
 - Asosiy matn — qisqa xatboshilar (har biri 1–3 gap), oddiy va tushunarli, rasmiy-ishchan ohangda.
   Ro'yxat (➖) faqat bir nechta bir xil band sanalganda ishlatiladi; hamma narsani ro'yxatga aylantirmang.
 - Hujjat asosi bo'lsa to'liq nomi bilan yozilsin: "Vazirlar Mahkamasining 2022-yil 15-avgustdagi 447-son
-  qaroriga muvofiq". Manbada rasmiy hujjat yoki rasmiy idora xabari havolasi (lex.uz, gov.uz, edu.uz,
-  Prezident matbuot kotibi, vazirlik kanali) bo'lsa, uni tegishli gapdan keyin qavs ichida qoldiring:
-  "(https://lex.uz/docs/5870213)". Boshqa yangilik saytlari va kanallarining havolasini QO'YMANG.
+  qaroriga muvofiq". Postga hech qanday manba havolasi yoki "Manba" qatori QO'YILMAYDI
+  (egasi talabi: xabarlarga manba kerak emas).
 - Kerak bo'lsa, voqeaning fonini 1 xatboshida bering (avval nima bo'lgan, hozir nima o'zgaradi) —
   faqat manbadagi faktlar asosida.
 - O'quvchiga amaliy ahamiyati bo'lsa, alohida qatorda savol-sarlavha va qisqa javob bering:
