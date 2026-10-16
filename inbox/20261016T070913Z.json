@@ -1,0 +1,28 @@
+{
+ "processed_ids": [
+  "ac61399c5256e0ff43a5bb3fe0ed6759e41d4341",
+  "9971ca1934471133a61cedc3b8801368d37e2ec9",
+  "ee05630f77e19d71068bb6e7343607a385fdbcd2",
+  "4385d5e582726c9173e45b7c8ae61813f8da2a91"
+ ],
+ "drafts": [
+  {
+   "id": "d350fc596f31da3040f00fc23d4a4e3a60bb3ea9",
+   "related": [],
+   "post": "<b>❗️Qurilish sohasida mutaxassislar faoliyatiga malaka sertifikati talabi joriy etiladi</b>\n\n<b>2027-yil 1-yanvardan</b> boshlab tegishli malaka sertifikatiga ega bo‘lmagan mutaxassislarning ayrim qurilish obyektlarida professional faoliyat yuritishi cheklanadi.\n\nCheklovlar quyidagi yo‘nalishlarni qamrab oladi:\n➖ loyiha hujjatlarini ishlab chiqish;\n➖ ekspertiza;\n➖ texnik nazorat;\n➖ qurilish ishlari sifatini nazorat qilish.\n\nShuningdek, malaka sertifikatiga ega bo‘lmagan shaxslarning ko‘p kvartirali uylar boshqaruv organlariga rahbarlik qilishiga yo‘l qo‘yilmaydi.\n\nMutaxassis sertifikatining amal qilish muddati – <b>3 yil</b>.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "ac61399c5256e0ff43a5bb3fe0ed6759e41d4341",
+  "9971ca1934471133a61cedc3b8801368d37e2ec9",
+  "ee05630f77e19d71068bb6e7343607a385fdbcd2",
+  "4385d5e582726c9173e45b7c8ae61813f8da2a91"
+ ]
+}
