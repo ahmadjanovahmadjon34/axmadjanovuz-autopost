@@ -1,0 +1,78 @@
+{
+ "processed_ids": [
+  "0612d1cbbe1c2188255447e93a11b471c9bffa6e",
+  "c2661da94e884bb001dd6d6cbed3e6f4fe804640",
+  "74a6f6810eba17b60b2323d9870bbf4cd8cf08e9",
+  "0318d2d540e745cc2b35500b11085c8126f616f1",
+  "ea1d2fbb9eaff9c6c7b3062b5486a993866056a8",
+  "b729b0bd83a12fcc619975ad619acc204f9a46a8",
+  "50b01c7ff72169a9b8171e9ca569949232170abc",
+  "ef005f72dfb0c94f69453f1959cb586601c513cc",
+  "147c21d699bafbff1689c7465fd34b8371f4b06f",
+  "55d20d27f5155393fc712dd12ad01a1aa2f3c89e",
+  "9f7450dab2e77b07dd1f9d04ac178a043436a6b0",
+  "-1001640191255:620534",
+  "-1001640191255:620535",
+  "-1001981582728:1566985"
+ ],
+ "drafts": [
+  {
+   "id": "ef005f72dfb0c94f69453f1959cb586601c513cc",
+   "related": [
+    "147c21d699bafbff1689c7465fd34b8371f4b06f"
+   ],
+   "post": "<b>❗️Green Card uchun arizalar qabuli 1-noyabrdan boshlanishi kutilmoqda</b>\n\nAQSh federal sudi Davlat departamentiga kechiktirilgan <b>DV-2027</b> Green Card lotereyasini o‘tkazish majburiyatini yukladi.\n\nSud qaroriga ko‘ra, arizalar qabuli <b>1-noyabrdan kechiktirmay</b> boshlanib, 30 kun davom etishi, g‘oliblar esa 3-dekabrgacha e’lon qilinishi belgilangan.\n\nBu yil ishtirokchilardan <b>1 dollar to‘lov</b> va amal qilish muddati tugamagan xorijga chiqish pasportining elektron nusxasi talab qilinishi aytilmoqda.\n\n<i>Ariza topshirishning aniq sanasi va tartibi AQSh Davlat departamenti tomonidan rasman e’lon qilinadi.</i>\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  },
+  {
+   "id": "9f7450dab2e77b07dd1f9d04ac178a043436a6b0",
+   "related": [],
+   "post": "<b>⚡️Milliy sertifikat imtihonlariga 203 mingdan ortiq ariza tushdi</b>\n\nNoyabrda bo‘ladigan biologiya, kimyo, matematika va fizika fanlaridan milliy sertifikat imtihonlariga ro‘yxatdan o‘tish davom etmoqda.\n\n16-oktabr soat 15:00 holatiga ko‘ra:\n➖ jami arizalar – <b>203 mingdan ortiq</b>;\n➖ my.gov.uz portali orqali – 44 mingdan ortiq;\n➖ MyGov ilovasi orqali – 159 mingdan ortiq.\n\nAriza faqat onlayn, my.gov.uz portali va uning mobil ilovasi orqali topshiriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  },
+  {
+   "id": "55d20d27f5155393fc712dd12ad01a1aa2f3c89e",
+   "related": [],
+   "post": "<b>⚡️O‘zbekistonda ikkinchi va uchinchi AES qurish rejalashtirilmoqda</b>\n\n<blockquote>Bu haqda Prezidentning yoqilg‘i-energetika sohasidagi investorlar bilan ochiq muloqotida ma’lum qilindi.</blockquote>\n\nTa’kidlanishicha, mamlakatda atom energetikasini rivojlantirishga katta e’tibor qaratilmoqda, <b>uran ishlab chiqarish</b> ko‘paymoqda.\n\nBirinchi atom elektr stansiyasi qurilishi boshlangan, <b>ikkinchi va uchinchisi</b> bo‘yicha ham rejalar bor.\n\nIkkinchi AES qurilishi yuzasidan yangi hamkorlar bilan muzokaralar o‘tkazilishi aytildi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:620534",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620535",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1566985",
+   "reply": "Xorijdan o‘qishni ko‘chirish imtihoni sanasi bo‘yicha rasmiy ma’lumot chiqishi bilan kanalda e’lon qilamiz. Hozircha ariza holatini ariza topshirgan platforma orqali tekshirib turing."
+  }
+ ],
+ "reject_ids": [
+  "0612d1cbbe1c2188255447e93a11b471c9bffa6e",
+  "c2661da94e884bb001dd6d6cbed3e6f4fe804640",
+  "74a6f6810eba17b60b2323d9870bbf4cd8cf08e9",
+  "0318d2d540e745cc2b35500b11085c8126f616f1",
+  "ea1d2fbb9eaff9c6c7b3062b5486a993866056a8",
+  "b729b0bd83a12fcc619975ad619acc204f9a46a8",
+  "50b01c7ff72169a9b8171e9ca569949232170abc"
+ ]
+}
