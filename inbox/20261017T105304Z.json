@@ -1,0 +1,59 @@
+{
+ "processed_ids": [
+  "a2a1349ec3a0e52aff3558804bfac6c512dd432d",
+  "cc28e606aa3bd69e0c99f1a4192e20601ae681ae",
+  "8e617a13f9fc75d0e85aab0d264a7cde56ae65a3",
+  "cff6b5f5bade69952d62d274311baacfc0835068",
+  "788fec0fe9b6f231b3779bddc6ac08ad846d0ff2",
+  "2f3237f5fcdf9a1918e5d296dbce333394dc1199",
+  "890b400d9611b4b72cd8b400aebe0cd2422ed528",
+  "-1001981582728:1567685",
+  "-1001981582728:1567687",
+  "-1001981582728:1567688",
+  "-1001981582728:1567689",
+  "-1001981582728:1567690"
+ ],
+ "drafts": [
+  {
+   "id": "cc28e606aa3bd69e0c99f1a4192e20601ae681ae",
+   "related": [],
+   "post": "⚡️ <b>“Milliy kitobxonlik harakati”: g‘oliblarga 50 ming dollargacha mukofot</b>\n\nMaktab o‘quvchilari uchun Yoshlar ishlari agentligi bilan hamkorlikda kitobxonlik dasturi tashkil etilmoqda. Ishtirokchilar belgilangan kitoblarni o‘qib, <b>test</b>, <b>erkin suhbat</b>dan o‘tadi va <b>insho</b> yozadi.\n\n📚 <b>Toifalar:</b>\n➖ 1–5-sinflar — <b>20 ta</b> kitob\n➖ 6–8 va 9–11-sinflar — <b>50 tadan</b> kitob\n\n🏆 <b>Mukofotlar (6–8 va 9–11-sinflar, respublika bosqichi):</b>\n➖ 1-o‘rin — <b>50 ming</b> AQSh dollari\n➖ 2-o‘rin — <b>30 ming</b> AQSh dollari\n➖ 3-o‘rin — <b>15 ming</b> AQSh dollari\n\n1–5-sinf g‘oliblari qimmatbaho sovg‘a va diplom oladi. Ustozlar, maktablar va oilalar uchun beshta nominatsiyaning har biriga <b>10 ming dollardan</b> mukofot bor.\n\n📱 Barcha kitoblar <b>“Mutolaa”</b> platformasida mavjud.",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567685",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567687",
+   "reply": "Va alaykum assalom! Sizga ham hayrli kun 😊"
+  },
+  {
+   "id": "-1001981582728:1567688",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567689",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567690",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a2a1349ec3a0e52aff3558804bfac6c512dd432d",
+  "8e617a13f9fc75d0e85aab0d264a7cde56ae65a3",
+  "cff6b5f5bade69952d62d274311baacfc0835068",
+  "788fec0fe9b6f231b3779bddc6ac08ad846d0ff2",
+  "2f3237f5fcdf9a1918e5d296dbce333394dc1199",
+  "890b400d9611b4b72cd8b400aebe0cd2422ed528"
+ ]
+}
