@@ -1,0 +1,83 @@
+{
+ "processed_ids": [
+  "bc7cd7a2646afa7e6f9e0731668ade7fcd18814f",
+  "3604077c0c6d3754793882350057fae503637b86",
+  "0a4367f9b564c1a6cc8499a6a16efa8ed64057a9",
+  "efc12b44351fe10c8fa61e5d153fc88f6896e840",
+  "-1001981582728:1567718",
+  "-1001981582728:1567719",
+  "-1001981582728:1567720",
+  "-1001640191255:620797",
+  "-1001640191255:620798",
+  "-1001640191255:620799",
+  "-1001640191255:620800",
+  "-1001640191255:620801",
+  "-1001640191255:620802",
+  "-1001640191255:620803",
+  "-1001640191255:620804"
+ ],
+ "drafts": [
+  {
+   "id": "bc7cd7a2646afa7e6f9e0731668ade7fcd18814f",
+   "related": [],
+   "post": "⚡️ <b>Maktablarda o‘quvchilarga insult belgilarini tanish o‘rgatiladi</b>\n\n<b>1-noyabrdan</b> boshlab umumta’lim maktablarida <b>“FAST — superqahramonlar”</b> dasturi bosqichma-bosqich joriy etiladi. U <b>1–4-sinf</b> o‘quvchilariga mo‘ljallangan.\n\n🏫 <b>Dastlab 13 ta maktabda:</b>\n➖ Toshkent shahri Olmazor tumanidagi <b>7 ta</b> maktab;\n➖ Samarqand shahri, Kattaqo‘rg‘on va Ishtixon tumanlaridagi <b>6 ta</b> maktab.\n\n🧠 Bolalarga yuzdagi asimmetriya, bir qo‘lni ko‘tara olmaslik va gapirishda qiynalish insult belgisi bo‘lishi mumkinligi tushuntiriladi. Bunday vaziyatda kattalarga zudlik bilan aytish va <b>103</b> raqamiga qo‘ng‘iroq qilish o‘rgatiladi.\n\n🎮 Darslar o‘yinlar, qahramonlar va videomateriallar yordamida o‘tadi. Dastur “Angels Initiative” xalqaro tashabbusi doirasida ishlab chiqilgan va 40 ga yaqin davlatda 2 milliondan ortiq bolani qamrab olgan.\n\nBu haqda Sog‘liqni saqlash vazirligi xabar berdi.",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567718",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567719",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567720",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620797",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620798",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620799",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620800",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620801",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620802",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620803",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620804",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "3604077c0c6d3754793882350057fae503637b86",
+  "0a4367f9b564c1a6cc8499a6a16efa8ed64057a9",
+  "efc12b44351fe10c8fa61e5d153fc88f6896e840"
+ ]
+}
