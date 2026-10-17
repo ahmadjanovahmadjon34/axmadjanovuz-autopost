@@ -1,0 +1,26 @@
+{
+ "processed_ids": [
+  "2cbdaf3a9bd96f88e4d2f52ee7ffb4d373a8356f",
+  "32b7bf157d71434275e72c2080cca65bef7dd26b",
+  "c47d442dac4f04bff3d35b93e85e291a62db2f25",
+  "29336fa0957c4293bf1c9465914aaaa7535c50db",
+  "20aa10c5b021829eee0cbb472474364305e7000b",
+  "8c2eb78c9b55d1f60a982b879bb4628ccf4b4f4d",
+  "-1001981582728:1567521"
+ ],
+ "drafts": [],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567521",
+   "reply": "O‘qishni ko‘chirish tartibi va shartlari har bir OTMda farq qiladi. Aniq javob uchun tanlagan nodavlat OTMingizning qabul bo‘limiga murojaat qiling."
+  }
+ ],
+ "reject_ids": [
+  "2cbdaf3a9bd96f88e4d2f52ee7ffb4d373a8356f",
+  "32b7bf157d71434275e72c2080cca65bef7dd26b",
+  "c47d442dac4f04bff3d35b93e85e291a62db2f25",
+  "29336fa0957c4293bf1c9465914aaaa7535c50db",
+  "20aa10c5b021829eee0cbb472474364305e7000b",
+  "8c2eb78c9b55d1f60a982b879bb4628ccf4b4f4d"
+ ]
+}
