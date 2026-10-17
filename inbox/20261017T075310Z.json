@@ -1,0 +1,26 @@
+{
+ "processed_ids": [
+  "187b461046d7d2f2ae0051a24aee66a52b890378",
+  "-1001981582728:1567633",
+  "-1001981582728:1567635",
+  "-1001981582728:1567637"
+ ],
+ "drafts": [],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567633",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567635",
+   "reply": "Yo‘q, xususiy (nodavlat) universitetda o‘qiyotgan talabalarga bu chegirma berilmaydi. Faqat davlat OTMida kunduzgi shaklda o‘qiyotganlarga beriladi."
+  },
+  {
+   "id": "-1001981582728:1567637",
+   "reply": "Bu oddiy kontraktdan yuqori summadagi (super-kontrakt deb ham ataladigan) to‘lov shakli. Ballari kontrakt chegarasiga yetmay, oshirilgan to‘lov evaziga qabul qilinganlarga qo‘llanadi, shuning uchun chegirma berilmaydi."
+  }
+ ],
+ "reject_ids": [
+  "187b461046d7d2f2ae0051a24aee66a52b890378"
+ ]
+}
