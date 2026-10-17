@@ -1,0 +1,43 @@
+{
+ "processed_ids": [
+  "1ec9a0f160c30eec566f2ecd4ab82a7b639dfc1c",
+  "cfbf0140981595f5b9f5ee17295b3d9a94d2b014",
+  "f95bb8e2978a60ecba7c5edf5bb57693b32c0dd7",
+  "ff1a34d69fe8dc4a2fbf352a93e706c3171cba44",
+  "254bf557e847140c597c8aec2e5dc9b32236061c",
+  "3a788e436c38e6830ef2dc77482de4e0ac83743f",
+  "-1001640191255:620805",
+  "-1001981582728:1567726"
+ ],
+ "drafts": [
+  {
+   "id": "bc7cd7a2646afa7e6f9e0731668ade7fcd18814f",
+   "related": [],
+   "post": "⚡️ <b>Umumta’lim maktablarida “FAST — superqahramonlar” dasturi joriy etiladi</b>\n\nSog‘liqni saqlash vazirligi ma’lumotiga ko‘ra, <b>2026-yil 1-noyabrdan</b> boshlab umumta’lim maktablarida 1–4-sinf o‘quvchilariga insultning dastlabki belgilarini aniqlash va shoshilinch vaziyatda to‘g‘ri harakat qilishni o‘rgatuvchi dastur bosqichma-bosqich joriy etiladi.\n\n<b>Dastlabki bosqichda mashg‘ulotlar 13 ta maktabda o‘tkaziladi:</b>\n➖ Toshkent shahri Olmazor tumanidagi <b>7 ta</b> maktab;\n➖ Samarqand shahri, Kattaqo‘rg‘on va Ishtixon tumanlaridagi <b>6 ta</b> maktab.\n\nMashg‘ulotlarda yuzdagi asimmetriya, qo‘ldagi holsizlik va nutq buzilishi insult belgisi bo‘lishi mumkinligi tushuntiriladi. Bunday holatda kattalarni zudlik bilan xabardor qilish va <b>103</b> raqamiga murojaat qilish tartibi o‘rgatiladi.\n\nDastur “Angels Initiative” xalqaro tashabbusi doirasida ishlab chiqilgan bo‘lib, 40 ga yaqin davlatda 2 milliondan ortiq bolani qamrab olgan.",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:620805",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567726",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "1ec9a0f160c30eec566f2ecd4ab82a7b639dfc1c",
+  "cfbf0140981595f5b9f5ee17295b3d9a94d2b014",
+  "f95bb8e2978a60ecba7c5edf5bb57693b32c0dd7",
+  "ff1a34d69fe8dc4a2fbf352a93e706c3171cba44",
+  "254bf557e847140c597c8aec2e5dc9b32236061c",
+  "3a788e436c38e6830ef2dc77482de4e0ac83743f"
+ ]
+}
