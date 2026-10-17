@@ -1,0 +1,85 @@
+{
+ "processed_ids": [
+  "8733b9a9e363209964b5c0c474aaafa802f99468",
+  "19f444e22bd79876ee67e4dc61f48d84860bac6d",
+  "8751f4d2e9bf79089d678eca72623606792a201c",
+  "22f0ab08598475eca4bda81ae98e8cb6b62fc00f",
+  "a10144584d3172fc7819cb8418a1417433936ba7",
+  "-1001640191255:620811",
+  "-1001640191255:620812",
+  "-1001640191255:620813",
+  "-1001640191255:620814",
+  "-1001640191255:620815",
+  "-1001640191255:620816",
+  "-1001640191255:620817",
+  "-1001640191255:620818",
+  "-1001981582728:1567742",
+  "-1001640191255:620819",
+  "-1001640191255:620820"
+ ],
+ "drafts": [
+  {
+   "id": "22f0ab08598475eca4bda81ae98e8cb6b62fc00f",
+   "related": [],
+   "post": "⚡️ <b>Xorijlik talabalar ilk bor o‘zbek tili bo‘yicha respublika olimpiadasida bellashmoqda</b>\n\nO‘zbekiston oliygohlarida o‘qiyotgan xorijlik talabalar o‘rtasida o‘zbek tilidan respublika olimpiadasi <b>ilk bor</b> o‘tkazilmoqda. Ochilish marosimi <b>16-oktabr</b> kuni Urganch RANCH texnologiya universitetida bo‘lib o‘tdi.\n\n📌 Olimpiadada <b>46 ta</b> oliy ta’lim tashkilotidan <b>100 nafarga yaqin</b> xorijlik talaba qatnashmoqda.\n\n🎯 Maqsad: davlat tilini o‘rganishga qiziqishni oshirish va milliy qadriyatlarga hurmatni mustahkamlash.\n\nOlimpiada Ta’lim va ilm-fan vazirligi tomonidan tashkil etilgan.",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:620811",
+   "reply": "Assalomu alaykum! Yaxshi, o‘zingiz qalaysiz? 😊"
+  },
+  {
+   "id": "-1001640191255:620812",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620813",
+   "reply": "Assalomu alaykum! Yaxshi, rahmat 😊"
+  },
+  {
+   "id": "-1001640191255:620814",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620815",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620816",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620817",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620818",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567742",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620819",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:620820",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "8733b9a9e363209964b5c0c474aaafa802f99468",
+  "19f444e22bd79876ee67e4dc61f48d84860bac6d",
+  "8751f4d2e9bf79089d678eca72623606792a201c",
+  "a10144584d3172fc7819cb8418a1417433936ba7"
+ ]
+}
