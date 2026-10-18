@@ -1,0 +1,65 @@
+{
+ "processed_ids": [
+  "ca8e3e166bbaaba280d59ca00236b27b312ad172",
+  "0f0c447f4a548412171999d63efdb54f897b1f3e",
+  "06d97884e62f97267aadcf7eb1754e260ec3b8b6",
+  "ff96f05714aaba54a008504befb87b0a6b4e672c",
+  "d9b8c55cfbf6541d7eb710418e33c4571fde99dd",
+  "-1001981582728:1568159",
+  "-1001981582728:1568160",
+  "-1001981582728:1568161",
+  "-1001981582728:1568162",
+  "-1001981582728:1568163",
+  "-1001981582728:1568164",
+  "-1001981582728:1568165"
+ ],
+ "drafts": [
+  {
+   "id": "ca8e3e166bbaaba280d59ca00236b27b312ad172",
+   "related": [],
+   "post": "<b>⚡️Darsga kelmagan talaba qachon akademik qarzdor bo‘ladi?</b>\n\nKredit-modul tizimida hisob quyidagicha (6 kreditli fan misolida):\n\n📚 1 kredit — <b>30 soat</b>, 6 kredit — <b>180 soat</b>.\n— 40 foizi (<b>72 soat</b>) auditoriya mashg‘ulotlari;\n— 60 foizi (108 soat) mustaqil ta’lim.\n\n❗️ Talaba auditoriya soatlarining <b>¼ qismini</b> (ya’ni <b>18 soat</b>) qoldirsa, yakuniy nazoratga kiritilmaydi.\n\nYakuniy nazoratga kiritilmagan talaba akademik qarzdor hisoblanadi va kursdan qoldiriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1568159",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568160",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568161",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568162",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568163",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568164",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1568165",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "0f0c447f4a548412171999d63efdb54f897b1f3e",
+  "06d97884e62f97267aadcf7eb1754e260ec3b8b6",
+  "ff96f05714aaba54a008504befb87b0a6b4e672c",
+  "d9b8c55cfbf6541d7eb710418e33c4571fde99dd"
+ ]
+}
