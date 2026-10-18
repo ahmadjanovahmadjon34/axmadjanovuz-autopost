@@ -1,0 +1,85 @@
+{
+ "processed_ids": [
+  "9bda57f8dc327fb6ca41cb2a602bfe0a4ff3bcf3",
+  "a3d93af7f6c7e918db69a919170cf0b72dcb6872",
+  "70fa93c2e46c5b59c743dc28225eddc24b16ee8c",
+  "126636a5040b059c92dbd4468b7b382326194c41",
+  "84cb985cb1eae0acc496896729da46a9cf4d9e66",
+  "6d71336539fc483cb40472e0a3fa468ffabcf958",
+  "-1001640191255:621018",
+  "-1001981582728:1567968",
+  "-1001981582728:1567969",
+  "-1001981582728:1567970",
+  "-1001981582728:1567972",
+  "-1001640191255:621019",
+  "-1001640191255:621020",
+  "-1001640191255:621022",
+  "-1001981582728:1567973",
+  "-1001981582728:1567974"
+ ],
+ "drafts": [
+  {
+   "id": "9bda57f8dc327fb6ca41cb2a602bfe0a4ff3bcf3",
+   "related": [
+    "70fa93c2e46c5b59c743dc28225eddc24b16ee8c",
+    "126636a5040b059c92dbd4468b7b382326194c41"
+   ],
+   "post": "<b>❗️Vazirlik tasdiqladi: kuzgi ta’til 4-noyabrdan boshlanadi</b>\n\nTa’lim va ilm-fan vazirligi amaldagi tartibga ko‘ra umumiy o‘rta ta’lim maktablari o‘quvchilari uchun kuzgi ta’til muddatlarini rasman e’lon qildi.\n\n📅 Ta’til: <b>2026-yil 4-noyabrdan 9-noyabrgacha</b>.\n\n📚 II chorak dars mashg‘ulotlari <b>10-noyabrdan</b> boshlanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": [
+     "Avvalgi ta'til postida \"vazirlik hali bayonot bermagan\" deyilgan edi; bu post vazirlikning rasmiy e'lonini yetkazadi"
+    ]
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:621018",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567968",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567969",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567970",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567972",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:621019",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:621020",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:621022",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567973",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567974",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a3d93af7f6c7e918db69a919170cf0b72dcb6872",
+  "84cb985cb1eae0acc496896729da46a9cf4d9e66",
+  "6d71336539fc483cb40472e0a3fa468ffabcf958"
+ ]
+}
