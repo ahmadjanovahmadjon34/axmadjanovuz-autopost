@@ -54,6 +54,7 @@ sources:
     - qalampir
     - Press_Secretary_Uz
     - MyGovUz
+    - huquqiyaxborot
   sites:
     - name: "Kun.uz"
       rss: "https://kun.uz/news/rss"
