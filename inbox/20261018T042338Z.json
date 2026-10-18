@@ -1,0 +1,52 @@
+{
+ "processed_ids": [
+  "74489d7a8554204c82397008107984104675ec1e",
+  "1fa0c947166aeb87ed3b6e175f3efdb7a07c0fb1",
+  "d7e20fe9a46dbf0925c4dc6ef4848c7af635b4a9",
+  "cfe92062d5841398fd7dab7fab00cd08796e72b0",
+  "8c6b8444651ec0047757be81c154488d1b3ebb92",
+  "b8f5b02393a6cacff7b1cec47d84884f4806a70f",
+  "-1001981582728:1567922",
+  "-1001981582728:1567923",
+  "-1001981582728:1567924",
+  "-1001981582728:1567925"
+ ],
+ "drafts": [
+  {
+   "id": "cfe92062d5841398fd7dab7fab00cd08796e72b0",
+   "related": [],
+   "post": "<b>⚡️Toshkent xalqaro moda akademiyasi ish boshlaydi</b>\n\nToshkentda yangi davlat oliy ta’lim tashkiloti — <b>Toshkent xalqaro moda akademiyasi</b> tashkil etiladi.\n\n📚 Akademiyada o‘quv jarayoni <b>2026/2027 o‘quv yilidan</b> boshlanadi.\n\nModa va dizayn sohasida o‘qishni rejalashtirayotgan abituriyentlar uchun yangi imkoniyat.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1567922",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567923",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1567924",
+   "reply": "Va alaykum assalom! Sizga ham xayrli kun 😊"
+  },
+  {
+   "id": "-1001981582728:1567925",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "74489d7a8554204c82397008107984104675ec1e",
+  "1fa0c947166aeb87ed3b6e175f3efdb7a07c0fb1",
+  "d7e20fe9a46dbf0925c4dc6ef4848c7af635b4a9",
+  "8c6b8444651ec0047757be81c154488d1b3ebb92",
+  "b8f5b02393a6cacff7b1cec47d84884f4806a70f"
+ ]
+}
