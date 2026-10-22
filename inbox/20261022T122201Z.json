@@ -1,0 +1,73 @@
+{
+ "processed_ids": [
+  "b08ff8d4d3579bc8867a352cd0a9328ad21ca186",
+  "7bd96f24b4e4fd2f0cd55b034d705c8ee6fb1c58",
+  "7185e6734fe275d1e37d605219fd8be11423dc7e",
+  "918d11722d9d5aaafc57ef5e327c7560460a1a30",
+  "bceb116408a90b295a0c1acaf5ef6f3f867e055e",
+  "c41215ac2c35258cde4346953e8ff69260703d6d",
+  "529bbc95c526f0688534ec014eeeda3db78af3e6",
+  "c5ae0c550c15dceff6a990adce920a80dbb605e3",
+  "6f8c1a20c8631c6242a0c71542dadb2ed30b4432",
+  "943e1c707da757386420e55e5afb16285303a682",
+  "991a473cf003352fcc48b965bba10d152524fd1c",
+  "0b750b33a2dafb5108e7d5f894e44e5b474e1750",
+  "de2646b87135e030f1f212b1dca7aaf63d97f50d",
+  "8da70923fd51818f56e261a51bf0a9892d0dbc26",
+  "c7508e98c3e3cf8036ee180f8120c2da32cf97ee",
+  "9ab958cbf40b470015ccb2e3ff7371ed581b35d8",
+  "2bbb68c65560962f00720c0d49cdcbabe1ab5259",
+  "afafefc6e324f4508f2a6e0acd42480194c1e65c",
+  "c6ad8b75746a15727459c2b5ea9e9d4770d6ecc9",
+  "e73df9f6fcaa9c2b431d7f792516036e0c85f6ff",
+  "63060684ea9cb19bb5aaeecde159eedfcc0d41cf",
+  "-1001981582728:1570949",
+  "-1001981582728:1570950"
+ ],
+ "drafts": [
+  {
+   "id": "918d11722d9d5aaafc57ef5e327c7560460a1a30",
+   "related": [
+    "c41215ac2c35258cde4346953e8ff69260703d6d",
+    "6f8c1a20c8631c6242a0c71542dadb2ed30b4432",
+    "afafefc6e324f4508f2a6e0acd42480194c1e65c"
+   ],
+   "post": "<b>❗️Milliy sertifikat imtihonlariga ro‘yxatdan o‘tish yuzasidan senator so‘rovi yuborildi</b>\n\nAyrim hududlarda ro‘yxatdan o‘tish <b>juda qisqa vaqtda yopilib qolgani</b> pedagoglar va boshqa talabgorlarning e’tiroziga sabab bo‘lgan. Umumiy muddat tugamagan bo‘lsa ham, hudud uchun ajratilgan o‘rinlar to‘lgach, u yerda ro‘yxatdan o‘tib bo‘lmayapti.\n\nSenator K. Tursunov <b>Bilim va malakalarni baholash agentligi</b> direktori M. Karimovdan quyidagilarni so‘radi:\n\n🔹 hudud va fanlar bo‘yicha o‘rinlar qanday mezonlarda ajratiladi;\n🔹 bo‘sh o‘rinlar haqidagi ma’lumot qanday ochiq qilinadi;\n🔹 bir hududda o‘rin tugab, boshqasida bo‘sh qolsa, ular <b>qayta taqsimlanadimi</b>;\n🔹 <b>qo‘shimcha o‘rinlar yoki imtihonlar</b> tashkil etiladimi.\n\nQonunga ko‘ra, so‘rovga <b>10 kun ichida</b> javob berilishi kerak.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1570949",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1570950",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "b08ff8d4d3579bc8867a352cd0a9328ad21ca186",
+  "7bd96f24b4e4fd2f0cd55b034d705c8ee6fb1c58",
+  "7185e6734fe275d1e37d605219fd8be11423dc7e",
+  "bceb116408a90b295a0c1acaf5ef6f3f867e055e",
+  "529bbc95c526f0688534ec014eeeda3db78af3e6",
+  "c5ae0c550c15dceff6a990adce920a80dbb605e3",
+  "943e1c707da757386420e55e5afb16285303a682",
+  "991a473cf003352fcc48b965bba10d152524fd1c",
+  "0b750b33a2dafb5108e7d5f894e44e5b474e1750",
+  "de2646b87135e030f1f212b1dca7aaf63d97f50d",
+  "8da70923fd51818f56e261a51bf0a9892d0dbc26",
+  "c7508e98c3e3cf8036ee180f8120c2da32cf97ee",
+  "9ab958cbf40b470015ccb2e3ff7371ed581b35d8",
+  "2bbb68c65560962f00720c0d49cdcbabe1ab5259",
+  "c6ad8b75746a15727459c2b5ea9e9d4770d6ecc9",
+  "e73df9f6fcaa9c2b431d7f792516036e0c85f6ff",
+  "63060684ea9cb19bb5aaeecde159eedfcc0d41cf"
+ ]
+}
