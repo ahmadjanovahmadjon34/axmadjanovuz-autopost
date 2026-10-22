@@ -1,0 +1,58 @@
+{
+ "processed_ids": [
+  "a2e5ec6fc62652fb92873141a91dfca3aa4fe124",
+  "8bdbf8e754578dfea0bea0cab0769616f9f3dece",
+  "bde347b44baba320519aec22ca752017c381a0d2",
+  "d300082db217e574323c67af0289cd5ad308aab8",
+  "957b3d00d62913d926984e5cfa0e2eaf1f5c1dd0",
+  "d4443c33b3d6b3516c3c710dfd33010076383040",
+  "50195b505a61d14e845e45823b4efb406cab89a7",
+  "45562be47134df9b8743d4412f1f33721c0e5df3",
+  "ae264aa64dd9dbdf53a22a55c2fe7efed84bb1e1",
+  "-1001981582728:1570775",
+  "-1001640191255:621728",
+  "-1001640191255:621729",
+  "-1001981582728:1570777"
+ ],
+ "drafts": [
+  {
+   "id": "957b3d00d62913d926984e5cfa0e2eaf1f5c1dd0",
+   "related": [],
+   "post": "<b>❗️Ta’lim vazirligiga 1-fevralgacha xodimlar tanlovsiz olinadi</b>\n\nPrezidentning 19-oktabrdagi PQ-380-son qaroriga ko‘ra, Ta’lim va ilm-fan vazirligi markaziy apparatiga xodimlar <b>2027-yil 1-fevralga qadar</b> istisno tariqasida <b>to‘g‘ridan-to‘g‘ri suhbat asosida</b> ishga qabul qilinadi.\n\n🔹 Bunda “ARGOS” tanlovi o‘tkazilmaydi.\n🔹 Istisno faqat vazirlik <b>markaziy apparatidagi bo‘sh lavozimlarga</b> tegishli.\n🔹 1-fevraldan keyin ishga qabul qilishda “ARGOS” tanloviga rioya qilish yana majburiy bo‘ladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1570775",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:621728",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:621729",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1570777",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a2e5ec6fc62652fb92873141a91dfca3aa4fe124",
+  "8bdbf8e754578dfea0bea0cab0769616f9f3dece",
+  "bde347b44baba320519aec22ca752017c381a0d2",
+  "d300082db217e574323c67af0289cd5ad308aab8",
+  "d4443c33b3d6b3516c3c710dfd33010076383040",
+  "50195b505a61d14e845e45823b4efb406cab89a7",
+  "45562be47134df9b8743d4412f1f33721c0e5df3",
+  "ae264aa64dd9dbdf53a22a55c2fe7efed84bb1e1"
+ ]
+}
