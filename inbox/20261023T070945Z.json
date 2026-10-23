@@ -1,0 +1,72 @@
+{
+ "processed_ids": [
+  "2ec9a2127e6a68757dd1b83555137d21aec8b06f",
+  "1f2e9b7f3d43f38de4ed35f48ae71c6f391da884",
+  "335c9548c0aadd131e7eb56947d0c013456b8147",
+  "db497e70e41f471a8fdbf953f1fa84682239fa27",
+  "345598ee0c531182aaa6582e0a0090498f61d485",
+  "bbc8ed4939ed6690c98d9a73458d7d9c5bb34eec",
+  "4a47d848f0aa773ef3c1603c86c3cb5efe6f189e",
+  "8f6fd9cd5abcc0ae2d71c96163b4cae723236a27",
+  "726bd57d5925db0354851efcaa600238f7d79b98",
+  "12ce5106f5334e04242c2a7fc73b6fb6282236c0",
+  "b67134f70e8fe59ad995d00dfb3ad7906645b5db",
+  "8b301827caf043f7f7cc34bc1b2a77bbd7dba51b",
+  "51c44e00976cd2e0d0ec58484fadb12508b619f1",
+  "609c080f655f09c40cd779ff80e63e7e832cbcc1",
+  "7ecf3a321866dd880b4d98aedef624e5154d616b",
+  "b9bf5596579b851deddd9ffc55cd12f16ae6a1ba",
+  "8f87421146e231bbcaa12cf348429009681a104d",
+  "f22b8f92a2b178be49fd3d115d475249eeb5f406",
+  "3ae7f49df0497a1f2b62344805a400c6aa5ba630",
+  "5c7256751ab83b7e44657c7bc176dec5739ab967",
+  "8211504dfc11ca6fb7e68e08f1f95369a46b7c0d",
+  "f12bdc2fad3c5df47e14e0e10195bceabcf14881",
+  "8c6871aad4c10810a79c8d4f68365f6648bbdcdd",
+  "dfd906da64ec6153bbfec1a2634120939afb0a3e",
+  "7b711783ac2f8a28e50bb0d8bf841bdb2c15f3c1",
+  "91f2d378ebe2de8e78c04de799e7e162b26ce58f"
+ ],
+ "drafts": [
+  {
+   "id": "12ce5106f5334e04242c2a7fc73b6fb6282236c0",
+   "related": [
+    "726bd57d5925db0354851efcaa600238f7d79b98",
+    "b67134f70e8fe59ad995d00dfb3ad7906645b5db",
+    "8b301827caf043f7f7cc34bc1b2a77bbd7dba51b",
+    "51c44e00976cd2e0d0ec58484fadb12508b619f1",
+    "609c080f655f09c40cd779ff80e63e7e832cbcc1",
+    "7ecf3a321866dd880b4d98aedef624e5154d616b"
+   ],
+   "post": "<b>⚡️Boshlang‘ich ta’lim o‘qituvchilari uchun milliy sertifikat imtihoniga ro‘yxatdan o‘tish boshlandi</b>\n\nVazirlar Mahkamasining 2026-yil 29-iyuldagi 411-son qaroriga muvofiq, ro‘yxatdan o‘tish <b>my.gov.uz</b> portali orqali amalga oshiriladi.\n\n🗓 Ro‘yxatdan o‘tishning oxirgi kuni — <b>5-noyabr</b>.\n\n📌 Eslatib o‘tamiz:\n🔹 imtihon natijasiga ko‘ra 3 yil amal qiladigan A+, A, B+, B, C+ va C darajali sertifikatlar beriladi;\n🔹 B+ va undan yuqori sertifikatga ega, boshlang‘ich sinflarda dars beruvchi boshlang‘ich ta’lim mutaxassisligidagi o‘qituvchilarga <b>lavozim maoshining 15 foizi</b> miqdorida har oylik ustama to‘lanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "2ec9a2127e6a68757dd1b83555137d21aec8b06f",
+  "1f2e9b7f3d43f38de4ed35f48ae71c6f391da884",
+  "335c9548c0aadd131e7eb56947d0c013456b8147",
+  "db497e70e41f471a8fdbf953f1fa84682239fa27",
+  "345598ee0c531182aaa6582e0a0090498f61d485",
+  "bbc8ed4939ed6690c98d9a73458d7d9c5bb34eec",
+  "4a47d848f0aa773ef3c1603c86c3cb5efe6f189e",
+  "8f6fd9cd5abcc0ae2d71c96163b4cae723236a27",
+  "b9bf5596579b851deddd9ffc55cd12f16ae6a1ba",
+  "8f87421146e231bbcaa12cf348429009681a104d",
+  "f22b8f92a2b178be49fd3d115d475249eeb5f406",
+  "3ae7f49df0497a1f2b62344805a400c6aa5ba630",
+  "5c7256751ab83b7e44657c7bc176dec5739ab967",
+  "8211504dfc11ca6fb7e68e08f1f95369a46b7c0d",
+  "f12bdc2fad3c5df47e14e0e10195bceabcf14881",
+  "8c6871aad4c10810a79c8d4f68365f6648bbdcdd",
+  "dfd906da64ec6153bbfec1a2634120939afb0a3e",
+  "7b711783ac2f8a28e50bb0d8bf841bdb2c15f3c1",
+  "91f2d378ebe2de8e78c04de799e7e162b26ce58f"
+ ]
+}
