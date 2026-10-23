@@ -1,0 +1,96 @@
+{
+ "processed_ids": [
+  "52589ffbba4835b3807a25a12c63d6ae799cfaed",
+  "50749674aff3b9d24eb6958650b4999afd1cec30",
+  "30308c923837553cfe4bebf9d15ca31c24e3d08e",
+  "2f6b02d3243be9454aafb699dfcf8c6b8a5a356b",
+  "3c6e10a9d66a94d98d04d3a561bc6d59ef7ae0e1",
+  "c786b9c77fa4b0ac73418b27105012375b590095",
+  "a49f982d00288c65c61bf1913525ec121b41fbbb",
+  "03d92e8fb5332c546ead90f9b5328a2f87d44abd",
+  "39e3d7f4c382a816cdfb220450f44580f5c4518d",
+  "4b6aab6f74f51a4765e702ce903a252f57b3b1bd",
+  "826ef0b7f0cf34fa7fbfe4c48dcbe8fa6ab9da78",
+  "99759c12ec9cc7cab372fbf570d152133fdb0b54",
+  "586727696bb569a6f0be7f90784c7063e62895ee",
+  "8ecb17be5ec30bb6ca449b7f2a914e5fb8c3d4e2",
+  "b6c1c84123c75dcf014af7d5c73fc63f6389097d",
+  "f22e692d3e1fd71d7cf2bc3e86720a183f319a4e",
+  "4bb96fcfe97f20b6a0783213987c3358d7460c16",
+  "bc40c0954efdd729d31c1ee0a3a1b4527f425c2a",
+  "a4b91db7a205c10ec52fbf1d62bb002f3bc605bd",
+  "01d0fca1ae87c9fbd04d3c8d28dbf310d3986810",
+  "2dfaab823e6cf7826e89ea8a2faffb8ece983c53",
+  "04ef3816406726734acacf129475ac3b02cc339f",
+  "0b7b2d7a5212b7dc4ae2b3d207895f6d5ed9f88d",
+  "-1001981582728:1571416",
+  "-1001640191255:622150",
+  "-1001981582728:1571418",
+  "-1001981582728:1571419",
+  "-1001981582728:1571420",
+  "-1001981582728:1571421"
+ ],
+ "drafts": [
+  {
+   "id": "c786b9c77fa4b0ac73418b27105012375b590095",
+   "related": [],
+   "post": "<b>⚡️Fan olimpiadasining tuman bosqichida 500 mingdan ortiq o‘quvchi qatnashmoqda</b>\n\nHozir barcha tuman (shahar)larda asosiy fan olimpiadasining <b>ikkinchi — tuman (shahar) bosqichi</b> bo‘lib o‘tmoqda. Unda ishtirok etish uchun <b>500 ming nafardan ortiq</b> o‘quvchi ro‘yxatdan o‘tgan.\n\n🗓 Bosqich <b>27-oktyabrgacha</b> davom etadi.\n\n📌 Olimpiada 4 bosqichda o‘tkaziladi. Unda umumiy o‘rta ta’lim maktablari, akademik litseylar va kasbiy ta’lim tashkilotlari o‘quvchilari qatnashadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1571416",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:622150",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571418",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571419",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571420",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571421",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "52589ffbba4835b3807a25a12c63d6ae799cfaed",
+  "50749674aff3b9d24eb6958650b4999afd1cec30",
+  "30308c923837553cfe4bebf9d15ca31c24e3d08e",
+  "2f6b02d3243be9454aafb699dfcf8c6b8a5a356b",
+  "3c6e10a9d66a94d98d04d3a561bc6d59ef7ae0e1",
+  "a49f982d00288c65c61bf1913525ec121b41fbbb",
+  "03d92e8fb5332c546ead90f9b5328a2f87d44abd",
+  "39e3d7f4c382a816cdfb220450f44580f5c4518d",
+  "4b6aab6f74f51a4765e702ce903a252f57b3b1bd",
+  "826ef0b7f0cf34fa7fbfe4c48dcbe8fa6ab9da78",
+  "99759c12ec9cc7cab372fbf570d152133fdb0b54",
+  "586727696bb569a6f0be7f90784c7063e62895ee",
+  "8ecb17be5ec30bb6ca449b7f2a914e5fb8c3d4e2",
+  "b6c1c84123c75dcf014af7d5c73fc63f6389097d",
+  "f22e692d3e1fd71d7cf2bc3e86720a183f319a4e",
+  "4bb96fcfe97f20b6a0783213987c3358d7460c16",
+  "bc40c0954efdd729d31c1ee0a3a1b4527f425c2a",
+  "a4b91db7a205c10ec52fbf1d62bb002f3bc605bd",
+  "01d0fca1ae87c9fbd04d3c8d28dbf310d3986810",
+  "2dfaab823e6cf7826e89ea8a2faffb8ece983c53",
+  "04ef3816406726734acacf129475ac3b02cc339f",
+  "0b7b2d7a5212b7dc4ae2b3d207895f6d5ed9f88d"
+ ]
+}
