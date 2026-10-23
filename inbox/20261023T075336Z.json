@@ -1,0 +1,69 @@
+{
+ "processed_ids": [
+  "a18138475e25d206f147d2b67479105b8fada3e2",
+  "62d5b30d4d4570fe8b68a2015b793df9fa54f99d",
+  "a7b5d752a54f63876806403e535b38f044c3e017",
+  "ba8de0d8397ad60ed0252f3cae45f4455e04b60b",
+  "a67f057c4123854492aac62877a09623f3482cc1",
+  "f0c6acd5f81e0c1636d67fea0025825d9b6e23aa",
+  "0eecd55d05f82d682e8763b5da6ef3f79238633a",
+  "191a99536e24bb2e0011c3ffc6e40b5382f4224e",
+  "e38d13fe82dda642a5b2be55bbab651f2a93c60e",
+  "b611c4f15b85555d79de66836ec35d27e49fb3b5",
+  "855c5f534c1c9f3713b3c14fcaca0dfa13000b2f",
+  "50d0854bfded662f3ae5d5f9103f32843c008a9a",
+  "7265f82a50a6a6c94c887651f3f183876822ad85",
+  "901e52a01be8a5760b6f858e0bced5e0e6c72d7f",
+  "15e7c46a1ddd05b27a6622f7ca14011a3d30458a",
+  "8194ad42d30ae45b56ec018d0ba1acc7c9e144bd",
+  "a44274a307344a089daa01bb072fb9fcafa7e8a7",
+  "a261044068397184515b9777160884621eb8d326",
+  "46b0ab61f9444d23665b79efa5f6bf321c924add",
+  "50a72835af24bcbd9dce1801e89096c950f77697",
+  "f8256fcbc0d540744ad19560d1b0954a763abcd9",
+  "6a937a8c64aa6099618ffb23790283cfc64bb649",
+  "-1001981582728:1571365"
+ ],
+ "drafts": [
+  {
+   "id": "50d0854bfded662f3ae5d5f9103f32843c008a9a",
+   "related": [],
+   "post": "<b>❗️Maktab o‘qituvchilari va rahbarlariga qanday ustamalar to‘lanadi?</b>\n\n📌 <b>Mentor-o‘qituvchilar — 20 foiz</b>\nPQ-231-son qarorga ko‘ra, har bir tuman (shahar)da “Kasbiy rivojlanish soati” va “Kasbiy rivojlanish kuni” uchun yuqori malakali o‘qituvchilardan mentorlar tarkibi shakllantiriladi. Ularga asosiy ish joyidagi maktab direktor jamg‘armasi hisobidan lavozim maoshining 20 foizi miqdorida har oylik ustama to‘lanadi. Bu ustama boshqa ustamalarga qo‘shimcha ravishda beriladi.\n\n📌 <b>Xalqaro olimpiada g‘oliblarini tayyorlaganlar — 200, 175 va 150 foiz</b>\nIMO, IPhO, IChO, IBO va IOI g‘oliblarini tayyorlagan o‘qituvchi va direktorlarga navbatdagi o‘quv yili uchun oltin, kumush va bronza medalga qarab tegishincha ustama to‘lanadi.\n\n📌 <b>Direktor — 20 foiz, o‘rinbosarlar — 10 foizgacha</b>\nFaoliyat samaradorligi 100 ballik tizimda baholanadi.\n\n📌 <b>Direktorlar kengashi a’zolari — 20 foiz</b>\nHududiy Direktorlar kengashida faoliyat yuritayotgan direktorlarga bazaviy tarif stavkasiga nisbatan 20 foiz har oylik ustama to‘lanadi. Samaradorlik bo‘yicha 20 foizlik ustama olayotgan direktorlarga bu ustama berilmaydi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1571365",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a18138475e25d206f147d2b67479105b8fada3e2",
+  "62d5b30d4d4570fe8b68a2015b793df9fa54f99d",
+  "a7b5d752a54f63876806403e535b38f044c3e017",
+  "ba8de0d8397ad60ed0252f3cae45f4455e04b60b",
+  "a67f057c4123854492aac62877a09623f3482cc1",
+  "f0c6acd5f81e0c1636d67fea0025825d9b6e23aa",
+  "0eecd55d05f82d682e8763b5da6ef3f79238633a",
+  "191a99536e24bb2e0011c3ffc6e40b5382f4224e",
+  "e38d13fe82dda642a5b2be55bbab651f2a93c60e",
+  "b611c4f15b85555d79de66836ec35d27e49fb3b5",
+  "855c5f534c1c9f3713b3c14fcaca0dfa13000b2f",
+  "7265f82a50a6a6c94c887651f3f183876822ad85",
+  "901e52a01be8a5760b6f858e0bced5e0e6c72d7f",
+  "15e7c46a1ddd05b27a6622f7ca14011a3d30458a",
+  "8194ad42d30ae45b56ec018d0ba1acc7c9e144bd",
+  "a44274a307344a089daa01bb072fb9fcafa7e8a7",
+  "a261044068397184515b9777160884621eb8d326",
+  "46b0ab61f9444d23665b79efa5f6bf321c924add",
+  "50a72835af24bcbd9dce1801e89096c950f77697",
+  "f8256fcbc0d540744ad19560d1b0954a763abcd9",
+  "6a937a8c64aa6099618ffb23790283cfc64bb649"
+ ]
+}
