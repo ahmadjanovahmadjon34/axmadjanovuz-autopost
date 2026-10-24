@@ -1,0 +1,65 @@
+{
+ "processed_ids": [
+  "ac627a3310b91b860cf3e4e8f5d776912f4abd27",
+  "88b511b3fe047484b3f8edbc345561ac87eac92b",
+  "2af4f9e1ffd40a9f35a45a4212c5798ac0d7897f",
+  "60f1969cf599b4e678c24aa0f18989b2bd96fcb5",
+  "b1fda3b02b48c6b1ce529d3bc38930dc75236e9e",
+  "e83017bfcc7c20b0bf3b8744a7cb93c322bbfdb6",
+  "e0ea03b5c64f9ad825736f09086b5ab0c58e5140",
+  "b3646af9fc0afc5676d729c2e0f5d8b950ffc092",
+  "11d26e2a39e4c901ac1d1af85362c5a54380e3f7",
+  "5bdd248956916779f075e1bf2ab60a8e8233022e",
+  "-1001981582728:1571610",
+  "-1001640191255:622191",
+  "-1001640191255:622192"
+ ],
+ "drafts": [
+  {
+   "id": "e0ea03b5c64f9ad825736f09086b5ab0c58e5140",
+   "related": [],
+   "post": "<b>❗️Prezident va nomli davlat stipendiyalari: test natijasidan norozilar apellyatsiya berishi mumkin</b>\n\nTa’lim vazirligi stipendiya tanlovining respublika bosqichidagi test sinovlari bo‘yicha rasmiy munosabat bildirdi.\n\n📌 Asosiy jihatlar:\n➖ Test <b>10-oktyabr</b> kuni Bilim va malakalarni baholash agentligida o‘tkazildi, unda <b>1 460 nafar</b> talabgor qatnashdi;\n➖ Fanlar: axborot texnologiyalari, O‘zbekiston tarixi va xorijiy tillar;\n➖ O‘tish bali – eng yuqori ballning <b>55 foizi</b>. Undan past ball olgan yoki testga kelmaganlar stipendiyaga tavsiya etilmaydi;\n➖ Natijadan norozi talabgorlar <b>my.edu.uz</b> tizimidagi shaxsiy kabineti orqali apellyatsiya beradi. Ko‘rib chiqish natijasi ham shu kabinetda e’lon qilinadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  },
+  {
+   "id": "5bdd248956916779f075e1bf2ab60a8e8233022e",
+   "related": [],
+   "post": "<b>⚡️Kam ta’minlangan oila yoshlariga haydovchilik kursi pulini davlat to‘lab beradi</b>\n\nQonunchilikka ko‘ra, kambag‘al oilalar reyestriga kiritilgan oilalardagi yoshlarga <b>“Yoshlar daftari”</b> jamg‘armalari orqali haydovchilik o‘quv kursi xarajatlari uchun subsidiya beriladi.\n\n🚗 Subsidiya haydovchilik guvohnomasining <b>“A”, “B”, “D” va “DE”</b> toifalarini olish uchun kurs to‘lovini qoplaydi.\n\n📅 Tartib <b>2026-yil 1-fevraldan</b> amalda.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1571610",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:622191",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:622192",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "ac627a3310b91b860cf3e4e8f5d776912f4abd27",
+  "88b511b3fe047484b3f8edbc345561ac87eac92b",
+  "2af4f9e1ffd40a9f35a45a4212c5798ac0d7897f",
+  "60f1969cf599b4e678c24aa0f18989b2bd96fcb5",
+  "b1fda3b02b48c6b1ce529d3bc38930dc75236e9e",
+  "e83017bfcc7c20b0bf3b8744a7cb93c322bbfdb6",
+  "b3646af9fc0afc5676d729c2e0f5d8b950ffc092",
+  "11d26e2a39e4c901ac1d1af85362c5a54380e3f7"
+ ]
+}
