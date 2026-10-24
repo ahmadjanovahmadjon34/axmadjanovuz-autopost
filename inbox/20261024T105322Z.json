@@ -1,0 +1,33 @@
+{
+ "processed_ids": [
+  "072cfc9effcf773220bce26ff787d0ee7e753b2d",
+  "c1ff9b12fc91b5dd49eb245ec6ef203ee3f08028",
+  "b0c657485c65ef564a4093136efdba179fae0a77",
+  "9754f6e0edfab9d9e346084f50dc2d442b374820",
+  "a4f58ed123a0de10237f7ac914742ce0bcab333f",
+  "4fbf58083120444a5b15b46687cd59973ad574d0",
+  "3eeafdae43d6503816c0d213651ffeb68abcd5fc"
+ ],
+ "drafts": [
+  {
+   "id": "a4f58ed123a0de10237f7ac914742ce0bcab333f",
+   "related": [],
+   "post": "<b>⚡️Qishki o‘qishni ko‘chirish 10–20-yanvar kunlari bo‘ladi</b>\n\nTalabalar o‘qishini <b>10-yanvardan 20-yanvarga qadar</b> uzrli sabab bilan ko‘chirishi mumkin.\n\n📌 Ko‘chirish shakllari:\n— bir oliy ta’lim tashkiloti ichida mos va turdosh yo‘nalish yoki mutaxassislikka o‘qishni ko‘chirish va qayta tiklash;\n— bir oliy ta’lim tashkilotidan boshqasiga mos va turdosh yo‘nalish yoki mutaxassislik bo‘yicha o‘qishni ko‘chirish va ko‘chirib tiklash.\n\n❗️2026/2027 o‘quv yilidan boshlab bir nodavlat OTMdan boshqasiga, shuningdek <b>nodavlat OTMdan davlat OTMga</b> ham uzrli sabab bilan o‘tish mumkin.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "072cfc9effcf773220bce26ff787d0ee7e753b2d",
+  "c1ff9b12fc91b5dd49eb245ec6ef203ee3f08028",
+  "b0c657485c65ef564a4093136efdba179fae0a77",
+  "9754f6e0edfab9d9e346084f50dc2d442b374820",
+  "4fbf58083120444a5b15b46687cd59973ad574d0",
+  "3eeafdae43d6503816c0d213651ffeb68abcd5fc"
+ ]
+}
