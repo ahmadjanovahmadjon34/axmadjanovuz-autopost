@@ -1,0 +1,45 @@
+{
+ "processed_ids": [
+  "02caeb914561cc3b2ad4b460e1bb43ddd32d5c14",
+  "f8581dabb40ad7d4d1d2f498b4c92a8fc00fb72f",
+  "73cb6ffb405192796f5fb6f5494bb92daf14e98f",
+  "f432384b1b555132e0dca280ec47db26c9d1b258",
+  "418b87c9c757cb7ce02d515527877758e160c3e2",
+  "eeae739f2e46dd854d73ec04498f5eb15168d6a7",
+  "1c9a13ac9528bd283d9e1f92a6dd4babcf4b00f1",
+  "-1001640191255:622203",
+  "-1001640191255:622205"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:470",
+   "related": [],
+   "post": "<b>❗️O‘qituvchilar uchun foydali qo‘llanma: 1000 ta asosiy so‘z</b>\n\nMazkur qo‘llanmadagi <b>1000 ta so‘z</b>ni o‘quvchilarga o‘rgatish ularning suhbat qurish, o‘qish va tarjima qilish ko‘nikmalarini rivojlantirishga xizmat qiladi.\n\n📌 Ushbu ma’lumotni maktab guruhlarida ulashish tavsiya etiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:622203",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:622205",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "02caeb914561cc3b2ad4b460e1bb43ddd32d5c14",
+  "f8581dabb40ad7d4d1d2f498b4c92a8fc00fb72f",
+  "73cb6ffb405192796f5fb6f5494bb92daf14e98f",
+  "f432384b1b555132e0dca280ec47db26c9d1b258",
+  "418b87c9c757cb7ce02d515527877758e160c3e2",
+  "eeae739f2e46dd854d73ec04498f5eb15168d6a7",
+  "1c9a13ac9528bd283d9e1f92a6dd4babcf4b00f1"
+ ]
+}
