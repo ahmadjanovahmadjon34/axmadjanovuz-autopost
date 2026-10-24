@@ -1,0 +1,45 @@
+{
+ "processed_ids": [
+  "bot:619839487:470",
+  "af8d5c1cd89813045393a326c912797d091402c7",
+  "3f7c8fa127b910606520a5e5420d176c00303e65",
+  "4c6d7b6bd02377e5a749dd45663841e0a481ceba",
+  "e679f1a43ce08b4a70bab054432f1f995aade645",
+  "-1001981582728:1571621",
+  "-1001981582728:1571622",
+  "-1001981582728:1571625"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:470",
+   "related": [],
+   "post": "<b>❗️Hamma izlagan kitob!</b>\n\nO‘quvchilaringizga mana shu <b>1000 ta so‘zni</b> o‘rgatsangiz, ularda bemalol suhbat qurish, o‘qish va tarjima qilish qobiliyatlari rivojlanadi.\n\n🟤 Maktab guruhingizga tashlab qo‘ysangiz, boshqalarga ham foydali bo‘ladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1571621",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571622",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1571625",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "af8d5c1cd89813045393a326c912797d091402c7",
+  "3f7c8fa127b910606520a5e5420d176c00303e65",
+  "4c6d7b6bd02377e5a749dd45663841e0a481ceba",
+  "e679f1a43ce08b4a70bab054432f1f995aade645"
+ ]
+}
