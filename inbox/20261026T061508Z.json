@@ -1,0 +1,65 @@
+{
+ "processed_ids": [
+  "cdc8a3447957eccbf601bdc47ceacd67d1c6cd3d",
+  "4d41bf4b687ff89631e103ef3281906d7d8a3ea7",
+  "e90c167d73a20699e9dd062bb0e7f6a2b56b18b4",
+  "4feb0651afe9557c7b054b5828f272d59dc30a40",
+  "5deafd8103e533ac55cc551fdbdc93f37d37eb56",
+  "bbc63cef83d24b61b5c890400aaf3d5f06e28189",
+  "7384962dcff5f57d5642f48c4cd3ef0399966f3c",
+  "d394ee97f9fc49da507dd2bd602349543158c500",
+  "d2417df508e2a36e2cdd01a66a1158b642ed3b5a",
+  "a6186b1c9626e1bbb1809c9e3c9025af04817fe7",
+  "a5e2bf2b232debb19b7697fb742e760398ded3fc",
+  "3b3f92bbcc66ecf29f0765e26d16645fc9e2d0fc",
+  "2334afbf753af8579b4738a1a7e14c8caf51af7f",
+  "ec939ce3b3178598b616778f7fb9baabef08b010",
+  "8bbaafa4dabd110f18bd764f366df30e27a13a62",
+  "15ba91a6be94fdec57489d26f961dd4d7409d4bd",
+  "5bd5e603723f7ea85b06c509a3e1391f403fbdb7",
+  "4863f085439d817dc30382fbf5f9699c459366c0",
+  "d09c4b8c1708d39d1ce5674abcc9c862412524aa",
+  "03587782f12136b53ed89512549e4089400af980",
+  "-1001981582728:1572890"
+ ],
+ "drafts": [
+  {
+   "id": "d394ee97f9fc49da507dd2bd602349543158c500",
+   "related": [],
+   "post": "<b>⚡️Pedagoglar malaka (test) sinovi natijalarini ko‘rishi mumkin</b>\n\n“Pedagog” platformasida 2026-yil <b>kuzgi mavsumda</b> o‘tkazilgan malaka (test) sinovlari natijalari e’lon qilindi.\n\n📌 Natijani ko‘rish tartibi:\n🔹 “Pedagog” platformasiga kiring;\n🔹 tegishli murojaatingizni oching;\n🔹 “Natijalar” bo‘limiga o‘ting;\n🔹 “Batafsil” tugmasini bosing.\n\n✅ To‘g‘ri javoblar — yashil rangda\n❌ Noto‘g‘ri javoblar — qizil rangda\n🔵 Kasbiy standart savollari — dumaloq shaklda\n\nAttestatsiyada qatnashadigan pedagoglar <b>sinovtest.uz</b> saytida namunaviy testlarni ishlab ko‘rishi mumkin.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1572890",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "cdc8a3447957eccbf601bdc47ceacd67d1c6cd3d",
+  "4d41bf4b687ff89631e103ef3281906d7d8a3ea7",
+  "e90c167d73a20699e9dd062bb0e7f6a2b56b18b4",
+  "4feb0651afe9557c7b054b5828f272d59dc30a40",
+  "5deafd8103e533ac55cc551fdbdc93f37d37eb56",
+  "bbc63cef83d24b61b5c890400aaf3d5f06e28189",
+  "7384962dcff5f57d5642f48c4cd3ef0399966f3c",
+  "d2417df508e2a36e2cdd01a66a1158b642ed3b5a",
+  "a6186b1c9626e1bbb1809c9e3c9025af04817fe7",
+  "a5e2bf2b232debb19b7697fb742e760398ded3fc",
+  "3b3f92bbcc66ecf29f0765e26d16645fc9e2d0fc",
+  "2334afbf753af8579b4738a1a7e14c8caf51af7f",
+  "ec939ce3b3178598b616778f7fb9baabef08b010",
+  "8bbaafa4dabd110f18bd764f366df30e27a13a62",
+  "15ba91a6be94fdec57489d26f961dd4d7409d4bd",
+  "5bd5e603723f7ea85b06c509a3e1391f403fbdb7",
+  "4863f085439d817dc30382fbf5f9699c459366c0",
+  "d09c4b8c1708d39d1ce5674abcc9c862412524aa",
+  "03587782f12136b53ed89512549e4089400af980"
+ ]
+}
