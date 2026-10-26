@@ -1,0 +1,133 @@
+{
+ "processed_ids": [
+  "9be1862fadb88879b16c7176f3ec133d30eb2d09",
+  "98a44d5c9541836ca4a31c9e14b851c8288c799e",
+  "49e858c432c7fd3e87f85e23b63ffcfd77535437",
+  "5079323ae1e1900c585b51663c7f46a5b651bb6c",
+  "2284c1ded37e36b2b5f1b3ae839c6f9c46f32ac7",
+  "cbc969a8acc95ec6b8b2de60286c3dc2f2291162",
+  "becb138ab422ff3ce7e63660bd9b4d30458b7c0d",
+  "e948bbce9d3f7652b0102e269eb96b8619652421",
+  "d742b9a3a6f240e34318581b7c8dbd15923a512a",
+  "f8c72a40383d607f81749f168a7cab7e67eedb17",
+  "295e281b301b70c550ceba5b2bd305a58fca86a1",
+  "cf4b5608b6014671db1e3e8381e38768c44261e3",
+  "66cd09d7ea38214c5640f2ab3b7b8f73021d5bc5",
+  "51e9ad872ec2e30e1e211112ea557dbf6c8b9133",
+  "fa7123558298dfd8bd0ec14a66b9ca886766da82",
+  "351d58780ddcceb88cf7d68dd45a3591d91afe98",
+  "ecfdc76c63bb0645055de5ffe719c64a3faa6e6d",
+  "bffca36904df72a446b4c49c6139431a130237ee",
+  "8983145880aaccb6fa29d74cf331c155b3de9be6",
+  "c46c0513160949e0fa51d366f26bc310645228ea",
+  "0435900f0250ffe05df0b64183cff71769a6672b",
+  "-1001640191255:623626",
+  "-1001640191255:623627",
+  "-1001640191255:623628",
+  "-1001640191255:623629",
+  "-1001640191255:623630",
+  "-1001640191255:623631",
+  "-1001640191255:623632",
+  "-1001640191255:623633",
+  "-1001640191255:623634",
+  "-1001640191255:623635",
+  "-1001640191255:623636",
+  "-1001640191255:623637",
+  "-1001640191255:623638",
+  "-1001981582728:1572891"
+ ],
+ "drafts": [
+  {
+   "id": "295e281b301b70c550ceba5b2bd305a58fca86a1",
+   "related": [
+    "ecfdc76c63bb0645055de5ffe719c64a3faa6e6d"
+   ],
+   "post": "<b>⚡️“Kelajak soati”: navbatdagi dars mavzusi ma’lum bo‘ldi</b>\n\nMaktablarda “Kelajak soati” darsining <b>8-mavzusi</b> — <b>“O‘zbekistonda ilm-fan: yutuqlar va imkoniyatlar”</b>.\n\n📚 Dars uchun tayyorlangan kontentlar:\n1️⃣ Ilm-fan taraqqiyotining yangi formulasi\n2️⃣ O‘zbekistonni dunyoga tanitgan olimlar\n3️⃣ “Ilm-fandagi eng muhim qadam – birinchi qadamdir” – Bahodir Hafizov\n4️⃣ Baxtiyor Sheraliyev bilan botanika bog‘i bo‘ylab sayr\n\n📝 Dars ssenariysi va taqdimoti ham tayyorlangan.\n\n🟤 Maktab guruhingizga ulashing, hamkasblaringizga foydali bo‘ladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:623626",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623627",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623628",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623629",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623630",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623631",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623632",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623633",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623634",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623635",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623636",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623637",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623638",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572891",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "9be1862fadb88879b16c7176f3ec133d30eb2d09",
+  "98a44d5c9541836ca4a31c9e14b851c8288c799e",
+  "49e858c432c7fd3e87f85e23b63ffcfd77535437",
+  "5079323ae1e1900c585b51663c7f46a5b651bb6c",
+  "2284c1ded37e36b2b5f1b3ae839c6f9c46f32ac7",
+  "cbc969a8acc95ec6b8b2de60286c3dc2f2291162",
+  "becb138ab422ff3ce7e63660bd9b4d30458b7c0d",
+  "e948bbce9d3f7652b0102e269eb96b8619652421",
+  "d742b9a3a6f240e34318581b7c8dbd15923a512a",
+  "f8c72a40383d607f81749f168a7cab7e67eedb17",
+  "cf4b5608b6014671db1e3e8381e38768c44261e3",
+  "66cd09d7ea38214c5640f2ab3b7b8f73021d5bc5",
+  "51e9ad872ec2e30e1e211112ea557dbf6c8b9133",
+  "fa7123558298dfd8bd0ec14a66b9ca886766da82",
+  "351d58780ddcceb88cf7d68dd45a3591d91afe98",
+  "bffca36904df72a446b4c49c6139431a130237ee",
+  "8983145880aaccb6fa29d74cf331c155b3de9be6",
+  "c46c0513160949e0fa51d366f26bc310645228ea",
+  "0435900f0250ffe05df0b64183cff71769a6672b"
+ ]
+}
