@@ -1,0 +1,27 @@
+{
+ "processed_ids": [
+  "bb6399a5508bed7d8d153c5115d05b61101fa673",
+  "b96369930d3a17bc2a269736552ef02005427667",
+  "a07a6ddbb626c3e90edc3a99899d374311ef8eaa",
+  "bot:619839487:525"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:525",
+   "related": [],
+   "post": "<b>⚡️Ishga joylashish uchun kerakli hujjatlarni my.gov.uz orqali olish mumkin</b>\n\nmy.gov.uz portalining <b>\"Ma'lumotnomalar\"</b> bo'limida ishga kirish uchun kerak bo'ladigan hujjatlar to'plami jamlangan.\n\n✅ <b>Bepul</b> yuklab olinadi:\n\n🔹 Fotosurat (3x4);\n🔹 JSHSHIR berilganligi haqida ma'lumotnoma;\n🔹 Yashash joyi bo'yicha ma'lumotnoma;\n🔹 Ish tajribasi haqida ma'lumotnoma;\n🔹 O'zini o'zi band qilganlik haqida ma'lumotnoma;\n🔹 Ta'lim muassasasini tugatganlik haqida ma'lumotnoma;\n🔹 Jamg'arib boriladigan pensiya hisobvarag'i haqida ma'lumotnoma;\n🔹 Imkoniyati cheklangan shaxs haqida ma'lumotnoma.\n\n💳 <b>Belgilangan to'lov</b> bilan olinadi:\n\n🔸 Narkologiya dispanseridan ma'lumotnoma;\n🔸 Ruhiy kasalliklar dispanseridan ma'lumotnoma;\n🔸 Sudlanmaganlik (yoki sudlanganlik) haqida ma'lumotnoma.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "bb6399a5508bed7d8d153c5115d05b61101fa673",
+  "b96369930d3a17bc2a269736552ef02005427667",
+  "a07a6ddbb626c3e90edc3a99899d374311ef8eaa"
+ ]
+}
