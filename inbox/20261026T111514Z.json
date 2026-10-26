@@ -1,0 +1,88 @@
+{
+ "processed_ids": [
+  "fb99b85755d147a3cfe5663b930aa97268a81fc0",
+  "f44d7af535978d76609b4c474b07fa6b58f962e8",
+  "cd9aca1efb996a61a428d7e4f155873863b2b64d",
+  "7cc8c2e370ed890e2163d527341317de38195a87",
+  "56afe7c55908d27d271dc97e5cd8c7fd4b68ef1e",
+  "89033eb99dcb128661cc5f263fd312885cf7b654",
+  "2d771ab97a77f28c58faa81f239e1065ba186c2f",
+  "7f0a31960f66f9526a110ce33ba5d3017d9c3529",
+  "72b3600fb2fef71fa38a4ad3c8f76919001d190e",
+  "-1001981582728:1572912",
+  "-1001981582728:1572913",
+  "-1001981582728:1572914",
+  "-1001981582728:1572915",
+  "-1001981582728:1572916",
+  "-1001981582728:1572917",
+  "-1001981582728:1572919",
+  "-1001981582728:1572920",
+  "-1001981582728:1572921",
+  "-1001981582728:1572924"
+ ],
+ "drafts": [
+  {
+   "id": "89033eb99dcb128661cc5f263fd312885cf7b654",
+   "related": [],
+   "post": "<b>❗️29-oktabr kuni nostrifikatsiya testlari bo‘lib o‘tadi</b>\n\nChet elda olingan ta’lim hujjatlarini tan oldirish (nostrifikatsiya) bo‘yicha navbatdagi test sinovi <b>2026-yil 29-oktabr</b> kuni o‘tkaziladi.\n\n📋 Ishtirokchilar ro‘yxati, test topshiriladigan fanlar va hudud e’lon qilindi. O‘zingizni my.gov.uz yoki Davlat xizmatlari markazi orqali ro‘yxatdan o‘tishda olgan <b>ariza raqamingiz</b> bilan tekshirishingiz mumkin.\n\n❗️Imtihon binosiga belgilangan vaqtdan kechikmay, <b>pasport yoki ID-karta</b> bilan boring.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1572912",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572913",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572914",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572915",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572916",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572917",
+   "reply": "Xorijiy til va adabiyot filologiya yo‘nalishiga kiradi, shuning uchun C1 darajadagi sertifikat talab etiladi."
+  },
+  {
+   "id": "-1001981582728:1572919",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572920",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572921",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1572924",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "fb99b85755d147a3cfe5663b930aa97268a81fc0",
+  "f44d7af535978d76609b4c474b07fa6b58f962e8",
+  "cd9aca1efb996a61a428d7e4f155873863b2b64d",
+  "7cc8c2e370ed890e2163d527341317de38195a87",
+  "56afe7c55908d27d271dc97e5cd8c7fd4b68ef1e",
+  "2d771ab97a77f28c58faa81f239e1065ba186c2f",
+  "7f0a31960f66f9526a110ce33ba5d3017d9c3529",
+  "72b3600fb2fef71fa38a4ad3c8f76919001d190e"
+ ]
+}
