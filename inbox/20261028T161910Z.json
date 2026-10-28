@@ -1,0 +1,118 @@
+{
+ "processed_ids": [
+  "a6adf4b39541048e120b73e4244fc66b6cce9d26",
+  "87d409d9f885816bbc3076c6e3fe0148041249c6",
+  "ec27b42c7e56ea14d591d787b8a90f0a1544da5e",
+  "28b8a858d964319572165d73488db8c521f37b23",
+  "0987fe1f1502f84b50012eba424c8f480b6e8de3",
+  "31a0067aa9846c29348c71b7f854bf2920bf4d63",
+  "f846b6d0d666e2b82f555ae4be854e2fb6d16c9a",
+  "64ec00faae2b404a169d26b92db67074b5717588",
+  "efc2c664b3f7557f1c87333ba15acff3bd20240d",
+  "14567e6b04b99e64fe795c508f1076104afc823d",
+  "cebc2c8f93fd836b404270037ac87fc7549dca0c",
+  "1d6d3b7cddd324286dcdec00d447c1e7039acff0",
+  "f38badad56c301b7fce1e06e971a181a033f52a5",
+  "18ace8e22a5d5b35394a68c6184fc3459b683576",
+  "30cd56f8047f7a2b6618c3e2b2ea27c3f0750b28",
+  "259bf0a1db8fd4c9e52f81b090708e6af6268866",
+  "ce6da6eb1454709ef6fa31ddc834acff9ba0881f",
+  "7bcd0d4a8b75077625091e5869b5f9570438bb6e",
+  "fc91895ecdc2e66dde0aa77a0c663ba86a70325c",
+  "-1001640191255:624000",
+  "-1001640191255:624003",
+  "-1001640191255:624004",
+  "-1001640191255:624005",
+  "-1001640191255:624006",
+  "-1001981582728:1573924",
+  "-1001981582728:1573925",
+  "-1001981582728:1573926",
+  "-1001981582728:1573927",
+  "-1001640191255:624007",
+  "-1001640191255:624009",
+  "-1001640191255:624010"
+ ],
+ "drafts": [
+  {
+   "id": "28b8a858d964319572165d73488db8c521f37b23",
+   "related": [],
+   "post": "<b>❗️Endi nikoh uchun arizani onlayn topshirish mumkin</b>\n\nNikohni qayd etish uchun arizani <b>FHDYO organiga borib topshirish shart emas</b>. Uni <b>my.gov.uz</b> portali yoki <b>MyGov</b> ilovasi orqali yuborish mumkin.\n\n📝 Ikkinchi tomon roziligini elektron tasdiqlaydi, nikoh esa belgilangan sanada FHDYO organiga borib rasmiylashtiriladi.\n\n✅ Onlayn ariza yuborish:\n🔹 <b>bepul</b>;\n🔹 hujjat talab qilinmaydi;\n🔹 doimiy ro‘yxatdagi hududdan qat’i nazar foydalanish mumkin.\n\n🗓 Umumiy qoidaga ko‘ra, nikoh ariza berilgandan <b>bir oy o‘tgach</b> qayd etiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:624000",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624003",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624004",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624005",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624006",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1573924",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1573925",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1573926",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1573927",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624007",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624009",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624010",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a6adf4b39541048e120b73e4244fc66b6cce9d26",
+  "87d409d9f885816bbc3076c6e3fe0148041249c6",
+  "ec27b42c7e56ea14d591d787b8a90f0a1544da5e",
+  "0987fe1f1502f84b50012eba424c8f480b6e8de3",
+  "31a0067aa9846c29348c71b7f854bf2920bf4d63",
+  "f846b6d0d666e2b82f555ae4be854e2fb6d16c9a",
+  "64ec00faae2b404a169d26b92db67074b5717588",
+  "efc2c664b3f7557f1c87333ba15acff3bd20240d",
+  "14567e6b04b99e64fe795c508f1076104afc823d",
+  "cebc2c8f93fd836b404270037ac87fc7549dca0c",
+  "1d6d3b7cddd324286dcdec00d447c1e7039acff0",
+  "f38badad56c301b7fce1e06e971a181a033f52a5",
+  "18ace8e22a5d5b35394a68c6184fc3459b683576",
+  "30cd56f8047f7a2b6618c3e2b2ea27c3f0750b28",
+  "259bf0a1db8fd4c9e52f81b090708e6af6268866",
+  "ce6da6eb1454709ef6fa31ddc834acff9ba0881f",
+  "7bcd0d4a8b75077625091e5869b5f9570438bb6e",
+  "fc91895ecdc2e66dde0aa77a0c663ba86a70325c"
+ ]
+}
