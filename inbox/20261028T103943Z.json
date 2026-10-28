@@ -1,0 +1,39 @@
+{
+ "processed_ids": [
+  "d976a34d0cce84c518e66baee253bc922421d462",
+  "d4792718281f92404ccf8c41f4a8c985a9a56d39",
+  "7faab6770174b0960c242bb428ace009fd797cb0",
+  "92126cbb478109f5528acecd3a17a260ae90431c",
+  "40646136284259836f5a22f95bc15db9ab36d326",
+  "30906d1b67c6af3f67670ab271a2068b1fc98735",
+  "d3e5cde47a141e85e73cbda8015c741c5795715c",
+  "2dcc8b5e365d83c0b3d535ea37746ca694062e77",
+  "6f69b30ffb7c6f964185ef9b852ebd0def4ede3f",
+  "ad3a96a2f96bda1a570202feeb5c35ee0769bf2c"
+ ],
+ "drafts": [
+  {
+   "id": "d976a34d0cce84c518e66baee253bc922421d462",
+   "related": [],
+   "post": "<b>❗️Maktablarda I chorak summativ baholash sinovlari o‘tkazilmoqda</b>\n\nBaholashning yangi tartibi joriy etilgan maktablarda <b>5–11-sinf</b> o‘quvchilari uchun chorak yakuni bo‘yicha sinovlar bo‘lmoqda:\n\n➖ <b>23-oktabr – 3-noyabr</b>: 4 923 ta maktabda <b>onlayn</b>\n➖ <b>30-oktabr</b>: 79 ta maktabda <b>an’anaviy</b> shaklda\n\n📚 <b>Fanlar:</b>\n🔹 5–7-sinf — matematika va ona tili\n🔹 8-sinf — algebra va fizika\n🔹 9-sinf — algebra va biologiya\n🔹 10-sinf — algebra va kimyo\n🔹 11-sinf — algebra va chet tili (ingliz, nemis yoki fransuz)\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "d4792718281f92404ccf8c41f4a8c985a9a56d39",
+  "7faab6770174b0960c242bb428ace009fd797cb0",
+  "92126cbb478109f5528acecd3a17a260ae90431c",
+  "40646136284259836f5a22f95bc15db9ab36d326",
+  "30906d1b67c6af3f67670ab271a2068b1fc98735",
+  "d3e5cde47a141e85e73cbda8015c741c5795715c",
+  "2dcc8b5e365d83c0b3d535ea37746ca694062e77",
+  "6f69b30ffb7c6f964185ef9b852ebd0def4ede3f",
+  "ad3a96a2f96bda1a570202feeb5c35ee0769bf2c"
+ ]
+}
