@@ -1,0 +1,27 @@
+{
+ "processed_ids": [
+  "c444c09d274f5655696e9fc411465e50a82d6f3b",
+  "faf1386711e5675b96acb2ec736a351fdb9ca071",
+  "1ab8f9747dda7ea99db7cc7afc1f48f15f98a256",
+  "d7e42e2eaaf38c0f2fab611bc418e8f765a81637",
+  "-1001981582728:1573893",
+  "-1001640191255:623964"
+ ],
+ "drafts": [],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1573893",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:623964",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "c444c09d274f5655696e9fc411465e50a82d6f3b",
+  "faf1386711e5675b96acb2ec736a351fdb9ca071",
+  "1ab8f9747dda7ea99db7cc7afc1f48f15f98a256",
+  "d7e42e2eaaf38c0f2fab611bc418e8f765a81637"
+ ]
+}
