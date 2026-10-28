@@ -1,0 +1,25 @@
+{
+ "processed_ids": [
+  "-1001981582728:1574273"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:563",
+   "related": [],
+   "post": "<b>❗️«Safe Road» ilovasi orqali shaxsiy ma’lumotlar sizdirilgan bo‘lishi mumkin</b>\n\nYo‘l harakati xavfsizligi xizmatiga tegishli «Safe Road» ilovasi buzilgani hamda foydalanuvchilarning shaxsiy ma’lumotlari tarqalgani to‘g‘risida xabarlar tarqalmoqda.\n\nUshbu xabarlarga ko‘ra, OSINT botlari bazasida quyidagi ma’lumotlar mavjud:\n— <b>ID-karta</b> ma’lumotlari;\n— jarima to‘lash uchun ulangan <b>bank kartalari</b> ma’lumotlari;\n— foydalanuvchilar kirgan qurilmalar haqidagi ma’lumotlar.\n\nShuningdek, <b>maktab.uz</b> bazasidagi o‘quvchilarning shaxsiy ma’lumotlari ham tarqalgani da’vo qilinmoqda.\n\nHozircha mazkur xabarlar <b>rasman tasdiqlanmagan</b>. Mas’ul tashkilotlar holatga oydinlik kiritishi va foydalanuvchilar ma’lumotlari xavfsizligi yuzasidan izoh berishi zarur.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574273",
+   "reply": ""
+  }
+ ],
+ "reject_ids": []
+}
