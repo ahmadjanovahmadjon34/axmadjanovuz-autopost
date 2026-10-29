@@ -1,0 +1,74 @@
+{
+ "processed_ids": [
+  "408fcc4d5670cd5fe44e33313aff0f642a304f50",
+  "d986bf22624144a809dcb57112ca48bd3b23d40f",
+  "da915d7d47bb014293941242619bad477dc6d710",
+  "216ba319d4ff915770d16d0522893f79efe7b6fa",
+  "e8d6e96c92cf5682b9f4c363642d9b73f00c974c",
+  "3347cd49591fe1615d8e74334857b12e3cd54b1b",
+  "efff9fc33783234a3818ae5ab5d0bc7c698dd063",
+  "3223cc22b5273fd246283a69b56e57a7ba890838",
+  "d512737059d4635b81ec6f0fea1d0ffda994ea17",
+  "9ce79787da51fdaa3582ad6e1e5afd6f0e32fa7b",
+  "3618abdfec8e73af01c5cd8ce102cadd8af92ceb",
+  "7cd6ce3515d9d97e5911837208b7c0bcb0a9a6c7",
+  "1539186865e3a209e21fe356f0e36eb3855797e6",
+  "cc19cc7bb02e87545a0cba02926526ff148b15f8",
+  "937ef510932b904935de8af0227135606adbe5e6",
+  "720ab0363f9ade388035141a31ad6e6b2b8f71f5",
+  "77a2c32dddd202fe0c9977dbfa2ad88053b4777f",
+  "24bfec4418570c2144592a3586901721d33337b3",
+  "4b77cd5d1a0a2dc4198900f7e1f422923fb14143",
+  "08eac4505d1ad7b94875f2731051a2603d2cfb76",
+  "95887b17aeffe17803ed29f1424df70f7bae2569",
+  "1e64aeaaad52344b3607b73e92c123d55786e001",
+  "-1001981582728:1574303",
+  "-1001981582728:1574304"
+ ],
+ "drafts": [
+  {
+   "id": "efff9fc33783234a3818ae5ab5d0bc7c698dd063",
+   "related": [],
+   "post": "<b>❗️Pedagoglar attestatsiyasini endi onlayn kuzatish mumkin</b>\n\n📌 Ta’lim va ilm-fan vazirligi attestatsiya jarayonlarini shaffof tashkil etish uchun test sinovlarini <b>to‘g‘ridan-to‘g‘ri efirda</b> (real vaqt rejimida) kuzatish imkoniyatini yaratdi.\n\n🗓 <b>27–29-oktabr</b> kunlari sinovlarda umumta’lim maktablarining <b>Ona tili va adabiyot</b> hamda <b>O‘zbek tili (davlat tili)</b> fani o‘qituvchilari ishtirok etmoqda.\n\n📹 Jarayonni <b>cams.uzedu.uz</b> sayti orqali kuzatib borish mumkin.\n\n✅ Attestatsiyaga tayyorlanayotgan pedagoglar <b>sinovtest.uz</b> saytida namunaviy testlarni ishlab ko‘rishlari mumkin.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574303",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574304",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "408fcc4d5670cd5fe44e33313aff0f642a304f50",
+  "d986bf22624144a809dcb57112ca48bd3b23d40f",
+  "da915d7d47bb014293941242619bad477dc6d710",
+  "216ba319d4ff915770d16d0522893f79efe7b6fa",
+  "e8d6e96c92cf5682b9f4c363642d9b73f00c974c",
+  "3347cd49591fe1615d8e74334857b12e3cd54b1b",
+  "3223cc22b5273fd246283a69b56e57a7ba890838",
+  "d512737059d4635b81ec6f0fea1d0ffda994ea17",
+  "9ce79787da51fdaa3582ad6e1e5afd6f0e32fa7b",
+  "3618abdfec8e73af01c5cd8ce102cadd8af92ceb",
+  "7cd6ce3515d9d97e5911837208b7c0bcb0a9a6c7",
+  "1539186865e3a209e21fe356f0e36eb3855797e6",
+  "cc19cc7bb02e87545a0cba02926526ff148b15f8",
+  "937ef510932b904935de8af0227135606adbe5e6",
+  "720ab0363f9ade388035141a31ad6e6b2b8f71f5",
+  "77a2c32dddd202fe0c9977dbfa2ad88053b4777f",
+  "24bfec4418570c2144592a3586901721d33337b3",
+  "4b77cd5d1a0a2dc4198900f7e1f422923fb14143",
+  "08eac4505d1ad7b94875f2731051a2603d2cfb76",
+  "95887b17aeffe17803ed29f1424df70f7bae2569",
+  "1e64aeaaad52344b3607b73e92c123d55786e001"
+ ]
+}
