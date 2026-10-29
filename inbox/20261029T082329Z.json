@@ -1,0 +1,109 @@
+{
+ "processed_ids": [
+  "3a732dc853d07c7086dd8b297f77841b2bd657ed",
+  "bec2ce687f07e3ba35800c7f4ac4eba8150ab429",
+  "b98908908700264d53ad9f1eb867e644be1ab777",
+  "5d13fd2f3fe139aea6643d7e670bcb01e36fcd6c",
+  "96eb3542023d8c9092f8f365127c2e6ddbb97c5f",
+  "33089eb2ee39396951fc342f3d13f2f5ace94071",
+  "8c87c37485dac9fb417139af1ea950b96780c6ea",
+  "31905d5917091ea48c2b6eb1ebc45deffbd5bac6",
+  "2ebef3404402c26a2067aa798b7a2050cedd1ddd",
+  "aedd744148d9146b04dbbbdc0e12de3068d9fbbc",
+  "3d3b0a82570f59d4cee945ec0afc504e445cbe48",
+  "2e3f0618a6a60967d7567870d438734df1cef51f",
+  "d479da791b38e35c170eb5741b0b0b88ee1b1dea",
+  "24c6553e32334d28a206abd31ef5b645f1f65752",
+  "a0ea56a57380d663da48dc371f270cdc92645912",
+  "a5f83e36c6646e503e262a0fa826d1d07ec74735",
+  "8b55cb50ffa6dacaed1e14485b33dcfee94e45b9",
+  "147644894c17a56261bc049eebbd630af9da7b5d",
+  "53140c0961b5d5c75f85bccdf130041794629298",
+  "3e2afd0669d779ae59a3e36bb97fc0085dab6d15",
+  "81b410c38ba442c2cfa6259a6bfa4b6e7d27fbd9",
+  "b45c7663cad8ea5279ebaf5583888bf9ccfa866c",
+  "-1001981582728:1574320",
+  "-1001981582728:1574321",
+  "-1001981582728:1574322",
+  "-1001981582728:1574323",
+  "-1001981582728:1574326",
+  "-1001640191255:624037",
+  "-1001640191255:624038",
+  "-1001981582728:1574329",
+  "-1001981582728:1574330"
+ ],
+ "drafts": [
+  {
+   "id": "a5f83e36c6646e503e262a0fa826d1d07ec74735",
+   "related": [],
+   "post": "<b>❗️“El-yurt umidi” 2-ochiq stipendiya tanloviga 290 ta kvota ajratildi</b>\n\n📥 Arizalar <b>1-noyabrdan 15-noyabrgacha</b> (15-noyabr kuni ham) onlayn platforma orqali <b>24/7</b> rejimida qabul qilinadi.\n\n🎓 Kvotalar taqsimoti:\n🔹 bakalavriat – <b>101 ta</b>;\n🔹 magistratura – <b>158 ta</b>;\n🔹 doktorantura – <b>31 ta</b>.\n\n❗️ Hujjatlarni oxirgi kunga qoldirmasdan topshiring.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574320",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574321",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574322",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574323",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574326",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624037",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624038",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574329",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574330",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "3a732dc853d07c7086dd8b297f77841b2bd657ed",
+  "bec2ce687f07e3ba35800c7f4ac4eba8150ab429",
+  "b98908908700264d53ad9f1eb867e644be1ab777",
+  "5d13fd2f3fe139aea6643d7e670bcb01e36fcd6c",
+  "96eb3542023d8c9092f8f365127c2e6ddbb97c5f",
+  "33089eb2ee39396951fc342f3d13f2f5ace94071",
+  "8c87c37485dac9fb417139af1ea950b96780c6ea",
+  "31905d5917091ea48c2b6eb1ebc45deffbd5bac6",
+  "2ebef3404402c26a2067aa798b7a2050cedd1ddd",
+  "aedd744148d9146b04dbbbdc0e12de3068d9fbbc",
+  "3d3b0a82570f59d4cee945ec0afc504e445cbe48",
+  "2e3f0618a6a60967d7567870d438734df1cef51f",
+  "d479da791b38e35c170eb5741b0b0b88ee1b1dea",
+  "24c6553e32334d28a206abd31ef5b645f1f65752",
+  "a0ea56a57380d663da48dc371f270cdc92645912",
+  "8b55cb50ffa6dacaed1e14485b33dcfee94e45b9",
+  "147644894c17a56261bc049eebbd630af9da7b5d",
+  "53140c0961b5d5c75f85bccdf130041794629298",
+  "3e2afd0669d779ae59a3e36bb97fc0085dab6d15",
+  "81b410c38ba442c2cfa6259a6bfa4b6e7d27fbd9",
+  "b45c7663cad8ea5279ebaf5583888bf9ccfa866c"
+ ]
+}
