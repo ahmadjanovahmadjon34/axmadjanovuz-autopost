@@ -1,0 +1,51 @@
+{
+ "processed_ids": [
+  "6f451f50ea2ee5bf4d5bff54db6786dfcb32a4c3",
+  "db643aeccb555c453eb17838a09c8d5789bad30f",
+  "0c360b05d3d45fedae181ea7520acb2a8f5bd69b",
+  "2244deea9ca92158b1a32374a8d9257b3c3c186f",
+  "ca0a1246d5b3f1e05a78b4a822e3739ccca39883",
+  "59e4b28b4ca74c466d92ac598a10037da20dd873",
+  "b45b39408eb1abec1ffa3c2d4d4e0435d62f11f7",
+  "-1001981582728:1574313",
+  "-1001981582728:1574314",
+  "-1001981582728:1574315"
+ ],
+ "drafts": [
+  {
+   "id": "59e4b28b4ca74c466d92ac598a10037da20dd873",
+   "related": [
+    "6f451f50ea2ee5bf4d5bff54db6786dfcb32a4c3"
+   ],
+   "post": "<b>❗️Ishsizlik nafaqasi muddatini 4 oygacha uzaytirish taklif etilmoqda</b>\n\n📌 Bandlik vazirligiga ko‘ra, hozir salkam <b>80 ming</b> fuqaro ishsizlik nafaqasi olmoqda. Nafaqaning eng yuqori miqdori <b>4 mln 80 ming so‘m</b>.\n\n✅ Nafaqa olish uchun oxirgi 5 yilda kamida <b>1 yil 8 oy</b> ijtimoiy soliq to‘lagan bo‘lish kerak. Tuman yoki shahar bandlik organiga murojaat qilinadi.\n\n🎓 Nafaqa oluvchilar kasb-hunar markazlarida <b>bepul o‘qitiladi</b> va ularga stipendiya ham beriladi.\n\n🗓 Hozir nafaqa <b>3 oygacha</b> to‘lanadi. Vazirlik uni <b>4 oygacha</b> uzaytirishni taklif qilmoqda, qonun loyihasi parlament tasdig‘idan o‘tishi kerak.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574313",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574314",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574315",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "6f451f50ea2ee5bf4d5bff54db6786dfcb32a4c3",
+  "db643aeccb555c453eb17838a09c8d5789bad30f",
+  "0c360b05d3d45fedae181ea7520acb2a8f5bd69b",
+  "2244deea9ca92158b1a32374a8d9257b3c3c186f",
+  "ca0a1246d5b3f1e05a78b4a822e3739ccca39883",
+  "b45b39408eb1abec1ffa3c2d4d4e0435d62f11f7"
+ ]
+}
