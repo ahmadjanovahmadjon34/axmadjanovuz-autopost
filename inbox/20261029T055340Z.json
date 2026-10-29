@@ -1,0 +1,84 @@
+{
+ "processed_ids": [
+  "8e2e239ba3bc71c648864c98f419f5a2d7693568",
+  "1b9172645329ff181ae0055bafdd1cd1b776aae2",
+  "0946cc99e890722e13dbebda4a45b54db0b3ffa3",
+  "6b94963c0235774538094cf99765352a474bcc4e",
+  "6c10ef1cc6f61cf271fbec44fba49cd7b06b639d",
+  "13d312a1c76a40fc1d55af054f1099dfb63fcc95",
+  "66a040af15af8834b5fe666df34ad11ec39949ed",
+  "f3b6fb5f7f1f1ce54cfc68e382ad020ecbee032a",
+  "52ed2856a0ea9b0c11e77bb82b6fa5e03dc9be39",
+  "91576e8b34c9e97c14e8c3c30ff30743cd2a4202",
+  "81623a985855d43aee3ea13352e2d3c9919d95eb",
+  "fd8745ca7714ebcf8ede5a94a5fa512a43ba3179",
+  "a1421a9eb541bceb9ef140132c5461296968175f",
+  "a7961d16059e66c48fd90e66eb40916d66bd7d3c",
+  "72a9bfdadcf61eea5654b01b3b830127faf3c235",
+  "5f3dc7e47ae990ab45ee6f0a954ac67d6941a7f9",
+  "-1001981582728:1574306",
+  "-1001981582728:1574308",
+  "-1001981582728:1574309",
+  "-1001981582728:1574310",
+  "-1001981582728:1574311",
+  "-1001981582728:1574312"
+ ],
+ "drafts": [
+  {
+   "id": "a7961d16059e66c48fd90e66eb40916d66bd7d3c",
+   "related": [
+    "13d312a1c76a40fc1d55af054f1099dfb63fcc95"
+   ],
+   "post": "<b>⚡️“El-yurt umidi” jamg‘armasi 2026-yilgi 2-ochiq stipendiya tanlovini e’lon qildi</b>\n\n🎓 Tanlov nufuzli universitetlarda <b>bakalavriat, magistratura va doktorantura</b> dasturlarida ta’lim olish uchun o‘tkaziladi.\n\n🗓 Hujjatlar maxsus onlayn platforma orqali <b>1-noyabrdan 15-noyabrgacha</b> qabul qilinadi (15-noyabr kuni soat <b>23:59</b> gacha).\n\n❗️ Topshirishni oxirgi kunga qoldirmang.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574306",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574308",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574309",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574310",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574311",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574312",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "8e2e239ba3bc71c648864c98f419f5a2d7693568",
+  "1b9172645329ff181ae0055bafdd1cd1b776aae2",
+  "0946cc99e890722e13dbebda4a45b54db0b3ffa3",
+  "6b94963c0235774538094cf99765352a474bcc4e",
+  "6c10ef1cc6f61cf271fbec44fba49cd7b06b639d",
+  "13d312a1c76a40fc1d55af054f1099dfb63fcc95",
+  "66a040af15af8834b5fe666df34ad11ec39949ed",
+  "f3b6fb5f7f1f1ce54cfc68e382ad020ecbee032a",
+  "52ed2856a0ea9b0c11e77bb82b6fa5e03dc9be39",
+  "91576e8b34c9e97c14e8c3c30ff30743cd2a4202",
+  "81623a985855d43aee3ea13352e2d3c9919d95eb",
+  "fd8745ca7714ebcf8ede5a94a5fa512a43ba3179",
+  "a1421a9eb541bceb9ef140132c5461296968175f",
+  "72a9bfdadcf61eea5654b01b3b830127faf3c235",
+  "5f3dc7e47ae990ab45ee6f0a954ac67d6941a7f9"
+ ]
+}
