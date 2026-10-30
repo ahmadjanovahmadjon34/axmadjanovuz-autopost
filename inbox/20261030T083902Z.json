@@ -1,0 +1,92 @@
+{
+ "processed_ids": [
+  "b91acde54f7713ad9c6f6435252dd040b34cfa8d",
+  "65d9d8d1a05448f018a43368f77bf2da7f6f63a3",
+  "6d4d906d5b86e92bee139c4f5f5062497d30ad74",
+  "b6aeac4cf88ca9360c5fb5851b3bcaf005274a6a",
+  "b8670c481a5312c2d2af3c56af51384617fc4c20",
+  "f6e0da628b207c5fdbe836a96f1c9a169e73b0b0",
+  "80e93f068aa10703f8f92f02fc3f89050ae570c1",
+  "c187bdb15df70b626f4bf10f03c4bd485d8b5583",
+  "07b57d15c2d75a6d3c78952a8a586558e1da34ed",
+  "438dcc2d71a222d1947ad7df25fb733d3b3d3348",
+  "f81213ba4028b6722fc1f64dfca5a73052148623",
+  "01864178f19a994cbd9be93332d22dc7981b1a5b",
+  "2a47190a7a72e7c2fddb568780c7ca2f3d82c056",
+  "8ccc52a64bcb2d5a0c3bb2535c425359b0b5df9b",
+  "86e87caf526403813d8b97840a9b468d759d38d3",
+  "e16052a0e95319bcd758be2729e4d64a94c9487d",
+  "3dcfde6e9280b812e32479d6a495639a6d4909e8",
+  "22776759a000a52eab2a9f705bf2bce322537eca",
+  "d7749cf1d56d1580db8c1ca47920ae8536dac0b5",
+  "9d9cf17cdbd81bb5bd2c4ef327e77b693c80f942",
+  "13c0417c94cf0d7d59c1a470b20d6f7414c92d9b",
+  "08d2d643e57f727b1cf6e643629b305d54231cf7",
+  "e0b90524994043c7da62755aa279d7f4004956f5",
+  "-1001981582728:1574740",
+  "-1001640191255:624275",
+  "-1001981582728:1574741"
+ ],
+ "drafts": [
+  {
+   "id": "d7749cf1d56d1580db8c1ca47920ae8536dac0b5",
+   "related": [
+    "07b57d15c2d75a6d3c78952a8a586558e1da34ed",
+    "438dcc2d71a222d1947ad7df25fb733d3b3d3348",
+    "01864178f19a994cbd9be93332d22dc7981b1a5b",
+    "2a47190a7a72e7c2fddb568780c7ca2f3d82c056",
+    "8ccc52a64bcb2d5a0c3bb2535c425359b0b5df9b",
+    "3dcfde6e9280b812e32479d6a495639a6d4909e8"
+   ],
+   "post": "<b>❗️1-noyabrdan tadbirkorlar o‘rnatgan radarlar xavfsizlik kamarini taqmaganlarni ham qayd etadi</b>\n\nVazirlar Mahkamasining 2026-yil 29-oktabrdagi <b>596-son</b> qaroriga ko‘ra, <b>2026-yil 1-noyabrdan</b> tadbirkorlar o‘rnatgan maxsus foto va video qayd etish vositalari haydovchilarning xavfsizlik kamaridan foydalanmaslik holatlarini ham qayd etadi.\n\n📌 Talablar:\n🔹 qoidabuzarlik sanasi, vaqti va aniq joyi \"Ma’muriy amaliyot\" moduliga avtomatik uzatiladi;\n🔹 suratlarda haydovchining yuzi va kamar taqqan-taqmagani yuqori sifatda aks etishi shart;\n🔹 qurilma elektr uzilganda kamida 8 soat ishlaydigan zaxira manbaga ega bo‘lishi kerak.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  },
+  {
+   "id": "13c0417c94cf0d7d59c1a470b20d6f7414c92d9b",
+   "related": [],
+   "post": "<b>⚡️Buxoro va Samarqandda yoshlar uchun bepul yapon tili kurslariga qabul boshlandi</b>\n\n📚 Kurs <b>5 oy</b> davom etadi: haftasiga 12 soat oflayn mashg‘ulot, JLPT N3–N1 darajalariga tayyorgarlik. Dastur IT va ITES kompaniyalariga ishga joylashishda ham ko‘maklashadi.\n\n👥 Kimlar qatnashadi: <b>18–30 yosh</b>, kamida <b>JLPT N5</b> darajasiga ega nomzodlar.\n\n📝 Saralash: onlayn ariza, motivatsion xat va suhbat yoki test.\n\n📅 Arizalar <b>20-noyabrgacha</b> qabul qilinadi. Joylar soni cheklangan.\n\n📞 Ma’lumot uchun: +998 93 322 56 89, +998 97 037 33 88\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574740",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624275",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574741",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "b91acde54f7713ad9c6f6435252dd040b34cfa8d",
+  "65d9d8d1a05448f018a43368f77bf2da7f6f63a3",
+  "6d4d906d5b86e92bee139c4f5f5062497d30ad74",
+  "b6aeac4cf88ca9360c5fb5851b3bcaf005274a6a",
+  "b8670c481a5312c2d2af3c56af51384617fc4c20",
+  "f6e0da628b207c5fdbe836a96f1c9a169e73b0b0",
+  "80e93f068aa10703f8f92f02fc3f89050ae570c1",
+  "c187bdb15df70b626f4bf10f03c4bd485d8b5583",
+  "f81213ba4028b6722fc1f64dfca5a73052148623",
+  "86e87caf526403813d8b97840a9b468d759d38d3",
+  "e16052a0e95319bcd758be2729e4d64a94c9487d",
+  "22776759a000a52eab2a9f705bf2bce322537eca",
+  "9d9cf17cdbd81bb5bd2c4ef327e77b693c80f942",
+  "08d2d643e57f727b1cf6e643629b305d54231cf7",
+  "e0b90524994043c7da62755aa279d7f4004956f5"
+ ]
+}
