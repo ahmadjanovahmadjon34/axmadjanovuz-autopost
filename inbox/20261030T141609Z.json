@@ -1,0 +1,97 @@
+{
+ "processed_ids": [
+  "108100684ce7a32d2dba4bd9ebeb56792abdb1fd",
+  "66ded0aee053f09f4799c0a2286c57176e0e860b",
+  "e9ce8cb5dc311f5ade78d6e8e7b3ac87ab32472b",
+  "0be5af48209bf7a4bc6a662b6fc09ec1b14725dc",
+  "445e9cb20b6bb517078b65c09b3dfa93a5e1cf65",
+  "f23682100863c1d73c44de5586220f97771e8823",
+  "64f8fb8dfd1c45810387bfccf76548145dc83510",
+  "675aeeca320db2f7b88c4fe0e13f406fde1a0a2d",
+  "978a99aab962d9d2576686a8844c363ae9ee75eb",
+  "a04c8e5c039aaae1800111fe7a2e134454f4f330",
+  "d5a8e631737f35a2e58a3a5c5b30d65f571af0aa",
+  "3073f1a9ea64b1b3f4a839b5b5ce59f153136a12",
+  "eb644c37174eec9069372ff0865b18d9203189c4",
+  "b0c2cb399c65063f5f7215851807df85fc59d471",
+  "d86b361cba737dead3128f8e493ca0ece3912a6f",
+  "aaf7638c31b780e396be0c8bf8b127b86b065d5f",
+  "c946cdd7927d5d6aa6d08c6c07b84ca3c9e0e085",
+  "cd8e7ac804b71121bb874c15e70ef7f958cd79ec",
+  "-1001981582728:1574824",
+  "-1001981582728:1574825",
+  "-1001981582728:1574826",
+  "-1001981582728:1574827",
+  "-1001981582728:1574828",
+  "-1001981582728:1574830"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:593",
+   "related": [],
+   "post": "<b>❗️Ayrim xizmatlarda hujjatlarning elektron shakli qabul qilinadi</b>\n\nAdliya vazirligi tomonidan 2026-yil 20-oktabrda <b>3958</b> va <b>3959</b> raqamlar bilan ro‘yxatdan o‘tkazilgan hujjatlar asosida <b>33 ta</b> idoraviy hujjatga o‘zgartirish kiritildi. Unga ko‘ra, ayrim xizmatlarda qog‘oz hujjat o‘rniga uning elektron shakli taqdim etilishi mumkin.\n\n<b>Elektron shaklda taqdim etiladigan hujjatlar:</b>\n— biometrik pasport va ID-karta;\n— tug‘ilish va nikoh guvohnomasi;\n— pensiya, nogironlik va urush qatnashchisi guvohnomasi;\n— talabalik guvohnomasi.\n\nHujjatlar my.gov.uz portali yoki \"Ijtimoiy karta\" ilovasi orqali ko‘rsatiladi.\n\n<b>Qo‘llaniladigan holatlar:</b>\n— bankda shaxsni tasdiqlashda;\n— notarial harakatlarda;\n— ichki aviareyslarga ro‘yxatdan o‘tishda;\n— aloqa xizmatlari shartnomasini tuzishda;\n— lombard xizmatlarida;\n— donorlikda;\n— harbiy hisobga olishda;\n— urush qatnashchilariga kompensatsiya to‘lashda.\n\nXizmat ko‘rsatishdan bosh tortilgan taqdirda, 20.10.2026 dagi 3958 va 3959 raqamli o‘zgartirishlarga havola qilish mumkin.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": 2
+  },
+  {
+   "id": "3073f1a9ea64b1b3f4a839b5b5ce59f153136a12",
+   "related": [],
+   "post": "<b>⚡️Nodavlat maktablarda ham inklyuziv sinf ochish mumkin</b>\n\nVazirlar Mahkamasining 2021-yil 12-oktabrdagi qarori bilan tasdiqlangan “Umumiy o‘rta ta’lim tashkilotlarida inklyuziv ta’limni tashkil etish tartibi to‘g‘risida”gi Nizomga ko‘ra:\n\n🔹 zarur sharoitlar mavjud bo‘lsa, nodavlat ta’lim tashkilotlarida ham <b>inklyuziv ta’lim</b> va <b>boshlang‘ich tayanch korreksion sinflar</b> tashkil etilishi mumkin;\n🔹 bunday sinflar Ta’lim va ilm-fan vazirligining hududiy boshqarmalari bilan <b>kelishilgan holda</b> ochiladi.\n\n📌 Asosiy talablardan biri — o‘quvchilarning maktab binosi ichida harakatlanishi va ta’lim olishi uchun zarur sharoit yaratilgan bo‘lishi kerak.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1574824",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574825",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574826",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574827",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574828",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1574830",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "108100684ce7a32d2dba4bd9ebeb56792abdb1fd",
+  "66ded0aee053f09f4799c0a2286c57176e0e860b",
+  "e9ce8cb5dc311f5ade78d6e8e7b3ac87ab32472b",
+  "0be5af48209bf7a4bc6a662b6fc09ec1b14725dc",
+  "445e9cb20b6bb517078b65c09b3dfa93a5e1cf65",
+  "f23682100863c1d73c44de5586220f97771e8823",
+  "64f8fb8dfd1c45810387bfccf76548145dc83510",
+  "675aeeca320db2f7b88c4fe0e13f406fde1a0a2d",
+  "978a99aab962d9d2576686a8844c363ae9ee75eb",
+  "a04c8e5c039aaae1800111fe7a2e134454f4f330",
+  "d5a8e631737f35a2e58a3a5c5b30d65f571af0aa",
+  "eb644c37174eec9069372ff0865b18d9203189c4",
+  "b0c2cb399c65063f5f7215851807df85fc59d471",
+  "d86b361cba737dead3128f8e493ca0ece3912a6f",
+  "aaf7638c31b780e396be0c8bf8b127b86b065d5f",
+  "c946cdd7927d5d6aa6d08c6c07b84ca3c9e0e085",
+  "cd8e7ac804b71121bb874c15e70ef7f958cd79ec"
+ ]
+}
