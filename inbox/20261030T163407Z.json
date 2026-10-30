@@ -1,0 +1,97 @@
+{
+ "processed_ids": [
+  "2f6204ec8fba999675819652316e78da13f286c0",
+  "81ea4fed7728af3845062fe92c33ecca6f740e85",
+  "af6d48bdefef52203ec87f175a8e337f358bad7e",
+  "02d1df9789dea01e9f34f62752504ce8393ec521",
+  "1ebaec1a026ec02e14a2e9c58272eabbc55ea35e",
+  "ef55e5c235404f250e0c5b312849d28b13a7eadf",
+  "b1884e42705514218d2046eb704f5e39556af0ba",
+  "f41169af8e947514d6831ec8edad263b6d1cb0a3",
+  "63ad61ca22bf480ea6fadf860e9e62f9a368df98",
+  "22146bb364dfb13185c19e971e7aa5fecfe9024a",
+  "9bd4dde73d6c9974ce4457f94409225dc24a8dcf",
+  "af7c13352548bf251f203a1d550cc09091b5fd57",
+  "01fd95e94307bdda962af71e1374451c585b00ef",
+  "-1001981582728:1575042",
+  "-1001981582728:1575045",
+  "-1001981582728:1575047",
+  "-1001981582728:1575050",
+  "-1001981582728:1575051",
+  "-1001981582728:1575052",
+  "-1001981582728:1575053",
+  "-1001981582728:1575055",
+  "-1001981582728:1575058",
+  "-1001981582728:1575059"
+ ],
+ "drafts": [
+  {
+   "id": "1ebaec1a026ec02e14a2e9c58272eabbc55ea35e",
+   "related": [
+    "81ea4fed7728af3845062fe92c33ecca6f740e85"
+   ],
+   "post": "<b>⚡️Chet tili bo‘yicha malaka imtihoni natijalari e’lon qilindi</b>\n\n📆 <b>2026-yil 10–23-oktabr</b> kunlari o‘tkazilgan chet tilini bilish darajasini aniqlash imtihoni natijalari ma’lum bo‘ldi.\n\n🆔 Natijani <b>my.gov.uz</b> saytidagi <b>\"Mening arizalarim\"</b> bo‘limidan ko‘rish mumkin.\n\n🧾 Imtihondan o‘tganlar sertifikatini shu sayt orqali <b>elektron shaklda</b> yuklab oladi.\n\n‼️ Natijadan norozi bo‘lganlar <b>3 kun</b> ichida my.gov.uz orqali apellatsiya berishi mumkin. Shikoyat <b>ikki hafta</b> ichida ko‘rib chiqiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 6
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1575042",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575045",
+   "reply": "Ha, bu qoida fanidan qat'i nazar barcha pedagog ayollarga tegishli. Uch yoshgacha farzandi bor bo'lsa, navbatdagi <b>majburiy</b> attestatsiyaga jalb etilmaydi."
+  },
+  {
+   "id": "-1001981582728:1575047",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575050",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575051",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575052",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575053",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575055",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575058",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575059",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "2f6204ec8fba999675819652316e78da13f286c0",
+  "af6d48bdefef52203ec87f175a8e337f358bad7e",
+  "02d1df9789dea01e9f34f62752504ce8393ec521",
+  "ef55e5c235404f250e0c5b312849d28b13a7eadf",
+  "b1884e42705514218d2046eb704f5e39556af0ba",
+  "f41169af8e947514d6831ec8edad263b6d1cb0a3",
+  "63ad61ca22bf480ea6fadf860e9e62f9a368df98",
+  "22146bb364dfb13185c19e971e7aa5fecfe9024a",
+  "9bd4dde73d6c9974ce4457f94409225dc24a8dcf",
+  "af7c13352548bf251f203a1d550cc09091b5fd57",
+  "01fd95e94307bdda962af71e1374451c585b00ef"
+ ]
+}
