@@ -1,0 +1,76 @@
+{
+ "processed_ids": [
+  "80b76cd01609dec5716d0bc269a0cb1d5a9103b5",
+  "a546453c2ec25659d2fcc7534962f99ab69ae90a",
+  "a315c13d53110a3a6a168a44d190853fb4c6a098",
+  "0af3b67f00417372d6bdbb5be854e387e830b416",
+  "f84558636fba5866a28944c9cc2ca250a1af6229",
+  "5f64c3cfac11d9517e03e832d8570ccb67ba4297",
+  "728f6b578a4eb92c7248d917744fa0829751cd9e",
+  "7eba647d66ca9aceaee4e2343b8806353cd4b17d",
+  "aacd7dfc0b54037dc5e9cf07b3680a8034d962d7",
+  "b0743df0875d329209ae7b755d8cfbbdaec680ec",
+  "818295eaa017e2d74af9db348ad30612985f3a33",
+  "77dc50c09fbe77c946e029ceb2f7956367ad53e4",
+  "3f3faf6014fb55bf24904465600d67ceb361c32d",
+  "80f01ba3bb2af5720d693fb0230e3b86f627e096",
+  "a38e112ea65b999bcf729332b0a46e78586fc18b",
+  "0d34c9d043e362f16867a7c4fc5bb6e27aec45b9",
+  "473e804436346f8f9948218bd31bd7c3e440c607",
+  "2f23bfff4025da1c911d6d67c56d6b24c81575c3",
+  "0c19873192b7392c880fe45f4749e7e05d2e5fbb",
+  "876d671593857c92e7eb17e3ff1618e8b6b7877c",
+  "1639c3c63cf42c31e83ba7b226ba0abfcf237cbc",
+  "f1e1ed80e5c0af2213b09c3c60e0639e1d7e860d",
+  "d094cdcec305fdee4b7d7f0781598e2d799587da"
+ ],
+ "drafts": [
+  {
+   "id": "77dc50c09fbe77c946e029ceb2f7956367ad53e4",
+   "related": [],
+   "post": "<b>⚡️12 davlatning 31 ta akkreditatsiya tashkiloti O‘zbekistonda tan olinadi</b>\n\nOliygohlarga ishonchli xalqaro akkreditatsiya tashkilotini tanlashda yordam berish uchun Ta’lim sifatini ta’minlash agentligi xalqaro, xorijiy va nodavlat akkreditatsiya tashkilotlari reyestrini shakllantirdi.\n\n📌 Reyestrdagi 4 ta tashkilot — ACQUIN, ASIIN (Germaniya), QAA (Buyuk Britaniya) va UNWTO TedQual (Ispaniya) akkreditatsiyasi natijasida <b>17 ta</b> oliygohning <b>128 ta</b> ta’lim dasturi xalqaro akkreditatsiyadan o‘tdi.\n\nUlar orasida Andijon, Buxoro, Farg‘ona, Navoiy va Urganch davlat universitetlari, TATU, TDPU, TDTU hamda \"TIQXMMI\" milliy tadqiqot universiteti bor.\n\n❗️Reyestrdagi qolgan <b>27 ta</b> tashkilot imkoniyatlaridan hali foydalanilmagan.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 2
+  },
+  {
+   "id": "0d34c9d043e362f16867a7c4fc5bb6e27aec45b9",
+   "related": [
+    "2f23bfff4025da1c911d6d67c56d6b24c81575c3",
+    "818295eaa017e2d74af9db348ad30612985f3a33"
+   ],
+   "post": "<b>❗️Isitish mavsumida ehtiyojmand oilalarga 1 million so‘mdan moddiy yordam beriladi</b>\n\nPrezidentning 28-oktabrdagi <b>PF–236-son</b> Farmoniga ko‘ra, 2026-yil <b>noyabr</b> oyida quyidagilarga bir martalik <b>1 mln so‘m</b> ajratiladi:\n\n🔹 Ijtimoiy reyestrga kiritilgan oilalar;\n🔹 Reyestrga kiritilmagan, lekin \"mahalla yettiligi\" xulosasiga ko‘ra mezonlarga mos keladigan, jon boshiga daromadi minimal iste’mol xarajatlarining 2 baravaridan oshmaydigan oilalar;\n🔹 Markaziy isitishga ulangan ko‘p qavatli uylarda yashovchi oilalar (jon boshiga daromad viloyatlarda minimal iste’mol xarajatlarining 2 baravaridan, Toshkentda 3 baravaridan oshmasa);\n🔹 Yolg‘iz keksalar va nogironligi bor shaxslar reyestridagi fuqarolar, yetim va ota-ona qaramog‘idan mahrum bolalar yashaydigan oilalar.\n\n📌 Shuningdek, elektr, gaz kompensatsiyasi va ko‘mir uchun yordam tayinlashda daromad mezoni minimal iste’mol xarajatlarining <b>2 baravarigacha</b> oshiriladi. Elektr va gaz bo‘yicha kompensatsiya <b>2028-yil 1-aprelgacha</b>, ko‘mir uchun yordam <b>2029-yil 1-yanvargacha</b> uzaytiriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": 5
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "80b76cd01609dec5716d0bc269a0cb1d5a9103b5",
+  "a546453c2ec25659d2fcc7534962f99ab69ae90a",
+  "a315c13d53110a3a6a168a44d190853fb4c6a098",
+  "0af3b67f00417372d6bdbb5be854e387e830b416",
+  "f84558636fba5866a28944c9cc2ca250a1af6229",
+  "5f64c3cfac11d9517e03e832d8570ccb67ba4297",
+  "728f6b578a4eb92c7248d917744fa0829751cd9e",
+  "7eba647d66ca9aceaee4e2343b8806353cd4b17d",
+  "aacd7dfc0b54037dc5e9cf07b3680a8034d962d7",
+  "b0743df0875d329209ae7b755d8cfbbdaec680ec",
+  "3f3faf6014fb55bf24904465600d67ceb361c32d",
+  "80f01ba3bb2af5720d693fb0230e3b86f627e096",
+  "a38e112ea65b999bcf729332b0a46e78586fc18b",
+  "473e804436346f8f9948218bd31bd7c3e440c607",
+  "0c19873192b7392c880fe45f4749e7e05d2e5fbb",
+  "876d671593857c92e7eb17e3ff1618e8b6b7877c",
+  "1639c3c63cf42c31e83ba7b226ba0abfcf237cbc",
+  "f1e1ed80e5c0af2213b09c3c60e0639e1d7e860d",
+  "d094cdcec305fdee4b7d7f0781598e2d799587da"
+ ]
+}
