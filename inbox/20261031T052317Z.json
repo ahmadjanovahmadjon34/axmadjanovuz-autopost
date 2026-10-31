@@ -1,0 +1,64 @@
+{
+ "processed_ids": [
+  "fea6cf63381e34c34591ecbccc8098776b15f83c",
+  "3312e2609d8911674a789badba95c1265f272b36",
+  "2442887b5f78152e9bede615550825a99173690b",
+  "b8ff5b7157b617a80436504e527169e663bac457",
+  "1855d9aa218f00c1d1acc98d7ca60cf9b30bdcad",
+  "217a7e1393655114a277e9962615ed68627cd99a",
+  "2568480eff9f2827162fc208a7a46f17cfd7bffe",
+  "b80f5c49d80680335a36a3e3cdfb40866835ba87",
+  "d8d83f114536b78047efe95b6dfbd3cac1e5bdb9",
+  "61e5981f2d2a5b6490d7de98c835cdf0f74f9378",
+  "ac82260ee27c1279fd1fe90130157f371edc0c19",
+  "0d9768c425245a6de197ce3c606f2245d5e14b8d",
+  "d8d1cd84e5869bcab86522a7d4d38b69e6252de1",
+  "b32453c61ae89bc0930354393412f02abe4d33a2",
+  "1f6ebf0ba8c117cff29fafc07504ba4d9b18e454",
+  "1078ded98909b9248e911c01f4d89ddda9497500",
+  "d49b9e9fd70d3bee2f6f215e6ac4a022274e9ac6",
+  "-1001981582728:1575144",
+  "-1001981582728:1575146"
+ ],
+ "drafts": [
+  {
+   "id": "d8d1cd84e5869bcab86522a7d4d38b69e6252de1",
+   "related": [],
+   "post": "❗️ <b>Suvdan qarzi borlar elektr uchun to'lov qila olmaydi</b>\n\n2027-yil 1-yanvardan boshlab ichimlik va oqova suv xizmatlaridan qarzdor bo'lganlarga elektr energiyasi uchun to'lov qilish cheklanadi.\n\nBu tartib ijtimoiy reestrga kiritilgan oilalarga nisbatan qo'llanilmaydi.\n\n<blockquote>Bu haqda \"O'zsuvta'minot\" AJ raisining birinchi o'rinbosari Islom Abdullayev 30-oktabr kuni o'tkazilgan matbuot anjumanida ma'lum qildi.</blockquote>\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1575144",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575146",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "fea6cf63381e34c34591ecbccc8098776b15f83c",
+  "3312e2609d8911674a789badba95c1265f272b36",
+  "2442887b5f78152e9bede615550825a99173690b",
+  "b8ff5b7157b617a80436504e527169e663bac457",
+  "1855d9aa218f00c1d1acc98d7ca60cf9b30bdcad",
+  "217a7e1393655114a277e9962615ed68627cd99a",
+  "2568480eff9f2827162fc208a7a46f17cfd7bffe",
+  "b80f5c49d80680335a36a3e3cdfb40866835ba87",
+  "d8d83f114536b78047efe95b6dfbd3cac1e5bdb9",
+  "61e5981f2d2a5b6490d7de98c835cdf0f74f9378",
+  "ac82260ee27c1279fd1fe90130157f371edc0c19",
+  "0d9768c425245a6de197ce3c606f2245d5e14b8d",
+  "b32453c61ae89bc0930354393412f02abe4d33a2",
+  "1f6ebf0ba8c117cff29fafc07504ba4d9b18e454",
+  "1078ded98909b9248e911c01f4d89ddda9497500",
+  "d49b9e9fd70d3bee2f6f215e6ac4a022274e9ac6"
+ ]
+}
