@@ -1,0 +1,95 @@
+{
+ "processed_ids": [
+  "8715d6019417d4372a6fbf25a7b3c1e6039629c1",
+  "f63f7c4812c7c6de07747939629f1856c1f202ea",
+  "8ccbfe29d2f58ff65f5dbb2fd7893c27990e8cf1",
+  "e2955c758b62f2610df89176ecf34e7d89832ea0",
+  "d9b76c2e11e7c9064df0f9a589e69f69e63ef4a9",
+  "d82bc53d1546038b1a0e0bc8cdcc3a22a7626609",
+  "95129292de551075e5cb51261b94894413726458",
+  "8a2ccf85c9bd2e7b07d8512a60899dcdaec45f3d",
+  "0ca8de46b39d95dedc259f7b4625163cc4b1d170",
+  "eb0c04642debf9e63fdb99c93f5dfe69e8bf1a6b",
+  "-1001981582728:1575157",
+  "-1001981582728:1575158",
+  "-1001981582728:1575159",
+  "-1001981582728:1575160",
+  "-1001981582728:1575161",
+  "-1001981582728:1575162",
+  "-1001981582728:1575163",
+  "-1001981582728:1575164",
+  "-1001981582728:1575165",
+  "-1001981582728:1575166",
+  "-1001981582728:1575167"
+ ],
+ "drafts": [
+  {
+   "id": "8a2ccf85c9bd2e7b07d8512a60899dcdaec45f3d",
+   "related": [],
+   "post": "❗️ <b>Ertadan reklama qo'ng'iroqlari va SMSlar kechqurun taqiqlanadi</b>\n\n2026-yil 1-noyabrdan boshlab mobil aloqa orqali reklama qo'ng'iroqlari va xabarnomalarini soat 18:00 dan 09:00 gacha tarqatish taqiqlanadi.\n\nShuningdek:\n➖ SMS orqali tovar, ish yoki xizmatni reklama qiluvchi har qanday yuridik va jismoniy shaxs buni faqat shaxsning yozma yoki elektron roziligini olgandan keyin amalga oshiradi;\n➖ Reklama qo'ng'iroqlari va SMS yuborish xizmatini ko'rsatuvchi yuridik shaxslar o'z axborot tizimlarini Shaxsga doir ma'lumotlar bazalarining davlat reestrida ro'yxatdan o'tkazgandan keyingina bu xizmatni ko'rsata oladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1575157",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575158",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575159",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575160",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575161",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575162",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575163",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575164",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575165",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575166",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575167",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "8715d6019417d4372a6fbf25a7b3c1e6039629c1",
+  "f63f7c4812c7c6de07747939629f1856c1f202ea",
+  "8ccbfe29d2f58ff65f5dbb2fd7893c27990e8cf1",
+  "e2955c758b62f2610df89176ecf34e7d89832ea0",
+  "d9b76c2e11e7c9064df0f9a589e69f69e63ef4a9",
+  "d82bc53d1546038b1a0e0bc8cdcc3a22a7626609",
+  "95129292de551075e5cb51261b94894413726458",
+  "0ca8de46b39d95dedc259f7b4625163cc4b1d170",
+  "eb0c04642debf9e63fdb99c93f5dfe69e8bf1a6b"
+ ]
+}
