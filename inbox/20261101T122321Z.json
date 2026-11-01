@@ -1,0 +1,102 @@
+{
+ "processed_ids": [
+  "f5b02425c2d036d67efeacb81e3c59cf94bb3b49",
+  "bot:619839487:630",
+  "629b10a0dc1a0077a35d46c5922ffd5d3c23dd33",
+  "feade0e52a94dffd5bc1e3626e32553165d52def",
+  "43084066692338794e64e6219f518300ca9f8d1c",
+  "ed1db5d1f2d6f30ca065e4abcd50cfc46f08eda2",
+  "afc564a9c303e61be03a6b74b802d2eabec6519a",
+  "0cf2408b2e0ce4d2904ed4c5d2a8b9b51ec67799",
+  "-1001640191255:625017",
+  "-1001640191255:625018",
+  "-1001640191255:625019",
+  "-1001640191255:625020",
+  "-1001640191255:625021",
+  "-1001640191255:625022",
+  "-1001640191255:625023",
+  "-1001640191255:625024",
+  "-1001640191255:625025",
+  "-1001640191255:625026",
+  "-1001640191255:625027",
+  "-1001640191255:625028",
+  "-1001640191255:625029"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:630",
+   "related": [
+    "629b10a0dc1a0077a35d46c5922ffd5d3c23dd33",
+    "feade0e52a94dffd5bc1e3626e32553165d52def",
+    "43084066692338794e64e6219f518300ca9f8d1c"
+   ],
+   "post": "<b>⚡️OTMlarda o‘qituvchilar bilan bir yillik mehnat shartnomasi tuzish qonunchilikka zid</b>\n\nOliy ta’lim muassasalarida o‘qituvchilar bilan sentabrda bir yillik shartnoma tuzilib, avgustda muddati tugagani sababli ishdan bo‘shatish holatlari bo‘yicha ko‘plab murojaatlar kelmoqda. <b>10 nafarga yaqin</b> professor-o‘qituvchi huquqlarini tiklash uchun sudga da’vo kiritgan.\n\n📌 Rektorlar Mehnat kodeksining <b>112–113-moddalari</b>dagi muddatli shartnoma asoslarini VMning <b>2006-yil 10-fevraldagi 20-son</b> qarorida belgilangan tanlov tartibi bilan adashtirmoqda.\n\n✅ Qonuniy asos bo‘lmasa, bir yillik shartnoma ham <b>nomuayyan muddatga</b> tuzilgan hisoblanadi.\n✅ O‘quv yilining tugashi o‘z-o‘zidan ishdan bo‘shatishga asos emas — bunday buyruqlar sudda bekor qilinib, o‘qituvchilar ishga tiklanishi mumkin.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:625017",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625018",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625019",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625020",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625021",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625022",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625023",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625024",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625025",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625026",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625027",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625028",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625029",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "f5b02425c2d036d67efeacb81e3c59cf94bb3b49",
+  "ed1db5d1f2d6f30ca065e4abcd50cfc46f08eda2",
+  "afc564a9c303e61be03a6b74b802d2eabec6519a",
+  "0cf2408b2e0ce4d2904ed4c5d2a8b9b51ec67799"
+ ]
+}
