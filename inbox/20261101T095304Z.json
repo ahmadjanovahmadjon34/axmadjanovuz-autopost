@@ -1,0 +1,93 @@
+{
+ "processed_ids": [
+  "c4ff099573765891d9bb7260d04eddd2013e796c",
+  "bot:619839487:627",
+  "d97c8eaa94563daf712aa0bc4a51cab8e65b90c9",
+  "fcd66513182d9c06ad298311e69f815c6e40aa1b",
+  "-1001981582728:1575420",
+  "-1001981582728:1575421",
+  "-1001981582728:1575422",
+  "-1001640191255:624727",
+  "-1001640191255:624728",
+  "-1001640191255:624729",
+  "-1001640191255:624730",
+  "-1001640191255:624731",
+  "-1001981582728:1575423",
+  "-1001981582728:1575424",
+  "-1001640191255:624732",
+  "-1001640191255:624733",
+  "-1001640191255:624734"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:627",
+   "related": [],
+   "post": "<b>❗️Isitish mavsumida gazning bazaviy me’yori 5 baravarga oshiriladi</b>\n\nO‘zbekistonda kuz-qish mavsumida tabiiy gaz iste’moli uchun bazaviy me’yor oshiriladi.\n\n📌 Belgilangan tartibga ko‘ra:\n➖ <b>noyabr — fevral:</b> har oy <b>500 kub metrgacha</b>;\n➖ <b>mart — oktabr:</b> har oy <b>100 kub metrgacha</b>.\n\n❄️ <b>Qoraqalpog‘iston Respublikasi</b> va <b>Xorazm viloyati</b>da sovuq mavsum uzoqroq davom etishi inobatga olinib, <b>oktabr — fevral</b> oylarida bazaviy me’yor <b>500 kub metr</b> etib belgilangan.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1575420",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575421",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575422",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624727",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624728",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624729",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624730",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624731",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575423",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575424",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624732",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624733",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:624734",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "c4ff099573765891d9bb7260d04eddd2013e796c",
+  "d97c8eaa94563daf712aa0bc4a51cab8e65b90c9",
+  "fcd66513182d9c06ad298311e69f815c6e40aa1b"
+ ]
+}
