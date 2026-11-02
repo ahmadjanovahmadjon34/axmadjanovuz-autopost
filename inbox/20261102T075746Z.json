@@ -1,0 +1,122 @@
+{
+ "processed_ids": [
+  "3c692e0a432f392d57aebb17ed9761cdefa2ba86",
+  "a46fcb61f3727dfd1014cae10032889e6e4ff9cf",
+  "0b1e9140d43b38a94cc7caa9155e5249ee3dc74f",
+  "df3cf429c93ad19903ab8f65146456799e8eca90",
+  "4fdc632edd4763e5bb71d91a02c6a32bf26763fd",
+  "fd6f1ca6bc4230dea9389e6fb5ea58637f109562",
+  "d45035ca4d972703af949b0cc814676cd5f4aab0",
+  "6d2b2a092911bd28382fdbb21c4dab9c57d68fb4",
+  "7a91d76bfab893c76699f18e9e3083837baee479",
+  "4557ac3d68917cda653b752d113713cfba50147a",
+  "be1ddc06ffd97d3cdd079b072536d2efaece2091",
+  "1c399f3ebc9a6f68ad0278db805032bbbfb3048e",
+  "dc4840b42173cd390ca14d50787be4e2951fd6cc",
+  "7e3eb2629b1b686edf035a2f6d6f4ec31f60d595",
+  "350f65364c5ad60bba5fcfe3e961cd04684630b9",
+  "ec91d37540991455b4cafd3bc4703d044c56627e",
+  "b00d1c2b25b12eafd687b7fbf8711dc951d38f5d",
+  "03d1b797e761a0da9ad99c47423f620d9506bf6c",
+  "78c8444161f3126d5185d10f3fcf7c73eae64da5",
+  "90b19cc8fe9a1ef2bd4e6efcad009879836bcd72",
+  "35253747392f286b831cd7b6ee34b4c26eecf391",
+  "61972ea6a5b9c6f1c5b971049825c11626677dbd",
+  "51fa5562e46225f28989ea69744b72d6cd7b7e0d",
+  "150a8a53b8bc36454984d8cf7d873ef3fe807b3d",
+  "4a916a16639cd303de4bb8e7a163b68b62a17e54",
+  "bb3e2ae5932956259653c54026a0f2cbdaa945ef",
+  "873d627c902084ea30fbfb56d66940d374868d37",
+  "e1d159a3e3cab66b8da08d7cdfeba7e01c5384bc",
+  "e42cc4e7c5e7d56b33b5df4eee63244ddf536555",
+  "1587054e8b0cf7ca7aaef21ed39d45f3d61553b0",
+  "1a5f07e75ed7d47eba6af24ac84197e53d5d7462",
+  "cb535701c90f9c2148ce2aa1d27a84ce5c061a91",
+  "6362d57241c39215e23914c8eb5a4f8c3078df08",
+  "-1001640191255:625382",
+  "-1001981582728:1575736",
+  "-1001981582728:1575737",
+  "-1001640191255:625384",
+  "-1001640191255:625385",
+  "-1001640191255:625386",
+  "-1001640191255:625387"
+ ],
+ "drafts": [
+  {
+   "id": "350f65364c5ad60bba5fcfe3e961cd04684630b9",
+   "related": [
+    "3c692e0a432f392d57aebb17ed9761cdefa2ba86"
+   ],
+   "post": "<b>⚡️Texnikumlar 15 yilga yirik tadbirkorlar boshqaruviga beriladi</b>\n\nPrezident mehnat migratsiyasi bo‘yicha yig‘ilishda texnikumlar faoliyatiga oid yangi tartiblarni ma’lum qildi:\n\n🔹 har bir viloyatdagi <b>2-3 tadan texnikum</b> 15 yilga yirik tadbirkorlar boshqaruviga beriladi, ular orqali yiliga kamida <b>30 ming</b> mutaxassis tayyorlash rejalashtirilmoqda;\n🔹 bitiruvchilarga davlat namunasidagi malaka sertifikati beriladi;\n🔹 tadbirkorlarning kadr tayyorlash va uskuna xaridiga sarflagan mablag‘lari to‘langan soliqlardan chegiriladi;\n🔹 chet elda yaxshi ishga joylashgan har bir bitiruvchi uchun grant ajratiladi;\n🔹 texnikum binolarining bir qismi bepul ijaraga beriladi;\n🔹 chet ellik o‘qituvchi va ekspertlar uchun ijtimoiy soliq <b>1 foiz</b> etib belgilanadi, o‘quv uskunalari bojxona bojidan ozod qilinadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:625382",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575736",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1575737",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625384",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625385",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625386",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625387",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a46fcb61f3727dfd1014cae10032889e6e4ff9cf",
+  "0b1e9140d43b38a94cc7caa9155e5249ee3dc74f",
+  "df3cf429c93ad19903ab8f65146456799e8eca90",
+  "4fdc632edd4763e5bb71d91a02c6a32bf26763fd",
+  "fd6f1ca6bc4230dea9389e6fb5ea58637f109562",
+  "d45035ca4d972703af949b0cc814676cd5f4aab0",
+  "6d2b2a092911bd28382fdbb21c4dab9c57d68fb4",
+  "7a91d76bfab893c76699f18e9e3083837baee479",
+  "4557ac3d68917cda653b752d113713cfba50147a",
+  "be1ddc06ffd97d3cdd079b072536d2efaece2091",
+  "1c399f3ebc9a6f68ad0278db805032bbbfb3048e",
+  "dc4840b42173cd390ca14d50787be4e2951fd6cc",
+  "7e3eb2629b1b686edf035a2f6d6f4ec31f60d595",
+  "ec91d37540991455b4cafd3bc4703d044c56627e",
+  "b00d1c2b25b12eafd687b7fbf8711dc951d38f5d",
+  "03d1b797e761a0da9ad99c47423f620d9506bf6c",
+  "78c8444161f3126d5185d10f3fcf7c73eae64da5",
+  "90b19cc8fe9a1ef2bd4e6efcad009879836bcd72",
+  "35253747392f286b831cd7b6ee34b4c26eecf391",
+  "61972ea6a5b9c6f1c5b971049825c11626677dbd",
+  "51fa5562e46225f28989ea69744b72d6cd7b7e0d",
+  "150a8a53b8bc36454984d8cf7d873ef3fe807b3d",
+  "4a916a16639cd303de4bb8e7a163b68b62a17e54",
+  "bb3e2ae5932956259653c54026a0f2cbdaa945ef",
+  "873d627c902084ea30fbfb56d66940d374868d37",
+  "e1d159a3e3cab66b8da08d7cdfeba7e01c5384bc",
+  "e42cc4e7c5e7d56b33b5df4eee63244ddf536555",
+  "1587054e8b0cf7ca7aaef21ed39d45f3d61553b0",
+  "1a5f07e75ed7d47eba6af24ac84197e53d5d7462",
+  "cb535701c90f9c2148ce2aa1d27a84ce5c061a91",
+  "6362d57241c39215e23914c8eb5a4f8c3078df08"
+ ]
+}
