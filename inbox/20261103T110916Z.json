@@ -1,0 +1,85 @@
+{
+ "processed_ids": [
+  "c621a7129302e4d24a4449713b32d71e610dd083",
+  "1088f62305deda0b8932d563bc2bf88ba0d94ab8",
+  "84442be16ceae315ec9ec1150e384fe4dea3d41b",
+  "67493bc3609886a70de112599556e5a832e04cfe",
+  "7a6cd63b3e689f867188e45bca997e75b6768af7",
+  "f417b98ef588102686cb6dcfcbb160fc4c177ab3",
+  "dc875af6058d5c31b1e5fc6c74f4beb3045987f8",
+  "1549b4b3d026a4569af9be3a40f545bd6da95efd",
+  "82e90b3812361e7a87e191f2c426f9da649e8c9e",
+  "2f938c4d4f09f87daa0ce464fbfc78c18223e918",
+  "ada3e9b70812508ea2468e3236919d8bec7b4a62",
+  "27833c95a91b9b6536bfe1314f6999a7c2fd499e",
+  "4453c9d106064688f950aac6d02c0ff260068a39",
+  "4e18e1f44c98a35e1944415db2af2a8818b37f99",
+  "264155f2a29102daf3d73cc49128729b0ff565fb",
+  "58c08edd76830f1506a366940b5fabfa49a710ae",
+  "74a81dcea37e0e8c8d61c461696062e1e7168b69",
+  "f422996ac6c6dbc23fe3cdc1e01e774916b04a38",
+  "b8a390aa3bf2440d4d6fa2c7d0a82d4cb1cd42e2",
+  "1df50eb6b547f19d9ca3a8e215b871f74e60f9ca",
+  "-1001640191255:625655",
+  "-1001981582728:1576506",
+  "-1001640191255:625657",
+  "-1001640191255:625660",
+  "-1001640191255:625663"
+ ],
+ "drafts": [
+  {
+   "id": "dc875af6058d5c31b1e5fc6c74f4beb3045987f8",
+   "related": [],
+   "post": "<b>⚡️“Ijtimoiy reyestr”ga kiritilmadingizmi? Endi uydan turib shikoyat qilish mumkin</b>\n\nVazirlar Mahkamasining 2026-yil 29-yanvardagi <b>35-son</b> qaroriga muvofiq, fuqarolar tuman (shahar) hokimliklari huzuridagi <b>Apellyatsiya kengashiga</b> Yagona interaktiv davlat xizmatlari portali orqali elektron shikoyat yuborishi mumkin.\n\nKengash quyidagilarni ko‘rib chiqadi:\n🔹 oilani “Ijtimoiy reyestr”ga kiritish rad etilgani bo‘yicha shikoyatlar;\n🔹 “Mahalla yettiligi” rasmiylashtirgan savolnoma, xulosa va dalolatnomalarni qisman yoki to‘liq bekor qilish;\n🔹 hujjatlarga o‘zgartirish kiritish majburiyatini “mahalla yettiligi” zimmasiga yuklash.\n\n⏱ Shikoyat <b>15 kun</b> ichida ko‘rib chiqiladi. Kengash majlislari kamida <b>oyiga bir marta</b> o‘tkaziladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:625655",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1576506",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625657",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625660",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625663",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "c621a7129302e4d24a4449713b32d71e610dd083",
+  "1088f62305deda0b8932d563bc2bf88ba0d94ab8",
+  "84442be16ceae315ec9ec1150e384fe4dea3d41b",
+  "67493bc3609886a70de112599556e5a832e04cfe",
+  "7a6cd63b3e689f867188e45bca997e75b6768af7",
+  "f417b98ef588102686cb6dcfcbb160fc4c177ab3",
+  "1549b4b3d026a4569af9be3a40f545bd6da95efd",
+  "82e90b3812361e7a87e191f2c426f9da649e8c9e",
+  "2f938c4d4f09f87daa0ce464fbfc78c18223e918",
+  "ada3e9b70812508ea2468e3236919d8bec7b4a62",
+  "27833c95a91b9b6536bfe1314f6999a7c2fd499e",
+  "4453c9d106064688f950aac6d02c0ff260068a39",
+  "4e18e1f44c98a35e1944415db2af2a8818b37f99",
+  "264155f2a29102daf3d73cc49128729b0ff565fb",
+  "58c08edd76830f1506a366940b5fabfa49a710ae",
+  "74a81dcea37e0e8c8d61c461696062e1e7168b69",
+  "f422996ac6c6dbc23fe3cdc1e01e774916b04a38",
+  "b8a390aa3bf2440d4d6fa2c7d0a82d4cb1cd42e2",
+  "1df50eb6b547f19d9ca3a8e215b871f74e60f9ca"
+ ]
+}
