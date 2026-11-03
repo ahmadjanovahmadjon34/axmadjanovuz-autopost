@@ -1,0 +1,82 @@
+{
+ "processed_ids": [
+  "865da2ba99676eb2400b3c392650a447e2e14479",
+  "f557b540a243804aef5e87b24c11c454f62aa867",
+  "2c5dd0bc47d2c6f415e02ddaf71094dcd944a081",
+  "4082e3ef88fd20bf3fcea0c6b6fb688e7b555cfd",
+  "16a14ba2aff78d4efe39fbfd4f82a38e14d94bb4",
+  "5a643d2fcae78f63d7ed6acbb16cb285a10eccd5",
+  "307e65bc40933a10e1a26ffbbc113dd4da40ab92",
+  "88ded07b8328f20be5f922b642cb3c94176c5ef8",
+  "d23523bec79e85d53d4d379dcee115a0c28671ee",
+  "35487f727f7145b9bf6e405d5e7d8f25ba8af1c1",
+  "8aaf12d250478b549a40843799cbe9e327a1fdbe",
+  "8fd8a1b1063b664435b1b3644d68ac5ec2d77260",
+  "efc63ce5aba0825205e2c282da98d9c951984979",
+  "1caca88d1bf982e01cb744262af8ac976ccb5c81",
+  "bce92e43d95728ffa8621cfeb51ccf5cc08c2d44",
+  "55575c426d405fb71511e058d647d86dab2f74a0",
+  "0c3fd162c414656faf31eb714f72c07271a5489b",
+  "4f3f379040d6e02c285401d496749bf24ba07062",
+  "e77bb085bfdc328a20a49591bd536c456cbc56bd",
+  "f569da88b307b477b923b74bada7b40b16fa4099",
+  "90cfd73ea5b1c4e6a2d11f0faaa91d953e5d793e",
+  "3b76403b61bfef292b1f5556e1ed833e865d43d9",
+  "2552e7c2560aafadfcc9feb12ac895de613e3827",
+  "b08a723541c1530b5d9594b5a11b88f1a0d277b4",
+  "8ccf42faf6c622b84cd1b1cc29a83e147af98e56",
+  "60cbcdd32708b683211a85d6cdd337d235a2b773"
+ ],
+ "drafts": [
+  {
+   "id": "307e65bc40933a10e1a26ffbbc113dd4da40ab92",
+   "related": [
+    "60cbcdd32708b683211a85d6cdd337d235a2b773",
+    "865da2ba99676eb2400b3c392650a447e2e14479",
+    "16a14ba2aff78d4efe39fbfd4f82a38e14d94bb4"
+   ],
+   "post": "<b>❗️“Xavfsiz talaba” ilovasini majburan o‘rnatish holati vazirlik nazoratida</b>\n\nIjtimoiy tarmoqlarda O‘zbekiston davlat jahon tillari universiteti va boshqa oliy ta’lim tashkilotlarida <b>“Xavfsiz talaba”</b> ilovasini o‘rnatmagan talabalar darsga kiritilmayotgani haqida xabarlar tarqaldi.\n\nTa’lim va ilm-fan vazirligi rasmiy munosabat bildirdi:\n\n🔹 masala nazoratga olindi;\n🔹 vazirlik rahbariyati holatni tezkor o‘rganish bo‘yicha ko‘rsatma berdi;\n🔹 ishchi guruh o‘rganish ishlarini boshladi.\n\nVazirlik ta’lim jarayonining uzluksizligi va <b>talabalarning ta’lim olish huquqi</b> ta’minlanishi shartligini ta’kidladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  },
+  {
+   "id": "f569da88b307b477b923b74bada7b40b16fa4099",
+   "related": [],
+   "post": "<b>⚡️Ehtiyojmand oilalarga 1 mln so‘m, elektr me’yori va ko‘mir uchun kompensatsiya: hukumat qarori</b>\n\nVazirlar Mahkamasining «Yoqilg‘i-energetika sohasida bozor tamoyillariga o‘tishda aholini ijtimoiy qo‘llab-quvvatlash chora-tadbirlarini amalga oshirish mexanizmlari to‘g‘risida»gi qarori qabul qilindi.\n\nQarorga ko‘ra:\n\n🔹 ehtiyojmand oilalarga <b>1 mln so‘mdan</b> bir martalik moddiy yordam <b>30-noyabrgacha</b> to‘lab beriladi;\n🔹 gaz ta’minoti bo‘lmagan va gaz yetib borishi qiyin hududlarda qish mavsumida elektr energiyasining oylik bazaviy me’yori <b>200 kVt·soatdan 350 kVt·soatga</b> oshirildi;\n🔹 mycoal.uz orqali ko‘mir sotib olgan ehtiyojmand oilalarga har bir tonna uchun <b>300 ming so‘mdan</b>, yiliga <b>600 ming so‘mgacha</b> kompensatsiya to‘lanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "f557b540a243804aef5e87b24c11c454f62aa867",
+  "2c5dd0bc47d2c6f415e02ddaf71094dcd944a081",
+  "4082e3ef88fd20bf3fcea0c6b6fb688e7b555cfd",
+  "5a643d2fcae78f63d7ed6acbb16cb285a10eccd5",
+  "88ded07b8328f20be5f922b642cb3c94176c5ef8",
+  "d23523bec79e85d53d4d379dcee115a0c28671ee",
+  "35487f727f7145b9bf6e405d5e7d8f25ba8af1c1",
+  "8aaf12d250478b549a40843799cbe9e327a1fdbe",
+  "8fd8a1b1063b664435b1b3644d68ac5ec2d77260",
+  "efc63ce5aba0825205e2c282da98d9c951984979",
+  "1caca88d1bf982e01cb744262af8ac976ccb5c81",
+  "bce92e43d95728ffa8621cfeb51ccf5cc08c2d44",
+  "55575c426d405fb71511e058d647d86dab2f74a0",
+  "0c3fd162c414656faf31eb714f72c07271a5489b",
+  "4f3f379040d6e02c285401d496749bf24ba07062",
+  "e77bb085bfdc328a20a49591bd536c456cbc56bd",
+  "90cfd73ea5b1c4e6a2d11f0faaa91d953e5d793e",
+  "3b76403b61bfef292b1f5556e1ed833e865d43d9",
+  "2552e7c2560aafadfcc9feb12ac895de613e3827",
+  "b08a723541c1530b5d9594b5a11b88f1a0d277b4",
+  "8ccf42faf6c622b84cd1b1cc29a83e147af98e56"
+ ]
+}
