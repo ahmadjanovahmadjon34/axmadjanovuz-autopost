@@ -1,0 +1,71 @@
+{
+ "processed_ids": [
+  "1eb501b251b9a0265ffb005878abfd749edca6e8",
+  "39ce585c985ed0f3713276ae34b4c18a84ced746",
+  "6e86d8c7a51f1faca32ee3278549613c5c8e0a6b",
+  "1d19a400ad6ea4a20d7efe1176fcaaa38f6e41bf",
+  "6e24a558d37cf621f3e7b3317a949b8fd2153e8c",
+  "b94ec5e32405ec0240e30ea32c6adc5bba8097f3",
+  "3209ba2178d93816fda91a42babbd5a92291300e",
+  "c9b4b967853557f924829c2fd08abe800fd1f261",
+  "122ed0eee61b48fe0e01ffa5015de988b6173717",
+  "7e545539e95a52c6da99cad9590ed6842fd676ce",
+  "ef3025bd0de79945a2d2da0cb85109033111f312",
+  "d5f600c392f1ea44250cb19ad87e499154cd938a",
+  "bd794e6f648a73d8d2c4c6125922f9a3ecb9843f",
+  "04c4adc5bfd95894d3d3fea48fd71da4b704bc6d",
+  "96c81cfcc611162e9d59df1a3ebfda8132d1b4b1",
+  "1bdf2c95942c19b8563dc9877f9aca13ac8b949d",
+  "c23102edcc4fe4704666c6e02a4b497bcb5a4c3f",
+  "343d72f113e02884ff3b2896774cfa50c183d290",
+  "e256b511b362653f94275a6f5f4e20cc44d5b9f5",
+  "e489d8c123aaec20ea686f2cc75ba99840ebf12a",
+  "55f57ae4149fcbdcdd748a0966a05499811e76a0",
+  "bc7b2f4a496908d873d5099f3851e93ea3a3dcce",
+  "-1001640191255:625715"
+ ],
+ "drafts": [
+  {
+   "id": "bd794e6f648a73d8d2c4c6125922f9a3ecb9843f",
+   "related": [
+    "d5f600c392f1ea44250cb19ad87e499154cd938a"
+   ],
+   "post": "⚡️<b>Vazirlik kuzgi ta’til uchun kitoblar ro‘yxatini tavsiya etdi</b>\n\n<b>1–4-sinflar:</b>\n– “Buvamning oshqozonidagi mamlakat” — Qobiljon Shermatov\n– “Zahramahr qo‘rquvlari yoxud hamma narsaga kim aybdor?” — Madina Mo‘minova\n– “Amir Temur haqida hikoyalar” — To‘lqin Hayit\n– “Bir bor ekan-pul bor ekan” — Namoz Sa’dullayev\n– “Maugli” — Redyard Kipling\n\n<b>5–9-sinflar:</b>\n– “Galaktikada bir kun” — Sa’dulla Quronov\n– “O‘tmishdan ertaklar” — Abdulla Qahhor\n– “Jayhun ustida bulutlar” — Mirkarim Osim\n– “Sohibqiron nabirasi” — Xurshid Davron\n– “G‘aroyib bolalar” — Aziz Nesin\n\n<b>10–11-sinflar:</b>\n– “Yaldo kechasi” — Xayriddin Sulton\n– “Qutadg‘u bilig” — Yusuf Xos Hojib\n– “Avlodlar dovoni” — Pirimqul Qodirov\n– “Otamdan qolgan dalalar” — Tog‘ay Murod\n– “Martin Iden” — Jek London\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:625715",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "1eb501b251b9a0265ffb005878abfd749edca6e8",
+  "39ce585c985ed0f3713276ae34b4c18a84ced746",
+  "6e86d8c7a51f1faca32ee3278549613c5c8e0a6b",
+  "1d19a400ad6ea4a20d7efe1176fcaaa38f6e41bf",
+  "6e24a558d37cf621f3e7b3317a949b8fd2153e8c",
+  "b94ec5e32405ec0240e30ea32c6adc5bba8097f3",
+  "3209ba2178d93816fda91a42babbd5a92291300e",
+  "c9b4b967853557f924829c2fd08abe800fd1f261",
+  "122ed0eee61b48fe0e01ffa5015de988b6173717",
+  "7e545539e95a52c6da99cad9590ed6842fd676ce",
+  "ef3025bd0de79945a2d2da0cb85109033111f312",
+  "d5f600c392f1ea44250cb19ad87e499154cd938a",
+  "04c4adc5bfd95894d3d3fea48fd71da4b704bc6d",
+  "96c81cfcc611162e9d59df1a3ebfda8132d1b4b1",
+  "1bdf2c95942c19b8563dc9877f9aca13ac8b949d",
+  "c23102edcc4fe4704666c6e02a4b497bcb5a4c3f",
+  "343d72f113e02884ff3b2896774cfa50c183d290",
+  "e256b511b362653f94275a6f5f4e20cc44d5b9f5",
+  "e489d8c123aaec20ea686f2cc75ba99840ebf12a",
+  "55f57ae4149fcbdcdd748a0966a05499811e76a0",
+  "bc7b2f4a496908d873d5099f3851e93ea3a3dcce"
+ ]
+}
