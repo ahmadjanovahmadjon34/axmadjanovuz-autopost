@@ -1,0 +1,97 @@
+{
+ "processed_ids": [
+  "13af6a855a1b7d507ea223351159a4aa87407f41",
+  "72910a44a6ea73c45dbafd4da432f8386381a704",
+  "85a72438c7a041b0ec1d1e3fdd6a8e6e879b521e",
+  "a62d353bde4ce1244618473f823234f03a1322ff",
+  "7c9588f81ff1fb57fed4aba35b05da9415a3ce3b",
+  "24223377dc400836640c1397bcfa9813a2f643bf",
+  "81259392423906c4832d99ba566ab8086fb9b480",
+  "37a9a1e69cbfa861a75ce82f22591da6aac2b480",
+  "fe6cbaa4a912bc0b592889fcfcae87ce922574bf",
+  "05729f1663d8e9fa13979cb4b20cde76669b2755",
+  "f28f26a914f4f6b65bbe1649edc8fe45f388b439",
+  "80011b9f5e130cdb39fe94aebd241ce2957ee56f",
+  "fa674ecaad299d4341fd9e0302b0c43d45d6b1aa",
+  "c427da0e82793906b918098730b8fc7d6ab2d380",
+  "8d408d558f02bfc663b80f07120d1800318bcd46",
+  "aca03c5bbeaed04e451099917b989a938b44ad30",
+  "ced1d80eb56599cbefa064943d96b6a0d8c1d244",
+  "87c84b241b266bb8cf9dd788fc5300421c4edfd4",
+  "55773e023ca06748987538b4213e6efb80b10691",
+  "24ccbf7bcd80b250fae0334fe56be48f3d4797c6",
+  "4a0c39ee3e2ba655aa8566a35454ab9908c2c1c0",
+  "558b6820f0b0fc4c456f1983a55151b894ef98d7",
+  "213c384feab90052de6e529196a6d9ba3eff0bb3",
+  "80efa6bdaba1b2506ed519fd7c819fba664e44b9",
+  "ac9a89cbcf90778e4bd3dea9e468b1e960424552",
+  "56c9e9ce5db794cd2a69de9ee9b2295d29a1713c",
+  "a766555789e77410d7738e3285ca54db5664a88a",
+  "63c48d2c2499d2a87f35e623118c7d4ab3774bc5",
+  "021a03ed1c63d154cd1bac97aa5bab59c5daa6d6",
+  "b5d531e82d812afedd9ea6e4b3b85a38a91dd536",
+  "5b86cc38110216bc58f92b50e622998e3e2e872e",
+  "-1001981582728:1576724",
+  "-1001981582728:1576725",
+  "-1001981582728:1576726"
+ ],
+ "drafts": [
+  {
+   "id": "ac9a89cbcf90778e4bd3dea9e468b1e960424552",
+   "related": [],
+   "post": "⚡️<b>Talabalar uchun yarimo‘tkazgich texnologiyalari bo‘yicha bepul xalqaro trening: arizalar 15-noyabrgacha</b>\n\nIqtisodiyot va moliya vazirligi, “ToshTech” texnika universiteti hamda Hindistonning Elektronika va axborot texnologiyalari milliy instituti (NIELIT) hamkorligida <b>VLSI va yarimo‘tkazgichlar texnologiyasi</b> bo‘yicha bepul boshlang‘ich o‘quv-trening dasturi tashkil etilmoqda.\n\n📚 Mashg‘ulotlar: raqamli elektronika, Linux, Vim, Tcl skript tili va VLSI loyihalash asoslari.\n\n▪️ Davomiyligi: <b>3 kun, jami 6 soat</b>;\n▪️ Format: kampusda jonli onlayn;\n▪️ Ta’lim tili: ingliz tili.\n\n👥 Bakalavriat va magistratura talabalari, professor-o‘qituvchilar, tadqiqotchilar va muhandislar qatnashishi mumkin. Ishtirokchilar saralash asosida tanlanadi.\n\n📆 Arizalar <b>2026-yil 15-noyabrga qadar</b> qabul qilinadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1576724",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1576725",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1576726",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "13af6a855a1b7d507ea223351159a4aa87407f41",
+  "72910a44a6ea73c45dbafd4da432f8386381a704",
+  "85a72438c7a041b0ec1d1e3fdd6a8e6e879b521e",
+  "a62d353bde4ce1244618473f823234f03a1322ff",
+  "7c9588f81ff1fb57fed4aba35b05da9415a3ce3b",
+  "24223377dc400836640c1397bcfa9813a2f643bf",
+  "81259392423906c4832d99ba566ab8086fb9b480",
+  "37a9a1e69cbfa861a75ce82f22591da6aac2b480",
+  "fe6cbaa4a912bc0b592889fcfcae87ce922574bf",
+  "05729f1663d8e9fa13979cb4b20cde76669b2755",
+  "f28f26a914f4f6b65bbe1649edc8fe45f388b439",
+  "80011b9f5e130cdb39fe94aebd241ce2957ee56f",
+  "fa674ecaad299d4341fd9e0302b0c43d45d6b1aa",
+  "c427da0e82793906b918098730b8fc7d6ab2d380",
+  "8d408d558f02bfc663b80f07120d1800318bcd46",
+  "aca03c5bbeaed04e451099917b989a938b44ad30",
+  "ced1d80eb56599cbefa064943d96b6a0d8c1d244",
+  "87c84b241b266bb8cf9dd788fc5300421c4edfd4",
+  "55773e023ca06748987538b4213e6efb80b10691",
+  "24ccbf7bcd80b250fae0334fe56be48f3d4797c6",
+  "4a0c39ee3e2ba655aa8566a35454ab9908c2c1c0",
+  "558b6820f0b0fc4c456f1983a55151b894ef98d7",
+  "213c384feab90052de6e529196a6d9ba3eff0bb3",
+  "80efa6bdaba1b2506ed519fd7c819fba664e44b9",
+  "56c9e9ce5db794cd2a69de9ee9b2295d29a1713c",
+  "a766555789e77410d7738e3285ca54db5664a88a",
+  "63c48d2c2499d2a87f35e623118c7d4ab3774bc5",
+  "021a03ed1c63d154cd1bac97aa5bab59c5daa6d6",
+  "b5d531e82d812afedd9ea6e4b3b85a38a91dd536",
+  "5b86cc38110216bc58f92b50e622998e3e2e872e"
+ ]
+}
