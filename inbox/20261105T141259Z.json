@@ -1,0 +1,34 @@
+{
+ "processed_ids": [
+  "bot:619839487:718",
+  "c99b8767d6f707ebe7a85bad91f8f65fd0b7e5cb",
+  "4fa5ff671f376a224d63d0e03575e16c4913f410",
+  "edacc2d60b76da3c291aff51159454e64a2a9edc",
+  "5b87a6bdc5da4fa6596ac5e8a193585b84761aa0",
+  "efa1c4c084c41bc9fd10891174c68392f370949d",
+  "5808f6a98299c0b267e78c94d74293eb1b2b0ae3",
+  "865b6e8e4143cbf376d3977ae5d882b66c598f16"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:718",
+   "related": [],
+   "post": "❗️<b>Oliy harbiy ta’lim muassasalariga hujjat qabul qilish muddatlari</b>\n\nHarbiy sohada ta’lim olmoqchi bo‘lgan abituriyentlar uchun qabul muddatlarini eslatib o‘tamiz:\n\n🔹 <b>Davlat xavfsizlik xizmati akademiyasi</b> — 10-oktyabrdan 10-noyabrgacha;\n\n🔹 <b>Ichki ishlar vazirligi akademiyasi</b> — 15-noyabrdan 15-fevralgacha;\n\n🔹 <b>Bojxona instituti</b> — 1-yanvardan 1-aprelgacha;\n\n🔹 <b>1-fevraldan 31-martgacha</b> qabul qiluvchi oliygohlar:\n— Qurolli Kuchlar akademiyasi;\n— Harbiy tibbiyot akademiyasi;\n— Chirchiq oliy tank qo‘mondonlik-muhandislik bilim yurti;\n— Harbiy aviatsiya instituti;\n— Axborot-kommunikatsiya texnologiyalari va aloqa harbiy instituti.\n\n🔹 <b>Jamoat xavfsizligi universiteti</b> — 1-fevraldan 20-martgacha;\n\n🔹 <b>Huquqni muhofaza qilish akademiyasi</b> — 1-fevraldan 1-martgacha.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "reject_ids": [
+  "c99b8767d6f707ebe7a85bad91f8f65fd0b7e5cb",
+  "4fa5ff671f376a224d63d0e03575e16c4913f410",
+  "edacc2d60b76da3c291aff51159454e64a2a9edc",
+  "5b87a6bdc5da4fa6596ac5e8a193585b84761aa0",
+  "efa1c4c084c41bc9fd10891174c68392f370949d",
+  "5808f6a98299c0b267e78c94d74293eb1b2b0ae3",
+  "865b6e8e4143cbf376d3977ae5d882b66c598f16"
+ ]
+}
