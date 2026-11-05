@@ -1,0 +1,49 @@
+{
+ "processed_ids": [
+  "bot:619839487:713",
+  "2487cca0b6b5a669a55bf4edb36d7253922c3a03",
+  "21f9f135cdb2f2a76a9f044d938179e65f16e840",
+  "2bfe0c4e0bf98c51dc589cdb10c03c7c8fa022a7",
+  "c02087fbef6baa35c52ce27e2a62778c5549dca5",
+  "c9b8860b1b61a9cbdcd84ddadb31cc6ddd23a590",
+  "b23b97a09f9ada0390dcb30fe302ebda7e623116",
+  "e09609349a21c09723468c738a176e92ed1a2587",
+  "c28aadb6c3dde647bdcd46a8c92f948f996ddff4",
+  "-1001981582728:1577183",
+  "-1001981582728:1577184"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:713",
+   "related": [
+    "21f9f135cdb2f2a76a9f044d938179e65f16e840"
+   ],
+   "post": "⚡️<b>Pedagoglar ipoteka subsidiyasiga arizani onlayn topshirishi mumkin</b>\n\nHukumat qaroriga (VMQ-69-son, 19.02.2026) muvofiq, ipoteka krediti boshlang‘ich badalining 25 foizi davlat byudjeti hisobidan qoplab beriladi.\n\n📌 <b>Arizani onlayn topshirish uchun:</b>\n🔹 Yagona interaktiv davlat xizmatlari portali yoki MyGov ilovasiga kiring;\n🔹 “Pedagoglarga turar joy sotib olish uchun subsidiya” xizmatini tanlang;\n🔹 Kerakli ma’lumotlarni kiritib, arizani yuboring.\n\n📥 Ariza Davlat xizmatlari markazlari orqali ham qabul qilinadi.\n\nℹ️ <b>Kimlar olishi mumkin:</b> kamida 15 yillik stajga ega, oliy malaka toifasidagi (bosh o‘qituvchi lavozimidagi), 60 yoshgacha bo‘lgan pedagoglar. Ariza beruvchi va turmush o‘rtog‘i nomida ikki va undan ortiq uy-joy bo‘lmasligi kerak.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577183",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577184",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "2487cca0b6b5a669a55bf4edb36d7253922c3a03",
+  "2bfe0c4e0bf98c51dc589cdb10c03c7c8fa022a7",
+  "c02087fbef6baa35c52ce27e2a62778c5549dca5",
+  "c9b8860b1b61a9cbdcd84ddadb31cc6ddd23a590",
+  "b23b97a09f9ada0390dcb30fe302ebda7e623116",
+  "e09609349a21c09723468c738a176e92ed1a2587",
+  "c28aadb6c3dde647bdcd46a8c92f948f996ddff4"
+ ]
+}
