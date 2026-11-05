@@ -1,0 +1,92 @@
+{
+ "processed_ids": [
+  "bot:619839487:708",
+  "a8eb2a3249a70815de2cac9649aee4cd00b0a42a",
+  "23d791cd152346c8918cf56eb74d06abcc4ef423",
+  "50b9ddd8d6a491798f7ac9f7ceb59478103dd4b2",
+  "1c8de737ea2c8933338722d67096b92458fdc540",
+  "bot:619839487:706",
+  "8fb4576c85984777fe81e6b3e56bf23d3ec4f1e3",
+  "f8172135591af83e4792730b0e567cc8120ec7c2",
+  "a900c9b99a7e010901646c9328d03f42f5dd44c2",
+  "883cc69a63fb248ac3de9aef7b700a745d88589d",
+  "4aa13908f7205f7b2affedc19e570312222b89a8",
+  "7d98d91decdfcdb8693f1d789764f85c8ab4d4bc",
+  "14404dea9a82725a349fde05ca0cb399b2efbebb",
+  "d47106d90f4aa7009e1d8371b6a72b03de5039eb",
+  "88ccdf8646672b3435f71c43d78f8d28b656267d",
+  "8e96ebbb44f06e640c46432d875699af78e90fff",
+  "c282851579501d9c908dcbc9f0097ee4d683ef68",
+  "a88552eb72ff22d6228ab18e5113f8964e966e82",
+  "-1001981582728:1577181",
+  "-1001640191255:625963",
+  "-1001981582728:1577182"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:708",
+   "related": [
+    "c282851579501d9c908dcbc9f0097ee4d683ef68"
+   ],
+   "post": "❗️<b>Oliy harbiy ta’lim muassasalariga hujjat topshirish muddatlari</b>\n\nHar bir oliy harbiy ta’lim muassasasiga ariza qabul qilish muddatlari rasmda keltirilgan.\n\n📌 Fuqarolar arizani yashash joyidagi tuman (shahar) mudofaa ishlari bo‘limiga topshiradi. Harbiy xizmatchilar esa xizmat joyidagi komandir (boshliq) nomiga bildirgi yozadi.\n\n✅ Nomzodlar psixologik suhbat, tibbiy ko‘rik, jismoniy tayyorgarlik sinovi va test bosqichlaridan o‘tadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  },
+  {
+   "id": "bot:619839487:706",
+   "related": [],
+   "post": "⚖️<b>DXXga ishga kirmoqchi bo‘lganlar uchun asosiy talablar</b>\n\n🔹 <b>Oliy ma’lumot.</b> Yuridik, xalqaro munosabatlar, iqtisodiyot, axborot texnologiyalari, harbiy fanlar va xorijiy tillar kabi yo‘nalishlar mutaxassislari afzal ko‘riladi.\n\n🔹 <b>Tibbiy va psixologik ko‘rik.</b> Xizmat yuqori jismoniy va ruhiy chidamlilikni talab qiladi.\n\n🔹 <b>Maxsus tayyorgarlik.</b> Jismoniy tayyorgarlik, maxfiy ma’lumotlar bilan ishlash va xavfsizlik qoidalariga rioya qilish ko‘nikmalari shakllantiriladi.\n\n🔹 <b>Huquqiy bilim.</b> Davlat xavfsizligi, jinoyat va konstitutsiyaviy huquq, terrorizm va ekstremizmga qarshi kurash bo‘yicha bilim talab etiladi.\n\n🔹 <b>Maxfiylikni saqlash.</b> Nomzodlar maxsus ishonchlilik tekshiruvidan o‘tkaziladi.\n\n🔹 <b>Til bilish.</b> O‘zbek tilini mukammal bilish talab etiladi, rus, ingliz va boshqa xorijiy tillarni bilish afzallik beradi.\n\n🔹 <b>Shaxsiy fazilatlar.</b> Intizom, mas’uliyat, sinchkovlik va stressga chidamlilik muhim.\n\n🔹 <b>Ish tajribasi.</b> Harbiy xizmat yoki huquqni muhofaza qilish organlaridagi tajriba afzal ko‘rilishi mumkin.\n\n📊 Ishga qabul ko‘p bosqichli saralash asosida o‘tkaziladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  },
+  {
+   "id": "a8eb2a3249a70815de2cac9649aee4cd00b0a42a",
+   "related": [],
+   "post": "❗️<b>“Ijtimoiy reestr” yoki “Mahalla yettiligi” qaroridan norozimisiz?</b>\n\nEndi bunday qaror va xulosalar ustidan Yagona interaktiv davlat xizmatlari portali orqali elektron shikoyat yuborish mumkin.\n\n📌 Shikoyat qilish mumkin bo‘lgan holatlar:\n🔹 oilangizni “Ijtimoiy reestr”ga kiritish rad etilsa;\n🔹 “Mahalla yettiligi” dalolatnomasi yoki xulosasidan norozi bo‘lsangiz.\n\nShikoyat tuman (shahar) hokimligi huzuridagi Apellyatsiya kengashiga yuboriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577181",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:625963",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577182",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "23d791cd152346c8918cf56eb74d06abcc4ef423",
+  "50b9ddd8d6a491798f7ac9f7ceb59478103dd4b2",
+  "1c8de737ea2c8933338722d67096b92458fdc540",
+  "8fb4576c85984777fe81e6b3e56bf23d3ec4f1e3",
+  "f8172135591af83e4792730b0e567cc8120ec7c2",
+  "a900c9b99a7e010901646c9328d03f42f5dd44c2",
+  "883cc69a63fb248ac3de9aef7b700a745d88589d",
+  "4aa13908f7205f7b2affedc19e570312222b89a8",
+  "7d98d91decdfcdb8693f1d789764f85c8ab4d4bc",
+  "14404dea9a82725a349fde05ca0cb399b2efbebb",
+  "d47106d90f4aa7009e1d8371b6a72b03de5039eb",
+  "88ccdf8646672b3435f71c43d78f8d28b656267d",
+  "8e96ebbb44f06e640c46432d875699af78e90fff",
+  "a88552eb72ff22d6228ab18e5113f8964e966e82"
+ ]
+}
