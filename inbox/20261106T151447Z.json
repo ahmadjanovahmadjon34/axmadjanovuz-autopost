@@ -1,0 +1,115 @@
+{
+ "processed_ids": [
+  "30376b2620fd85714631d3f50769b335af8b1bea",
+  "f2c53a867bcc462ced7821568ae990819bed2a81",
+  "984f4164f401b9cc1b440699a0bd0e52fae08588",
+  "1c149a950dcf0db7586af57e9b4702ee9492a43b",
+  "61da3074ecf0c6310bea4dcf2116a0cc060633e3",
+  "019fa459427ee6b01567a820e63fedede75263ca",
+  "1e0913d898d99d8a0c6987938a511556c95b5de5",
+  "242c5621056c28fa8030b9dcd7d04f560e3d421a",
+  "c5967349e9ba5212e66ac4eef590fa93908c8d75",
+  "c9cee6c4cafe454c3179cc76f5b096b8dc7ddb51",
+  "af3373c998f9be0d6b6db10f55d3e6f59bf7be50",
+  "3a42cebd470010c6f3dacf41b01194277076080f",
+  "9fbe6b31c6a4adb344af3cb918b3176ee639f565",
+  "09a044ab08aaf55a485640829ba013bedbf84c36",
+  "43a2b90fa70d83dea79ba30790793bbc6b406a74",
+  "526c4588ef23dacc2c50af1c27cec9746db3d7d9",
+  "4146a99cf0541014a0db9472e39b87f4d298d629",
+  "2507f45f6ee5367a4496853a1f9ab6f8b2e30e68",
+  "3e4e8cd66638d5a5bdd0d89f292d49b6afd31e34",
+  "01532731961ea2aa14b0107553aed90effc363ff",
+  "33db381ebed2e1052a6cd8de3dc819ebc6c056b8",
+  "3fa01a0b450d4c5fc91ce2445d492ebe48006176",
+  "-1001981582728:1577507",
+  "-1001981582728:1577508",
+  "-1001981582728:1577511",
+  "-1001981582728:1577512",
+  "-1001981582728:1577515",
+  "-1001981582728:1577516",
+  "-1001981582728:1577519",
+  "-1001981582728:1577520",
+  "-1001981582728:1577522",
+  "-1001981582728:1577523"
+ ],
+ "drafts": [
+  {
+   "id": "2507f45f6ee5367a4496853a1f9ab6f8b2e30e68",
+   "related": [
+    "1e0913d898d99d8a0c6987938a511556c95b5de5",
+    "9fbe6b31c6a4adb344af3cb918b3176ee639f565",
+    "526c4588ef23dacc2c50af1c27cec9746db3d7d9"
+   ],
+   "post": "⚡️<b>Vazirlik rektorlarga 15 kun ichida talabalar uchun qabul tashkil etishni topshirdi</b>\n\nTa’lim va ilm-fan vazirligida davlat OTM rektorlari ishtirokida o‘tgan uchrashuvda ta’lim sifati, bitiruvchilar bandligi, murojaatlar, talabalarning yashash sharoitlari, energiya tejamkorligi, xalqaro hamkorlik va kadrlar masalalari ko‘rib chiqildi.\n\n📌 <b>Asosiy raqamlar:</b>\n🔹 davlat OTMlarining 2026-yilgi bitiruvchilaridan 13,8 ming nafari band emas;\n🔹 tahlil qilingan 29,7 ming o‘quv adabiyotining 5,5 mingtasi 20 yildan avval chop etilgan.\n\n✅ <b>Topshiriqlar:</b>\n🔹 ayrim OTM mansabdorlarining lavozimiga loyiqligini o‘rganish uchun ishchi guruh tuziladi;\n🔹 rektorlar 15 kun ichida talaba va o‘qituvchilar uchun qabullar tashkil etib, muammolarni joyida hal qiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577507",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577508",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577511",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577512",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577515",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577516",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577519",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577520",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577522",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577523",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "30376b2620fd85714631d3f50769b335af8b1bea",
+  "f2c53a867bcc462ced7821568ae990819bed2a81",
+  "984f4164f401b9cc1b440699a0bd0e52fae08588",
+  "1c149a950dcf0db7586af57e9b4702ee9492a43b",
+  "61da3074ecf0c6310bea4dcf2116a0cc060633e3",
+  "019fa459427ee6b01567a820e63fedede75263ca",
+  "242c5621056c28fa8030b9dcd7d04f560e3d421a",
+  "c5967349e9ba5212e66ac4eef590fa93908c8d75",
+  "c9cee6c4cafe454c3179cc76f5b096b8dc7ddb51",
+  "af3373c998f9be0d6b6db10f55d3e6f59bf7be50",
+  "3a42cebd470010c6f3dacf41b01194277076080f",
+  "09a044ab08aaf55a485640829ba013bedbf84c36",
+  "43a2b90fa70d83dea79ba30790793bbc6b406a74",
+  "4146a99cf0541014a0db9472e39b87f4d298d629",
+  "3e4e8cd66638d5a5bdd0d89f292d49b6afd31e34",
+  "01532731961ea2aa14b0107553aed90effc363ff",
+  "33db381ebed2e1052a6cd8de3dc819ebc6c056b8",
+  "3fa01a0b450d4c5fc91ce2445d492ebe48006176"
+ ]
+}
