@@ -1,0 +1,75 @@
+{
+ "processed_ids": [
+  "a84aadd84994f9f405d242b664e5285711ee3130",
+  "e64ee241366470726948526d1cfe546e44b458ad",
+  "3f3834343da8db3f2c341dbae5a0d9eed8228489",
+  "3614e18a4251475832ee1f47c9ec27706c146999",
+  "aa850bbebd070f2964eed8b6627ebaf69e4949e0",
+  "2029834a17d85caa41c8b84ba43885150e2c3073",
+  "40867177062f1c649a96717f64c1f4dadca3360d",
+  "04ca8e7fbb7c65daa2ba67e84876c09b4af9c39d",
+  "ebe3a54b1285ba8735c3cbd21673f7d605898770",
+  "d08f69d5e8bae7ea58253b0e34e9e48bf782a243",
+  "6e832794f5ae31f461589abe14e1b9f4fab210b6",
+  "8a50fa68a3bc69174b47e8ee6a19ae558f0515b4",
+  "339f0d7d18c21b2d9ee27194304dc226466d103e",
+  "740a37c8a235736fea0ff08782c963f244d845c0",
+  "118790dee8ec72572f1ed3a17aebafa56171c1a1",
+  "375701d181cf297fb55c4550f1f88b0a98928321",
+  "a329fe38f53758be6774662537afa895dda388ff",
+  "dacfafc5d66f08d84ca1f81d14c43c814bad5012",
+  "935f67936f288d230c8f85ab2170267b2169db0d",
+  "5a304e70d95e11173e64808623892644b7a7a3d0",
+  "451a2207c08877d0b1cc97d373e44affe5545e69",
+  "7fa17a08e8440f00194f4dc5b3b466ffa2cbcd26",
+  "36dacef7808618a8c6269190773b627318e691cb",
+  "9fdf3d08a18401d112b940257a717dae399a59da",
+  "2d07e59164326beb9853c5e3a63884d8c2a8f078",
+  "d67b99aaa195c2f1b963b3ffaa6320b1331bb8dd",
+  "66d891a4a7e3621d9ae324219d94050ba383bc2d",
+  "e8d78003b88f59ce33673918f77a318595624928"
+ ],
+ "drafts": [
+  {
+   "id": "04ca8e7fbb7c65daa2ba67e84876c09b4af9c39d",
+   "related": [
+    "2029834a17d85caa41c8b84ba43885150e2c3073"
+   ],
+   "post": "⚡️<b>Akademik litseylarga qabul-2027: test tuzilmasi va baholash mezonlari e’lon qilindi</b>\n\n2027/2028-o‘quv yili uchun akademik litseylarga kiruvchilar uchun test sinovi tartibi ma’lum qilindi.\n\n📝 Jami <b>60 ta</b> test topshirig‘i:\n🔹 20 ta — intellektual qobiliyat (IQ) darajasini aniqlash;\n🔹 40 ta — ta’lim yo‘nalishiga mos ikkita fan bo‘yicha (har biridan 20 tadan).\n\n📌 Maksimal ball — <b>146</b>:\n🔹 1-fan: 20 × 3,1 = 62 ball;\n🔹 2-fan: 20 × 3,1 = 62 ball;\n🔹 IQ: 20 × 1,1 = 22 ball.\n\n📚 Yo‘nalishlar bo‘yicha fanlar majmuasi — rasmda.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "reject_ids": [
+  "a84aadd84994f9f405d242b664e5285711ee3130",
+  "e64ee241366470726948526d1cfe546e44b458ad",
+  "3f3834343da8db3f2c341dbae5a0d9eed8228489",
+  "3614e18a4251475832ee1f47c9ec27706c146999",
+  "aa850bbebd070f2964eed8b6627ebaf69e4949e0",
+  "40867177062f1c649a96717f64c1f4dadca3360d",
+  "ebe3a54b1285ba8735c3cbd21673f7d605898770",
+  "d08f69d5e8bae7ea58253b0e34e9e48bf782a243",
+  "6e832794f5ae31f461589abe14e1b9f4fab210b6",
+  "8a50fa68a3bc69174b47e8ee6a19ae558f0515b4",
+  "339f0d7d18c21b2d9ee27194304dc226466d103e",
+  "740a37c8a235736fea0ff08782c963f244d845c0",
+  "118790dee8ec72572f1ed3a17aebafa56171c1a1",
+  "375701d181cf297fb55c4550f1f88b0a98928321",
+  "a329fe38f53758be6774662537afa895dda388ff",
+  "dacfafc5d66f08d84ca1f81d14c43c814bad5012",
+  "935f67936f288d230c8f85ab2170267b2169db0d",
+  "5a304e70d95e11173e64808623892644b7a7a3d0",
+  "451a2207c08877d0b1cc97d373e44affe5545e69",
+  "7fa17a08e8440f00194f4dc5b3b466ffa2cbcd26",
+  "36dacef7808618a8c6269190773b627318e691cb",
+  "9fdf3d08a18401d112b940257a717dae399a59da",
+  "2d07e59164326beb9853c5e3a63884d8c2a8f078",
+  "d67b99aaa195c2f1b963b3ffaa6320b1331bb8dd",
+  "66d891a4a7e3621d9ae324219d94050ba383bc2d",
+  "e8d78003b88f59ce33673918f77a318595624928"
+ ]
+}
