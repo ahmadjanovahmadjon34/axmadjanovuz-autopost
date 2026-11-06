@@ -1,0 +1,95 @@
+{
+ "processed_ids": [
+  "343f6e789e6201a04598b8ef1703fad5a84e1b79",
+  "c97542a46023fa9af6dd0d9c7c6662abc208b8c6",
+  "1021f2c6626f8f7b8594013a51d8f43fc3ac17dd",
+  "1596101f505b37c37abc2d666f631a5bc66a4bf2",
+  "a614d56f242a32bb313908a9b62d7acffb7d59e5",
+  "9ec20ce70e2489a6c1801144a7cdc3de389d1af4",
+  "46be14a7a39c4156db6d43e8dd312b92f7540b5c",
+  "21719a539e07d589043eab0d609ebc6a78682c0b",
+  "3499d46b730a176f2fe1ae4bff005f949f67b161",
+  "63f3444a0e0a0a40011d413e3f852e043cf40edd",
+  "d8c57e6089e3953a937b29c9fe171b1648cc72df",
+  "6dc1326607ae1d043f3d0b9f4577cb773da98692",
+  "db7533544cd0975f774cb6c8d5545745d8f2a9d1",
+  "1c83f51c7dc5201bf3208b8b99aa140d725813a5",
+  "8af7761293c2269bd6db1ae7888cacb2ff4fab75",
+  "9272363b6a3f8e47dda40d9f92e7de2a94da7917",
+  "ae122ec2917557bac85ae268ed83f2af0e69d1f0",
+  "0bf351922c32f5a1f1fc4de9235a9fb3c51bc7d1",
+  "348fa025f8de9e94678a90bf4af391a2966a0329",
+  "335bb97b2e3fca4a718fa7391d112cdb12df1efc",
+  "18d4725c3b6818440f3dad075c19257023d34936",
+  "-1001981582728:1577425",
+  "-1001981582728:1577426",
+  "-1001981582728:1577427",
+  "-1001981582728:1577428"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:730",
+   "related": [
+    "e9d0b58156785bda85a579cc32e7929685df1f14",
+    "63f3444a0e0a0a40011d413e3f852e043cf40edd"
+   ],
+   "post": "❗️<b>Vazirlikda OTM rahbarlari faoliyati tanqidiy tahlil qilindi</b>\n\n6-noyabr kuni Ta’lim va ilm-fan vazirligida davlat oliy ta’lim tashkilotlari faoliyati yuzasidan tanqidiy yig‘ilish bo‘lib o‘tdi. Unda Prezident Administratsiyasi va Bosh prokuratura vakillari hamda OTM rahbarlari ishtirok etdi.\n\nYig‘ilishda:\n— rektorlarning investitsiya jalb qilish bo‘yicha ishlari va umumiy samaradorligi ko‘rib chiqildi;\n— vazifasini lozim darajada bajarmayotgan rektorlarga qat’iy ogohlantirish berildi;\n— faoliyati qoniqarsiz deb topilgan bir qator rahbarlarni lavozimidan ozod etish bo‘yicha topshiriq berildi.\n\nAyrim OAVda besh nafar rektor, jumladan O‘zbekiston davlat jahon tillari universiteti va Samarqand davlat chet tillar instituti rahbarlari ishdan olingani xabar qilingan. Biroq hozircha birorta rahbar rasman lavozimidan ozod etilmagan, ularning faoliyati o‘rganilmoqda.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": "5"
+  },
+  {
+   "id": "46be14a7a39c4156db6d43e8dd312b92f7540b5c",
+   "related": [],
+   "post": "⚡️<b>Talabalar va texnikum o‘quvchilari uchun “Kasbiy volontyorlik” dasturi joriy etiladi</b>\n\nPrezidentning 2026-yil 6-noyabrdagi PF-240-son farmoniga ko‘ra, 2027-yildan boshlab:\n\n🔹 davlat OTMlari talabalari va texnikum o‘quvchilari uchun “Kasbiy volontyorlik” dasturi amalga oshiriladi;\n🔹 talabalar o‘z mutaxassisligiga mos volontyorlik dasturida o‘qishdan tashqari vaqtda, ixtiyoriy ravishda ishtirok etadi;\n🔹 davlat organlari va tashkilotlari buning uchun zarur sharoit yaratadi;\n🔹 volontyorlik istagidagi yoshlar uchun “Service Learning” (ijtimoiy xizmat asosidagi ta’lim) dasturi bo‘yicha qisqa muddatli o‘quvlar tashkil etiladi.\n\n📌 2027-yil 1-yanvardan tajriba tariqasida “Inson” ijtimoiy xizmatlar markazlariga ijtimoiy xodim lavozimiga ishga olishda malaka ko‘rsatkichlari teng bo‘lsa, volontyorlik bilan shug‘ullangan nomzodga ustunlik beriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577425",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577426",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577427",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1577428",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "343f6e789e6201a04598b8ef1703fad5a84e1b79",
+  "c97542a46023fa9af6dd0d9c7c6662abc208b8c6",
+  "1021f2c6626f8f7b8594013a51d8f43fc3ac17dd",
+  "1596101f505b37c37abc2d666f631a5bc66a4bf2",
+  "a614d56f242a32bb313908a9b62d7acffb7d59e5",
+  "9ec20ce70e2489a6c1801144a7cdc3de389d1af4",
+  "21719a539e07d589043eab0d609ebc6a78682c0b",
+  "3499d46b730a176f2fe1ae4bff005f949f67b161",
+  "d8c57e6089e3953a937b29c9fe171b1648cc72df",
+  "6dc1326607ae1d043f3d0b9f4577cb773da98692",
+  "db7533544cd0975f774cb6c8d5545745d8f2a9d1",
+  "1c83f51c7dc5201bf3208b8b99aa140d725813a5",
+  "8af7761293c2269bd6db1ae7888cacb2ff4fab75",
+  "9272363b6a3f8e47dda40d9f92e7de2a94da7917",
+  "ae122ec2917557bac85ae268ed83f2af0e69d1f0",
+  "0bf351922c32f5a1f1fc4de9235a9fb3c51bc7d1",
+  "348fa025f8de9e94678a90bf4af391a2966a0329",
+  "335bb97b2e3fca4a718fa7391d112cdb12df1efc",
+  "18d4725c3b6818440f3dad075c19257023d34936"
+ ]
+}
