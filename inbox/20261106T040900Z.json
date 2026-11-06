@@ -1,0 +1,24 @@
+{
+ "processed_ids": [
+  "f64ffd477a4b6b5592f6950e4baad0b435fa2807",
+  "bot:619839487:723",
+  "52d55f8469f67f1b71e4cdc0b8f53ed05db068c7"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:723",
+   "related": [],
+   "post": "⚡️<b>Magistraturaga qabul: hozirgi tartib va 2027/2028-yildagi o‘zgarishlar</b>\n\n📌 <b>2026/2027-o‘quv yili:</b> magistraturaga alohida kirish imtihoni o‘tkazilmadi. Qabul bakalavriat diplom bali va xorijiy til sertifikati asosida bo‘ldi.\n\n🔄 <b>2027/2028-o‘quv yilidan</b> (Prezidentning 2026-yil 10-apreldagi PF-58-son farmoni asosida):\n🔹 xorijiy til sertifikati talabi saqlanib qoladi;\n🔹 davlat oliy ta’lim tashkilotlari mutaxassislik fanidan kirish imtihoni o‘tkazishi mumkin bo‘ladi;\n🔹 imtihon shakli va dasturi bo‘yicha yangi tartib loyihasi 2026-yil dekabrigacha tayyorlanadi.\n\n🖼 Batafsil — rasmdagi infografikada.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "reject_ids": [
+  "f64ffd477a4b6b5592f6950e4baad0b435fa2807",
+  "52d55f8469f67f1b71e4cdc0b8f53ed05db068c7"
+ ]
+}
