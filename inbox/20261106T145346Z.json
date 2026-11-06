@@ -1,0 +1,46 @@
+{
+ "processed_ids": [
+  "0ca5672aa4fdb9df6f7a25e653f853ad21bba969",
+  "1829080ef12f628086fd1eb55e5e4cda8b5fb874",
+  "bot:619839487:736",
+  "ac938d93e947d06c5b4be8425c571a0967d4a9f2",
+  "cf1816b878acedcefaf12e200f0234b3b076c60e",
+  "07ba22992e2705617732071c9b0053adbb22544a",
+  "6e0d7ce9942b81853910b93d0eaddfd2290209c4",
+  "c288e9fccd5c6d2ecb96a3d57a3a07af993ae1b7",
+  "a3072097b824dab83ee72e59ae2295c3fbaa7e4c",
+  "e4a5cef81eab63c6c4c941d69a341c13007f7533",
+  "-1001981582728:1577506"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:736",
+   "related": [
+    "6e0d7ce9942b81853910b93d0eaddfd2290209c4"
+   ],
+   "post": "❗️<b>Lavozimidan ozod etilgani aytilayotgan rektorlar nomlari tarqaldi</b>\n\nTelegram kanallarida 6-noyabr kuni Ta’lim va ilm-fan vaziri Erkinjon Turdimov o‘tkazgan yig‘ilishdan so‘ng quyidagi rektorlar lavozimidan ozod etilgani aytilmoqda:\n\n🔹 Guliston davlat universiteti rektori Muksin Xodjiyev;\n🔹 Samarqand davlat chet tillar instituti rektori Bahodir Xoliqov;\n🔹 Toshkent kimyo-texnologiya instituti rektori Botir Usmonov;\n🔹 O‘zbekiston davlat jahon tillari universiteti rektori Ilhomjon To‘xtasinov.\n\nXabarlarga ko‘ra, ayrim rektorlar yig‘ilishda keskin tanqid qilingan va yig‘ilishdan chiqarib yuborilgan.\n\n⚠️ Bu ma’lumotlar rasman tasdiqlanmagan. Vazirlikdagi yig‘ilish haqidagi xabarlarda faoliyati qoniqarsiz deb topilgan bir qator rahbarlarni ozod etish bo‘yicha topshiriq berilgani, biroq hozircha birorta rahbar rasman ishdan olinmagani aytilgan.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577506",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "0ca5672aa4fdb9df6f7a25e653f853ad21bba969",
+  "1829080ef12f628086fd1eb55e5e4cda8b5fb874",
+  "ac938d93e947d06c5b4be8425c571a0967d4a9f2",
+  "cf1816b878acedcefaf12e200f0234b3b076c60e",
+  "07ba22992e2705617732071c9b0053adbb22544a",
+  "c288e9fccd5c6d2ecb96a3d57a3a07af993ae1b7",
+  "a3072097b824dab83ee72e59ae2295c3fbaa7e4c",
+  "e4a5cef81eab63c6c4c941d69a341c13007f7533"
+ ]
+}
