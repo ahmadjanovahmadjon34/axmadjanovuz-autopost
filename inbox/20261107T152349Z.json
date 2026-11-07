@@ -1,0 +1,47 @@
+{
+ "processed_ids": [
+  "4274ca404100edafddcd9354679d7758eb497072",
+  "760f078bbdd0026bcb755e938f74313d3f66c979",
+  "262b105ea5477682238dea9e31157874d0126ae6",
+  "650dae32f59c0e06d36b9fed7a2266437be01951",
+  "0189e73d30bce122de7c5f2d95a328d2668859ff",
+  "c3c21c46aaec632b5c43a6b1122f26c4f85903a1",
+  "4c1488e339f32c1cd5388aeda14768fa2cfa5a09",
+  "81b31f758da7743d2d816490507d89271c42eaca",
+  "2266abf96245fcdfbac6884fd45932c23a2fde44",
+  "69083f2fae0f25b50f719ced127d8b841c6529eb",
+  "609d7c5d8ecf62b128e533173256cbd307505364",
+  "-1001981582728:1577900"
+ ],
+ "drafts": [
+  {
+   "id": "69083f2fae0f25b50f719ced127d8b841c6529eb",
+   "related": [],
+   "post": "❗️<b>CHQBT rahbarlarining farzandlariga 30 foizlik kontrakt chegirmasi berilmayapti</b>\n\nVazirlar Mahkamasining 2026-yil 17-sentabrdagi 501-son qaroriga ko'ra, pedagoglarning davlat OTMlarida kunduzgi bakalavriatda o'qiyotgan farzandlariga bazaviy kontrakt summasining 30 foizi miqdorida chegirma beriladi.\n\n\"Chaqiruvga qadar boshlang'ich tayyorgarlik rahbari\" lavozimi Pedagogik faoliyat bilan bog'liq lavozimlar ro'yxatiga (452-pozitsiya) kiritilgan. 591-son qarorga ko'ra, CHQBT rahbarlariga boshqa fan o'qituvchilari uchun belgilangan barcha imtiyozlar tatbiq etiladi.\n\nBiroq kontrakt.edu.uz tizimida ayrim arizalar \"ish joyi — Mudofaa ishlari bo'limi chegirma beriladigan tashkilotlar ro'yxatida yo'q\" degan sabab bilan rad etilmoqda.\n\nMuammo shundaki, 501-son qarorda imtiyoz ta'lim tashkilotida tuzilgan mehnat shartnomasiga bog'langan, CHQBT rahbarlarining ish beruvchisi esa ko'pincha Mudofaa ishlari bo'limi hisoblanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 8,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1577900",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "4274ca404100edafddcd9354679d7758eb497072",
+  "760f078bbdd0026bcb755e938f74313d3f66c979",
+  "262b105ea5477682238dea9e31157874d0126ae6",
+  "650dae32f59c0e06d36b9fed7a2266437be01951",
+  "0189e73d30bce122de7c5f2d95a328d2668859ff",
+  "c3c21c46aaec632b5c43a6b1122f26c4f85903a1",
+  "4c1488e339f32c1cd5388aeda14768fa2cfa5a09",
+  "81b31f758da7743d2d816490507d89271c42eaca",
+  "2266abf96245fcdfbac6884fd45932c23a2fde44",
+  "609d7c5d8ecf62b128e533173256cbd307505364"
+ ]
+}
