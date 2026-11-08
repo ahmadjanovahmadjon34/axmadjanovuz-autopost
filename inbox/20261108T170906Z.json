@@ -1,0 +1,86 @@
+{
+ "processed_ids": [
+  "0d3673f2f4d8ac82ceb33916c292d76fd184d35a",
+  "305b75f87dd4c3f0600ea002961e0a2d2c1ef6fa",
+  "2d9c0528cbf9e307df32fcd0ce26dfbcda38ddfb",
+  "616ec74d75e5f90861cea645b3cf8813f8c3371c",
+  "53033890cff19c5931cda18bc524aeba30136a78",
+  "265063e7d738a2715171435bd381f95c82618d8c",
+  "72180feff7b9668f58603959c979d5336893eeee",
+  "c7c9a155bdb67b9e9074e0a79d4e83eacc68fd26",
+  "-1001981582728:1578343",
+  "-1001981582728:1578344",
+  "-1001981582728:1578345",
+  "-1001981582728:1578346",
+  "-1001981582728:1578347",
+  "-1001981582728:1578349",
+  "-1001981582728:1578351",
+  "-1001981582728:1578352",
+  "-1001981582728:1578353",
+  "-1001981582728:1578354"
+ ],
+ "drafts": [
+  {
+   "id": "72180feff7b9668f58603959c979d5336893eeee",
+   "related": [],
+   "post": "❗️<b>Qishki \"perevod\" uchun arizalar 10–20-yanvar kunlari qabul qilinadi</b>\n\nVazirlar Mahkamasining 578-son qaroriga ko'ra, talabalar bahorgi semestr uchun o'qishini ko'chirish muddati va tartibi o'zgardi.\n\nArizalar har yili 10-yanvardan 20-yanvargacha faqat onlayn — transfer.edu.uz sayti va Yagona interaktiv davlat xizmatlari portali orqali qabul qilinadi.\n\n<b>Faqat davlat OTMlari o'rtasida va 2 ta uzrli sabab bilan:</b>\n— talaba oila qurgani sababli turmush o'rtog'i doimiy yashaydigan hududdagi OTMga ko'chmoqchi bo'lsa;\n— davlat organi xodimining ish joyi o'zgargan taqdirda turmush o'rtog'i yoki voyaga yetmagan farzandining o'qishini ko'chirish uchun (vazirlik yoki idora rahbari tavsiyasi bilan).\n\n<b>Kerakli hujjatlar:</b> reyting daftarchasi, akademik ma'lumotnoma yoki transkript nusxasi hamda uzrli sababni tasdiqlovchi hujjat.\n\n<b>Muhim:</b>\n— bir OTMdan boshqasiga o'qishni ko'chirib tiklashga ruxsat berilmaydi;\n— yuborilgan arizani tahrirlab bo'lmaydi;\n— arizalar 21-yanvardan 10-fevralgacha ko'rib chiqiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1578343",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578344",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578345",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578346",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578347",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578349",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578351",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578352",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578353",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578354",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "0d3673f2f4d8ac82ceb33916c292d76fd184d35a",
+  "305b75f87dd4c3f0600ea002961e0a2d2c1ef6fa",
+  "2d9c0528cbf9e307df32fcd0ce26dfbcda38ddfb",
+  "616ec74d75e5f90861cea645b3cf8813f8c3371c",
+  "53033890cff19c5931cda18bc524aeba30136a78",
+  "265063e7d738a2715171435bd381f95c82618d8c",
+  "c7c9a155bdb67b9e9074e0a79d4e83eacc68fd26"
+ ]
+}
