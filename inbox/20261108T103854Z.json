@@ -1,0 +1,70 @@
+{
+ "processed_ids": [
+  "d13c92ae2ebb3d2484b3f29d3a1579b92ff4feca",
+  "4cdf5520033b3404f6c7902443af4f3c4f9e54cf",
+  "0cb437ca66026f68af3dd9e1b407140e1d66b597",
+  "13a3c2755c1253adcff46b996e7fd2693f047f0d",
+  "2d9f185884f48aa2e986accf2644089bca520228",
+  "1aed313fe4b8770a18e4cef9396641a1b8ab9921",
+  "6c9e717ec9ead6918044416f885589c1870ba249",
+  "0660126686a8a9bf2241b9171e221d9e5fa347d9",
+  "4ad974ccdfd684b93b21837c968a7a100a8ef95f",
+  "83a7428cd2132f9e313302334b80cf9cfe670635",
+  "-1001981582728:1578255",
+  "-1001981582728:1578256",
+  "-1001981582728:1578257",
+  "-1001981582728:1578258",
+  "-1001981582728:1578259",
+  "-1001981582728:1578260"
+ ],
+ "drafts": [
+  {
+   "id": "2d9f185884f48aa2e986accf2644089bca520228",
+   "related": [],
+   "post": "⚡️<b>9–10-noyabr kunlari toifa testida qatnashadigan matematika o'qituvchilari ro'yxati e'lon qilindi</b>\n\nRo'yxatlar Qoraqalpog'iston Respublikasi, barcha viloyatlar va Toshkent shahri kesimida chiqdi.\n\nPedagoglar ro'yxat orqali o'zlarining test topshiradigan sanasi, guruhi va vaqtini bilib olishlari mumkin.\n\nAttestatsiyaga tayyorlanish uchun sinov testlari sinovtest.uz saytida joylashtirilgan.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1578255",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578256",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578257",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578258",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578259",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578260",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "d13c92ae2ebb3d2484b3f29d3a1579b92ff4feca",
+  "4cdf5520033b3404f6c7902443af4f3c4f9e54cf",
+  "0cb437ca66026f68af3dd9e1b407140e1d66b597",
+  "13a3c2755c1253adcff46b996e7fd2693f047f0d",
+  "1aed313fe4b8770a18e4cef9396641a1b8ab9921",
+  "6c9e717ec9ead6918044416f885589c1870ba249",
+  "0660126686a8a9bf2241b9171e221d9e5fa347d9",
+  "4ad974ccdfd684b93b21837c968a7a100a8ef95f",
+  "83a7428cd2132f9e313302334b80cf9cfe670635"
+ ]
+}
