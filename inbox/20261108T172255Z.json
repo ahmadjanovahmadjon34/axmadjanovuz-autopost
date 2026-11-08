@@ -1,0 +1,46 @@
+{
+ "processed_ids": [
+  "3e5282356d02fe2c7689faae4ba8508f74adb034",
+  "59c367317c72cdf948f7d681a46494572489b41f",
+  "b2e48ab89d966acccd3d259a2779c4679eaf0482",
+  "d910d8bd7861e34066a02dd96d24b2cdb05f1fa6",
+  "a7b4de6bce584ac9a78c0f2ab85bdd5efcc292b4",
+  "9b641727a252e8e32b49a76906056de2ec274d48",
+  "5607427d98d42c2c3c1b292f3a317c567b1c6fb4",
+  "5b7d10f3586eef1e83d3f3c2de50429aa5a07b79",
+  "-1001981582728:1578355",
+  "-1001981582728:1578356"
+ ],
+ "drafts": [
+  {
+   "id": "d910d8bd7861e34066a02dd96d24b2cdb05f1fa6",
+   "related": [],
+   "post": "⚡️<b>Chet tillaridan sertifikat imtihonlari o'tdi: gapirish bosqichi 9-noyabrdan boshlanadi</b>\n\n7–8-noyabr kunlari ingliz, nemis, fransuz, turk, fors, xitoy, ispan, italyan, urdu va arab tillaridan tinglab tushunish, o'qish va yozish bo'yicha imtihonlar o'tkazildi. Nemis va fransuz tillaridan imtihon kompyuterda topshirildi.\n\nImtihonlarda 31,7 ming nafardan ortiq talabgor qatnashdi, 21 nafari qoidalarga amal qilmagani uchun chetlatildi.\n\nGapirish ko'nikmasi bosqichi 9–20-noyabr kunlari (dam olish kunlaridan tashqari) o'tkaziladi. Natijalar Vazirlar Mahkamasining 73-son qarorida belgilangan tartibda e'lon qilinadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1578355",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1578356",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "3e5282356d02fe2c7689faae4ba8508f74adb034",
+  "59c367317c72cdf948f7d681a46494572489b41f",
+  "b2e48ab89d966acccd3d259a2779c4679eaf0482",
+  "a7b4de6bce584ac9a78c0f2ab85bdd5efcc292b4",
+  "9b641727a252e8e32b49a76906056de2ec274d48",
+  "5607427d98d42c2c3c1b292f3a317c567b1c6fb4",
+  "5b7d10f3586eef1e83d3f3c2de50429aa5a07b79"
+ ]
+}
