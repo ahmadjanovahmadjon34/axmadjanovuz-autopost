@@ -1,0 +1,137 @@
+{
+ "processed_ids": [
+  "c3d741ef0ee456a6a353c04507061e662d1faad7",
+  "bot:619839487:799",
+  "0c59f9e2635e1210fe02f022c2864314f26e99b3",
+  "214ae5eac97968b86fc06ccce30538611fd83244",
+  "476f60073e54271fc1ed776cec65061efbc20af0",
+  "adc4402b21a2759a74ee61d152e018437ef60b2f",
+  "b1325b2165264e1d91a2edf2e48370982ce1231f",
+  "ef84b562eefaf4441730ff2d3dbcc8395ae54b67",
+  "-1001981582728:1579209",
+  "-1001981582728:1579210",
+  "-1001981582728:1579211",
+  "-1001981582728:1579212",
+  "-1001981582728:1579213",
+  "-1001981582728:1579214",
+  "-1001981582728:1579215",
+  "-1001981582728:1579216",
+  "-1001981582728:1579217",
+  "-1001981582728:1579218",
+  "-1001981582728:1579219",
+  "-1001981582728:1579220",
+  "-1001981582728:1579221",
+  "-1001981582728:1579222",
+  "-1001981582728:1579223",
+  "-1001981582728:1579224",
+  "-1001981582728:1579225",
+  "-1001981582728:1579226",
+  "-1001981582728:1579227",
+  "-1001981582728:1579228"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:799",
+   "related": [
+    "214ae5eac97968b86fc06ccce30538611fd83244"
+   ],
+   "post": "❗️<b>TKTI rektori Botir Usmonov lavozimidan ozod etilgani aytilmoqda</b>\n\nInsayderlar xabariga ko‘ra, Ta’lim va ilm-fan vazirining buyrug‘i bilan Botir Usmonov bugun Toshkent kimyo-texnologiya instituti rektori lavozimidan o‘z xohishiga ko‘ra ozod etilgan.\n\nAytilishicha, bu haqda bugun institut jamoasiga ma’lum qilingan, institut saytidan ham rektor haqidagi ma’lumot olib tashlangan.\n\nEslatib o‘tamiz, avvalroq Telegram kanallarida Botir Usmonov lavozimidan ozod etilishi mumkin bo‘lgan rektorlar qatorida tilga olingan edi.\n\n⚠️ Vazirlik tomonidan rasmiy ma’lumot hozircha e’lon qilinmagan.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1579209",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579210",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579211",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579212",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579213",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579214",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579215",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579216",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579217",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579218",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579219",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579220",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579221",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579222",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579223",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579224",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579225",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579226",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579227",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579228",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "c3d741ef0ee456a6a353c04507061e662d1faad7",
+  "0c59f9e2635e1210fe02f022c2864314f26e99b3",
+  "476f60073e54271fc1ed776cec65061efbc20af0",
+  "adc4402b21a2759a74ee61d152e018437ef60b2f",
+  "b1325b2165264e1d91a2edf2e48370982ce1231f",
+  "ef84b562eefaf4441730ff2d3dbcc8395ae54b67"
+ ]
+}
