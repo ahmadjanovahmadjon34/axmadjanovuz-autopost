@@ -1,0 +1,122 @@
+{
+ "processed_ids": [
+  "32ac1dfbe786811f4b10166d81ddc67762ac6a62",
+  "10e97e7e35192196fc033dedf96ee0f0dc0f5b2a",
+  "019764f32428af440d4597808ffab82a531af859",
+  "88053689855ee79dd92d62b85dbcc40cd9d688d2",
+  "51fc6e49ab1473b2dca199df811a1e1fe5b36a7c",
+  "91b56368794c98a43a891145c26e5a243a24404e",
+  "1cdb58bfaacf944e2c8e79fd6a1a4181cd017d1d",
+  "42e024ba3936211e0a01dee770f5601dfef41453",
+  "7e76b1cf31ff92a82c0f603d056c08cbbfa886e9",
+  "25fec59b73a3215e02398ea15ef97e5f652b7bc7",
+  "e9cdeff38addcfd1806986b5a9db717c292bb855",
+  "d4a6f751462a760c0f53be256569c1c1055e151d",
+  "9f5c4686faa0971eea24e074874af7e8e38fa251",
+  "f4090172b9bdc3c8d71409666cbb3aee5ade672e",
+  "bb575f393e3543bc55d3b7b26adf437253b68e5e",
+  "3d428ba75b026a6e6b3317b726f43482e18ac040",
+  "3e25b4dbab6db85d7f65c9e5184f785c6a235e4c",
+  "e577653e52aa36068449b1346235643243514f4a",
+  "75eed26bd13a95c97d6d5239c2a5372ce31d742c",
+  "dc2241f437b0be9600f1cf5d9a1742effcb03e41",
+  "2234c97baf0383985cbd3a4b4510e856d3a74154",
+  "3ea01b0c8a0f7b2d921f05038b913262404488dc",
+  "c32e45474af5b732fd4c61061ca81095f00e22b0",
+  "a9872aaead56c1f645ab17dd2f81da8d6090e6be",
+  "5a90d0cb5ff000f96653a6fa1d0253732d4463dc",
+  "494797f916ab68dff2ec0ee6c34fea2fd1395565",
+  "902506b806f26bcc0fa82f6f71d894def5774160",
+  "bf8a5e2d2f8f35254486ce48acc882a9540a69e2",
+  "0e2f8c161745cf7ee21711422d0d8ca3388e5dd5",
+  "ef16dcedd82cd984d0250148e540fe6805fc849c",
+  "eaf26a589f44756e736149dc4acb72ece7fb375e",
+  "-1001640191255:628183",
+  "-1001640191255:628184",
+  "-1001640191255:628186",
+  "-1001981582728:1579684",
+  "-1001981582728:1579685",
+  "-1001640191255:628188",
+  "-1001640191255:628189",
+  "-1001640191255:628190"
+ ],
+ "drafts": [
+  {
+   "id": "bf8a5e2d2f8f35254486ce48acc882a9540a69e2",
+   "related": [],
+   "post": "❗️<b>Barcha maktablar xalqaro baholash dasturlariga qamrab olinadi</b>\n\nPrezidentning 10-noyabrdagi <b>PF–242-son</b> Farmoni bilan inson qadrini yuksaltirish bo‘yicha milliy dasturlar yo‘nalishlari belgilandi. Ta’lim sohasidagi vazifalar:\n\n🔹 6 yoshli bolalarni maktabga tayyorlov guruhlari bilan to‘liq qamrab olish;\n🔹 nodavlat maktabgacha ta’lim tashkilotlari uchun amaldagi imtiyozlarni saqlab qolish va samaradorligini baholash;\n🔹 barcha umumta’lim maktablarini bosqichma-bosqich xalqaro baholash dasturlari bilan qamrab olish;\n🔹 kamida 10 ta oliy ta’lim tashkilotini nufuzli xalqaro reytinglarning top-1000 ro‘yxatiga kiritish;\n🔹 10 million nafar yoshni raqamli industriya va kelajak kasblariga jalb qilish.\n\nShuningdek, huquqiy tarbiya va savodxonlik umumta’lim maktablaridan boshlab tizimli yo‘lga qo‘yiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:628183",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:628184",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:628186",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579684",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1579685",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:628188",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:628189",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:628190",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "32ac1dfbe786811f4b10166d81ddc67762ac6a62",
+  "10e97e7e35192196fc033dedf96ee0f0dc0f5b2a",
+  "019764f32428af440d4597808ffab82a531af859",
+  "88053689855ee79dd92d62b85dbcc40cd9d688d2",
+  "51fc6e49ab1473b2dca199df811a1e1fe5b36a7c",
+  "91b56368794c98a43a891145c26e5a243a24404e",
+  "1cdb58bfaacf944e2c8e79fd6a1a4181cd017d1d",
+  "42e024ba3936211e0a01dee770f5601dfef41453",
+  "7e76b1cf31ff92a82c0f603d056c08cbbfa886e9",
+  "25fec59b73a3215e02398ea15ef97e5f652b7bc7",
+  "e9cdeff38addcfd1806986b5a9db717c292bb855",
+  "d4a6f751462a760c0f53be256569c1c1055e151d",
+  "9f5c4686faa0971eea24e074874af7e8e38fa251",
+  "f4090172b9bdc3c8d71409666cbb3aee5ade672e",
+  "bb575f393e3543bc55d3b7b26adf437253b68e5e",
+  "3d428ba75b026a6e6b3317b726f43482e18ac040",
+  "3e25b4dbab6db85d7f65c9e5184f785c6a235e4c",
+  "e577653e52aa36068449b1346235643243514f4a",
+  "75eed26bd13a95c97d6d5239c2a5372ce31d742c",
+  "dc2241f437b0be9600f1cf5d9a1742effcb03e41",
+  "2234c97baf0383985cbd3a4b4510e856d3a74154",
+  "3ea01b0c8a0f7b2d921f05038b913262404488dc",
+  "c32e45474af5b732fd4c61061ca81095f00e22b0",
+  "a9872aaead56c1f645ab17dd2f81da8d6090e6be",
+  "5a90d0cb5ff000f96653a6fa1d0253732d4463dc",
+  "494797f916ab68dff2ec0ee6c34fea2fd1395565",
+  "902506b806f26bcc0fa82f6f71d894def5774160",
+  "0e2f8c161745cf7ee21711422d0d8ca3388e5dd5",
+  "ef16dcedd82cd984d0250148e540fe6805fc849c",
+  "eaf26a589f44756e736149dc4acb72ece7fb375e"
+ ]
+}
