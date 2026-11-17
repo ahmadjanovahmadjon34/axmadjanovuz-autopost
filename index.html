@@ -3,10 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Axmadjanov.uz</title>
-<meta name="description" content="Oliy ta'lim, nodavlat universitetlar, magistratura va abituriyentlar uchun foydali ma'lumotlar. Bizni kuzating.">
-<meta property="og:title" content="Axmadjanov.uz — Ta'limda to'g'ri yo'l">
-<meta property="og:description" content="Instagram, Telegram va boshqa sahifalarimiz bir joyda.">
+<title>Axmadjanov.uz — Ta’limda to‘g‘ri yo‘l</title>
+<meta name="description" content="Abituriyentlar, talabalar va ota-onalar uchun bakalavr, magistratura, doktorantura va nodavlat universitetlar haqida aniq va sodda ma’lumot.">
+<link rel="canonical" href="https://axmadjanov.uz/">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://axmadjanov.uz/">
+<meta property="og:site_name" content="Axmadjanov.uz">
+<meta property="og:title" content="Axmadjanov.uz — Ta’limda to‘g‘ri yo‘l">
+<meta property="og:description" content="Bakalavr, magistratura, doktorantura va nodavlat universitetlar haqida aniq va sodda ma’lumot. Instagram va Telegram sahifalarimiz bir joyda.">
+<meta property="og:image" content="https://axmadjanov.uz/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#030D22">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +30,15 @@
 html,body{min-height:100%}
 body{
   background:var(--bg); color:var(--text);
-  font-family:Inter,system-ui,sans-serif; overflow-x:hidden;
+  font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; overflow-x:hidden;
   min-height:100vh; display:flex; flex-direction:column; align-items:center;
   padding:48px 16px 32px; position:relative;
 }
 /* rays */
 .rays{position:fixed;inset:0;z-index:-2;overflow:hidden;
   background:radial-gradient(ellipse at 50% 22%, rgba(20,80,158,.55) 0%, rgba(3,13,34,0) 60%);}
-.rays::before{content:"";position:absolute;left:50%;top:22vh;width:300vmax;height:300vmax;
-  margin:-150vmax 0 0 -150vmax;
+.rays::before{content:"";position:absolute;left:50%;top:22vh;width:200vmax;height:200vmax;
+  margin:-100vmax 0 0 -100vmax;will-change:transform;
   background:repeating-conic-gradient(from 0deg, rgba(255,255,255,.04) 0deg 6deg, rgba(255,255,255,0) 6deg 15deg);
   animation:spin 90s linear infinite;}
 .rays::after{content:"";position:absolute;inset:0;
@@ -46,9 +56,9 @@ body{
   border:2px solid var(--gold); box-shadow:0 0 0 6px rgba(246,196,69,.10), 0 12px 30px rgba(0,0,0,.5);
   display:grid;place-items:center;overflow:hidden}
 .logo img{width:100%;height:100%;object-fit:cover}
-.logo span{font-family:Oswald;font-weight:700;font-size:52px;color:var(--gold);line-height:1}
-.title{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
-.tag{font-family:Oswald;font-weight:700;text-transform:uppercase;line-height:1;
+.logo span{font-family:Oswald,Impact,'Arial Narrow',sans-serif;font-weight:700;font-size:52px;color:var(--gold);line-height:1}
+.title{font-size:inherit;font-weight:inherit;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.tag{display:block;white-space:nowrap;font-family:Oswald,Impact,'Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;line-height:1;
   padding:6px 12px 7px; transform:rotate(-2deg); box-shadow:0 6px 16px rgba(0,0,0,.35)}
 .t1{background:#fff;color:var(--ink);font-size:24px;letter-spacing:.5px}
 .t2{background:var(--gold);color:var(--ink);font-size:40px;transform:rotate(1deg)}
@@ -56,14 +66,17 @@ body{
 
 /* section label */
 .label{display:flex;align-items:center;gap:14px;margin-bottom:18px;
-  font-family:Oswald;font-weight:600;letter-spacing:4px;color:var(--gold);font-size:15px;text-transform:uppercase}
+  font-family:Oswald,Impact,'Arial Narrow',sans-serif;font-weight:600;letter-spacing:4px;color:var(--gold);font-size:15px;text-transform:uppercase}
 .label::before,.label::after{content:"";width:40px;height:1px;background:var(--gold);opacity:.7}
 
 /* cards */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%}
-.card{display:flex;align-items:center;gap:14px;padding:14px 14px 14px 16px;
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;width:100%}
+.card{min-width:0;display:flex;align-items:center;gap:14px;padding:14px 14px 14px 16px;
   background:var(--card);border-radius:18px;text-decoration:none;color:var(--ink);
   box-shadow:0 8px 24px rgba(0,0,0,.35); transition:transform .15s, box-shadow .15s}
+a{-webkit-tap-highlight-color:transparent}
+.card:active{transform:scale(.98)}
+.card:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
 .ic{width:44px;height:44px;border-radius:12px;flex:none;display:grid;place-items:center}
 .ic svg{width:26px;height:26px}
@@ -73,9 +86,9 @@ body{
 .tt{background:#111}
 .web{background:linear-gradient(135deg,#14509E,#030D22);border:1.5px solid var(--gold)}
 .info{flex:1;min-width:0}
-.name{font-family:Oswald;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.1}
+.name{font-family:Oswald,Impact,'Arial Narrow',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.1}
 .handle{font-size:13.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.btn{flex:none;font-family:Oswald;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.5px;
+.btn{flex:none;font-family:Oswald,Impact,'Arial Narrow',sans-serif;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.5px;
   background:var(--ink);color:var(--gold);padding:9px 12px;border-radius:999px}
 
 .about{max-width:500px;text-align:center;line-height:1.65;font-size:16.5px;margin:40px 0 0;color:var(--text)}
@@ -88,52 +101,63 @@ footer{margin-top:auto;padding-top:40px;font-size:13px;color:#7D8AA5}
   .logo{width:92px;height:92px}
   .logo span{font-size:40px}
   .t1{font-size:18px}.t2{font-size:30px}.t3{font-size:20px}
-  .grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:minmax(0,1fr)}
   .about{font-size:15.5px}
+}
+@media (max-width:370px){
+  body{padding-left:12px;padding-right:12px}
+  .head{gap:10px}
+  .logo{width:74px;height:74px}
+  .t1{font-size:15px}.t2{font-size:25px}.t3{font-size:17px}
+  .tag{padding:5px 9px 6px}
+  .card{gap:10px;padding:12px 10px 12px 12px}
+  .name{font-size:18px}
+  .btn{font-size:12px;padding:8px 10px}
+  .label{letter-spacing:3px;font-size:14px}
 }
 </style>
 </head>
 <body>
-<div class="rays"></div>
+<div class="rays" aria-hidden="true"></div>
 <main class="wrap">
   <header class="head">
-    <div class="logo"><img src="foto.jpg" alt="Axmadjanov"></div>
-    <div class="title">
-      <div class="tag t1">Ta'limda</div>
-      <div class="tag t2">To'g'ri yo'l</div>
-      <div class="tag t3">Axmadjanov.uz</div>
-    </div>
+    <div class="logo"><img src="foto.jpg" alt="Axmadjon Axmadjanov" width="400" height="400"></div>
+    <h1 class="title">
+      <span class="tag t1">Ta’limda</span>
+      <span class="tag t2">To‘g‘ri yo‘l</span>
+      <span class="tag t3">Axmadjanov.uz</span>
+    </h1>
   </header>
 
-  <div class="label">Bizni kuzating</div>
+  <h2 class="label">Bizni kuzating</h2>
   <div class="grid">
     <a class="card" href="https://instagram.com/axmadjanov.uz" target="_blank" rel="noopener">
-      <div class="ic ig"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></div>
+      <div class="ic ig"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></div>
       <div class="info"><div class="name">Instagram</div><div class="handle">@axmadjanov.uz</div></div>
       <span class="btn">Kuzatish</span>
     </a>
     <a class="card" href="https://t.me/axmadjanovuz" target="_blank" rel="noopener">
-      <div class="ic tg"><svg viewBox="0 0 24 24" fill="#fff"><path d="M21.5 4.3 18.4 19.2c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.3 13.1l-4.7-1.5c-1-.3-1-1 .2-1.5L20.2 3c.9-.3 1.6.2 1.3 1.3z"/></svg></div>
+      <div class="ic tg"><svg aria-hidden="true" viewBox="0 0 24 24" fill="#fff"><path d="M21.5 4.3 18.4 19.2c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.3 13.1l-4.7-1.5c-1-.3-1-1 .2-1.5L20.2 3c.9-.3 1.6.2 1.3 1.3z"/></svg></div>
       <div class="info"><div class="name">Telegram</div><div class="handle">@axmadjanovuz</div></div>
-      <span class="btn">Qo'shilish</span>
+      <span class="btn">Qo‘shilish</span>
     </a>
   </div>
 
-  <div class="label" style="margin-top:34px">Ijtimoiy loyiha</div>
+  <h2 class="label" style="margin-top:34px">Ijtimoiy loyiha</h2>
   <div class="grid">
     <a class="card" href="https://instagram.com/nodavlattalim" target="_blank" rel="noopener">
-      <div class="ic ig"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></div>
-      <div class="info"><div class="name">Nodavlat ta'lim</div><div class="handle">Muharrir · @nodavlattalim</div></div>
+      <div class="ic ig"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></div>
+      <div class="info"><div class="name">Nodavlat ta’lim</div><div class="handle">Muharrir · @nodavlattalim</div></div>
       <span class="btn">Kuzatish</span>
     </a>
-    <a class="card" href="https://axmadjanov.uz">
-      <div class="ic web"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+    <a class="card" href="/">
+      <div class="ic web"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
       <div class="info"><div class="name">Web-sahifa</div><div class="handle">axmadjanov.uz</div></div>
       <span class="btn">Ochish</span>
     </a>
   </div>
 
-  <p class="about">Abituriyentlar, talabalar va ota-onalar uchun <b>bakalavr, magistratura, doktorantura</b> va <b>nodavlat universitetlar</b> haqida aniq va sodda ma'lumot beramiz. Maqsadimiz: har bir yosh o'ziga mos ta'lim yo'lini to'g'ri tanlashi.</p>
+  <p class="about">Abituriyentlar, talabalar va ota-onalar uchun <b>bakalavr, magistratura, doktorantura</b> va <b>nodavlat universitetlar</b> haqida aniq va sodda ma’lumot beramiz. Maqsadimiz: har bir yosh o‘ziga mos ta’lim yo‘lini to‘g‘ri tanlashi.</p>
 </main>
 <footer>© 2020 Axmadjanov · axmadjanov.uz</footer>
 </body>
