@@ -1,0 +1,56 @@
+{
+ "processed_ids": [
+  "bot:619839487:874",
+  "d540066eace974a8da5d08de65a7caa57eb3330f",
+  "379497f9ba5737d2f54cc26b5c1168b48b0b17ce",
+  "5c02b3fc009d7b682a0a3303ff1adb7998264335",
+  "aae57099e99d446dc139855a27b1f2dc21d555c6",
+  "1463cfb1f8f0077c8eb73a1215194e1fd90ec806",
+  "859f2ba66ab62ed63805f65ade024b42b5ccdc1a",
+  "876c882ce7bbf24cc9d5cd6575e0ba96ef523ce2",
+  "-1001981582728:1582035",
+  "-1001981582728:1582036",
+  "-1001640191255:631236",
+  "-1001640191255:631237"
+ ],
+ "drafts": [
+  {
+   "id": "bot:619839487:874",
+   "related": [],
+   "post": "❗️<b>Banklar 5 yilda talabalarga 7,7 trln so‘m ta’lim krediti ajratdi</b>\n\nSo‘nggi 5 yil davomida banklar tomonidan 663 mingdan ortiq talabaga jami 7,7 trillion so‘mlik ta’lim krediti berildi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1582035",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582036",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631236",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631237",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "d540066eace974a8da5d08de65a7caa57eb3330f",
+  "379497f9ba5737d2f54cc26b5c1168b48b0b17ce",
+  "5c02b3fc009d7b682a0a3303ff1adb7998264335",
+  "aae57099e99d446dc139855a27b1f2dc21d555c6",
+  "1463cfb1f8f0077c8eb73a1215194e1fd90ec806",
+  "859f2ba66ab62ed63805f65ade024b42b5ccdc1a",
+  "876c882ce7bbf24cc9d5cd6575e0ba96ef523ce2"
+ ]
+}
