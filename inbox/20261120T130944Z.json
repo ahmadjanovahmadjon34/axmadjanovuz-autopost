@@ -1,0 +1,45 @@
+{
+ "processed_ids": [
+  "491552b914e86897314c478a480e042ac694286b",
+  "98af58d05825bdb7ce5b2b5218e8b106a1a871f6",
+  "5872e5bc7314714ecb655dad641a28699cdeed5d",
+  "141bee8df99f6ad0d3ea4e012c0a1c70eb41b598",
+  "5a8e9a7de4d462baa2f9739775378d50ec071290",
+  "61b7db8de8b5622fc6374d140ac7cbf3d9eabef5",
+  "22524fb06a4e8b14f34a24d2f6968989a89cb329",
+  "a7a7f13166392cc7c821e55016476e2a2e3e71ed",
+  "214a49b6654153c5683de062df135fff5936fe0a",
+  "faf1eeae2351084681f64ac4fb4c7e56af4356c0",
+  "-1001981582728:1582629"
+ ],
+ "drafts": [
+  {
+   "id": "22524fb06a4e8b14f34a24d2f6968989a89cb329",
+   "related": [],
+   "post": "❗️<b>Ayrim ta’lim muassasalari xodimlariga ish staji uchun ustama belgilandi</b>\n\nAdliya vazirligi Ijtimoiy himoya milliy agentligi tizimidagi ayrim ta’lim muassasalari xodimlariga mehnat haqi to‘lash shartlarini ro‘yxatdan o‘tkazdi (ro‘yxat raqami 3975, 16-noyabr).\n\nHujjatga ko‘ra, bosh hisobchi, yetakchi hisobchi, hisobchi va kadrlar bo‘yicha inspektorlar uchun tarif razryadlari hamda ko‘p yillik ish staji uchun oylik ustamalar belgilandi.\n\n📌 Ustama miqdori (lavozim maoshiga nisbatan):\n• 1–3 yil — 30 foiz;\n• 3–5 yil — 60 foiz;\n• 5–10 yil — 80 foiz;\n• 10–15 yil — 100 foiz;\n• 15 yil va undan ortiq — 120 foiz.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1582629",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "491552b914e86897314c478a480e042ac694286b",
+  "98af58d05825bdb7ce5b2b5218e8b106a1a871f6",
+  "5872e5bc7314714ecb655dad641a28699cdeed5d",
+  "141bee8df99f6ad0d3ea4e012c0a1c70eb41b598",
+  "5a8e9a7de4d462baa2f9739775378d50ec071290",
+  "61b7db8de8b5622fc6374d140ac7cbf3d9eabef5",
+  "a7a7f13166392cc7c821e55016476e2a2e3e71ed",
+  "214a49b6654153c5683de062df135fff5936fe0a",
+  "faf1eeae2351084681f64ac4fb4c7e56af4356c0"
+ ]
+}
