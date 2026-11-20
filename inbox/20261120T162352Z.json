@@ -1,0 +1,50 @@
+{
+ "processed_ids": [
+  "4e8ea0b74dd228ce3c1e69a8399a52fe8f27a562",
+  "26bab62c1f9afaf1254c0c49335e35bc7244fbeb",
+  "5f1a52be8c74bf907e1ffbeeecd3e237dc2af4b0",
+  "3be010b603d9fe7adfed1fbab4f8a788bfc3f2ac",
+  "21c8ed37ede67f7d8a9850fd30eb5c6deb185c3c",
+  "-1001981582728:1582687",
+  "-1001640191255:631684",
+  "-1001640191255:631687",
+  "-1001640191255:631692"
+ ],
+ "drafts": [
+  {
+   "id": "3be010b603d9fe7adfed1fbab4f8a788bfc3f2ac",
+   "related": [],
+   "post": "⚡️<b>Nogironligi bor talabgorlar uchun chet tili imtihoni natijalari e’lon qilindi</b>\n\n2026-yil 13-noyabr kuni ko‘zi ojiz, eshitish va gapirishda nuqsoni bo‘lgan hamda yozish imkoniyati cheklangan talabgorlar uchun o‘tkazilgan chet tilini bilish darajasini aniqlash imtihoni natijalari e’lon qilindi.\n\n📌 Natijalar Yagona interaktiv davlat xizmatlari portalidagi “Mening arizalarim” bo‘limida ko‘rish mumkin.\n\n🧾 Imtihondan o‘tganlar sertifikatini shu portal orqali elektron yuklab oladi.\n\n‼️ Natijadan norozi bo‘lganlar 3 kun ichida portal orqali apellyatsiya berishi mumkin. Shikoyat ikki hafta ichida ko‘rib chiqiladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1582687",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631684",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631687",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631692",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "4e8ea0b74dd228ce3c1e69a8399a52fe8f27a562",
+  "26bab62c1f9afaf1254c0c49335e35bc7244fbeb",
+  "5f1a52be8c74bf907e1ffbeeecd3e237dc2af4b0",
+  "21c8ed37ede67f7d8a9850fd30eb5c6deb185c3c"
+ ]
+}
