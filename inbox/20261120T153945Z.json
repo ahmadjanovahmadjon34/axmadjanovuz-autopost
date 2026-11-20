@@ -1,0 +1,45 @@
+{
+ "processed_ids": [
+  "fe7d65c20969184dc17ad6e10f7061b648438ce1",
+  "22c8f70d7f089dddc97160ed18c1bacfc86a3d6d",
+  "27ea6748f226323a8e43ad3dc12d434931f3cff4",
+  "1a48d10485cbf709470756fa1043f9379669926c",
+  "6dfcb88bf91e6139c80be891564454a13a487064",
+  "-1001981582728:1582658",
+  "-1001981582728:1582659",
+  "-1001981582728:1582660"
+ ],
+ "drafts": [
+  {
+   "id": "6dfcb88bf91e6139c80be891564454a13a487064",
+   "related": [],
+   "post": "❗️<b>O‘qituvchilarning 62,3 foizi kasbiy sertifikatlashdan o‘ta olmadi</b>\n\nTa’lim sifatini ta’minlash milliy agentligi ma’lumotiga ko‘ra, 2024–2026-yillarda sertifikatlash testlarida qatnashgan 47 936 nafar pedagogning 62,3 foizi yetarli ball to‘play olmagan.\n\n📌 Sertifikat olganlar orasida:\n• 12 693 nafari — 56–70 ball;\n• 4 778 nafari — 72–85 ball;\n• 608 nafari — 86 va undan yuqori ball.\n\nMuvaffaqiyatli o‘tganlar ulushi davlat universitetlari bitiruvchilari orasida 39,9 foiz, pedagogika universitetlari bitiruvchilari orasida 37,2 foizni tashkil etgan.\n\nTestlarda qatnashganlar mamlakatdagi jami pedagoglarning 6,9 foiziga teng.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1582658",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582659",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582660",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "fe7d65c20969184dc17ad6e10f7061b648438ce1",
+  "22c8f70d7f089dddc97160ed18c1bacfc86a3d6d",
+  "27ea6748f226323a8e43ad3dc12d434931f3cff4",
+  "1a48d10485cbf709470756fa1043f9379669926c"
+ ]
+}
