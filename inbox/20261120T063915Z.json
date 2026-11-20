@@ -1,0 +1,57 @@
+{
+ "processed_ids": [
+  "a3add8b3ba4362995a9cfbbfe53536e670e61cc5",
+  "55131f8af4f40ef1ed14cf3bc976ff16e4163c85",
+  "76b45d9780101997bd6b9180fce5db9cfe80b770",
+  "a31bba0ce18c994cd20a944fc3a5434ab9ad757b",
+  "691501512736f370d9644e6b03e50333a052b655",
+  "6f637c18593a4d26c51d097351c6c412edfe4103",
+  "8b5126bb8ba46d423162ee0a0911847f6d22ce7d",
+  "0c0ec0ed0e41d4ba5b9363e8c0e81e97c5b86b24",
+  "a8fcb14d55b81e997a18639286e21800a3c3b466",
+  "0f2cc6506b2f115a0a1a5c80c1e5c8db0aad2f01",
+  "f02f863bd79b112d97301e0b891c418de280c7e3",
+  "-1001640191255:631620",
+  "-1001640191255:631621",
+  "-1001640191255:631622"
+ ],
+ "drafts": [
+  {
+   "id": "76b45d9780101997bd6b9180fce5db9cfe80b770",
+   "related": [],
+   "post": "⚡️<b>Maktab direktorlari xorijda malaka oshirishi mumkin</b>\n\nTa’limni rivojlantirish respublika ilmiy-metodik markazi UNESCO bilan hamkorlikda maktab direktorlari uchun maxsus saralashni boshladi.\n\nTashabbus Islom taraqqiyot banki, Islom birdamlik jamg‘armasi va Ta’lim bo‘yicha Global hamkorlik tashkiloti moliyalashtirayotgan “SmartED” loyihasi doirasida amalga oshirilmoqda.\n\n📌 Saralash shartlari:\n• 10 ta ilmiy-metodik qo‘llanmadan iborat “Maktab direktorining ish kitobi” to‘plamini o‘rganish;\n• Test sinovlaridan muvaffaqiyatli o‘tish.\n\n🏆 Barcha bosqichlardan o‘tgan direktorlar tajriba almashish va malaka oshirish uchun xorijiy davlatlarga yuboriladi.\n\nRo‘yxatdan o‘tish markazning raqamli ta’lim platformasi orqali amalga oshiriladi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "6"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:631620",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631621",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631622",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "a3add8b3ba4362995a9cfbbfe53536e670e61cc5",
+  "55131f8af4f40ef1ed14cf3bc976ff16e4163c85",
+  "a31bba0ce18c994cd20a944fc3a5434ab9ad757b",
+  "691501512736f370d9644e6b03e50333a052b655",
+  "6f637c18593a4d26c51d097351c6c412edfe4103",
+  "8b5126bb8ba46d423162ee0a0911847f6d22ce7d",
+  "0c0ec0ed0e41d4ba5b9363e8c0e81e97c5b86b24",
+  "a8fcb14d55b81e997a18639286e21800a3c3b466",
+  "0f2cc6506b2f115a0a1a5c80c1e5c8db0aad2f01",
+  "f02f863bd79b112d97301e0b891c418de280c7e3"
+ ]
+}
