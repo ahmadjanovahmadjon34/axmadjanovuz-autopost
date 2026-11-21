@@ -1,0 +1,22 @@
+{
+ "processed_ids": [
+  "25ecf9a121909dd9b700daca8c6b65886437c58d",
+  "28284f70ca172fc165d7335d7a3558d764d69a2e",
+  "4e1d706b2f0f402b6f237f618f022a1c0cea7f5d",
+  "07ef52e12a5fae6a6b7905c4fb00f759f3433c3a",
+  "-1001640191255:631773"
+ ],
+ "drafts": [],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:631773",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "25ecf9a121909dd9b700daca8c6b65886437c58d",
+  "28284f70ca172fc165d7335d7a3558d764d69a2e",
+  "4e1d706b2f0f402b6f237f618f022a1c0cea7f5d",
+  "07ef52e12a5fae6a6b7905c4fb00f759f3433c3a"
+ ]
+}
