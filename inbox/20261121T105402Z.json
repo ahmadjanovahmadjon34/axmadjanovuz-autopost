@@ -1,0 +1,57 @@
+{
+ "processed_ids": [
+  "2f0ee6b2f4cc0501bd47bfd0d8eff82f74be24db",
+  "858e86cd556d13de85dab60f61251b157ca733b3",
+  "b4be5d504c7ec3aab56d4f8bd0c3401bf4bc89a5",
+  "41bf50f9744e4797b0a622f22d9852d7194de233",
+  "1c6525748082ba548edfb0663b0b436239b75b71",
+  "a91c65772fb6270976c9ea31ec4a6eab9f8a60ea",
+  "-1001981582728:1582865",
+  "-1001981582728:1582866",
+  "-1001981582728:1582867",
+  "-1001640191255:631785",
+  "-1001981582728:1582870"
+ ],
+ "drafts": [
+  {
+   "id": "a91c65772fb6270976c9ea31ec4a6eab9f8a60ea",
+   "related": [],
+   "post": "❗️<b>Harbiy xizmatni namunali o‘tagan askarlar OTMga testsiz qabul qilinadi</b>\n\nHukumat qaroriga kiritilgan o‘zgartirishga ko‘ra (19.11.2026), muddatli harbiy xizmatchilar uchun yangi imtiyoz belgilandi.\n\n📌 Xizmatni namunali o‘tagan, respublika va xalqaro sport musobaqalari yoki fan olimpiadalarida 1-o‘rinni olgan harbiy xizmatchilar yillik kvota doirasida saralanib, testsiz qabul qilinadi:\n• Amir Temur nomidagi DXX akademiyasiga — DXX tizimida xizmat o‘taganlar;\n• Jamoat xavfsizligi universitetiga — Milliy gvardiyada xizmat o‘taganlar;\n• Oliy harbiy ta’lim muassasalariga — mas’ul vazirliklar tizimida xizmat o‘tagan va tavsiya etilganlar.\n\n✅ Kvotalar harbiy xizmatchilar umumiy soniga mutanosib taqsimlanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001981582728:1582865",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582866",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582867",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631785",
+   "reply": "Imtihon sanalari hozircha belgilanmagan. Ular ro‘yxatga olish yakunlangach, talabgorlar soni va hududlar bo‘yicha taqsimotga qarab belgilanadi va imtihon boshlanishidan 7 kun oldin e’lon qilinadi."
+  },
+  {
+   "id": "-1001981582728:1582870",
+   "reply": "Imtihon sanalari hozircha belgilanmagan. Ular ro‘yxatga olish yakunlangach, talabgorlar soni va hududlar bo‘yicha taqsimotga qarab belgilanadi va imtihon boshlanishidan 7 kun oldin e’lon qilinadi."
+  }
+ ],
+ "reject_ids": [
+  "2f0ee6b2f4cc0501bd47bfd0d8eff82f74be24db",
+  "858e86cd556d13de85dab60f61251b157ca733b3",
+  "b4be5d504c7ec3aab56d4f8bd0c3401bf4bc89a5",
+  "41bf50f9744e4797b0a622f22d9852d7194de233",
+  "1c6525748082ba548edfb0663b0b436239b75b71"
+ ]
+}
