@@ -1,0 +1,29 @@
+{
+ "processed_ids": [
+  "74ccd606bd88db87384fe2e03cf33177b434b6f4",
+  "78382d880ee4eb0f706da09a643d9c21ecdd690c",
+  "63dafc9748353f37773c400b4e8b701769661e73",
+  "96d57b43fd3797388bf889015febca0bcaf64553",
+  "8a40c1005a03e0467dfb7ba8eac0308fd7454c2e"
+ ],
+ "drafts": [
+  {
+   "id": "78382d880ee4eb0f706da09a643d9c21ecdd690c",
+   "related": [],
+   "post": "❗️<b>Sinfda 20 foiz bola kasallansa, karantin e’lon qilinadi</b>\n\nTa’lim muassasalaridagi biror sinf yoki guruhdagi bolalarning 20 foizi yuqumli kasalliklar bilan kasallansa, o‘sha sinf yoki guruh karantinga yopiladi va onlayn ta’limga o‘tkaziladi.\n\n📌 Sanitariya-epidemiologik osoyishtalik qo‘mitasi ota-onalardan yuqumli kasallik belgilari bor bolalarni ta’lim muassasalariga yubormaslikni so‘radi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": false,
+   "agent": "2"
+  }
+ ],
+ "comment_replies": [],
+ "reject_ids": [
+  "74ccd606bd88db87384fe2e03cf33177b434b6f4",
+  "63dafc9748353f37773c400b4e8b701769661e73",
+  "96d57b43fd3797388bf889015febca0bcaf64553",
+  "8a40c1005a03e0467dfb7ba8eac0308fd7454c2e"
+ ]
+}
