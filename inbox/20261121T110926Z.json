@@ -1,0 +1,51 @@
+{
+ "processed_ids": [
+  "e3f50ba97d5c17fe081f2a8294b65a4e40060ba4",
+  "ca3b357046dd42168191d1f46c1c8e27631cb5d4",
+  "8ce2e48de7a5accd5ed7b2d39abf60b881d56360",
+  "6b63c1f44a79fa3745084cb52ac119fae923e015",
+  "59fee643b877e14693e7e48d1d02beb381145505",
+  "6c048a21c39e38d36e85042d44cc194592dfb2a3",
+  "68f09ddb52938daa1e213b42dbf5fa7896bd5262",
+  "-1001640191255:631787",
+  "-1001981582728:1582874",
+  "-1001640191255:631788",
+  "a91c65772fb6270976c9ea31ec4a6eab9f8a60ea"
+ ],
+ "drafts": [
+  {
+   "id": "a91c65772fb6270976c9ea31ec4a6eab9f8a60ea",
+   "related": [],
+   "post": "❗️<b>Harbiy xizmatni namunali o‘taganlar OTMga test sinovlarisiz qabul qilinadi</b>\n\nHukumat qaroriga 19-noyabrda kiritilgan o‘zgartirishlarga muvofiq, muddatli harbiy xizmatchilar uchun yangi imtiyoz tartibi belgilandi.\n\nUnga ko‘ra, muddatli harbiy xizmatni namunali o‘tagan, respublika va xalqaro sport musobaqalari yoki fan olimpiadalarida 1-o‘rinni egallagan harbiy xizmatchilardan yillik kvota doirasida saralangan nomzodlar quyidagi muassasalarga test sinovlarisiz qabul qilinadi:\n— Amir Temur nomidagi DXX akademiyasiga — DXX tizimida xizmat o‘taganlar;\n— Jamoat xavfsizligi universitetiga — Milliy gvardiyada xizmat o‘taganlar;\n— Oliy harbiy ta’lim muassasalariga — mas’ul vazirliklar tizimida xizmat o‘tagan va tavsiya etilganlar.\n\nKvotalar harbiy xizmatchilar umumiy soniga mutanosib taqsimlanadi.\n\n👉 @Axmadjanovuz",
+   "qc": {
+    "score": 9,
+    "issues": []
+   },
+   "redo": true,
+   "agent": "5"
+  }
+ ],
+ "comment_replies": [
+  {
+   "id": "-1001640191255:631787",
+   "reply": ""
+  },
+  {
+   "id": "-1001981582728:1582874",
+   "reply": ""
+  },
+  {
+   "id": "-1001640191255:631788",
+   "reply": ""
+  }
+ ],
+ "reject_ids": [
+  "e3f50ba97d5c17fe081f2a8294b65a4e40060ba4",
+  "ca3b357046dd42168191d1f46c1c8e27631cb5d4",
+  "8ce2e48de7a5accd5ed7b2d39abf60b881d56360",
+  "6b63c1f44a79fa3745084cb52ac119fae923e015",
+  "59fee643b877e14693e7e48d1d02beb381145505",
+  "6c048a21c39e38d36e85042d44cc194592dfb2a3",
+  "68f09ddb52938daa1e213b42dbf5fa7896bd5262"
+ ]
+}
